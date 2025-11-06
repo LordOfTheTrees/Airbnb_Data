@@ -155,7 +155,7 @@ class CrossCityAnalyzer:
         # Figure 1: 4-Panel City Comparison
         fig, axes = plt.subplots(2, 2, figsize=(18, 14))
         fig.suptitle('Airbnb Market Comparison Across Cities', 
-                    fontsize=18, fontweight='bold', pad=20)
+                    fontsize=18, fontweight='bold', y=0.995)
         
         # Panel 1: Average Price
         ax = axes[0, 0]
@@ -229,7 +229,7 @@ class CrossCityAnalyzer:
         # Create 2x2 scatter plot figure
         fig, axes = plt.subplots(2, 2, figsize=(18, 14))
         fig.suptitle('Key Relationships in Airbnb Data Across Cities', 
-                    fontsize=18, fontweight='bold', pad=20)
+                    fontsize=18, fontweight='bold', y=0.995)
         
         # Get unique cities for color palette
         cities = df_plot['city'].unique()
@@ -430,7 +430,7 @@ class CrossCityAnalyzer:
         sns.heatmap(corr_matrix, annot=True, fmt='.3f', cmap='coolwarm',
                    center=0, square=True, linewidths=1, cbar_kws={"shrink": 0.8})
         plt.title('Correlation Matrix - All Cities Combined', 
-                 fontsize=16, fontweight='bold', pad=20)
+                 fontsize=16, fontweight='bold')
         plt.tight_layout()
         plt.savefig('outputs/overall_correlation_heatmap.png', dpi=300, bbox_inches='tight')
         print("✓ Saved: outputs/overall_correlation_heatmap.png")

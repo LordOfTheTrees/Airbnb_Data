@@ -145,7 +145,7 @@ def create_all_correlation_matrices(df, city_name, output_dir):
     sns.heatmap(corr_matrix, annot=True, fmt='.3f', cmap='coolwarm', 
                center=0, square=True, linewidths=0.5, cbar_kws={"shrink": 0.8})
     plt.title(f'{city_name.upper()} - Correlation Matrix (All Variables)', 
-             fontsize=16, fontweight='bold', pad=20)
+             fontsize=16, fontweight='bold')
     plt.tight_layout()
     plt.savefig(output_dir / f'{city_name}_correlation_heatmap_full.png', 
                dpi=300, bbox_inches='tight')
@@ -359,7 +359,7 @@ if __name__ == "__main__":
     """
     
     # ====== CUSTOMIZE THIS LIST ======
-    # List your city folder names here
+        # List your city folder names here
     city_folders = ['Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge', 'Chicago',
                    'Columbus', 'Dallas', 'Denver', 'Hawaii', 'Jersey_City', 'Los_Angeles', 
                    'Nashville', 'New_Orleans', 'New_York', 'Oakland', 'Oregon', 'Paris',

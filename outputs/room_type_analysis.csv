@@ -1,0 +1,5 @@
+room_type,id_count,price_clean_mean,price_clean_median,number_of_reviews_mean,number_of_reviews_median
+Entire home/apt,231714,394.19,183.0,43.66,10.0
+Hotel room,2795,23063.2,40000.0,24.48,0.0
+Private room,56536,313.81,78.0,38.89,4.0
+Shared room,1190,79.11,33.0,34.69,3.0
