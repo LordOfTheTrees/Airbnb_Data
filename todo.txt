@@ -1,3 +1,17 @@
+1) finish the fulll decompression and analysis for all 70+ variables.
+
+2) start digging deeper around variables using scatter plots
+
+3) insert computed metrics for profitability into the data
+
+4) identify hotspots of profitability by lat / long boundaries.
+
+5) link those areas of profitability by correlations
+
+6) reason into causal chains
+
+7) explore how they are replicated or validated in training vs testing sets 
+
     # List your city folder names here
     city_folders = ['Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge', 'Chicago',
                    'Columbus', 'Dallas', 'Denver', 'Hawaii', 'Jersey_City', 'Los_Angeles', 
