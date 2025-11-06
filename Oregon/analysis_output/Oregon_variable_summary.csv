@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,4425.0,0,0.0,37676,1502342378545523430,1.5023423785454858e+18,5.2379260962529766e+17,53532169.0,5.7170203453132506e+17,0.0,37676
+name,discrete_categorical,4368.0,0,0.0,"""Crown Vic"" - sweet modern renovated Victorian",🧚‍♂️🐅🪞The Gem on Hawthorne🌱🌈 🪩,,,,,,Wyndham Portland Waterfront Park Resort | Studio
+host_id,continuous,2929.0,0,0.0,1618,716123682,716122064.0,137576627.61468926,45533700.0,183954654.92410004,0.0,592522307
+host_name,discrete_categorical,1474.0,7,0.16,Aaliyah Mumtaz,Zosia,,,,,,Trevor
+neighbourhood_group,empty,,4425,100.0,,,,,,,,
+neighbourhood,discrete_categorical,92.0,0,0.0,Alameda,Woodstock,,,,,,Northwest District
+latitude,continuous,3804.0,0,0.0,45.43340226867938,45.61596,0.18255773132062103,45.52694669903956,45.5255886,0.03273280795488252,15.0,45.5200553
+longitude,continuous,3864.0,0,0.0,-122.83344,-122.48413129553136,0.3493087044686405,-122.65203400754751,-122.65377,0.04681482818751605,14.0,-122.6800784
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,443.0,627,14.17,17.0,50000.0,49983.0,526.3575566087414,110.0,4027.599368320814,1.0,100.0
+minimum_nights,discrete_numeric,35.0,0,0.0,1,730,729.0,14.028474576271186,2.0,21.910204362344075,0.0,30
+number_of_reviews,continuous,605.0,0,0.0,0,1813,1813.0,109.52225988700565,36.0,169.5789488836272,0.0,0
+last_review,discrete_categorical,774.0,587,13.27,2014-07-18,2025-09-06,,,,,,2025-09-01
+reviews_per_month,continuous,740.0,587,13.27,0.01,46.1,46.09,2.136380927566441,1.5,2.2467661311842444,2.0,1.0
+calculated_host_listings_count,discrete_numeric,26.0,0,0.0,1,87,86.0,5.531977401129944,1.0,13.027753491305804,0.0,1
+availability_365,continuous,364.0,0,0.0,0,365,365.0,214.25988700564972,244.0,126.97761931517404,0.0,0
+number_of_reviews_ltm,continuous,129.0,0,0.0,0,682,682.0,16.81265536723164,5.0,25.16012773955207,0.0,0
+license,discrete_categorical,2157.0,1407,31.8,00-000000-000-00-ho,Exempt,,,,,,Exempt
+price_clean,continuous,443.0,627,14.17,17.0,50000.0,49983.0,526.3575566087414,110.0,4027.599368320814,1.0,100.0

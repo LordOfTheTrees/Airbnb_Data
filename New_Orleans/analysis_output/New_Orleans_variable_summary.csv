@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,7444.0,0,0.0,19091,1506565692749570334,1.5065656927495514e+18,6.09122810611945e+17,6.812116908843849e+17,5.7001301573166784e+17,0.0,19091
+name,discrete_categorical,7232.0,0,0.0,"""105"" Large studio on St. Charles Avenue",🎭 New Orleans 🎶 Historic Bungalow Suite 🎷,,,,,,La Belle Maison Resort| 1BR Resort Suite
+host_id,continuous,3477.0,0,0.0,33265,713813543,713780278.0,241526868.9531166,162734254.5,216018211.2312902,0.0,443127060
+host_name,discrete_categorical,1821.0,2,0.03,A-Yemisi,Zvjezda,,,,,,Tigran
+neighbourhood_group,empty,,7444,100.0,,,,,,,,
+neighbourhood,discrete_categorical,70.0,0,0.0,Algiers Point,Whitney,,,,,,Central Business District
+latitude,continuous,5200.0,0,0.0,29.897042004333727,30.16104,0.2639979956662728,29.957995516491756,29.95553141043151,0.024044035377605775,15.0,29.966378964558213
+longitude,continuous,5318.0,0,0.0,-90.13552074182395,-89.73709,0.3984307418239581,-90.0727315017234,-90.0728178423173,0.03131102164021242,14.0,-90.03928884934831
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,686.0,1211,16.27,15.0,50134.0,50119.0,488.04941440718756,132.0,3533.4609912244955,1.0,90.0
+minimum_nights,discrete_numeric,33.0,0,0.0,1,1125,1124.0,16.735626007522836,3.0,25.20222579196888,0.0,30
+number_of_reviews,continuous,473.0,0,0.0,0,1841,1841.0,65.72447608812466,22.0,103.69658033871157,0.0,0
+last_review,discrete_categorical,985.0,1290,17.33,2014-04-08,2025-09-10,,,,,,2025-09-01
+reviews_per_month,continuous,609.0,1290,17.33,0.01,42.71,42.7,1.559078648033799,1.16,1.71235338526552,2.0,1.0
+calculated_host_listings_count,discrete_numeric,43.0,0,0.0,1,84,83.0,15.132455668995163,3.0,23.58141111659667,0.0,1
+availability_365,continuous,366.0,0,0.0,0,365,365.0,218.10934981192906,256.0,123.7840935352393,0.0,0
+number_of_reviews_ltm,continuous,104.0,0,0.0,0,439,439.0,11.616335303600215,4.0,17.32393729466169,0.0,0
+license,discrete_categorical,3920.0,1335,17.93,12-xstr-36741,Exempt,,,,,,Exempt
+price_clean,continuous,686.0,1211,16.27,15.0,50134.0,50119.0,488.04941440718756,132.0,3533.4609912244955,1.0,90.0

@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,45886,0,0.0,2708,1500170326776843485,1.5001703267768407e+18,6.83651539578519e+17,8.108954711145574e+17,5.876466103896899e+17,0.0,2708
+name,discrete_categorical,44389,1,0.0,! Central Private COZY Vacation House Garden View!,🧳 HIPSTER STUDIO w/ kitchen 12 miles to DISNEYLAND,,,,,,Private bed & Bath – Peaceful & Cozy Stay
+host_id,continuous,23025,0,0.0,767,716168390,716167623.0,217428936.5304886,126644161.0,214491062.12083882,0.0,107434423
+host_name,discrete_categorical,8846,23,0.05,A,麗華,,,,,,Blueground
+neighbourhood_group,discrete_categorical,3,0,0.0,City of Los Angeles,Unincorporated Areas,,,,,,City of Los Angeles
+neighbourhood,discrete_categorical,266,0,0.0,Acton,Woodland Hills,,,,,,Long Beach
+latitude,continuous,34217,0,0.0,33.33854,34.81670683380363,1.478166833803627,34.05563596943615,34.06159900817569,0.14473376729812687,15.0,34.0438745
+longitude,continuous,36816,0,0.0,-118.91713383961329,-117.65229,1.2648438396132917,-118.31020720974854,-118.34019,0.17304322027071115,14.0,-118.2578334
+room_type,discrete_categorical,4,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,1764,9067,19.76,8.0,85000.0,84992.0,341.9924495505038,155.0,1794.9426161197239,1.0,100.0
+minimum_nights,continuous,100,0,0.0,1,1124,1123.0,18.935906376672623,30.0,31.297177443224655,0.0,30
+number_of_reviews,continuous,680,0,0.0,0,3151,3151.0,38.0801769602929,5.0,84.89522416072299,0.0,0
+last_review,discrete_categorical,2970,12501,27.24,2011-05-21,2025-09-02,,,,,,2025-08-17
+reviews_per_month,continuous,901,12501,27.24,0.01,66.59,66.58,1.3804951325445558,0.72,1.7413526821224923,2.0,1.0
+calculated_host_listings_count,continuous,78,0,0.0,1,617,616.0,21.916880965871943,3.0,75.81473392424748,0.0,1
+availability_365,continuous,366,0,0.0,0,365,365.0,212.58806607679904,252.0,136.6336169829911,0.0,0
+number_of_reviews_ltm,continuous,156,0,0.0,0,925,925.0,7.783790262825263,1.0,16.535953796733065,0.0,0
+license,discrete_categorical,7556,33031,71.98,000000,str25-0013,,,,,,Exempt
+price_clean,continuous,1764,9067,19.76,8.0,85000.0,84992.0,341.9924495505038,155.0,1794.9426161197239,1.0,100.0

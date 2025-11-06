@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,1829.0,0,0.0,40669,1517011467451968795,1.517011467451928e+18,8.671949246172934e+17,1.0517042721887126e+18,5.4303640120382086e+17,0.0,40669
+name,discrete_categorical,1797.0,0,0.0,"""28+ Day Stay: Work & Relax with Ease - Near NYC""",可爱的小窝,,,,,,Lovely room for rent with shared bathroom
+host_id,continuous,783.0,0,0.0,16038,719080586,719064548.0,220975854.13449973,130285679.0,214737100.1436795,0.0,28260018
+host_name,discrete_categorical,666.0,1,0.05,Abe,Zoheb,,,,,,Bp Stays.
+neighbourhood_group,empty,,1829,100.0,,,,,,,,
+neighbourhood,discrete_categorical,6.0,0,0.0,Ward A (councilmember Denise Ridley),Ward F (councilmember Jermaine D. Robinson),,,,,,Ward D (councilmember Michael Yun)
+latitude,continuous,1607.0,0,0.0,40.68601,40.75990640163599,0.07389640163598443,40.726602003662244,40.7246795,0.01578706463784023,14.0,40.724545
+longitude,continuous,1620.0,0,0.0,-74.107528,-74.0313140827153,0.07621391728470428,-74.06087452680592,-74.05886,0.01628248219663861,14.0,-74.03591
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,410.0,198,10.83,30.0,4095.0,4065.0,179.46045370938074,140.0,201.82367813208475,1.0,72.0
+minimum_nights,discrete_numeric,30.0,0,0.0,1,365,364.0,20.277200656096227,28.0,37.28220825159936,0.0,28
+number_of_reviews,continuous,235.0,0,0.0,0,595,595.0,40.600874794969926,13.0,67.82109235453308,0.0,0
+last_review,discrete_categorical,418.0,290,15.86,2016-06-17,2025-09-25,,,,,,2025-09-22
+reviews_per_month,continuous,476.0,290,15.86,0.01,12.58,12.57,1.732228719948018,1.38,1.530033371107927,2.0,1.0
+calculated_host_listings_count,discrete_numeric,25.0,0,0.0,1,59,58.0,9.898851831601968,3.0,13.671959508393451,0.0,1
+availability_365,continuous,350.0,0,0.0,0,365,365.0,221.76380535811919,248.0,116.6677658787522,0.0,0
+number_of_reviews_ltm,continuous,75.0,0,0.0,0,94,94.0,12.338983050847459,4.0,15.681837856940607,0.0,0
+license,discrete_categorical,601.0,804,43.96,Exempt,str-2024-00102,,,,,,Exempt
+price_clean,continuous,410.0,198,10.83,30.0,4095.0,4065.0,179.46045370938074,140.0,201.82367813208475,1.0,72.0

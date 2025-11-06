@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,580.0,0,0.0,1913774,1527204974355428183,1.5272049743535145e+18,6.186928840006554e+17,7.068268847698611e+17,5.516760543708731e+17,0.0,1913774
+name,discrete_categorical,574.0,0,0.0,"""Elegant Escape"" (KING BED) Great Location!",💥New! 👑KING BEDS 🐶Pets📍Location ⛰Views 🔹Modern,,,,,,Downtown Bozeman Stay | Breakfast. Kitchen. Pool.
+host_id,continuous,327.0,0,0.0,159312,705006599,704847287.0,165654663.81034482,87300632.0,176166603.71577445,0.0,158595657
+host_name,discrete_categorical,271.0,0,0.0,Aaron,Zack,,,,,,Mountain Home
+neighbourhood_group,empty,,580,100.0,,,,,,,,
+neighbourhood,discrete_categorical,1.0,0,0.0,Bozeman,Bozeman,,,,,,Bozeman
+latitude,continuous,527.0,0,0.0,45.64226,45.729839,0.08757899999999808,45.68191918416546,45.68150525,0.013599669811175965,14.0,45.66179
+longitude,continuous,542.0,0,0.0,-111.11787,-111.00741,0.11046000000000333,-111.05246846299414,-111.0452909790985,0.02382212063724829,14.0,-111.11288
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,245.0,54,9.31,42.0,1447.0,1405.0,197.15589353612168,163.0,135.49696335890997,1.0,120.0
+minimum_nights,discrete_numeric,14.0,0,0.0,1,400,399.0,10.71551724137931,2.0,22.132356620490256,0.0,1
+number_of_reviews,continuous,201.0,0,0.0,0,844,844.0,81.3948275862069,38.0,123.07849261560611,0.0,0
+last_review,discrete_categorical,169.0,77,13.28,2021-03-07,2025-10-16,,,,,,2025-10-12
+reviews_per_month,continuous,306.0,77,13.28,0.03,10.0,9.97,1.9581709741550697,1.43,1.8263712947174173,2.0,0.05
+calculated_host_listings_count,discrete_numeric,12.0,0,0.0,1,40,39.0,7.544827586206897,2.0,11.580299697139804,0.0,1
+availability_365,continuous,256.0,0,0.0,0,365,365.0,223.38620689655173,262.0,118.98096021654214,0.0,0
+number_of_reviews_ltm,continuous,81.0,0,0.0,0,151,151.0,16.825862068965517,8.5,21.258967916437847,0.0,0
+license,discrete_categorical,349.0,157,27.07,Exempt,str29-00222,,,,,,Exempt
+price_clean,continuous,245.0,54,9.31,42.0,1447.0,1405.0,197.15589353612168,163.0,135.49696335890997,1.0,120.0

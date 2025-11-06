@@ -1,0 +1,16 @@
+var1,var2,correlation
+number_of_reviews,reviews_per_month,0.6337093883036587
+availability_365,calculated_host_listings_count,0.30330762995919347
+minimum_nights,reviews_per_month,-0.2087526449629526
+minimum_nights,calculated_host_listings_count,-0.19828058300046034
+price_clean,calculated_host_listings_count,0.12192732969515083
+number_of_reviews,minimum_nights,-0.11352009392054359
+number_of_reviews,calculated_host_listings_count,-0.11021973580108155
+availability_365,minimum_nights,-0.0878670080714613
+number_of_reviews,availability_365,-0.08129004353427026
+price_clean,number_of_reviews,-0.0578529088585671
+price_clean,minimum_nights,-0.056186161449117186
+reviews_per_month,calculated_host_listings_count,0.04561115603933241
+price_clean,reviews_per_month,-0.04201515191363385
+availability_365,reviews_per_month,0.031023050202813842
+price_clean,availability_365,-0.003509661421960324

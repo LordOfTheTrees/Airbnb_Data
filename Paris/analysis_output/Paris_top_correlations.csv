@@ -1,0 +1,11 @@
+var1,var2,correlation
+number_of_reviews,reviews_per_month,0.5639752405237161
+availability_365,reviews_per_month,0.22721388091543718
+minimum_nights,reviews_per_month,-0.2190374890287851
+availability_365,minimum_nights,-0.1996892225162386
+number_of_reviews,minimum_nights,-0.12645705182877326
+availability_365,calculated_host_listings_count,0.09727867935760089
+number_of_reviews,availability_365,0.09635791121469713
+number_of_reviews,calculated_host_listings_count,-0.05141759216669432
+minimum_nights,calculated_host_listings_count,-0.04185664020103352
+reviews_per_month,calculated_host_listings_count,0.008828836572215464

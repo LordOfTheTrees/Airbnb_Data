@@ -1,0 +1,5 @@
+    # List your city folder names here
+    city_folders = ['Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge', 'Chicago',
+                   'Columbus', 'Dallas', 'Denver', 'Hawaii', 'Jersey_City', 'Los_Angeles', 
+                   'Nashville', 'New_Orleans', 'New_York', 'Oakland', 'Oregon', 'Paris',
+                    'Paris', 'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC']

@@ -1,0 +1,21 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,5723.0,0,0.0,61878,1490255976511423868,1.490255976511362e+18,8.87572344692356e+17,1.0804654920299668e+18,5.421766470311634e+17,0.0,61878
+name,discrete_categorical,5444.0,0,0.0,! Home In The Heart Of Dallas !,"😌Spacious & Serene🌙 w/
+Hot Tub+Arcade+Ping-Pong+Fire Pit",,,,,,"Stunning Downtown Apt | Pool, Laundry, Parking"
+host_id,continuous,2435.0,0,0.0,43422,712894118,712850696.0,292185660.7052245,263502162.0,221422269.5552395,0.0,108514926
+host_name,discrete_categorical,1626.0,0,0.0,A-Solutions BnB,Zykeisha,,,,,,Zachi
+neighbourhood_group,empty,,5723,100.0,,,,,,,,
+neighbourhood,discrete_categorical,14.0,0,0.0,District 1,District 9,,,,,,District 2
+latitude,continuous,4881.0,0,0.0,32.63379,33.01515,0.3813600000000008,32.80945654009216,32.80094129031481,0.06345793946949509,15.0,32.77766
+longitude,continuous,4842.0,0,0.0,-96.99269693344831,-96.48124,0.511456933448315,-96.79500023456191,-96.79497983516926,0.04758063255619596,14.0,-96.79487
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,585.0,350,6.12,11.0,50000.0,49989.0,386.69849246231155,110.0,3088.202570681648,1.0,86.0
+minimum_nights,continuous,58.0,0,0.0,1,365,364.0,8.221037917176305,2.0,19.63347024785026,0.0,1
+number_of_reviews,continuous,367.0,0,0.0,0,1363,1363.0,42.23501659968548,13.0,83.73121652364865,0.0,0
+last_review,discrete_categorical,718.0,906,15.83,2015-12-06,2025-08-18,,,,,,2025-08-03
+reviews_per_month,continuous,734.0,906,15.83,0.01,27.28,27.27,2.027238945401702,1.44,1.9938097348331656,2.0,1.0
+calculated_host_listings_count,discrete_numeric,39.0,0,0.0,1,116,115.0,13.546217019045955,4.0,23.289609142765798,0.0,1
+availability_365,continuous,364.0,0,0.0,0,365,365.0,253.24148174034596,299.0,118.14089293024206,0.0,365
+number_of_reviews_ltm,continuous,119.0,0,0.0,0,401,401.0,13.438930630788049,5.0,19.726243377280504,0.0,0
+license,empty,,5723,100.0,,,,,,,,
+price_clean,continuous,585.0,350,6.12,11.0,50000.0,49989.0,386.69849246231155,110.0,3088.202570681648,1.0,86.0

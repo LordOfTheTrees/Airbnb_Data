@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,9443.0,0,0.0,6422,1516029466193367799,1.5160294661933614e+18,6.912618070170267e+17,8.086586610677426e+17,5.612843004347704e+17,0.0,6422
+name,discrete_categorical,9034.0,0,0.0,!!DOWNTOWN CONDO W/ POOL & VIEW - WALK EVERYWHERE!,🥂NASH DISTillerie 3BRs Walk2Germantown Rooftop Firepit Downtown Skyline King Suite 2-Car Garage🥂,,,,,,Wyndham Nashville Resort | 2BR/2BA King Bed Suite
+host_id,continuous,3787.0,0,0.0,12172,719651872,719639700.0,226849976.45631686,151080494.0,200725626.2614545,0.0,338667310
+host_name,discrete_categorical,1857.0,11,0.12,203,Zion,,,,,,AvantStay Nashville
+neighbourhood_group,empty,,9443,100.0,,,,,,,,
+neighbourhood,discrete_categorical,35.0,0,0.0,District 1,District 9,,,,,,District 19
+latitude,continuous,6743.0,0,0.0,35.98489,36.3967,0.4118100000000027,36.165302363510065,36.15991,0.040499095992557584,14.0,36.1548886
+longitude,continuous,6889.0,0,0.0,-87.03596,-86.54606,0.4899000000000058,-86.76708473591826,-86.77541389999999,0.050153673757735814,14.0,-86.77541389999999
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,706.0,2809,29.75,0.0,50000.0,50000.0,223.39960807959,158.0,735.2324135199656,1.0,99.0
+minimum_nights,discrete_numeric,32.0,0,0.0,1,730,729.0,6.231494228529069,2.0,16.361677995960914,0.0,1
+number_of_reviews,continuous,610.0,0,0.0,0,3427,3427.0,83.11913586783861,33.0,137.5235255421475,0.0,0
+last_review,discrete_categorical,764.0,994,10.53,2015-06-29,2025-09-23,,,,,,2025-09-14
+reviews_per_month,continuous,846.0,994,10.53,0.01,76.42,76.41,2.213570836785418,1.77,2.465142309491147,2.0,1.0
+calculated_host_listings_count,continuous,59.0,0,0.0,1,229,228.0,28.215291750503017,6.0,49.07336142030443,0.0,1
+availability_365,continuous,366.0,0,0.0,0,365,365.0,249.8231494228529,300.0,112.34306508347896,0.0,0
+number_of_reviews_ltm,continuous,150.0,0,0.0,0,1140,1140.0,18.20459599703484,11.0,26.354621190506197,0.0,0
+license,discrete_categorical,848.0,8410,89.06,#2021028369,Т2025004683,,,,,,620313552
+price_clean,continuous,706.0,2809,29.75,0.0,50000.0,50000.0,223.39960807959,158.0,735.2324135199656,1.0,99.0

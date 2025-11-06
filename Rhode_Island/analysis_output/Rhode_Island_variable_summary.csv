@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,5762,0,0.0,15373,1518246788234100829,1.5182467882340854e+18,6.376705227926967e+17,7.365797571574506e+17,5.595327518259237e+17,0.0,15373
+name,discrete_categorical,5438,0,0.0,! Rare 10 Guests/FamilyVacation+BeachHouse!Newport,🏡🏡🤩😍 Beautiful apartment perfect location.💎💜,,,,,,Wyndham Long Wharf Resort |2BR King Suite
+host_id,continuous,2903,0,0.0,11808,718717272,718705464.0,210190359.22353348,142514120.0,192190165.06108555,0.0,223489475
+host_name,discrete_categorical,1371,0,0.0,A,Zongdong,,,,,,Rhonda
+neighbourhood_group,discrete_categorical,5,0,0.0,Bristol,Washington,,,,,,Newport
+neighbourhood,discrete_categorical,38,0,0.0,Barrington,Woonsocket,,,,,,Newport
+latitude,continuous,4914,0,0.0,41.15037,42.0107708,0.8604008000000007,41.56080236534654,41.49353,0.18323258614537782,14.0,41.4902895
+longitude,continuous,4931,0,0.0,-71.859497,-71.1268,0.7326970000000017,-71.41488086931679,-71.41698500000001,0.13059758657477957,14.0,-71.3199932
+room_type,discrete_categorical,4,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,939,769,13.35,29.0,50000.0,49971.0,869.6959743641097,274.0,4681.291744971711,1.0,300.0
+minimum_nights,discrete_numeric,37,0,0.0,1,365,364.0,7.692120791391877,2.0,17.426044899540855,0.0,2
+number_of_reviews,continuous,397,0,0.0,0,821,821.0,49.74071502950365,17.0,85.60300888841805,0.0,0
+last_review,discrete_categorical,657,787,13.66,2016-07-10,2025-09-29,,,,,,2025-09-14
+reviews_per_month,continuous,629,787,13.66,0.01,24.9,24.889999999999997,1.4516140703517588,0.95,1.603641835608866,2.0,0.08
+calculated_host_listings_count,discrete_numeric,41,0,0.0,1,147,146.0,15.956959389101007,3.0,30.58247057826519,0.0,1
+availability_365,continuous,364,0,0.0,0,365,365.0,180.53280111072544,173.0,128.09174148716238,0.0,0
+number_of_reviews_ltm,continuous,109,0,0.0,0,316,316.0,10.805449496702535,5.0,16.65381566695802,0.0,0
+license,discrete_categorical,3924,740,12.84,Exempt,"re06931-str, expiry date: 2026-01-12",,,,,,Exempt
+price_clean,continuous,939,769,13.35,29.0,50000.0,49971.0,869.6959743641097,274.0,4681.291744971711,1.0,300.0

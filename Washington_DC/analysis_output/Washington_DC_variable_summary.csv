@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,6423.0,0,0.0,3344,1444333353652565632,1.4443333536525622e+18,6.485935858386532e+17,8.02399477059003e+17,5.6597853989647616e+17,0.0,3344
+name,discrete_categorical,6208.0,0,0.0,"""Call Me Stylish""  HUGE Studio in Columbia Hgts!",🏘️❤️Turnkey Happiness in Washington DC/Petworth🔑,,,,,,Upscale and Great Location
+host_id,continuous,3161.0,0,0.0,4617,699735765,699731148.0,185205685.0099642,81929011.0,208743669.83193874,0.0,39930655
+host_name,discrete_categorical,1879.0,3,0.05,A.,Zyhra,,,,,,Sojourn
+neighbourhood_group,empty,,6423,100.0,,,,,,,,
+neighbourhood,discrete_categorical,39.0,0,0.0,"Brightwood Park, Crestwood, Petworth","Woodridge, Fort Lincoln, Gateway",,,,,,"Union Station, Stanton Park, Kingman Park"
+latitude,continuous,4958.0,0,0.0,38.82028,38.99447,0.17419000000000295,38.90940082901012,38.90885554193135,0.025112924797331602,14.0,38.9034
+longitude,continuous,5040.0,0,0.0,-77.11286177614646,-76.91092,0.20194177614645525,-77.01294319136689,-77.01468,0.03052269230122133,14.0,-77.00522
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,490.0,1577,24.55,10.0,50000.0,49990.0,392.25567478332647,135.0,3126.66800641453,1.0,100.0
+minimum_nights,continuous,53.0,0,0.0,1,701,700.0,13.003425190720847,2.0,28.20164170630554,0.0,1
+number_of_reviews,continuous,485.0,0,0.0,0,1332,1332.0,68.63023509263584,21.0,111.62025537043269,0.0,0
+last_review,discrete_categorical,821.0,1095,17.05,2013-06-15,2025-06-17,,,,,,2025-06-16
+reviews_per_month,continuous,732.0,1095,17.05,0.01,29.0,28.99,2.0546865615615615,1.55,1.9742421431784838,2.0,1.0
+calculated_host_listings_count,discrete_numeric,38.0,0,0.0,1,257,256.0,26.38502257512066,3.0,61.26056794177389,0.0,1
+availability_365,continuous,366.0,0,0.0,0,365,365.0,216.0126109294722,244.0,119.47622376017625,0.0,0
+number_of_reviews_ltm,continuous,125.0,0,0.0,0,339,339.0,15.515646893974779,5.0,21.494461192523325,0.0,0
+license,discrete_categorical,2617.0,1484,23.1,Exempt,Unhosted License: 5567423323008765,,,,,,Exempt
+price_clean,continuous,490.0,1577,24.55,10.0,50000.0,49990.0,392.25567478332647,135.0,3126.66800641453,1.0,100.0

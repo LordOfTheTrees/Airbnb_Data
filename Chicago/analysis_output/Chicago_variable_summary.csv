@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,8604.0,0,0.0,2384,1444414413460064139,1.4444144134600617e+18,7.095550712036358e+17,8.531934310563461e+17,5.4569414238584006e+17,0.0,2384
+name,discrete_categorical,8137.0,0,0.0,"!!BIG PRIVATE HOUSE!!close2bus,Great reviews!!",🥇⛺️ MODERN TINY HOME IN CHICAGO,,,,,,Traveler's Dream - 1 bed in a shared bedroom
+host_id,continuous,3635.0,0,0.0,2613,697939925,697937312.0,228410196.2169921,146726224.0,204526730.36623994,0.0,107434423
+host_name,discrete_categorical,2084.0,5,0.06,747 Lofts Concierge,Özlem,,,,,,Blueground
+neighbourhood_group,empty,,8604,100.0,,,,,,,,
+neighbourhood,discrete_categorical,76.0,0,0.0,Albany Park,Woodlawn,,,,,,Near North Side
+latitude,continuous,6903.0,0,0.0,41.65064,42.0222,0.3715599999999952,41.89035037271575,41.89455334547361,0.062083802505617555,15.0,41.8860812
+longitude,continuous,6723.0,0,0.0,-87.84672,-87.52842,0.3183000000000078,-87.66166038803581,-87.65723262587957,0.04389347820336095,14.0,-87.63422229999998
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,875.0,923,10.73,13.0,50328.0,50315.0,577.5426376773858,169.0,3879.0187816806215,1.0,90.0
+minimum_nights,continuous,52.0,0,0.0,1,365,364.0,13.745932124593212,2.0,24.802440625502165,0.0,2
+number_of_reviews,continuous,468.0,0,0.0,0,1222,1222.0,53.95792654579265,14.0,93.65917097627681,0.0,0
+last_review,discrete_categorical,852.0,1782,20.71,2016-02-23,2025-06-17,,,,,,2025-06-01
+reviews_per_month,continuous,681.0,1782,20.71,0.01,59.0,58.99,1.9016065669891524,1.54,2.164160670494513,2.0,1.0
+calculated_host_listings_count,discrete_numeric,43.0,0,0.0,1,594,593.0,52.5139470013947,4.0,148.89750178618868,0.0,1
+availability_365,continuous,366.0,0,0.0,0,365,365.0,220.57775453277546,250.0,113.87731405978263,0.0,0
+number_of_reviews_ltm,continuous,110.0,0,0.0,0,728,728.0,13.370060437006044,5.0,19.90689629835534,0.0,0
+license,discrete_categorical,3844.0,2697,31.35,2083768,pending,,,,,,2792126
+price_clean,continuous,875.0,923,10.73,13.0,50328.0,50315.0,577.5426376773858,169.0,3879.0187816806215,1.0,90.0

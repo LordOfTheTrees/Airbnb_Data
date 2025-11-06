@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,36111,0,0.0,2595,1521848367963498302,1.5218483679634957e+18,4.6679062536767936e+17,50953084.0,5.448721148131625e+17,0.0,2595
+name,discrete_categorical,34446,2,0.01,! Hamilton Studio. priv bathrm. near subways,🪴🛋🌞 Unique sunny clean brownstone studio 1st floor,,,,,,Water View King Bed Hotel Room
+host_id,continuous,21382,0,0.0,1678,721443059,721441381.0,175619453.1080834,88326021.0,194562427.80721432,0.0,107434423
+host_name,discrete_categorical,8296,1166,3.23, Valéria,진,,,,,,Eugene
+neighbourhood_group,discrete_categorical,5,0,0.0,Bronx,Staten Island,,,,,,Manhattan
+neighbourhood,discrete_categorical,224,0,0.0,Allerton,Woodside,,,,,,Bedford-Stuyvesant
+latitude,continuous,22336,0,0.0,40.5003663,40.912016503779405,0.4116502037794021,40.728253469250184,40.72596,0.0562693102794468,15.0,40.61881
+longitude,continuous,20236,0,0.0,-74.251907,-73.71182221830068,0.5400847816993206,-73.94735044379112,-73.95500008072835,0.05499451522811298,14.0,-73.98652
+room_type,discrete_categorical,4,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,1150,14783,40.94,10.0,50104.0,50094.0,680.5268192048012,154.0,4480.453282468837,1.0,150.0
+minimum_nights,continuous,106,0,0.0,1,1124,1123.0,28.61009110797264,30.0,29.166475675296244,0.0,30
+number_of_reviews,continuous,511,0,0.0,0,3736,3736.0,27.321231757636177,3.0,70.30868396993621,0.0,0
+last_review,discrete_categorical,3400,11188,30.98,2011-05-12,2025-10-01,,,,,,2025-08-31
+reviews_per_month,continuous,810,11188,30.98,0.01,122.76,122.75,0.821178028327248,0.25,1.9161042428815425,2.0,0.01
+calculated_host_listings_count,continuous,67,0,0.0,1,1148,1147.0,67.45515216969898,2.0,215.6788130643448,0.0,1
+availability_365,continuous,366,0,0.0,0,365,365.0,162.18872365761126,150.0,147.26262481014209,0.0,0
+number_of_reviews_ltm,continuous,173,0,0.0,0,1699,1699.0,3.983606103403395,0.0,19.468283855786634,0.0,0
+license,discrete_categorical,1962,30735,85.11,Exempt,ose-strreg-0002623,,,,,,Exempt
+price_clean,continuous,1150,14783,40.94,10.0,50104.0,50094.0,680.5268192048012,154.0,4480.453282468837,1.0,150.0

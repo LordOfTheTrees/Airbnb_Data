@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,4910.0,0,0.0,360,1519942878592317935,1.5199428785923177e+18,6.324804372602985e+17,7.322466892941745e+17,5.587634218204033e+17,0.0,360
+name,discrete_categorical,4836.0,0,0.0,"""Beautify styled home near Sloans Lake",🗝️ Chic SoBo 1BR King 🛏 Balcony ☕️ Standing Desk WFH,,,,,,Enjoy an apartment-style room in the Catbird Hotel
+host_id,continuous,3356.0,0,0.0,589,720575711,720575122.0,161197616.96985742,79037284.5,181032068.49678755,0.0,121718072
+host_name,discrete_categorical,1569.0,5,0.1,11th Avenue,Zuri,,,,,,Evolve
+neighbourhood_group,empty,,4910,100.0,,,,,,,,
+neighbourhood,discrete_categorical,78.0,0,0.0,Athmar Park,Windsor,,,,,,Five Points
+latitude,continuous,4264.0,0,0.0,39.62495,39.84741688360052,0.22246688360052502,39.742119195455956,39.748155,0.0316794572695237,15.0,39.74634
+longitude,continuous,4380.0,0,0.0,-105.1028044,-104.67381700873376,0.428987391266233,-104.9762656202407,-104.98485654999999,0.0615989125489673,14.0,-104.99678
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,520.0,609,12.4,8.0,5000.0,4992.0,163.2348291095094,123.0,167.5650715828272,1.0,120.0
+minimum_nights,discrete_numeric,44.0,0,0.0,1,500,499.0,17.215478615071284,4.0,23.7153625308254,0.0,29
+number_of_reviews,continuous,477.0,0,0.0,0,1711,1711.0,71.7234215885947,23.0,123.46177555719603,0.0,0
+last_review,discrete_categorical,753.0,608,12.38,2015-07-23,2025-09-29,,,,,,2025-09-21
+reviews_per_month,continuous,686.0,608,12.38,0.01,31.48,31.47,1.8726011157601117,1.28,2.088668077829288,2.0,1.0
+calculated_host_listings_count,discrete_numeric,29.0,0,0.0,1,80,79.0,6.179226069246436,1.0,13.19257586935403,0.0,1
+availability_365,continuous,366.0,0,0.0,0,365,365.0,211.7723014256619,242.0,125.41037906174046,0.0,0
+number_of_reviews_ltm,continuous,121.0,0,0.0,0,399,399.0,13.9030549898167,4.0,22.43681903197533,0.0,0
+license,discrete_categorical,2594.0,1738,35.4,003840,USE2024-037,,,,,,2021-BFN-0001467
+price_clean,continuous,520.0,609,12.4,8.0,5000.0,4992.0,163.2348291095094,123.0,167.5650715828272,1.0,120.0

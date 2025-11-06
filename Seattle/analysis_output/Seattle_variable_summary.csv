@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,6996,0,0.0,6606,1516825888737631052,1.5168258887376243e+18,6.685860759905975e+17,7.646665581873393e+17,5.5974140945564896e+17,0.0,6606
+name,discrete_categorical,6727,0,0.0,"""B House"" Modern West Seattle Townhome 2br/2bth",🌟 3BR Comfy Modern Townhouse Between Airport & DT,,,,,,"Blueground | First Hill, fitness & coworking"
+host_id,continuous,3558,0,0.0,2536,718660999,718658463.0,173547731.12221268,90757469.5,193008628.43696344,0.0,107434423
+host_name,discrete_categorical,1954,351,5.02,A-Team,Zz,,,,,,Melissa
+neighbourhood_group,discrete_categorical,17,0,0.0,Ballard,West Seattle,,,,,,Other neighborhoods
+neighbourhood,discrete_categorical,88,0,0.0,Adams,Yesler Terrace,,,,,,Belltown
+latitude,continuous,5839,0,0.0,47.49803,47.73401,0.23597999999999786,47.62618138902856,47.62426,0.04922193351198033,6.0,47.6415
+longitude,continuous,5700,0,0.0,-122.419478,-122.24087,0.178607999999997,-122.3344139956828,-122.33263500000001,0.033362819250629804,5.0,-122.3237693
+room_type,discrete_categorical,4,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,593,775,11.08,15.0,50039.0,50024.0,571.7161228098377,149.0,4137.408760744384,1.0,152.0
+minimum_nights,discrete_numeric,43,0,0.0,1,365,364.0,10.990708976558032,2.0,18.71823502705361,0.0,2
+number_of_reviews,continuous,562,0,0.0,0,1577,1577.0,82.3076043453402,32.0,126.64142534196533,0.0,0
+last_review,discrete_categorical,788,887,12.68,2015-03-07,2025-09-24,,,,,,2025-09-21
+reviews_per_month,continuous,774,887,12.68,0.01,60.33,60.32,2.2263169094778195,1.84,2.116236447357348,2.0,1.0
+calculated_host_listings_count,discrete_numeric,40,0,0.0,1,344,343.0,28.839908519153802,2.0,76.091529753921,0.0,1
+availability_365,continuous,366,0,0.0,0,365,365.0,207.7094053744997,234.0,122.92855728436417,0.0,0
+number_of_reviews_ltm,continuous,128,0,0.0,0,562,562.0,16.992138364779873,9.0,21.979380055433023,0.0,0
+license,discrete_categorical,3910,1211,17.31,0008395980754312,str-opli-60-550061,,,,,,Exempt
+price_clean,continuous,593,775,11.08,15.0,50039.0,50024.0,571.7161228098377,149.0,4137.408760744384,1.0,152.0

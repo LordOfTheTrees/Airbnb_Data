@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,7780.0,0,0.0,958,1499677890538720999,1.49967789053872e+18,5.4239313328340717e+17,5.743371212947606e+17,5.626810857952296e+17,0.0,958
+name,discrete_categorical,7312.0,0,0.0,"!B Upper Room w/private bath, 1 guest only",🎷 Stay in the Heart of Fillmore & Japantown 🎶,,,,,,Chic King Suite at Wyndham Donatello in SF
+host_id,continuous,3699.0,0,0.0,1169,716069750,716068581.0,194905516.03264782,90891621.5,216275275.51313674,0.0,542041520
+host_name,discrete_categorical,2122.0,1,0.01,1906 Mission,戸上,,,,,,Ronald Alan
+neighbourhood_group,empty,,7780,100.0,,,,,,,,
+neighbourhood,discrete_categorical,37.0,0,0.0,Bayview,Western Addition,,,,,,Downtown/Civic Center
+latitude,continuous,5361.0,0,0.0,37.70848,37.81094,0.10246000000000066,37.7709251048674,37.7768295,0.023160311442193736,14.0,37.7884146
+longitude,continuous,5420.0,0,0.0,-122.51246,-122.36604,0.1464200000000062,-122.42914942062988,-122.4215935,0.026894535833912072,14.0,-122.4215935
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,749.0,1985,25.51,29.0,50000.0,49971.0,378.9242450388266,170.0,2440.0199804429717,1.0,263.0
+minimum_nights,continuous,52.0,0,0.0,1,1125,1124.0,19.860925449871466,3.0,48.25564437935462,0.0,30
+number_of_reviews,continuous,526.0,0,0.0,0,1417,1417.0,52.701413881748074,7.0,113.27394528351829,0.0,0
+last_review,discrete_categorical,1182.0,1870,24.04,2011-05-23,2025-09-01,,,,,,2025-08-17
+reviews_per_month,continuous,649.0,1870,24.04,0.01,49.89,49.88,1.2459526226734348,0.47,1.997822566037963,2.0,0.05
+calculated_host_listings_count,discrete_numeric,45.0,0,0.0,1,264,263.0,23.398200514138818,3.0,55.42362928361772,0.0,1
+availability_365,continuous,366.0,0,0.0,0,365,365.0,189.69074550128533,214.0,132.33990268864517,0.0,0
+number_of_reviews_ltm,continuous,124.0,0,0.0,0,950,950.0,8.680848329048843,1.0,21.67425444796022,0.0,0
+license,discrete_categorical,2256.0,2647,34.02,0003158,“City application pending”,,,,,,Exempt
+price_clean,continuous,749.0,1985,25.51,29.0,50000.0,49971.0,378.9242450388266,170.0,2440.0199804429717,1.0,263.0

@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,461.0,0,0.0,2992450,1522036487464000982,1.5220364874610086e+18,8.341498471579222e+17,9.925545496721597e+17,5.544073191659621e+17,0.0,2992450
+name,discrete_categorical,457.0,0,0.0,"""The Albany Allen Home"" Private Bedroom 1",🪴 Historic & Homey 1 Bdrm Apt @ Downtown Albany,,,,,,Funky Urban Gem: Prime Central Location - Parking!
+host_id,continuous,190.0,0,0.0,649068,710552538,709903470.0,249119265.11930585,232967878.0,196316241.21065432,0.0,232967878
+host_name,discrete_categorical,169.0,0,0.0,Abdelrahman,Zuhair,,,,,,Diana
+neighbourhood_group,empty,,461,100.0,,,,,,,,
+neighbourhood,discrete_categorical,15.0,0,0.0,EIGHTH WARD,TWELFTH WARD,,,,,,SIXTH WARD
+latitude,continuous,440.0,0,0.0,42.63066,42.7149,0.0842400000000012,42.65913449391677,42.65783832009679,0.010649554317929069,15.0,42.64535
+longitude,continuous,448.0,0,0.0,-73.87649,-73.73825,0.13824000000001035,-73.77641015898,-73.77434,0.01845990289465985,14.0,-73.82402
+room_type,discrete_categorical,3.0,0,0.0,Entire home/apt,Private room,,,,,,Entire home/apt
+price,continuous,166.0,36,7.81,24.0,1314.0,1290.0,119.88,94.0,119.95503166871121,1.0,56.0
+minimum_nights,discrete_numeric,20.0,0,0.0,1,365,364.0,7.10412147505423,2.0,22.227431258870656,0.0,1
+number_of_reviews,continuous,153.0,0,0.0,0,962,962.0,60.44251626898048,20.0,111.35059913430042,0.0,0
+last_review,discrete_categorical,152.0,61,13.23,2022-08-17,2025-10-05,,,,,,2025-09-28
+reviews_per_month,continuous,266.0,61,13.23,0.05,11.56,11.51,2.007175,1.395,1.9644103541454072,2.0,1.0
+calculated_host_listings_count,discrete_numeric,13.0,0,0.0,1,21,20.0,7.086767895878525,4.0,6.847806580619504,0.0,1
+availability_365,continuous,195.0,0,0.0,0,365,365.0,239.7462039045553,272.0,122.64231578630557,0.0,365
+number_of_reviews_ltm,continuous,70.0,0,0.0,0,143,143.0,14.377440347071584,6.0,20.064045572572883,0.0,0
+license,empty,,461,100.0,,,,,,,,
+price_clean,continuous,166.0,36,7.81,24.0,1314.0,1290.0,119.88,94.0,119.95503166871121,1.0,56.0

@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,2877.0,0,0.0,90676,1517931680426327396,1.5179316804262367e+18,8.487105551105097e+17,9.79658684650991e+17,5.26980770152655e+17,0.0,90676
+name,discrete_categorical,2844.0,0,0.0,"""Big House"" near OSU",💫Coastal Style in the City - Close to Everything!💫,,,,,,Modern Apt | Parking | Near German Village + Dtwn
+host_id,continuous,1013.0,0,0.0,78761,716221421,716142660.0,258952954.63607925,217660325.0,196999659.35107437,0.0,432234139
+host_name,discrete_categorical,735.0,16,0.56,Aamna,Zoubida,,,,,,Sara
+neighbourhood_group,empty,,2877,100.0,,,,,,,,
+neighbourhood,discrete_categorical,27.0,0,0.0,Clintonville,Westland,,,,,,Near North/University
+latitude,continuous,2592.0,0,0.0,39.85846,40.15328,0.2948200000000014,39.98648793460004,39.98011597295754,0.043764374023637795,14.0,39.96874
+longitude,continuous,2550.0,0,0.0,-83.16108581792567,-82.78194,0.3791458179256608,-82.99052801960549,-82.99751,0.04344314256182951,14.0,-83.00042
+room_type,discrete_categorical,3.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,382.0,183,6.36,23.0,50028.0,50005.0,327.4610244988864,108.0,2968.6459554051694,1.0,85.0
+minimum_nights,discrete_numeric,24.0,0,0.0,1,364,363.0,9.841849148418492,2.0,14.885574704078412,0.0,1
+number_of_reviews,continuous,357.0,0,0.0,0,997,997.0,61.86513729579423,21.0,102.54486394473027,0.0,0
+last_review,discrete_categorical,403.0,319,11.09,2017-03-25,2025-09-26,,,,,,2025-09-22
+reviews_per_month,continuous,638.0,319,11.09,0.02,18.77,18.75,2.1423924941360437,1.63,1.978667019685011,2.0,1.0
+calculated_host_listings_count,discrete_numeric,32.0,0,0.0,1,71,70.0,13.872436565867222,6.0,18.40880035568185,0.0,1
+availability_365,continuous,353.0,0,0.0,0,365,365.0,235.84289190128607,268.0,118.80449190723542,0.0,0
+number_of_reviews_ltm,continuous,109.0,0,0.0,0,238,238.0,16.733402850191172,9.0,21.02922431706984,0.0,0
+license,discrete_categorical,1831.0,523,18.18,2000-1000,STRP25000900,,,,,,Exempt
+price_clean,continuous,382.0,183,6.36,23.0,50028.0,50005.0,327.4610244988864,108.0,2968.6459554051694,1.0,85.0

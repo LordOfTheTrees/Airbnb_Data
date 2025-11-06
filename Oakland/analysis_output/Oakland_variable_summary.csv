@@ -1,0 +1,20 @@
+variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
+id,continuous,2250.0,0,0.0,3083,1516904884509653502,1.5169048845096504e+18,5.757026001547286e+17,6.370000218869288e+17,5.7530937269970477e+17,0.0,3083
+name,discrete_categorical,2227.0,0,0.0,"""Cabin Feel"" Home near the 580",🌿 The L I L Y  P A D 🌿| Tiny Living | Urban Oasis,,,,,,ArtHaus Chestnut - New Studio in West Oakland
+host_id,continuous,1485.0,0,0.0,2852,719905804,719902952.0,143304742.46755555,42832906.0,189404843.52822813,0.0,6722695
+host_name,discrete_categorical,1026.0,23,1.02,A,Élan,,,,,,Elliot
+neighbourhood_group,empty,,2250,100.0,,,,,,,,
+neighbourhood,discrete_categorical,122.0,0,0.0,Acorn-Acorn Industrial,Woodminster,,,,,,Prescott
+latitude,continuous,2081.0,0,0.0,37.7290436,37.86712,0.13807640000000276,37.80960841468348,37.810735,0.026822295484407937,15.0,37.82909
+longitude,continuous,2122.0,0,0.0,-122.3243,-122.12115888925992,0.20314111074007712,-122.23713031266345,-122.24701,0.03890883179848256,14.0,-122.25522
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+price,continuous,365.0,313,13.91,18.0,40000.0,39982.0,229.83376355188435,110.0,1816.0295278743406,1.0,90.0
+minimum_nights,discrete_numeric,44.0,0,0.0,1,365,364.0,10.570222222222222,3.0,27.181548001381298,0.0,2
+number_of_reviews,continuous,319.0,0,0.0,0,969,969.0,57.01288888888889,15.0,102.35466249632415,0.0,0
+last_review,discrete_categorical,593.0,382,16.98,2012-12-29,2025-09-24,,,,,,2025-09-21
+reviews_per_month,continuous,436.0,382,16.98,0.01,13.81,13.8,1.2913276231263382,0.77,1.4695931663953576,2.0,0.07
+calculated_host_listings_count,discrete_numeric,15.0,0,0.0,1,28,27.0,3.144,1.0,4.258715542303037,0.0,1
+availability_365,continuous,345.0,0,0.0,0,365,365.0,197.75244444444445,209.5,127.21377014016618,0.0,0
+number_of_reviews_ltm,continuous,87.0,0,0.0,0,161,161.0,8.761333333333333,2.0,14.9524343806754,0.0,0
+license,empty,,2250,100.0,,,,,,,,
+price_clean,continuous,365.0,313,13.91,18.0,40000.0,39982.0,229.83376355188435,110.0,1816.0295278743406,1.0,90.0
