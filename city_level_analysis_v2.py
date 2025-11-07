@@ -254,18 +254,27 @@ def analyze_city(city_folder, base_dir='.', use_detailed=False):
     
     # Choose which file to load based on use_detailed flag
     if use_detailed:
+        # When -all is specified, ONLY try the detailed .gz file
         listings_file = city_path / 'listings_csv.gz'
         if not listings_file.exists():
-            print(f"⚠️  Detailed file not found for {city_name}, trying simple file...")
+            print(f"⚠️  Detailed file (listings_csv.gz) not found for {city_name}")
+            print(f"    Falling back to simple listings.csv...")
             listings_file = city_path / 'listings.csv'
+            if listings_file.exists():
+                print(f"📊 Using SIMPLE dataset (19 variables) as fallback")
         else:
-            print(f"📊 Using DETAILED dataset (79 variables)")
+            print(f"📊 Using DETAILED dataset (79 variables) from listings_csv.gz")
     else:
+        # When -all is NOT specified, use the simple file
         listings_file = city_path / 'listings.csv'
         if not listings_file.exists():
+            print(f"⚠️  Simple file (listings.csv) not found for {city_name}")
+            print(f"    Trying detailed listings_csv.gz...")
             listings_file = city_path / 'listings_csv.gz'
+            if listings_file.exists():
+                print(f"📊 Using DETAILED dataset (79 variables) as fallback")
         else:
-            print(f"📊 Using SIMPLE dataset (19 variables)")
+            print(f"📊 Using SIMPLE dataset (19 variables) from listings.csv")
     
     if not listings_file.exists():
         print(f"❌ No listings file found for {city_name}")
@@ -399,11 +408,13 @@ if __name__ == "__main__":
     use_detailed = '-all' in sys.argv
     
     # ====== CUSTOMIZE THIS LIST ======
-        # List your city folder names here
-    city_folders = ['Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge', 'Chicago',
-                   'Columbus', 'Dallas', 'Denver', 'Hawaii', 'Jersey_City', 'Los_Angeles', 
-                   'Nashville', 'New_Orleans', 'New_York', 'Oakland', 'Oregon', 'Paris',
-                    'Paris', 'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC']
+    city_folders = [
+        'Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge',
+        'Chicago', 'Columbus', 'Dallas', 'Denver', 'Hawaii',
+        'Jersey_City', 'Los_Angeles', 'Nashville', 'New_Orleans',
+        'New_York', 'Oakland', 'Oregon', 'Paris',
+        'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC'
+    ]
     # =================================
     
     # Run analysis
@@ -413,9 +424,22 @@ if __name__ == "__main__":
     print(f"ALL DONE! Check each city's 'analysis_output' folder for results.")
     print(f"{'#'*80}")
     
+    # Verify what was actually analyzed
+    if results:
+        sample_city = list(results.keys())[0]
+        num_vars = len(results[sample_city])
+        print(f"\n✅ VERIFICATION: Analyzed {num_vars} variables per city")
+        
+        if num_vars >= 70:
+            print(f"   🎯 SUCCESS: Full detailed analysis with ~79 variables")
+        elif num_vars <= 25:
+            print(f"   ⚠️  Simple analysis with ~19 variables")
+            print(f"   💡 TIP: Run 'python city_level_analysis.py -all' for full 79-variable analysis")
+        else:
+            print(f"   ⚠️  Partial dataset detected")
+    
     if use_detailed:
-        print(f"\n💡 TIP: You analyzed the DETAILED datasets (79 variables)")
-        print(f"   This includes revenue estimates, property types, bedrooms, review scores, etc.")
+        print(f"\n💡 You requested DETAILED analysis (-all flag)")
     else:
-        print(f"\n💡 TIP: You analyzed the SIMPLE datasets (19 variables)")
+        print(f"\n💡 You used SIMPLE analysis (default)")
         print(f"   To get full analysis with 79 variables, run: python city_level_analysis.py -all")

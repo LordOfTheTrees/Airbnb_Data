@@ -49,26 +49,31 @@ class CrossCityAnalyzer:
             
             # Choose file based on use_detailed flag
             if self.use_detailed:
+                # When -all is specified, ONLY try the detailed .gz file
                 listings_file = city_path / 'listings_csv.gz'
+                file_type = "detailed (79 vars)"
                 if not listings_file.exists():
                     listings_file = city_path / 'listings.csv'
+                    file_type = "simple (19 vars) - fallback"
             else:
+                # When -all is NOT specified, use the simple file
                 listings_file = city_path / 'listings.csv'
+                file_type = "simple (19 vars)"
                 if not listings_file.exists():
                     listings_file = city_path / 'listings_csv.gz'
+                    file_type = "detailed (79 vars) - fallback"
             
             if listings_file.exists():
                 print(f"\n📍 Loading {city.upper()}...")
                 try:
                     if str(listings_file).endswith('.gz'):
                         df = pd.read_csv(listings_file, compression='gzip')
-                        print(f"   ✓ {len(df):,} listings (detailed 79-var dataset)")
                     else:
                         df = pd.read_csv(listings_file)
-                        print(f"   ✓ {len(df):,} listings (simple 19-var dataset)")
                     
                     df['city'] = city
                     self.cities[city] = df
+                    print(f"   ✓ {len(df):,} listings × {len(df.columns)} columns [{file_type}]")
                     
                     # Load city-level summary if available
                     summary_file = city_path / 'analysis_output' / f'{city}_variable_summary.csv'
@@ -498,11 +503,13 @@ if __name__ == "__main__":
     use_detailed = '-all' in sys.argv
     
     # ====== CUSTOMIZE THIS LIST ======
-        # List your city folder names here
-    city_folders = ['Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge', 'Chicago',
-                   'Columbus', 'Dallas', 'Denver', 'Hawaii', 'Jersey_City', 'Los_Angeles', 
-                   'Nashville', 'New_Orleans', 'New_York', 'Oakland', 'Oregon', 'Paris',
-                    'Paris', 'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC']
+    city_folders = [
+        'Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge',
+        'Chicago', 'Columbus', 'Dallas', 'Denver', 'Hawaii',
+        'Jersey_City', 'Los_Angeles', 'Nashville', 'New_Orleans',
+        'New_York', 'Oakland', 'Oregon', 'Paris',
+        'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC'
+    ]
     # =================================
     
     print("\n" + "#"*80)
