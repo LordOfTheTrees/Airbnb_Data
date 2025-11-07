@@ -1,20 +1,93 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
 id,continuous,8604.0,0,0.0,2384,1444414413460064139,1.4444144134600617e+18,7.095550712036358e+17,8.531934310563461e+17,5.4569414238584006e+17,0.0,2384
+listing_url,discrete_categorical,8604.0,0,0.0,https://www.airbnb.com/rooms/1000018146718269696,https://www.airbnb.com/rooms/999990253135420490,,,,,,https://www.airbnb.com/rooms/1000018146718269696
+scrape_id,discrete_numeric,1.0,0,0.0,20250617145442,20250617145442,0.0,20250617145442.0,20250617145442.0,0.0,0.0,20250617145442
+last_scraped,discrete_categorical,2.0,0,0.0,2025-06-17,2025-06-18,,,,,,2025-06-17
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
 name,discrete_categorical,8137.0,0,0.0,"!!BIG PRIVATE HOUSE!!close2bus,Great reviews!!",🥇⛺️ MODERN TINY HOME IN CHICAGO,,,,,,Traveler's Dream - 1 bed in a shared bedroom
+description,discrete_categorical,7133.0,173,2.01,"!!!!! 1 GARAGE PARKING INCLUDED!!!!<br />Discover the charm of this stylish apartment in Wicker Park, one of Chicago's most vibrant neighborhoods. Perfectly located for exploring the city's best dining, shopping, and nightlife, this cozy retreat offers a modern, comfortable space to unwind. With easy access to public transportation, you’re minutes away from downtown. Enjoy the perfect blend of convenience and comfort during your stay.","📍 Enjoy a comfortable, spacious stay in one of the best spots to explore Chicago.<br /><br />🚇 Just a 2-minute walk to the CTA Pink Line<br />Reach Downtown and top attractions in minutes<br />Easy and fast access to all parts of the city<br /><br />🚗 Assigned parking spot<br />       Free street parking available<br /><br />🍽️ Fully Equipped Kitchen<br />       Cook your meals with ease<br /><br />🚫 House Rules –<br />No parties or events allowed<br />Respect for neighbors—noise complaints may result in early checkout",,,,,,You'll have a great time at this comfortable place to stay.
+neighborhood_overview,discrete_categorical,3127.0,3897,45.29,"""Between its historic architecture, dynamic bar scene, and bustling main street, Andersonville is a thriving example of a charming urban neighborhood.<br /><br />When it comes to shopping, you’ll find Chicago’s “shop local capital,” with an array of independently owned storefronts and cool boutiques. Stock up on everything from antiques to artisanal gifts to authentic Swedish pastries.<br /><br />Along Clark Street’s restaurant strip, you can take your pick from cozy diners, craft brew emporiums, tried-and-true holes in the wall, and some of the city’s best comfort food spots."" - Choose Chicago.<br /><br />Check the Andersonville Chamber of Commerce website for list of neighborhood events and attractions.","📍 Prime Location in the Heart of Chicago! 🌟<br /><br />This property is perfectly situated just:<br />✅ 5 minutes to Fulton Market’s best restaurants 🍽️<br />✅ 5 minutes to United Center Arena (home to games & concerts) 🎶🏀<br />✅ 7 minutes to Grant Park & Michigan Avenue 🌳🛍️<br />✅ 10 minutes to Lake Michigan 🌊<br />✅ 7 minutes to the Medical District 🏥<br /><br />Whether you’re here for food, fun, or work, everything is within reach! 🚗✨ #ChicagoLiving #PerfectLocation #ExploreChicago",,,,,,"If you chose to stay with us You're only a 9 minute walk from McCormick Place and a 4 minute walk from the Green Line Subway stop which gets you virtually everywhere in the City. You are also a short walk to a number of restaurants and attractions. The South Loop is such a dynamic mix of attractions and histories that the neighborhood tends to be seen as many different things to many different people. Consider the assorted areas that comprise the South Loop: Much of its eastern edge is encompassed by the Museum Campus, an impressive collection of cultural treasures that includes the Field Museum, Adler Planetarium and Shedd Aquarium. This campus sits on scenic lakefront parklands that are an extension of Grant Park. With 319 acres of green space and recreational fields, Grant Park is known as ""Chicago's front yard"" to locals and also plays host to major city events such as Taste of Chicago, Chicago Blues Festival and Lollapalooza. Jutting out further into Lake Michigan is Northerly Isl"
+picture_url,discrete_categorical,8351.0,0,0.0,https://a0.muscache.com/pictures/001b441f-2cdc-4ad2-a8b9-da77bff9c373.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-997793881846593996/original/6d27476a-bd5c-4834-a9cd-d3b419f7708f.jpeg,,,,,,https://a0.muscache.com/pictures/03e507c1-2602-4846-9aa2-87903caddc1b.jpg
 host_id,continuous,3635.0,0,0.0,2613,697939925,697937312.0,228410196.2169921,146726224.0,204526730.36623994,0.0,107434423
+host_url,discrete_categorical,3635.0,0,0.0,https://www.airbnb.com/users/show/100072753,https://www.airbnb.com/users/show/9995028,,,,,,https://www.airbnb.com/users/show/107434423
 host_name,discrete_categorical,2084.0,5,0.06,747 Lofts Concierge,Özlem,,,,,,Blueground
-neighbourhood_group,empty,,8604,100.0,,,,,,,,
-neighbourhood,discrete_categorical,76.0,0,0.0,Albany Park,Woodlawn,,,,,,Near North Side
+host_since,discrete_categorical,2493.0,5,0.06,2008-08-29,2025-05-27,,,,,,2016-12-16
+host_location,discrete_categorical,222.0,1700,19.76,"Albertville, AL","York, SC",,,,,,"Chicago, IL"
+host_about,discrete_categorical,1990.0,3152,36.63,"
+",本人热情好客，,,,,,,"We’re Blueground, a global proptech company with several thousand move-in-ready apartments in a growing number of major cities around the world. With flexible terms and homes in vibrant, centrally based neighborhoods, you’ll feel at home and free to roam for as long as you want — a month, a year, or longer. 
+
+Each apartment is thoughtfully designed with exclusive furnishings, fully equipped kitchens, and incredible amenities – making every day a five-star experience. From day one, you’ll enjoy high-speed Wi-Fi, premium linens, and smart home entertainment. Plus, access to pools, gyms, and outdoor spaces in select buildings.
+
+Why stress over your apartment? We provide a hassle-free alternative — a consistent, quality guest experience that starts even before you arrive. Because we let you book our most up-to-date apartment listings online, confirm with a click, pay securely, and check in easily. 
+
+Even better? You can enhance your stay with car rentals, grocery delivery, laundry services, and more through our special partnerships. 
+
+During your stay
+Upon arrival, you’ll either be greeted personally by a Blueground team member or given self-check-in instructions. The entire apartment is yours! You’ll enjoy reliable support via email, phone, and our Guest App, where you can request everything from a home cleaning to extra towels. 
+
+We’ll share all details upon confirmation of your stay."
+host_response_time,discrete_categorical,4.0,477,5.54,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,46.0,477,5.54,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,85.0,400,4.65,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,279,3.24,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,3519.0,5,0.06,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z0.muscache.cn/im/pictures/user/bad43468-e4fd-4aee-a562-d7ab6857218a.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/im/pictures/user/d0ad9599-6fc0-4be6-865e-ffe99142517c.jpg?aki_policy=profile_small
+host_picture_url,discrete_categorical,3519.0,5,0.06,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z0.muscache.cn/im/pictures/user/bad43468-e4fd-4aee-a562-d7ab6857218a.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/im/pictures/user/d0ad9599-6fc0-4be6-865e-ffe99142517c.jpg?aki_policy=profile_x_medium
+host_neighbourhood,discrete_categorical,229.0,211,2.45,Acres Home,Wrigleyville,,,,,,Cambridge
+host_listings_count,continuous,79.0,5,0.06,1.0,4927.0,4926.0,452.9808117222933,5.0,1365.499154313892,1.0,1.0
+host_total_listings_count,continuous,106.0,5,0.06,1.0,9109.0,9108.0,583.6606582160716,7.0,1710.350833306956,1.0,1.0
+host_verifications,discrete_categorical,6.0,5,0.06,"['email', 'phone', 'work_email']",['phone'],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,5,0.06,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,5,0.06,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,3896,45.28,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,76.0,0,0.0,Albany Park,Woodlawn,,,,,,Near North Side
+neighbourhood_group_cleansed,empty,,8604,100.0,,,,,,,,
 latitude,continuous,6903.0,0,0.0,41.65064,42.0222,0.3715599999999952,41.89035037271575,41.89455334547361,0.062083802505617555,15.0,41.8860812
 longitude,continuous,6723.0,0,0.0,-87.84672,-87.52842,0.3183000000000078,-87.66166038803581,-87.65723262587957,0.04389347820336095,14.0,-87.63422229999998
+property_type,discrete_categorical,45.0,0,0.0,Boat,Tiny home,,,,,,Entire rental unit
 room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,875.0,923,10.73,13.0,50328.0,50315.0,577.5426376773858,169.0,3879.0187816806215,1.0,90.0
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,4.448628544862855,4.0,3.149576094180942,0.0,2
+bathrooms,continuous,22.0,882,10.25,0.0,15.0,15.0,1.4410774410774412,1.0,0.8310676978538143,1.0,1.0
+bathrooms_text,discrete_categorical,34.0,19,0.22,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,17.0,186,2.16,0.0,20.0,20.0,1.855072463768116,2.0,1.275107284460152,0.0,1.0
+beds,continuous,21.0,896,10.41,0.0,20.0,20.0,2.3629994810586403,2.0,1.9433500058151096,1.0,1.0
+amenities,discrete_categorical,7500.0,0,0.0,"[""20 inch HDTV with HBO Max, Apple TV, Hulu, standard cable, Amazon Prime Video, Netflix"", ""Portable heater"", ""Lock on bedroom door"", ""Laundromat nearby"", ""Hot water"", ""Exterior security cameras on property"", ""Hair dryer"", ""Smoke alarm"", ""Outdoor furniture"", ""Extra pillows and blankets"", ""Piano"", ""Fast wifi \u2013 538 Mbps"", ""Dishes and silverware"", ""Central heating"", ""Keypad"", ""Mini Grill oven"", ""Clothing storage"", ""Fire pit"", ""Exercise equipment: yoga mat"", ""Bed linens"", ""Noise decibel monitors on property"", ""BBQ grill"", ""Gas stove"", ""Blender"", ""Iron"", ""Coffee maker"", ""Wine glasses"", ""Refrigerator"", ""Self check-in"", ""Baking sheet"", ""Window AC unit"", ""Long term stays allowed"", ""Barbecue utensils"", ""Dining table"", ""Hangers"", ""Dedicated workspace"", ""Freezer"", ""Microwave"", ""Free street parking"", ""Shared patio or balcony"", ""Valley view"", ""Carbon monoxide alarm"", ""Shared backyard \u2013 Fully fenced"", ""Books and reading material"", ""Toaster"", ""Fire extinguisher"", ""Cooking basics"", ""First aid kit"", ""Breakfast"", ""Free driveway parking on premises \u2013 1 space""]",[],,,,,,"[""Private entrance"", ""Air conditioning"", ""Heating"", ""Gym"", ""Hot water"", ""Hair dryer"", ""Smoke alarm"", ""Pets allowed"", ""Washer \u2013\u00a0In unit"", ""Kitchen"", ""Dryer \u2013\u00a0In unit"", ""Bed linens"", ""Elevator"", ""Essentials"", ""Shampoo"", ""Iron"", ""Coffee maker"", ""Refrigerator"", ""Self check-in"", ""Long term stays allowed"", ""Pool"", ""Crib"", ""Hangers"", ""Wifi"", ""High chair"", ""Microwave"", ""Dishwasher"", ""Oven"", ""Carbon monoxide alarm"", ""TV"", ""Lockbox"", ""Cooking basics""]"
+price,discrete_categorical,875.0,923,10.73,"$1,000.00",$999.00,,,,,,$90.00
 minimum_nights,continuous,52.0,0,0.0,1,365,364.0,13.745932124593212,2.0,24.802440625502165,0.0,2
-number_of_reviews,continuous,468.0,0,0.0,0,1222,1222.0,53.95792654579265,14.0,93.65917097627681,0.0,0
-last_review,discrete_categorical,852.0,1782,20.71,2016-02-23,2025-06-17,,,,,,2025-06-01
-reviews_per_month,continuous,681.0,1782,20.71,0.01,59.0,58.99,1.9016065669891524,1.54,2.164160670494513,2.0,1.0
-calculated_host_listings_count,discrete_numeric,43.0,0,0.0,1,594,593.0,52.5139470013947,4.0,148.89750178618868,0.0,1
+maximum_nights,continuous,138.0,0,0.0,2,1125,1123.0,478.4327057182706,365.0,410.87692471935975,0.0,365
+minimum_minimum_nights,continuous,53.0,0,0.0,1,365,364.0,13.592166434216644,2.0,24.702507335339952,0.0,2
+maximum_minimum_nights,continuous,69.0,0,0.0,1,365,364.0,33.838098558809854,4.0,81.69115344324834,0.0,2
+minimum_maximum_nights,continuous,123.0,0,0.0,1,1125,1124.0,661.7355880985588,365.0,462.2752077672487,0.0,1125
+maximum_maximum_nights,continuous,123.0,0,0.0,2,2147483647,2147483645.0,1248661.7338447233,1125.0,51756337.59857865,0.0,1125
+minimum_nights_avg_ntm,continuous,231.0,0,0.0,1.0,365.0,364.0,14.682589493258948,2.9,25.418680559552968,1.0,2.0
+maximum_nights_avg_ntm,continuous,493.0,0,0.0,2.0,529517363.3,529517361.3,308397.24387494195,730.0,12761844.8638031,1.0,1125.0
+calendar_updated,empty,,8604,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,91,1.06,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,11.340423059042307,10.0,9.991917580290112,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,25.91120409112041,25.0,19.49628421553462,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,46.09414225941423,47.0,28.04060369585959,0.0,0
 availability_365,continuous,366.0,0,0.0,0,365,365.0,220.57775453277546,250.0,113.87731405978263,0.0,0
+calendar_last_scraped,discrete_categorical,2.0,0,0.0,2025-06-17,2025-06-18,,,,,,2025-06-17
+number_of_reviews,continuous,468.0,0,0.0,0,1222,1222.0,53.95792654579265,14.0,93.65917097627681,0.0,0
 number_of_reviews_ltm,continuous,110.0,0,0.0,0,728,728.0,13.370060437006044,5.0,19.90689629835534,0.0,0
+number_of_reviews_l30d,discrete_numeric,26.0,0,0.0,0,62,62.0,1.4463040446304045,0.0,2.192528828815895,0.0,0
+availability_eoy,continuous,199.0,0,0.0,0,198,198.0,121.41968851696885,138.0,59.165516580958446,0.0,0
+number_of_reviews_ly,continuous,111.0,0,0.0,0,518,518.0,12.465946071594606,2.0,20.01368537413608,0.0,0
+estimated_occupancy_l365d,continuous,83.0,0,0.0,0,255,255.0,87.41957229195722,64.0,90.00908638701065,0.0,0
+estimated_revenue_l365d,continuous,3134.0,923,10.73,0.0,12750000.0,12750000.0,25062.883999479236,8856.0,202054.40045541147,1.0,0.0
+first_review,discrete_categorical,2422.0,1782,20.71,2009-07-03,2025-06-16,,,,,,2025-05-18
+last_review,discrete_categorical,852.0,1782,20.71,2016-02-23,2025-06-17,,,,,,2025-06-01
+review_scores_rating,continuous,126.0,1782,20.71,1.0,5.0,4.0,4.760795954265611,4.87,0.40579650996723576,2.0,5.0
+review_scores_accuracy,continuous,125.0,1782,20.71,1.0,5.0,4.0,4.793556141893872,4.9,0.3699491654095123,2.0,5.0
+review_scores_cleanliness,continuous,137.0,1782,20.71,1.0,5.0,4.0,4.761405746115508,4.88,0.39243147905341746,2.0,5.0
+review_scores_checkin,continuous,106.0,1782,20.71,1.0,5.0,4.0,4.833133978305482,4.93,0.36614283684733206,2.0,5.0
+review_scores_communication,continuous,110.0,1782,20.71,1.0,5.0,4.0,4.847543242450895,4.95,0.3690524096848455,2.0,5.0
+review_scores_location,continuous,152.0,1782,20.71,1.0,5.0,4.0,4.753469656992084,4.88,0.3774322720116434,2.0,5.0
+review_scores_value,continuous,137.0,1782,20.71,1.0,5.0,4.0,4.675233069481091,4.79,0.4360897976327841,2.0,5.0
 license,discrete_categorical,3844.0,2697,31.35,2083768,pending,,,,,,2792126
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
+calculated_host_listings_count,discrete_numeric,43.0,0,0.0,1,594,593.0,52.5139470013947,4.0,148.89750178618868,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,39.0,0,0.0,0,594,594.0,49.676197117619715,2.0,149.57449038687628,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,25.0,0,0.0,0,59,59.0,2.4141097164109717,0.0,7.312661065964837,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,7.0,0,0.0,0,26,26.0,0.15783356578335658,0.0,1.8831265293941435,0.0,0
+reviews_per_month,continuous,681.0,1782,20.71,0.01,59.0,58.99,1.9016065669891524,1.54,2.164160670494513,2.0,1.0
 price_clean,continuous,875.0,923,10.73,13.0,50328.0,50315.0,577.5426376773858,169.0,3879.0187816806215,1.0,90.0

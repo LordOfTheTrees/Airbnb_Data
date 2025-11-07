@@ -1,20 +1,92 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
-id,continuous,33457,0,0.0,5269,1510557608102313650,1.5105576081023084e+18,6.104404242824054e+17,6.999812869230706e+17,5.588201598696589e+17,0.0,5269
-name,discrete_categorical,30834,0,0.0,! 1 A New Waikiki Studio Ala wai Moana Convention,🥭WAIKIKI STYLISH PENTHOUSE-Free Parking 🥭,,,,,,Wyndham Kauai Beach Villas | 1BR/1BA King Suite
-host_id,continuous,8787,0,0.0,884,718331959,718331075.0,197288390.19562423,116164696.0,189952960.19101036,0.0,39073224
-host_name,discrete_categorical,3990,2,0.01,A,紀篤,,,,,,Matthew
-neighbourhood_group,discrete_categorical,4,0,0.0,Hawaii,Maui,,,,,,Maui
-neighbourhood,discrete_categorical,30,0,0.0,Central Oahu,Waimea-Kekaha,,,,,,Primary Urban Center
-latitude,continuous,22622,0,0.0,18.989648285159877,22.22909,3.2394417148401224,20.907427333088076,20.95818,0.8136274167346833,15.0,21.2747247
-longitude,continuous,21636,0,0.0,-159.71652793068847,-154.84228,4.874247930688483,-157.21303690729752,-156.69108,1.2898152242695737,14.0,-157.820931
-room_type,discrete_categorical,4,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,2016,325,0.97,9.0,50123.0,50114.0,945.4945068212,233.0,4571.497576103053,1.0,40000.0
-minimum_nights,continuous,59,0,0.0,1,720,719.0,7.302089248886631,2.0,23.785042224455406,0.0,1
-number_of_reviews,continuous,570,0,0.0,0,1506,1506.0,42.11886899602475,10.0,78.85143301994874,0.0,0
-last_review,discrete_categorical,1705,6726,20.1,2013-03-01,2025-09-16,,,,,,2025-09-01
-reviews_per_month,continuous,726,6726,20.1,0.01,23.57,23.56,1.1327458755751751,0.65,1.2768514260721004,2.0,0.05
-calculated_host_listings_count,continuous,121,0,0.0,1,540,539.0,91.81453806378336,25.0,135.7308557488534,0.0,1
-availability_365,continuous,366,0,0.0,0,365,365.0,229.68192007651612,252.0,100.68607325605664,0.0,365
-number_of_reviews_ltm,continuous,131,0,0.0,0,353,353.0,8.673969572884598,2.0,14.038055535975777,0.0,0
-license,discrete_categorical,20601,5770,17.25,# Posted in Cottage, PL-STVR-2023-000780,,,,,,Exempt
-price_clean,continuous,2016,325,0.97,9.0,50123.0,50114.0,945.4945068212,233.0,4571.497576103053,1.0,40000.0
+id,continuous,33457.0,0,0.0,5269,1510557608102313650,1.5105576081023084e+18,6.104404242824052e+17,6.999812869230706e+17,5.588201598696589e+17,0.0,5269
+listing_url,discrete_categorical,33457.0,0,0.0,https://www.airbnb.com/rooms/1000111199730505604,https://www.airbnb.com/rooms/999891253907503853,,,,,,https://www.airbnb.com/rooms/1000111199730505604
+scrape_id,discrete_numeric,1.0,0,0.0,20250916040722,20250916040722,0.0,20250916040722.0,20250916040722.0,0.0,0.0,20250916040722
+last_scraped,discrete_categorical,2.0,0,0.0,2025-09-16,2025-09-17,,,,,,2025-09-17
+source,discrete_categorical,1.0,0,0.0,city scrape,city scrape,,,,,,city scrape
+name,discrete_categorical,30834.0,0,0.0,! 1 A New Waikiki Studio Ala wai Moana Convention,🥭WAIKIKI STYLISH PENTHOUSE-Free Parking 🥭,,,,,,Wyndham Kauai Beach Villas | 1BR/1BA King Suite
+description,discrete_categorical,26517.0,1010,3.02,    Our ideal location will provide you with a great way to get the most out of your Maui vacation. We have endeavored to make our condo well equipped for your comfort. A renown beach is just across the street and dining options are equally close.<br />  ,"🩴 Steps to the beach. 🏖️<br />Tropical Getaway in Kihei<br />Welcome to your Maui escape at theNest in Kihei – a bright and breezy 1-bedroom, 2-bathroom condo with a pull-out couch, perfect for couples, families, or friends. Just across the street from Kamaole Beach Park III, one of Maui’s best-loved beaches.<br /><br />🛏️ 1 Bedroom • 2 Bathrooms • Sleeps 2–4<br /><br />Live Aloha and SAVE BIG!<br /><br />Message me w/ questions",,,,,,Take it easy at this unique and tranquil getaway.
+neighborhood_overview,discrete_categorical,9034.0,17030,50.9,"""Centralized"" is a perfect description of the neighborhood.   Moments to beach....about a 10 minute distance from Island Colony.<br />In the same block is popular casual eateries, ie, Zigu, Aloha Steakhouse, Pau Hana Base, MacDonalds, Heavenly to name a few.  Also, in the lobby is Forty Niner a local foodie spot.<br />Famous International Market Place is just around the corner.  And Royal Hawaiian Ave has a bunch of places to shop and eat too!<br />Royal Hawaiian Shopping Center is a huge 3 level tourist must visit too!<br />The Bus line is right in this block to go everywhere!","🩳Situated on the south shore of Oahu, Waikiki is one of the most iconic destinations in Honolulu. <br />Although Waikiki is widely known as a tourist hotspot, the neighborhood also draws residents seeking a vibrant beachfront lifestyle within close reach of Downtown Honolulu and the University of Hawaiʻi at Mānoa, in addition to numerous service workers and tourism industry professionals.<br /><br />Waikiki offers a broad range of apartments and condos available for rent, many of which tout gorgeous views of the ocean or the nearby mountains.<br />We're super close to Waikiki Beach and everything else Waikiki has to offer.<br /><br />🦩🦚Even the Honolulu Zoo is just a block away!<br /><br />🏬 Waikiki boasts beautiful beaches like Kūhiō Beach, Kahanamoku Beach, and Fort DeRussy Beach Park, along with exceptional shopping at International Market Place, Royal Hawaiian Center, and Waikiki Shopping Center.<br /><br />🍱The community also enjoys a vast selection of restaurants, bars, and shops",,,,,,"Honua Kai occupies 38 pristine beachfront acres on the shores of Kaanapali’s North Beach so you’ll literally be just steps away from the tranquility of Maui’s shoreline. Stroll out to the beach to touch your toes in the soft sand or take a refreshing dip in the Pacific. An “Ohana Play Package” including beach chairs, BBQ equipment, and a portable cooler is provided complimentary."
+picture_url,discrete_categorical,32496.0,0,0.0,https://a0.muscache.com/pictures/00018704-352d-4bc8-a802-cfa0f1e91adc.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-999891253907503853/original/bb728295-f70e-496a-87c7-a4748cb23d25.jpeg,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1252985363791962027/original/50bb40e6-19bf-4c09-a3ce-f0cffcbc030a.jpeg
+host_id,continuous,8787.0,0,0.0,884,718331959,718331075.0,197288390.19562423,116164696.0,189952960.19101036,0.0,39073224
+host_url,discrete_categorical,8787.0,0,0.0,https://www.airbnb.com/users/show/10000414,https://www.airbnb.com/users/show/99981912,,,,,,https://www.airbnb.com/users/show/39073224
+host_name,discrete_categorical,3990.0,2,0.01,A,紀篤,,,,,,Matthew
+host_since,discrete_categorical,4041.0,2,0.01,2008-07-20,2025-09-10,,,,,,2015-07-20
+host_location,discrete_categorical,1050.0,8385,25.06,"Abbotsford, Canada","Zephyr Cove-Round Hill Village, NV",,,,,,"Honolulu, HI"
+host_about,discrete_categorical,4729.0,10145,30.32,"
+
+","ﾛｻﾝｾﾞﾙｽに28年間住んでいましたが､自然が好きで､ﾊﾜｲ島にやってきました。
+皆様が このﾊﾜｲ島の大自然の中で 自然とのつながり､宇宙とのつながりを感じていただけたら､､､人間の本来あるべき姿を見つめ直すことができたらとおもい､Hawaii MAKOAﾊﾜｲﾏｺｱを始めました。
+ご縁をいただけますことを願って。。。。
+I have lived in Los Angeles for 28 years.
+I moved in Hawaii Island in 2010 because I love nature and animals.
+Hawaii Makoa is the perfect place for me to connect with the earth.",,,,,,"Maui Resort Rentals provides upscale vacation experiences at a curated collection of resort residences.
+
+Our Kaanapali and Wailea offices are just minutes from Maui's beachfront resorts.
+
+Our Ritz-Carlton and Marriott trained staff are here to serve. Your guest experience is our highest priority."
+host_response_time,discrete_categorical,4.0,1780,5.32,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,60.0,1780,5.32,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,97.0,1395,4.17,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,563,1.68,f,t,,,,,,t
+host_thumbnail_url,discrete_categorical,8432.0,2,0.01,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z1.muscache.cn/im/users/222740/profile_pic/1414557144/original.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/im/pictures/user/40b81dd1-cd1c-4f72-8764-b963dbc50b0f.jpg?aki_policy=profile_small
+host_picture_url,discrete_categorical,8432.0,2,0.01,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z1.muscache.cn/im/users/222740/profile_pic/1414557144/original.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/im/pictures/user/40b81dd1-cd1c-4f72-8764-b963dbc50b0f.jpg?aki_policy=profile_x_medium
+host_neighbourhood,discrete_categorical,386.0,7409,22.14,Ahwatukee Foothills Village,‘Ō‘ōkala,,,,,,Waikiki
+host_listings_count,continuous,211.0,2,0.01,1.0,3898.0,3897.0,230.11926468390376,33.0,581.1610368720535,1.0,1.0
+host_total_listings_count,continuous,251.0,2,0.01,1.0,9683.0,9682.0,339.38586160514126,42.0,981.3211763780517,1.0,1.0
+host_verifications,discrete_categorical,6.0,2,0.01,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,2,0.01,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,2,0.01,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,17030,50.9,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,30.0,0,0.0,Central Oahu,Waimea-Kekaha,,,,,,Primary Urban Center
+neighbourhood_group_cleansed,discrete_categorical,4.0,0,0.0,Hawaii,Maui,,,,,,Maui
+latitude,continuous,22622.0,0,0.0,18.989648285159877,22.22909,3.2394417148401224,20.907427333088076,20.95818,0.8136274167346834,15.0,21.2747247
+longitude,continuous,21636.0,0,0.0,-159.71652793068847,-154.84228,4.874247930688483,-157.2130369072975,-156.69108,1.2898152242695737,14.0,-157.820931
+property_type,discrete_categorical,80.0,0,0.0,Barn,Yurt,,,,,,Entire condo
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,4.835310996204083,4.0,2.5173036009922445,0.0,4
+bathrooms,continuous,26.0,3,0.01,0.0,14.0,14.0,1.6571560949363304,1.0,0.9980551115273638,1.0,1.0
+bathrooms_text,discrete_categorical,45.0,73,0.22,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,18.0,68,0.2,0.0,48.0,48.0,1.618227559974842,1.0,1.2446909744952424,0.0,1.0
+beds,continuous,23.0,36,0.11,0.0,32.0,32.0,2.607911193560935,2.0,1.6477326811841189,1.0,2.0
+amenities,discrete_categorical,27728.0,0,0.0,"["" Bergman Kelly shampoo"", ""Smoke alarm"", ""Bay view"", ""Resort access"", ""Extra pillows and blankets"", ""First aid kit"", ""Hot water"", ""Dining table"", ""Self check-in"", ""Hangers"", ""Washer"", ""Room-darkening shades"", ""Fire extinguisher"", ""TV with standard cable"", ""Outlet covers"", ""Wifi"", ""Bed linens"", ""Clothing storage"", ""Iron"", ""Shower gel"", ""Carbon monoxide alarm"", ""Coffee maker"", ""Elevator"", ""Beach access \u2013 Beachfront"", ""Heating"", ""Oven"", ""Shared hot tub"", ""Private patio or balcony"", ""Dishwasher"", "" Bergman Kelly conditioner"", ""Ocean view"", ""Refrigerator"", ""Beach view"", ""Wine glasses"", ""Stove"", ""Toaster"", ""Cooking basics"", ""Smart lock"", "" Bergman Kelly body soap"", ""Dryer"", ""Dedicated workspace"", ""Microwave"", ""Trash compactor"", ""Waterfront"", ""Hair dryer"", ""Private entrance"", ""BBQ grill"", ""Beach essentials"", ""Backyard"", ""Freezer"", ""Essentials"", ""Free parking on premises"", ""Kitchen"", ""Air conditioning"", ""Dishes and silverware"", ""Shared pool""]",[],,,,,,"[""Ceiling fan"", ""Smoke alarm"", ""Resort access"", ""Long term stays allowed"", ""Barbecue utensils"", ""Extra pillows and blankets"", ""Hot water"", ""Shared BBQ grill: gas"", ""Hangers"", ""Room-darkening shades"", ""Bathtub"", ""Blender"", ""TV with standard cable"", ""Wifi"", ""Luggage dropoff allowed"", ""Bed linens"", ""Clothing storage"", ""Body soap"", ""Iron"", ""Shower gel"", ""Carbon monoxide alarm"", ""Pack \u2019n play/Travel crib - available upon request"", ""Coffee maker"", ""Washer \u2013\u00a0In unit"", ""Dryer \u2013\u00a0In unit"", ""Pool - available all year, water slide"", ""Beach access"", ""Hot tub - available all year"", ""Elevator"", ""Oven"", ""Private patio or balcony"", ""Dishwasher"", ""Coffee"", ""Refrigerator"", ""Baking sheet"", ""Wine glasses"", ""Stove"", ""Toaster"", ""Cooking basics"", ""Gym"", ""Microwave"", ""Dedicated workspace"", ""Private entrance"", ""Hair dryer"", ""Backyard"", ""Freezer"", ""Shampoo"", ""Essentials"", ""Free parking on premises"", ""Kitchen"", ""Air conditioning"", ""Cleaning products"", ""Dishes and silverware"", ""Cleaning available during stay"", ""High chair - available upon request""]"
+price,discrete_categorical,2016.0,325,0.97,"$1,000.00",$999.00,,,,,,"$40,000.00"
+minimum_nights,continuous,59.0,0,0.0,1,720,719.0,7.302089248886631,2.0,23.785042224455406,0.0,1
+maximum_nights,continuous,166.0,0,0.0,1,1125,1124.0,523.4505185760827,365.0,437.73836733611654,0.0,365
+minimum_minimum_nights,continuous,61.0,10,0.03,1.0,720.0,719.0,6.864651538254552,2.0,22.60963659528937,1.0,1.0
+maximum_minimum_nights,continuous,74.0,10,0.03,1.0,999.0,998.0,9.11235686309684,4.0,24.067927553595542,1.0,2.0
+minimum_maximum_nights,continuous,175.0,10,0.03,1.0,1125.0,1124.0,428.71731395939844,365.0,447.52427890896007,1.0,365.0
+maximum_maximum_nights,continuous,195.0,10,0.03,1.0,2147483647.0,2147483646.0,1348931.4595030944,365.0,53793637.867402166,1.0,1125.0
+minimum_nights_avg_ntm,continuous,299.0,0,0.0,1.0,720.0,719.0,7.712084167737694,3.0,22.826747378334744,1.0,1.0
+maximum_nights_avg_ntm,continuous,4310.0,0,0.0,1.0,2129833099.5,2129833098.5,1316235.1013479992,365.0,52607566.186390445,1.0,365.0
+calendar_updated,empty,,33457,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,58,0.17,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,14.070956750455808,13.0,10.141982172506848,0.0,30
+availability_60,continuous,61.0,0,0.0,0,60,60.0,30.888961951161193,30.0,19.123879184694626,0.0,60
+availability_90,continuous,91.0,0,0.0,0,90,90.0,49.41393430373315,50.0,27.09967212552513,0.0,90
+availability_365,continuous,366.0,0,0.0,0,365,365.0,229.68192007651612,252.0,100.68607325605664,0.0,365
+calendar_last_scraped,discrete_categorical,2.0,0,0.0,2025-09-16,2025-09-17,,,,,,2025-09-17
+number_of_reviews,continuous,570.0,0,0.0,0,1506,1506.0,42.11886899602475,10.0,78.85143301994874,0.0,0
+number_of_reviews_ltm,continuous,131.0,0,0.0,0,353,353.0,8.673969572884598,2.0,14.038055535975777,0.0,0
+number_of_reviews_l30d,discrete_numeric,19.0,0,0.0,0,34,34.0,0.5919538512120035,0.0,1.1841370675364578,0.0,0
+availability_eoy,continuous,108.0,0,0.0,0,107,107.0,57.7823176016977,59.0,30.79931959654935,0.0,0
+number_of_reviews_ly,continuous,132.0,0,0.0,0,381,381.0,7.962100606748962,1.0,13.931448044152742,0.0,0
+estimated_occupancy_l365d,continuous,91.0,0,0.0,0,255,255.0,57.84484562273963,18.0,76.73633751221132,0.0,0
+estimated_revenue_l365d,continuous,6617.0,325,0.97,0.0,1500000.0,1500000.0,14991.945490764216,4900.0,30967.163204204968,1.0,0.0
+first_review,discrete_categorical,4039.0,6726,20.1,2010-02-16,2025-09-16,,,,,,2022-12-31
+last_review,discrete_categorical,1705.0,6726,20.1,2013-03-01,2025-09-16,,,,,,2025-09-01
+review_scores_rating,continuous,146.0,6726,20.1,1.0,5.0,4.0,4.794810145523924,4.89,0.3193474636267268,2.0,5.0
+review_scores_accuracy,continuous,142.0,6730,20.12,1.0,5.0,4.0,4.810093912522917,4.9,0.32647283481412287,2.0,5.0
+review_scores_cleanliness,continuous,152.0,6730,20.12,1.0,5.0,4.0,4.774563924121674,4.87,0.33210087851363435,2.0,5.0
+review_scores_checkin,continuous,123.0,6730,20.12,1.0,5.0,4.0,4.857063643506566,4.94,0.2867615850197844,2.0,5.0
+review_scores_communication,continuous,136.0,6730,20.12,1.0,5.0,4.0,4.843941706888166,4.94,0.3085544336959745,2.0,5.0
+review_scores_location,continuous,115.0,6730,20.12,1.0,5.0,4.0,4.874130654394433,4.93,0.22918526130384012,2.0,5.0
+review_scores_value,continuous,156.0,6730,20.12,1.0,5.0,4.0,4.692094885321959,4.77,0.3637366054832549,2.0,5.0
+license,discrete_categorical,20601.0,5770,17.25,# Posted in Cottage, PL-STVR-2023-000780,,,,,,Exempt
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
+calculated_host_listings_count,continuous,121.0,0,0.0,1,540,539.0,91.81453806378336,25.0,135.7308557488534,0.0,1
+calculated_host_listings_count_entire_homes,continuous,120.0,0,0.0,0,533,533.0,89.53325163642884,20.0,135.79715837478787,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,33.0,0,0.0,0,70,70.0,1.5805063215470605,0.0,6.821618233052837,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,5.0,0,0.0,0,8,8.0,0.006545715395881281,0.0,0.16324498950951358,0.0,0
+reviews_per_month,continuous,726.0,6726,20.1,0.01,23.57,23.56,1.1327458755751751,0.65,1.2768514260721002,2.0,0.05
+price_clean,continuous,2016.0,325,0.97,9.0,50123.0,50114.0,945.4945068212,233.0,4571.497576103053,1.0,40000.0

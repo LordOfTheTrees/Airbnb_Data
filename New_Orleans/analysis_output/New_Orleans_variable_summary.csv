@@ -1,20 +1,88 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
 id,continuous,7444.0,0,0.0,19091,1506565692749570334,1.5065656927495514e+18,6.09122810611945e+17,6.812116908843849e+17,5.7001301573166784e+17,0.0,19091
+listing_url,discrete_categorical,7444.0,0,0.0,https://www.airbnb.com/rooms/1000605984761961722,https://www.airbnb.com/rooms/999977199404282735,,,,,,https://www.airbnb.com/rooms/1000605984761961722
+scrape_id,discrete_numeric,1.0,0,0.0,20250911031349,20250911031349,0.0,20250911031349.0,20250911031349.0,0.0,0.0,20250911031349
+last_scraped,discrete_categorical,1.0,0,0.0,2025-09-11,2025-09-11,,,,,,2025-09-11
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
 name,discrete_categorical,7232.0,0,0.0,"""105"" Large studio on St. Charles Avenue",🎭 New Orleans 🎶 Historic Bungalow Suite 🎷,,,,,,La Belle Maison Resort| 1BR Resort Suite
+description,discrete_categorical,5907.0,71,0.95,"    Enjoy New Orleans from quiet tree lined street in safe neighborhood that still enjoys all the conveniences of the city. Second floor apt w 2 br, 1 bath. Tons of natural light, touches of New Orleans Architecture! Fully kitchen, wifi + private parking<br />  ","🧞 Enter your cabin, sir.<br />What will your pleasure be?<br />just relaxy let your backsy rest<br />You feel better with a friend like me.<br /><br />Ain't like the rest of em.<br />We ain't got no silly fees.<br />You just check right in till you've left on out.<br />You feel better with a friend like me.<br /><br />(record skip)<br /><br />You feel better with our team<br />Make your bed so clean<br />You feel better in our spots<br />Couple pans and pots<br /><br />You feel better<br />with a<br />friennnnd<br />like<br />meeee<br /><br />Here is our philosophy :<br />basic : ✅<br />clean : ✅<br />cheap : ✅<br />coool : 😎",,,,,,Live in the Heart of Downtown New Orleans
+neighborhood_overview,discrete_categorical,3193.0,3015,40.5,"""Fewer than two miles downriver from the French Quarter- home of Bourbon Street, Cafe du Monde, Jackson Square and all those other tourist attractions you've already heard of-- is the quirky-cool New Orleans neighborhood you should be checking out on your next trip. It's called the Bywater."" - Conde Nast Traveler","📍 Location Highlights<br />Welcome to the heart of it all — right on the iconic Mardi Gras parade route, giving you a front-row seat to New Orleans’ most electric celebrations.<br /><br />Just outside your door, discover a vibrant mix of restaurants, cafés, and bars — all bursting with local flavor and warm hospitality.<br /><br />🚋 The historic St. Charles streetcar stops right out front, offering a direct line to Canal Street, the French Quarter, and more of the city’s must-see sights.<br /><br />You’re in the Lower Garden District, one of New Orleans’ most beloved and walkable neighborhoods — just minutes from:<br /><br />• The Convention Center<br />• The National WWII Museum<br />• Magazine Street shops & dining<br />• Caesars Superdome & Smoothie King Center<br /><br />Whether you're here for business, celebration, or a slow unwind, this location puts you close to it all — central, charming, and unmistakably New Orleans.",,,,,,"Immerse yourself in the vibrant energy of New Orleans at Roami at The Lola, located in the heart of the bustling Central Business District (CBD). This dynamic neighborhood blends historic charm with modern sophistication, offering the perfect setting for both business and leisure. From towering skyscrapers to art-filled galleries and upscale dining spots, the CBD has it all. Just a short walk away, you can explore the lively streets of the French Quarter, discover the city’s jazz history, or enjoy world-class cuisine. Whether you’re here to work, play, or unwind, The Lola provides the perfect base for your New Orleans adventure.<br /><br />Nearby Attractions<br /><br />Lafayette Square (0.2 miles): Lush park hosting live music, cultural events, and a peaceful escape in the heart of the CBD.<br /><br />Bourbon Street and Canal Street (0.5 miles): Iconic streets filled with nightlife, shopping, and historic landmarks.<br /><br />Audubon Aquarium of the Americas (0.7 miles): Family-friend"
+picture_url,discrete_categorical,7351.0,0,0.0,https://a0.muscache.com/pictures/0045085d-297f-4b9e-84db-931fb53e7dc1.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-999845587619490638/original/7f22ba3b-fe29-4fe0-bbc7-a26381c25663.jpeg,,,,,,https://a0.muscache.com/pictures/85959432-929c-43a3-9546-e9b065fd0c24.jpg
 host_id,continuous,3477.0,0,0.0,33265,713813543,713780278.0,241526868.9531166,162734254.5,216018211.2312902,0.0,443127060
+host_url,discrete_categorical,3477.0,0,0.0,https://www.airbnb.com/users/show/100173050,https://www.airbnb.com/users/show/99927481,,,,,,https://www.airbnb.com/users/show/443127060
 host_name,discrete_categorical,1821.0,2,0.03,A-Yemisi,Zvjezda,,,,,,Tigran
-neighbourhood_group,empty,,7444,100.0,,,,,,,,
-neighbourhood,discrete_categorical,70.0,0,0.0,Algiers Point,Whitney,,,,,,Central Business District
+host_since,discrete_categorical,2375.0,2,0.03,2009-08-22,2025-08-16,,,,,,2022-01-31
+host_location,discrete_categorical,262.0,2341,31.45,"Alameda, CA","Youngstown, NY",,,,,,"New Orleans, LA"
+host_about,discrete_categorical,1826.0,3285,44.13,"
+","“The first thing you notice about New Orleans are the burying grounds - the cemeteries - and they're a cold proposition, one of the best things there are here. Going by, you try to be as quiet as possible, better to let them sleep. Greek, Roman, sepulchres- palatial mausoleums made to order, phantomesque, signs and symbols of hidden decay - ghosts of women and men who have sinned and who've died and are now living in tombs. The past doesn't pass away so quickly here. You could be dead for a long time.
+
+The ghosts race towards the light, you can almost hear the heavy breathing spirits, all determined to get somewhere. New Orleans, unlike a lot of those places you go back to and that don't have the magic anymore, still has got it. Night can swallow you up, yet none of it touches you. Around any corner, there's a promise of something daring and ideal and things are just getting going. There's something obscenely joyful behind every door, either that or somebody crying with their head in their hands. A lazy rhythm looms in the dreamy air and the atmosphere pulsates with bygone duels, past-life romance, comrades requesting comrades to aid them in some way. You can't see it, but you know it's here. Somebody is always sinking. Everyone seems to be from some very old Southern families. Either that or a foreigner. I like the way it is.
+
+There are a lot of places I like, but I like New Orleans better. There's a thousand different angles at any moment. At any time you could run into a ritual honoring some vaguely known queen. Bluebloods, titled persons like crazy drunks, lean weakly against the walls and drag themselves through the gutter. Even they seem to have insights you might want to listen to. No action seems inappropriate here. The city is one very long poem. Gardens full of pansies, pink petunias, opiates. Flower-bedecked shrines, white myrtles, bougainvillea and purple oleander stimulate your senses, make you feel cool and clear inside.
+
+Everything in New Orleans is a good idea. Bijou temple-type cottages and lyric cathedrals side by side. Houses and mansions, structures of wild grace. Italianate, Gothic, Romanesque, Greek Revival standing in a long line in the rain. Roman Catholic art. Sweeping front porches, turrets, cast-iron balconies, colonnades- 30-foot columns, gloriously beautiful- double pitched roofs, all the architecture of the whole wide world and it doesn't move. All that and a town square where public executions took place. In New Orleans you could almost see other dimensions. There's only one day at a time here, then it's tonight and then tomorrow will be today again. Chronic melancholia hanging from the trees. You never get tired of it. After a while you start to feel like a ghost from one of the tombs, like you're in a wax museum below crimson clouds. Spirit empire. Wealthy empire. One of Napoleon's generals, Lallemaud, was said to have come here to check it out, looking for a place for his commander to seek refuge after Waterloo. He scouted around and left, said that here the devil is damned, just like everybody else, only worse. The devil comes here and sighs. New Orleans. Exquisite, old-fashioned. A great place to live vicariously. Nothing makes any difference and you never feel hurt, a great place to really hit on things. Somebody puts something in front of you here and you might as well drink it. Great place to be intimate or do nothing. A place to come and hope you'll get smart - to feed pigeons looking for handouts” bob dylan",,,,,,"Hosteeva was born out of our passion for travel and a need to revolutionize how vacation rentals should be managed. Today, we take these principles all across North America by bringing you properties that match 5 star hotel standards, first class customer service and an all-around smooth travel experience."
+host_response_time,discrete_categorical,4.0,1596,21.44,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,38.0,1596,21.44,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,80.0,1155,15.52,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,268,3.6,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,3365.0,2,0.03,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z1.muscache.cn/im/users/8596036/profile_pic/1416689454/original.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3
+host_picture_url,discrete_categorical,3365.0,2,0.03,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z1.muscache.cn/im/users/8596036/profile_pic/1416689454/original.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3
+host_neighbourhood,discrete_categorical,160.0,361,4.85,11th Ward,Zephyr Cove,,,,,,Central Business District
+host_listings_count,continuous,89.0,2,0.03,1.0,3883.0,3882.0,104.54729911314163,4.0,465.7051813455527,1.0,1.0
+host_total_listings_count,continuous,110.0,2,0.03,1.0,9658.0,9657.0,167.44168234345605,6.0,748.7937822715392,1.0,1.0
+host_verifications,discrete_categorical,6.0,2,0.03,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,2,0.03,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,2,0.03,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,3015,40.5,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,70.0,0,0.0,Algiers Point,Whitney,,,,,,Central Business District
+neighbourhood_group_cleansed,empty,,7444,100.0,,,,,,,,
 latitude,continuous,5200.0,0,0.0,29.897042004333727,30.16104,0.2639979956662728,29.957995516491756,29.95553141043151,0.024044035377605775,15.0,29.966378964558213
 longitude,continuous,5318.0,0,0.0,-90.13552074182395,-89.73709,0.3984307418239581,-90.0727315017234,-90.0728178423173,0.03131102164021242,14.0,-90.03928884934831
+property_type,discrete_categorical,47.0,0,0.0,Barn,Tiny home,,,,,,Entire home
 room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,686.0,1211,16.27,15.0,50134.0,50119.0,488.04941440718756,132.0,3533.4609912244955,1.0,90.0
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,5.104782375067169,4.0,3.188474089962622,0.0,4
+bathrooms,continuous,31.0,1190,15.99,0.0,44.0,44.0,1.7986888391429485,1.5,1.32639489011485,1.0,1.0
+bathrooms_text,discrete_categorical,44.0,84,1.13,0 baths,Private half-bath,,,,,,1 bath
+bedrooms,continuous,21.0,147,1.97,0.0,41.0,41.0,2.2502398245854462,2.0,1.6671762685956126,1.0,1.0
+beds,continuous,28.0,1193,16.03,0.0,55.0,55.0,3.004639257718765,2.0,2.4732445236660663,1.0,2.0
+amenities,discrete_categorical,6545.0,0,0.0,"[""1 inch TV"", ""Air conditioning"", ""Dishes and silverware"", ""Private backyard \u2013 Fully fenced"", ""Fireplace guards"", ""Breakfast"", ""Outlet covers"", ""Luggage dropoff allowed"", ""Cooking basics"", ""Long term stays allowed"", ""Bathtub"", ""Dedicated workspace"", ""Microwave"", ""Hair dryer"", ""Carbon monoxide alarm"", ""Fire extinguisher"", ""Smoke alarm"", ""Heating"", ""Washer"", ""Dryer"", ""Iron"", ""Outdoor furniture"", ""Stove"", ""Oven"", ""Barbecue utensils"", ""Free parking on premises"", ""Paid parking on premises"", ""Hot water"", ""Board games"", ""Shampoo"", ""Private patio or balcony"", ""Courtyard view"", ""Dishwasher"", ""BBQ grill"", ""Indoor fireplace"", ""Free street parking"", ""Wifi"", ""Bed linens"", ""Kitchen"", ""Self check-in"", ""Keypad"", ""Essentials"", ""First aid kit"", ""Coffee maker"", ""Refrigerator"", ""Sound system""]",[],,,,,,"[""Hot water kettle"", ""Air conditioning"", ""Dishes and silverware"", ""Toaster"", ""Cooking basics"", ""TV"", ""Long term stays allowed"", ""Dedicated workspace"", ""Hair dryer"", ""Carbon monoxide alarm"", ""Fire extinguisher"", ""Smoke alarm"", ""Gym"", ""Heating"", ""Smart lock"", ""Hangers"", ""Stove"", ""Pets allowed"", ""Hot water"", ""Shampoo"", ""Dishwasher"", ""Extra pillows and blankets"", ""Wifi"", ""Elevator"", ""Bed linens"", ""Kitchen"", ""Self check-in"", ""Essentials"", ""First aid kit"", ""Coffee maker"", ""Refrigerator""]"
+price,discrete_categorical,686.0,1211,16.27,"$1,000.00",$999.00,,,,,,$90.00
 minimum_nights,discrete_numeric,33.0,0,0.0,1,1125,1124.0,16.735626007522836,3.0,25.20222579196888,0.0,30
-number_of_reviews,continuous,473.0,0,0.0,0,1841,1841.0,65.72447608812466,22.0,103.69658033871157,0.0,0
-last_review,discrete_categorical,985.0,1290,17.33,2014-04-08,2025-09-10,,,,,,2025-09-01
-reviews_per_month,continuous,609.0,1290,17.33,0.01,42.71,42.7,1.559078648033799,1.16,1.71235338526552,2.0,1.0
-calculated_host_listings_count,discrete_numeric,43.0,0,0.0,1,84,83.0,15.132455668995163,3.0,23.58141111659667,0.0,1
+maximum_nights,continuous,131.0,0,0.0,3,1125,1122.0,447.48401397098337,365.0,388.53326216403644,0.0,365
+minimum_minimum_nights,continuous,36.0,2,0.03,1.0,1125.0,1124.0,15.564901908089224,2.0,25.070997567176253,1.0,30.0
+maximum_minimum_nights,continuous,52.0,2,0.03,1.0,1125.0,1124.0,17.242811072292394,6.0,24.890552631875565,1.0,30.0
+minimum_maximum_nights,continuous,112.0,2,0.03,1.0,2147483647.0,2147483646.0,3174797.5935232462,365.0,82506702.52771325,1.0,1125.0
+maximum_maximum_nights,continuous,106.0,2,0.03,3.0,2147483647.0,2147483644.0,3174844.3949207203,365.0,82506700.72686309,1.0,1125.0
+minimum_nights_avg_ntm,continuous,145.0,0,0.0,1.0,1125.0,1124.0,16.030789897904352,3.0,24.929050102720897,1.0,30.0
+maximum_nights_avg_ntm,continuous,399.0,0,0.0,3.0,2147483647.0,2147483644.0,3173964.60720043,365.0,82495632.2839312,1.0,1125.0
+calendar_updated,empty,,7444,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,249,3.34,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,18.15690488984417,21.0,10.759738144834506,0.0,30
+availability_60,continuous,61.0,0,0.0,0,60,60.0,36.219102632993014,40.0,20.648740921093456,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,57.417517463729176,65.0,30.39305935012656,0.0,0
 availability_365,continuous,366.0,0,0.0,0,365,365.0,218.10934981192906,256.0,123.7840935352393,0.0,0
+calendar_last_scraped,discrete_categorical,1.0,0,0.0,2025-09-11,2025-09-11,,,,,,2025-09-11
+number_of_reviews,continuous,473.0,0,0.0,0,1841,1841.0,65.72447608812466,22.0,103.69658033871157,0.0,0
 number_of_reviews_ltm,continuous,104.0,0,0.0,0,439,439.0,11.616335303600215,4.0,17.32393729466169,0.0,0
+number_of_reviews_l30d,discrete_numeric,21.0,0,0.0,0,47,47.0,0.5562869425040301,0.0,1.431841493304895,0.0,0
+availability_eoy,continuous,113.0,0,0.0,0,112,112.0,72.34175174637292,83.0,37.16362609599082,0.0,0
+number_of_reviews_ly,continuous,102.0,0,0.0,0,384,384.0,11.34416980118216,2.0,17.675240088378754,0.0,0
+estimated_occupancy_l365d,discrete_numeric,36.0,0,0.0,0,255,255.0,112.53559914024719,80.0,108.59549624120305,0.0,0
+estimated_revenue_l365d,continuous,1837.0,1211,16.27,0.0,10507140.0,10507140.0,25951.79111182416,13515.0,174893.18531046988,1.0,0.0
+first_review,discrete_categorical,2348.0,1290,17.33,2010-04-16,2025-09-09,,,,,,2025-02-10
+last_review,discrete_categorical,985.0,1290,17.33,2014-04-08,2025-09-10,,,,,,2025-09-01
+review_scores_rating,continuous,124.0,1290,17.33,1.0,5.0,4.0,4.78210432239194,4.88,0.3620542112912162,2.0,5.0
+review_scores_accuracy,continuous,118.0,1291,17.34,1.0,5.0,4.0,4.814851292052657,4.91,0.33848321334624887,2.0,5.0
+review_scores_cleanliness,continuous,126.0,1290,17.33,1.0,5.0,4.0,4.797970425739356,4.89,0.3328270209529257,2.0,5.0
+review_scores_checkin,continuous,95.0,1291,17.34,1.0,5.0,4.0,4.87557289127255,4.96,0.3050001613651176,2.0,5.0
+review_scores_communication,continuous,110.0,1290,17.33,1.0,5.0,4.0,4.86039161520962,4.96,0.32802581531386593,2.0,5.0
+review_scores_location,continuous,137.0,1291,17.34,1.0,5.0,4.0,4.739084999187388,4.84,0.3475930025291846,2.0,5.0
+review_scores_value,continuous,131.0,1291,17.34,1.0,5.0,4.0,4.720417682431334,4.81,0.3799955569508219,2.0,5.0
 license,discrete_categorical,3920.0,1335,17.93,12-xstr-36741,Exempt,,,,,,Exempt
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
+calculated_host_listings_count,discrete_numeric,43.0,0,0.0,1,84,83.0,15.132455668995163,3.0,23.58141111659667,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,42.0,0,0.0,0,83,83.0,13.065824825362709,2.0,22.142375600578138,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,18.0,0,0.0,0,23,23.0,1.0936324556689951,0.0,3.2340252852547238,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,3.0,0,0.0,0,3,3.0,0.002552391187533584,0.0,0.0759652867039727,0.0,0
+reviews_per_month,continuous,609.0,1290,17.33,0.01,42.71,42.7,1.559078648033799,1.16,1.71235338526552,2.0,1.0
 price_clean,continuous,686.0,1211,16.27,15.0,50134.0,50119.0,488.04941440718756,132.0,3533.4609912244955,1.0,90.0

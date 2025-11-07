@@ -1,20 +1,90 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
-id,continuous,36111,0,0.0,2595,1521848367963498302,1.5218483679634957e+18,4.6679062536767936e+17,50953084.0,5.448721148131625e+17,0.0,2595
-name,discrete_categorical,34446,2,0.01,! Hamilton Studio. priv bathrm. near subways,🪴🛋🌞 Unique sunny clean brownstone studio 1st floor,,,,,,Water View King Bed Hotel Room
-host_id,continuous,21382,0,0.0,1678,721443059,721441381.0,175619453.1080834,88326021.0,194562427.80721432,0.0,107434423
-host_name,discrete_categorical,8296,1166,3.23, Valéria,진,,,,,,Eugene
-neighbourhood_group,discrete_categorical,5,0,0.0,Bronx,Staten Island,,,,,,Manhattan
-neighbourhood,discrete_categorical,224,0,0.0,Allerton,Woodside,,,,,,Bedford-Stuyvesant
-latitude,continuous,22336,0,0.0,40.5003663,40.912016503779405,0.4116502037794021,40.728253469250184,40.72596,0.0562693102794468,15.0,40.61881
-longitude,continuous,20236,0,0.0,-74.251907,-73.71182221830068,0.5400847816993206,-73.94735044379112,-73.95500008072835,0.05499451522811298,14.0,-73.98652
-room_type,discrete_categorical,4,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,1150,14783,40.94,10.0,50104.0,50094.0,680.5268192048012,154.0,4480.453282468837,1.0,150.0
-minimum_nights,continuous,106,0,0.0,1,1124,1123.0,28.61009110797264,30.0,29.166475675296244,0.0,30
-number_of_reviews,continuous,511,0,0.0,0,3736,3736.0,27.321231757636177,3.0,70.30868396993621,0.0,0
-last_review,discrete_categorical,3400,11188,30.98,2011-05-12,2025-10-01,,,,,,2025-08-31
-reviews_per_month,continuous,810,11188,30.98,0.01,122.76,122.75,0.821178028327248,0.25,1.9161042428815425,2.0,0.01
-calculated_host_listings_count,continuous,67,0,0.0,1,1148,1147.0,67.45515216969898,2.0,215.6788130643448,0.0,1
-availability_365,continuous,366,0,0.0,0,365,365.0,162.18872365761126,150.0,147.26262481014209,0.0,0
-number_of_reviews_ltm,continuous,173,0,0.0,0,1699,1699.0,3.983606103403395,0.0,19.468283855786634,0.0,0
-license,discrete_categorical,1962,30735,85.11,Exempt,ose-strreg-0002623,,,,,,Exempt
-price_clean,continuous,1150,14783,40.94,10.0,50104.0,50094.0,680.5268192048012,154.0,4480.453282468837,1.0,150.0
+id,continuous,36111.0,0,0.0,2595,1521848367963498302,1.5218483679634957e+18,4.667906253676794e+17,50953084.0,5.448721148131625e+17,0.0,2595
+listing_url,discrete_categorical,36111.0,0,0.0,https://www.airbnb.com/rooms/10000070,https://www.airbnb.com/rooms/999964466102080007,,,,,,https://www.airbnb.com/rooms/10000070
+scrape_id,discrete_numeric,1.0,0,0.0,20251001171547,20251001171547,0.0,20251001171547.0,20251001171547.0,0.0,0.0,20251001171547
+last_scraped,discrete_categorical,2.0,0,0.0,2025-10-01,2025-10-02,,,,,,2025-10-02
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
+name,discrete_categorical,34446.0,2,0.01,! Hamilton Studio. priv bathrm. near subways,🪴🛋🌞 Unique sunny clean brownstone studio 1st floor,,,,,,Water View King Bed Hotel Room
+description,discrete_categorical,29846.0,958,2.65,        <br /> Cozy & clean on the corner of 5th Street and 2nd Avenue. 1 room (Queen bed) in 3 bedroom apartment (2 roommates are boys - 25 year old Finance professionals). Great kitchen and bathroom. Easy 2 minute walk to all subways and Union Sq.<br />  ,"🪹🔮 This magical nest was designed to be my comfy, safe haven from the hectic BK bustle. It's full of plants, art, soft lighting, and surround sound music. <br /><br />🌞 It has a back deck with loungers and outdoor dining to soak in the sun or have a nice twinkle lit evening, and is situated just 3 blocks from a gorgeous little park or a half hour stroll west on Eastern Parkway to Brooklyn Museum, Prospect Park, and the Botanical Gardens 🪴🌷<br /><br />Old school AirBnB host for over a decade now. Not in 'the biz'",,,,,,You'll have a great time at this comfortable place to stay.
+neighborhood_overview,discrete_categorical,13989.0,17407,48.2," Bushwick Brooklyn is a great neighborhood with many art galleries, bars , cafés, restaurants and stores very hip young  crowd in bushwick...","🛒 Supermarkets & Grocery Stores<br /><br />The Food Emporium<br />	•	📍 452 W 43rd St (between 9th & 10th Ave)<br />	•	🕒 Open daily 7 AM – 12 AM<br />	•	Offers organic produce, prepared meals, and a wide selection of groceries.   <br /><br />Target	<br />1. •📍 615 10th Ave (at W 45th St)<br /><br />	• 🕒 Open daily 8 AM – 11 PM<br /><br />	• Offers a wide selection of groceries, including organic and international products.<br /><br />Starbucks, Groceries, Liquor store across the street.",,,,,,"This furnished apartment is located in Midtown East. This bustling neighborhood is home to NYC landmarks like the Empire State Building, the United Nations' headquarters, and Grand Central Station. Midtown East is also home to a thriving dining scene, with everything from humble food carts selling hotdogs to white-tablecloth restaurants with multiple Michelin stars. There are also many cultural attractions, including the Museum of Modern Art, the lovely Japan Society, the historic Morgan Library, and more. Midtown East is also home to some incredible shopping, from the international flagship stores along Fifth Avenue to Bloomingdale's, one of the city's best-loved department stores."
+picture_url,discrete_categorical,35367.0,0,0.0,https://a0.muscache.com/pictures/0004b780-88ce-4ff8-b623-e3bb4ad35838.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-999775215264479826/original/8f3aec01-3fda-4cbb-9929-9e1173de706c.jpeg,,,,,,https://a0.muscache.com/pictures/6998e77e-4564-49e8-b652-61c90e84ee65.jpg
+host_id,continuous,21382.0,0,0.0,1678,721443059,721441381.0,175619453.1080834,88326021.0,194562427.80721432,0.0,107434423
+host_url,discrete_categorical,21382.0,0,0.0,https://www.airbnb.com/users/show/10001551,https://www.airbnb.com/users/show/9997747,,,,,,https://www.airbnb.com/users/show/107434423
+host_name,discrete_categorical,8296.0,1166,3.23, Valéria,진,,,,,,Eugene
+host_since,discrete_categorical,5176.0,1167,3.23,2008-08-11,2025-09-29,,,,,,2012-08-11
+host_location,discrete_categorical,981.0,8700,24.09,"Aalborg, Denmark","İstanbul, Turkey",,,,,,"New York, NY"
+host_about,discrete_categorical,11252.0,16496,45.68,"
+","한국분 선호합니다. 
+지내는 분들이 모두 한국사람입니다. 
+
+I am working and living in the city.
+The roommates in this home are very friendly and nice.
+This area is so easy commute and safe.
+
+Since this is not a hotel or the place for the making money, I don't have any towels and other stuff. I will share mine,if you need anything like toothbrush, towel,blanket and more. - need to let me know before you come!-
+",,,,,,"my number: (Phone number hidden by Airbnb) , my email: (Email hidden by Airbnb)"
+host_response_time,discrete_categorical,4.0,15774,43.68,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,70.0,15774,43.68,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,97.0,15595,43.19,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,384,1.06,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,20795.0,1167,3.23,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z1.muscache.cn/im/pictures/user/afba8615-652b-47f8-9a87-4a8e9c2a7c04.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3
+host_picture_url,discrete_categorical,20795.0,1167,3.23,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z1.muscache.cn/im/pictures/user/afba8615-652b-47f8-9a87-4a8e9c2a7c04.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3
+host_neighbourhood,discrete_categorical,523.0,8484,23.49,Abbotsford,Zona Romántica,,,,,,Bedford-Stuyvesant
+host_listings_count,continuous,117.0,1167,3.23,1.0,5478.0,5477.0,112.26465201465201,2.0,592.4173474930365,1.0,1.0
+host_total_listings_count,continuous,154.0,1167,3.23,1.0,9764.0,9763.0,194.00706845238096,3.0,900.407345059767,1.0,1.0
+host_verifications,discrete_categorical,7.0,1167,3.23,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,1167,3.23,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,1167,3.23,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,17406,48.2,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,224.0,0,0.0,Allerton,Woodside,,,,,,Bedford-Stuyvesant
+neighbourhood_group_cleansed,discrete_categorical,5.0,0,0.0,Bronx,Staten Island,,,,,,Manhattan
+latitude,continuous,22336.0,0,0.0,40.5003663,40.912016503779405,0.4116502037794021,40.72825346925018,40.72596,0.0562693102794468,15.0,40.61881
+longitude,continuous,20236.0,0,0.0,-74.251907,-73.71182221830068,0.5400847816993206,-73.94735044379114,-73.95500008072835,0.05499451522811298,14.0,-73.98652
+property_type,discrete_categorical,74.0,0,0.0,Barn,Tower,,,,,,Entire rental unit
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,2.7332391791974744,2.0,1.866399636976895,0.0,2
+bathrooms,discrete_numeric,19.0,14411,39.91,0.0,15.5,15.5,1.1927880184331798,1.0,0.5480178630940667,0.0,1.0
+bathrooms_text,discrete_categorical,32.0,114,0.32,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,15.0,5949,16.47,0.0,16.0,16.0,1.3860155162124528,1.0,0.9449314819663737,0.0,1.0
+beds,discrete_numeric,19.0,14468,40.07,0.0,40.0,40.0,1.6215866561936885,1.0,1.2115406823464174,0.0,1.0
+amenities,discrete_categorical,29271.0,0,0.0,"["" Eco Botanics Travel Size  shampoo"", ""Exterior security cameras on property"", ""Extra pillows and blankets"", ""Dedicated workspace"", ""Clothing storage: closet and dresser"", "" Eco Botanics Travel Size  conditioner"", ""Laundromat nearby"", ""Room-darkening shades"", ""Microwave"", ""Iron"", ""Fireplace guards"", ""Essentials"", ""Hot water kettle"", ""Self check-in"", ""Freezer"", ""Hair dryer"", ""Central heating"", "" Eco Botanics Travel Size body soap"", ""Cleaning products"", ""Shower gel"", ""Smoke alarm"", ""Luggage dropoff allowed"", ""Board games"", ""AC - split type ductless system"", ""Kitchen"", ""Wifi"", ""Carbon monoxide alarm"", ""Frigidaire stainless steel gas stove"", ""Ethernet connection"", ""Indoor fireplace: electric"", ""Fire extinguisher"", ""Frigidaire stainless steel oven"", ""Dining table"", ""Wine glasses"", ""Lockbox"", ""Lock on bedroom door"", ""Cooking basics"", ""Hot water"", ""Hangers"", ""Free street parking"", ""Long term stays allowed"", ""Bed linens"", ""Stainless Steel Frigidaire Gallery refrigerator"", ""Single level home"", ""Dishes and silverware"", ""Ceiling fan"", ""50 inch HDTV with Hulu, Netflix, Roku"", ""First aid kit""]",[],,,,,,"[""Smoke alarm"", ""Air conditioning"", ""Wifi"", ""Carbon monoxide alarm"", ""TV"", ""Washer"", ""Kitchen""]"
+price,discrete_categorical,1150.0,14783,40.94,"$1,000.00",$999.00,,,,,,$150.00
+minimum_nights,continuous,106.0,0,0.0,1,1124,1123.0,28.61009110797264,30.0,29.166475675296244,0.0,30
+maximum_nights,continuous,256.0,0,0.0,1,2147483647,2147483646.0,60035.534186259036,365.0,11300820.93721458,0.0,1125
+minimum_minimum_nights,continuous,113.0,12,0.03,1.0,1124.0,1123.0,28.40333527244522,30.0,28.933871387524515,1.0,30.0
+maximum_minimum_nights,continuous,129.0,12,0.03,1.0,1124.0,1123.0,38.70827446743677,30.0,63.42062528570585,1.0,30.0
+minimum_maximum_nights,continuous,237.0,12,0.03,1.0,2147483647.0,2147483646.0,298090.6244217291,365.0,25272202.205895808,1.0,1125.0
+maximum_maximum_nights,continuous,235.0,12,0.03,1.0,2147483647.0,2147483646.0,952495.2478462007,730.0,45201399.68746988,1.0,1125.0
+minimum_nights_avg_ntm,continuous,363.0,0,0.0,1.0,1124.0,1123.0,29.45969372213453,30.0,33.68452354827658,1.0,30.0
+maximum_nights_avg_ntm,continuous,863.0,0,0.0,1.0,2147483647.0,2147483646.0,698647.3670903603,375.0,35792174.12645352,1.0,1125.0
+calendar_updated,empty,,36111,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,5665,15.69,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,8.704577552546315,0.0,12.106346401302464,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,21.359198028301627,5.0,24.537592228170894,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,35.372518069286365,23.0,36.93298206769128,0.0,0
+availability_365,continuous,366.0,0,0.0,0,365,365.0,162.18872365761126,150.0,147.26262481014209,0.0,0
+calendar_last_scraped,discrete_categorical,2.0,0,0.0,2025-10-01,2025-10-02,,,,,,2025-10-02
+number_of_reviews,continuous,511.0,0,0.0,0,3736,3736.0,27.321231757636177,3.0,70.30868396993621,0.0,0
+number_of_reviews_ltm,continuous,173.0,0,0.0,0,1699,1699.0,3.983606103403395,0.0,19.468283855786634,0.0,0
+number_of_reviews_l30d,discrete_numeric,34.0,0,0.0,0,108,108.0,0.3005732325330232,0.0,1.4481682595821201,0.0,0
+availability_eoy,continuous,93.0,0,0.0,0,92,92.0,35.873445764448505,23.0,37.36774208636593,0.0,0
+number_of_reviews_ly,continuous,172.0,0,0.0,0,1797,1797.0,3.537647808147102,0.0,18.974885066876116,0.0,0
+estimated_occupancy_l365d,continuous,59.0,0,0.0,0,255,255.0,46.95159369721138,0.0,85.00464733671436,0.0,0
+estimated_revenue_l365d,continuous,2444.0,14783,40.94,0.0,12763260.0,12763260.0,18092.87387471868,0.0,154390.8216745131,1.0,0.0
+first_review,discrete_categorical,4491.0,11188,30.98,2009-05-25,2025-10-01,,,,,,2023-01-01
+last_review,discrete_categorical,3400.0,11188,30.98,2011-05-12,2025-10-01,,,,,,2025-08-31
+review_scores_rating,continuous,158.0,11188,30.98,0.0,5.0,5.0,4.722112506520082,4.86,0.4630001498641705,2.0,5.0
+review_scores_accuracy,continuous,151.0,11198,31.01,0.0,5.0,5.0,4.762297194235941,4.9,0.4478701036233251,2.0,5.0
+review_scores_cleanliness,continuous,182.0,11189,30.99,0.0,5.0,5.0,4.655355509188669,4.81,0.510746229564496,2.0,5.0
+review_scores_checkin,continuous,134.0,11202,31.02,0.0,5.0,5.0,4.833790999237224,4.95,0.3847023649328839,2.0,5.0
+review_scores_communication,continuous,142.0,11194,31.0,0.0,5.0,5.0,4.821406268812457,4.96,0.42593324977206315,2.0,5.0
+review_scores_location,continuous,151.0,11204,31.03,0.0,5.0,5.0,4.7432035170835505,4.86,0.3995997501320856,2.0,5.0
+review_scores_value,continuous,163.0,11204,31.03,0.0,5.0,5.0,4.634118119404184,4.76,0.5040164667458914,2.0,5.0
+license,discrete_categorical,1962.0,30735,85.11,Exempt,ose-strreg-0002623,,,,,,Exempt
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
+calculated_host_listings_count,continuous,67.0,0,0.0,1,1148,1147.0,67.45515216969898,2.0,215.67881306434487,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,49.0,0,0.0,0,1148,1148.0,48.66179280551633,1.0,204.53759159884805,0.0,0
+calculated_host_listings_count_private_rooms,discrete_numeric,40.0,0,0.0,0,567,567.0,17.957824485613802,1.0,79.0156771138589,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,9.0,0,0.0,0,20,20.0,0.05253246933067486,0.0,0.7757282051646703,0.0,0
+reviews_per_month,continuous,810.0,11188,30.98,0.01,122.76,122.75,0.8211780283272478,0.25,1.9161042428815425,2.0,0.01
+price_clean,continuous,1150.0,14783,40.94,10.0,50104.0,50094.0,680.5268192048012,154.0,4480.453282468837,1.0,150.0

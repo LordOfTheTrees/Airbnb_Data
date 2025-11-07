@@ -7,7 +7,7 @@ This script loads data from all cities and creates comparative visualizations
 
 Usage:
     python cross_city_analysis.py           # Uses simple 19-column listings.csv
-    python cross_city_analysis.py -all      # Uses detailed 79-column listings_csv.gz
+    python cross_city_analysis.py -all      # Uses detailed 79-column listings.csv.gz
 """
 
 import pandas as pd
@@ -40,7 +40,7 @@ class CrossCityAnalyzer:
         print("="*80)
         
         if self.use_detailed:
-            print("🔍 MODE: DETAILED ANALYSIS (79 variables from listings_csv.gz)\n")
+            print("🔍 MODE: DETAILED ANALYSIS (79 variables from listings.csv.gz)\n")
         else:
             print("🔍 MODE: SIMPLE ANALYSIS (19 variables from listings.csv)\n")
         
@@ -50,7 +50,7 @@ class CrossCityAnalyzer:
             # Choose file based on use_detailed flag
             if self.use_detailed:
                 # When -all is specified, ONLY try the detailed .gz file
-                listings_file = city_path / 'listings_csv.gz'
+                listings_file = city_path / 'listings.csv.gz'
                 file_type = "detailed (79 vars)"
                 if not listings_file.exists():
                     listings_file = city_path / 'listings.csv'
@@ -60,7 +60,7 @@ class CrossCityAnalyzer:
                 listings_file = city_path / 'listings.csv'
                 file_type = "simple (19 vars)"
                 if not listings_file.exists():
-                    listings_file = city_path / 'listings_csv.gz'
+                    listings_file = city_path / 'listings.csv.gz'
                     file_type = "detailed (79 vars) - fallback"
             
             if listings_file.exists():

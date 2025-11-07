@@ -1,20 +1,86 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
 id,continuous,2250.0,0,0.0,3083,1516904884509653502,1.5169048845096504e+18,5.757026001547286e+17,6.370000218869288e+17,5.7530937269970477e+17,0.0,3083
+listing_url,discrete_categorical,2250.0,0,0.0,https://www.airbnb.com/rooms/1001667540113196317,https://www.airbnb.com/rooms/999250010838223554,,,,,,https://www.airbnb.com/rooms/1001667540113196317
+scrape_id,discrete_numeric,1.0,0,0.0,20250925032724,20250925032724,0.0,20250925032724.0,20250925032724.0,0.0,0.0,20250925032724
+last_scraped,discrete_categorical,1.0,0,0.0,2025-09-25,2025-09-25,,,,,,2025-09-25
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
 name,discrete_categorical,2227.0,0,0.0,"""Cabin Feel"" Home near the 580",🌿 The L I L Y  P A D 🌿| Tiny Living | Urban Oasis,,,,,,ArtHaus Chestnut - New Studio in West Oakland
+description,discrete_categorical,2079.0,38,1.69,"""Bright, stylish, and effortlessly comfortable, this one-bedroom, one-bath apartment is the perfect retreat. Enjoy a newly updated kitchen, in-building coin-operated laundry, and a peaceful back garden—your own little oasis in the city. Conveniently located, you’re just a 15-minute walk or a 4-minute drive from top restaurants, shops, and attractions. Whether you're here to explore or relax, this space offers the best of both worlds or you can just lounge and recooperate","🌟 Minutes from San Francisco – Private, Spacious & Secure Stay 🌟<br /><br />Stay in our private downstairs unit (Unit 2) of a modern duplex, located right on the Oakland/Emeryville border – just 10 miles from downtown San Francisco! Perfect for families, groups, or business travelers.<br /><br />🔑 Safe & Easy Check-In<br />	• Keyless entry<br />	• Brink  & ADT security for peace of mind",,,,,,Keep it simple at this peaceful and centrally-located place.
+neighborhood_overview,discrete_categorical,1084.0,1046,46.49,"""Temescal is a vibrant neighborhood leading the Oakland renaissance, full of innovative and diverse people creating small independent thoughtfully-curated shops, restaurants and services, celebrating emerging arts and culture in our community.""","🌆 The Neighborhood:<br />• Walk to Grocery Outlet, Sprouts, Target, Starbucks, and nearby dining<br />• Close to Uptown Oakland’s restaurants and conveniences<br />• 0.8 miles to 19th Street BART station for quick trips into San Francisco and the East Bay",,,,,,"We are centrally located in Downtown Oakland with many cafes, restaurants, and bars just a few blocks away. Please see our guidebook for more recommendations. <br /><br />Popular destinations nearby: <br />0.1 miles from 12th St BART Station<br />0.5 miles from Fox Theater Oakland<br />0.7 miles from Lake Merritt<br />0.8 miles from Jack London Square<br />1.5 miles from Kaiser Permanente Oakland Medical Center<br />5.5 miles from UC Berkeley"
+picture_url,discrete_categorical,2203.0,0,0.0,https://a0.muscache.com/pictures/00783a2b-499b-4c9e-90af-1594b56bf654.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-935538368552668597/original/efb0de69-be19-40b8-badb-ae41937d198e.jpeg,,,,,,https://a0.muscache.com/pictures/7df87ca3-74aa-481a-ab21-ca3c44da7af0.jpg
 host_id,continuous,1485.0,0,0.0,2852,719905804,719902952.0,143304742.46755555,42832906.0,189404843.52822813,0.0,6722695
+host_url,discrete_categorical,1485.0,0,0.0,https://www.airbnb.com/users/show/10000979,https://www.airbnb.com/users/show/997574,,,,,,https://www.airbnb.com/users/show/6722695
 host_name,discrete_categorical,1026.0,23,1.02,A,Élan,,,,,,Elliot
-neighbourhood_group,empty,,2250,100.0,,,,,,,,
-neighbourhood,discrete_categorical,122.0,0,0.0,Acorn-Acorn Industrial,Woodminster,,,,,,Prescott
+host_since,discrete_categorical,1249.0,23,1.02,2008-09-09,2025-09-20,,,,,,2013-06-03
+host_location,discrete_categorical,114.0,396,17.6,"Alameda, CA","West Coast, New Zealand",,,,,,"Oakland, CA"
+host_about,discrete_categorical,910.0,870,38.67,"
+My name is khidir have been living in oakland since 2013 and enjoy meeting new people and familiarizing myself with other cultures. In addition, I speak more than five languages. This made me decide to become an Airbnb host. I’m enthusiastic about sports, languages, and running, in addition to having traveled to many USA states, I’ve visited almost twenty-five countries in total in Asia, Europe, Africa, and Arab countries. 
+
+I am Looking forward to meeting you! I’ll do my best to make your stay comfortable and help you enjoy this awesome city to the fullest!
+
+ Feel free to reach out to me if you have any questions regarding my listing. ","“Hey, I’m Aminah! Serial entrepreneur, avid traveler, and someone who believes life is best enjoyed through good food and memorable moments. When I’m not immersed in business, you’ll find me exploring new corners of the world, whipping up delicious dishes, and hosting gatherings that leave a lasting impression. Excited to share a slice of my Bay Area life with you!”",,,,,,"I've spent most of my life between the Bay Area, Santa Monica, and NYC.  I like art and the rentals are quite filled with it. I've traveled a lot, from 10 in a room hostels to luxury, and understand what makes a nice place to visit. it's important to me that you have a great stay!"
+host_response_time,discrete_categorical,4.0,428,19.02,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,34.0,428,19.02,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,79.0,317,14.09,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,51,2.27,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,1434.0,23,1.02,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z0.muscache.cn/im/pictures/user/ea5ec6f5-fbb3-4e1b-9196-d5e89a912f47.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3
+host_picture_url,discrete_categorical,1434.0,23,1.02,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z0.muscache.cn/im/pictures/user/ea5ec6f5-fbb3-4e1b-9196-d5e89a912f47.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3
+host_neighbourhood,discrete_categorical,204.0,151,6.71,Adams Point,Zona Romántica,,,,,,Prescott
+host_listings_count,continuous,35.0,23,1.02,1.0,750.0,749.0,13.173327346205658,2.0,71.95401064318081,1.0,1.0
+host_total_listings_count,continuous,53.0,23,1.02,1.0,1448.0,1447.0,22.230803771890436,3.0,131.19802417893032,1.0,1.0
+host_verifications,discrete_categorical,7.0,23,1.02,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,23,1.02,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,23,1.02,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,1046,46.49,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,122.0,0,0.0,Acorn-Acorn Industrial,Woodminster,,,,,,Prescott
+neighbourhood_group_cleansed,empty,,2250,100.0,,,,,,,,
 latitude,continuous,2081.0,0,0.0,37.7290436,37.86712,0.13807640000000276,37.80960841468348,37.810735,0.026822295484407937,15.0,37.82909
 longitude,continuous,2122.0,0,0.0,-122.3243,-122.12115888925992,0.20314111074007712,-122.23713031266345,-122.24701,0.03890883179848256,14.0,-122.25522
+property_type,discrete_categorical,42.0,0,0.0,Barn,Yurt,,,,,,Entire home
 room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,365.0,313,13.91,18.0,40000.0,39982.0,229.83376355188435,110.0,1816.0295278743406,1.0,90.0
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,3.440888888888889,2.0,2.4216158467281805,0.0,2
+bathrooms,discrete_numeric,14.0,313,13.91,0.0,9.0,9.0,1.3141455859576665,1.0,0.6990594370741132,0.0,1.0
+bathrooms_text,discrete_categorical,26.0,0,0.0,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,12.0,73,3.24,0.0,19.0,19.0,1.5668350941662839,1.0,1.1898246390886933,0.0,1.0
+beds,discrete_numeric,15.0,318,14.13,0.0,20.0,20.0,1.9166666666666667,1.0,1.559718091441936,0.0,1.0
+amenities,discrete_categorical,2176.0,0,0.0,"[""32 inch HDTV with premium cable"", ""Self check-in"", ""Coffee maker"", ""Dishes and silverware"", ""Dedicated workspace"", ""Essentials"", ""Hot water"", ""Refrigerator"", ""Carbon monoxide alarm"", ""Cooking basics"", ""Iron"", ""Freezer"", ""Portable heater"", ""Free washer \u2013 In building"", ""First aid kit"", ""Conditioner"", ""Smoke alarm"", ""Extra pillows and blankets"", ""Wine glasses"", ""Trash compactor"", ""Coffee"", ""Oven"", ""Free street parking"", ""Shampoo"", ""Microwave"", ""Kitchen"", ""Drying rack for clothing"", ""Hair dryer"", ""Cleaning products"", ""Hangers"", ""Dining table"", ""Stove"", ""Body soap"", ""Wifi"", ""Shower gel"", ""Clothing storage"", ""Blender"", ""Hot water kettle"", ""Bed linens"", ""Lockbox"", ""Fire extinguisher"", ""Baking sheet""]",[],,,,,,"[""Self check-in"", ""Coffee maker"", ""Dryer"", ""Dedicated workspace"", ""Essentials"", ""Carbon monoxide alarm"", ""Iron"", ""First aid kit"", ""Smoke alarm"", ""Extra pillows and blankets"", ""Shampoo"", ""Washer"", ""Free parking on premises"", ""Hair dryer"", ""Hangers"", ""Heating"", ""Building staff"", ""Room-darkening shades"", ""Wifi"", ""Bed linens"", ""TV"", ""Fire extinguisher"", ""Air conditioning""]"
+price,discrete_categorical,365.0,313,13.91,"$1,000.00",$99.00,,,,,,$90.00
 minimum_nights,discrete_numeric,44.0,0,0.0,1,365,364.0,10.570222222222222,3.0,27.181548001381298,0.0,2
-number_of_reviews,continuous,319.0,0,0.0,0,969,969.0,57.01288888888889,15.0,102.35466249632415,0.0,0
-last_review,discrete_categorical,593.0,382,16.98,2012-12-29,2025-09-24,,,,,,2025-09-21
-reviews_per_month,continuous,436.0,382,16.98,0.01,13.81,13.8,1.2913276231263382,0.77,1.4695931663953576,2.0,0.07
-calculated_host_listings_count,discrete_numeric,15.0,0,0.0,1,28,27.0,3.144,1.0,4.258715542303037,0.0,1
+maximum_nights,continuous,104.0,0,0.0,1,1125,1124.0,360.70533333333333,364.0,385.5351322652196,0.0,365
+minimum_minimum_nights,continuous,44.0,1,0.04,1.0,365.0,364.0,9.780791462872388,2.0,26.60418091683843,1.0,1.0
+maximum_minimum_nights,continuous,54.0,1,0.04,1.0,366.0,365.0,13.516229435304579,3.0,39.683386952368274,1.0,2.0
+minimum_maximum_nights,continuous,92.0,1,0.04,1.0,1125.0,1124.0,548.4224099599822,365.0,464.87979002886925,1.0,1125.0
+maximum_maximum_nights,continuous,91.0,1,0.04,1.0,1125.0,1124.0,564.6042685638062,365.0,464.78258501592376,1.0,1125.0
+minimum_nights_avg_ntm,continuous,147.0,0,0.0,1.0,365.0,364.0,10.7856,3.0,27.52152182164496,1.0,2.0
+maximum_nights_avg_ntm,continuous,128.0,0,0.0,1.0,1125.0,1124.0,555.5979111111111,365.0,463.3616439567947,1.0,1125.0
+calendar_updated,empty,,2250,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,44,1.96,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,13.212444444444445,13.0,11.737730726700079,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,31.192888888888888,35.0,23.33577934626873,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,50.57377777777778,60.0,34.53082765006807,0.0,0
 availability_365,continuous,345.0,0,0.0,0,365,365.0,197.75244444444445,209.5,127.21377014016618,0.0,0
+calendar_last_scraped,discrete_categorical,1.0,0,0.0,2025-09-25,2025-09-25,,,,,,2025-09-25
+number_of_reviews,continuous,319.0,0,0.0,0,969,969.0,57.01288888888889,15.0,102.35466249632415,0.0,0
 number_of_reviews_ltm,continuous,87.0,0,0.0,0,161,161.0,8.761333333333333,2.0,14.9524343806754,0.0,0
+number_of_reviews_l30d,discrete_numeric,12.0,0,0.0,0,11,11.0,0.648,0.0,1.3582768357923456,0.0,0
+availability_eoy,continuous,99.0,0,0.0,0,98,98.0,55.07022222222222,65.0,37.04903379033242,0.0,0
+number_of_reviews_ly,continuous,87.0,0,0.0,0,164,164.0,8.266222222222222,1.0,15.321971090009882,0.0,0
+estimated_occupancy_l365d,continuous,83.0,0,0.0,0,255,255.0,62.25333333333333,24.0,79.62619315173966,0.0,0
+estimated_revenue_l365d,continuous,960.0,313,13.91,0.0,240000.0,240000.0,8712.364997418688,3312.0,13466.22689377471,1.0,0.0
+first_review,discrete_categorical,1395.0,382,16.98,2009-07-14,2025-09-22,,,,,,2024-11-30
+last_review,discrete_categorical,593.0,382,16.98,2012-12-29,2025-09-24,,,,,,2025-09-21
+review_scores_rating,continuous,96.0,382,16.98,1.0,5.0,4.0,4.813083511777302,4.9,0.32713592058466623,2.0,5.0
+review_scores_accuracy,continuous,92.0,382,16.98,0.0,5.0,5.0,4.834673447537473,4.92,0.34390624524494706,2.0,5.0
+review_scores_cleanliness,continuous,107.0,382,16.98,0.0,5.0,5.0,4.796707708779444,4.9,0.3557075015776661,2.0,5.0
+review_scores_checkin,continuous,75.0,382,16.98,0.0,5.0,5.0,4.886263383297645,4.96,0.2983162160603266,2.0,5.0
+review_scores_communication,continuous,67.0,382,16.98,1.0,5.0,4.0,4.896482869379016,4.97,0.2618538339298679,2.0,5.0
+review_scores_location,continuous,129.0,382,16.98,1.0,5.0,4.0,4.702435760171306,4.83,0.39710212832049735,2.0,5.0
+review_scores_value,continuous,102.0,382,16.98,1.0,5.0,4.0,4.743790149892934,4.82,0.34417438509966847,2.0,5.0
 license,empty,,2250,100.0,,,,,,,,
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
+calculated_host_listings_count,discrete_numeric,15.0,0,0.0,1,28,27.0,3.144,1.0,4.258715542303037,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,14.0,0,0.0,0,21,21.0,2.152,1.0,3.094912993674794,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,10.0,0,0.0,0,16,16.0,0.8497777777777777,0.0,2.272579494411808,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,5.0,0,0.0,0,10,10.0,0.11288888888888889,0.0,0.9716584544820237,0.0,0
+reviews_per_month,continuous,436.0,382,16.98,0.01,13.81,13.8,1.2913276231263382,0.77,1.4695931663953576,2.0,0.07
 price_clean,continuous,365.0,313,13.91,18.0,40000.0,39982.0,229.83376355188435,110.0,1816.0295278743406,1.0,90.0

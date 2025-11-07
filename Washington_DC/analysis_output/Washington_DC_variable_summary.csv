@@ -1,20 +1,86 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
 id,continuous,6423.0,0,0.0,3344,1444333353652565632,1.4443333536525622e+18,6.485935858386532e+17,8.02399477059003e+17,5.6597853989647616e+17,0.0,3344
+listing_url,discrete_categorical,6423.0,0,0.0,https://www.airbnb.com/rooms/1000826250389415584,https://www.airbnb.com/rooms/999247664972316947,,,,,,https://www.airbnb.com/rooms/1000826250389415584
+scrape_id,discrete_numeric,1.0,0,0.0,20250617145457,20250617145457,0.0,20250617145457.0,20250617145457.0,0.0,0.0,20250617145457
+last_scraped,discrete_categorical,1.0,0,0.0,2025-06-17,2025-06-17,,,,,,2025-06-17
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
 name,discrete_categorical,6208.0,0,0.0,"""Call Me Stylish""  HUGE Studio in Columbia Hgts!",🏘️❤️Turnkey Happiness in Washington DC/Petworth🔑,,,,,,Upscale and Great Location
+description,discrete_categorical,5541.0,74,1.15," The room is located inside a Row house in NW DC, it is very private and has a private Bathroom, the house is from a walking distance to the Convention Center, shopping, Metro Stations, Chinatown, the Capitol Building, Union Station and the Mall.","🚗 Private garage parking spot – rare for DC!<br />🚆 5-minute walk to the Metro (99 walk score) – easy access to the entire city.<br />✨ Perfect for remote workers – fast WiFi <br />🔑 Two private entrances – enjoy added privacy and convenience.<br /><br />The space features a brand new Nectar queen bed, fully stocked kitchen, and all essentials for a comfortable stay. Enjoy clean linens, fresh towels, and a well-equipped kitchen for home-cooked meals.. Just a 5-minute walk to Columbia Heights Metro (Green/Yellow Line)",,,,,,"In Central DC’s NoMa neighborhood, this new city-center building offers luxurious amenities and a sunny, modern living space. It is perfect for business or leisure stays. Highlights include:<br />•	Upscale kitchen<br />•	In-unit washer/dryer<br />•	Spa-style fitness center with yoga, spin, and CrossFit studios<br />•	Rooftop bar<br />•	Coworking lounge<br />•	Pool<br />•	Minutes from U.S Capitol, National Mall, Museums and Memorials, Nationals Park, Capital One Arena and more<br />•	Near Union Station Amtrak/Metro, I-395, & more"
+neighborhood_overview,discrete_categorical,2730.0,2589,40.31,"""Columbia Heights is a vibrant and diverse neighborhood in Washington, DC. Steeped in history, the area boasts a rich past, including a significant role in the civil rights movement. Today, it is a bustling community with a lively arts scene, trendy restaurants, and unique shopping experiences. The neighborhood is conveniently located near public transportation, with the Columbia Heights Metro Station (Green and Yellow lines) just a few blocks away and multiple bus lines servicing the area. A wide variety of restaurants and bars can be found along 11th Street and 14th Street, catering to all tastes and budgets. Just a short walk away is the beautiful Malcolm X Park (also known as Meridian Hill Park), a popular spot for picnics, outdoor activities, and the famous Sunday Drum Circle.<br /><br />By staying in Columbia Heights, guests will have easy access to all the amenities and experiences that make this neighborhood an exciting and welcoming place to explore.""","⭐PROXIMITY⭐<br />Our neighborhood is safe and conveniently close to many DC attractions:<br /><br />Eastern Market (2.3 miles)<br />Capitol Hill (2.4 miles)<br />Navy Yard (1.5 miles)<br />The White House (4.1 miles)<br />National Mall (3.3 miles)<br />U.S. Capitol (2.8 miles)<br /><br />⭐NEIGHBORHOOD ⭐<br />Anacostia is an up-and-coming neighborhood, likely the last unpolished gem in DC. It has been undergoing significant changes in the past few years. However, it is not a picture-perfect, manicured neighborhood like Georgetown. Depending on where you're coming from, you may see different aspects of the community. Some parts are still rough-looking, while others showcase a new, updated, and hip side. We love living here, but it might not be everyone's cup of tea. Please note that there are no stores or amenities within walking distance. The Navy Yard, with its shops, bars, and restaurants, is about 2.5 miles or a 6-minute drive away.<br /><br />⭐PRO TIPS⭐<br />While there is easy acce",,,,,,"Revel in the ideal apartment in an ideal location. Whether you are touring DC or on business, this brand new apartment is the perfect home base for your trip. Surrounded by a variety of eateries, parks, and major government installations, you'll feel like you are in the heart of DC.<br /><br />This gorgeous condo features a comfortable sleeping space complete with plush bedding and a walk-in closet. Get a restful sleep knowing you have total security with smart locks by Latch that offer privacy, convenience, and security.<br /><br />In the bathroom, you’ll find high-class glass-walled showers and elegant fixtures. For your convenience, we provide towels, linens and many toiletries.<br /><br />Don’t want to leave the apartment? Cook up a storm on the on the white quartz countertops using our fully stocked utensil selection and enjoy a meal at the breakfast bar on the kitchen island.<br /><br />Relax on the couch while enjoying modern features, sleek finishes and an open floor plan. The "
+picture_url,discrete_categorical,6294.0,0,0.0,https://a0.muscache.com/pictures/001e5b70-4436-4639-9e88-b0fc6ccb419d.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-998690618037812781/original/e09b1985-43ad-4bfc-88d6-777180064b72.jpeg,,,,,,https://a0.muscache.com/pictures/05593349-9f1c-408d-abac-6bc6c345c88b.jpg
 host_id,continuous,3161.0,0,0.0,4617,699735765,699731148.0,185205685.0099642,81929011.0,208743669.83193874,0.0,39930655
+host_url,discrete_categorical,3161.0,0,0.0,https://www.airbnb.com/users/show/100083313,https://www.airbnb.com/users/show/99955771,,,,,,https://www.airbnb.com/users/show/39930655
 host_name,discrete_categorical,1879.0,3,0.05,A.,Zyhra,,,,,,Sojourn
-neighbourhood_group,empty,,6423,100.0,,,,,,,,
-neighbourhood,discrete_categorical,39.0,0,0.0,"Brightwood Park, Crestwood, Petworth","Woodridge, Fort Lincoln, Gateway",,,,,,"Union Station, Stanton Park, Kingman Park"
+host_since,discrete_categorical,2242.0,3,0.05,2008-11-25,2025-06-06,,,,,,2015-07-29
+host_location,discrete_categorical,136.0,1339,20.85,"Abell, MD","Williamsburg, VA",,,,,,"Washington, DC"
+host_about,discrete_categorical,1736.0,2382,37.09,"
+I enjoy hosting family and friends in Washington, D.C, and Airbnb allows me to expand my love for hosting to a larger community. D.C is a melting pot, and residents and visitors can enjoy an array of activities that range from fine to casual dining, free museums, Performing Arts, and nature (Rock Creek Park, Key Bridge Boathouse, and Anacostia River). I look forward to hosting you. ","“Hi there! My name is Rahsaan and I've been living here in the Washington DC metro area for the last 20 years. 
+
+I’m enthusiastic about traveling  business and working out.– i have traveled all over the US, and a lot of the world. I enjoy learning about different foods and cultures.",,,,,,"Hi, I'm Nicole, the co-founder of Sojourn.  At Sojourn, we understand how being away from home and routine can be disruptive to your being, which is why we have made our raison d’etre about making your temporary stay seamless and fluid. We are, at our core, about hospitality! A Sojourn space is carefully curated, thoughtfully designed, complete with beautiful and comfortable furniture. You will find fully equipped kitchens, superior quality mattresses, high quality linens and luxury towels. We have built Sojourn around understanding your unique needs and expectations. We can and will cater our services to ensure that you have everything you need to settle in and enjoy your Sojourn.
+
+"
+host_response_time,discrete_categorical,4.0,466,7.26,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,44.0,466,7.26,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,82.0,300,4.67,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,119,1.85,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,3089.0,3,0.05,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z1.muscache.cn/im/pictures/user/User/original/bee660b2-0db4-448c-b032-e44174a573ed.jpeg?aki_policy=profile_small,,,,,,https://z0.muscache.cn/im/pictures/user/adc0efa0-2e36-4aa0-9352-79ced76e02f8.jpg?aki_policy=profile_small
+host_picture_url,discrete_categorical,3089.0,3,0.05,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z1.muscache.cn/im/pictures/user/User/original/bee660b2-0db4-448c-b032-e44174a573ed.jpeg?aki_policy=profile_x_medium,,,,,,https://z0.muscache.cn/im/pictures/user/adc0efa0-2e36-4aa0-9352-79ced76e02f8.jpg?aki_policy=profile_x_medium
+host_neighbourhood,discrete_categorical,194.0,224,3.49,16th Street Heights,Wooten,,,,,,Northwest Washington
+host_listings_count,continuous,70.0,3,0.05,1.0,4927.0,4926.0,287.898753894081,3.0,1009.166850463834,1.0,1.0
+host_total_listings_count,continuous,88.0,3,0.05,1.0,9109.0,9108.0,425.97445482866044,5.0,1342.5481269202783,1.0,1.0
+host_verifications,discrete_categorical,5.0,3,0.05,"['email', 'phone', 'work_email']",['phone'],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,3,0.05,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,3,0.05,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,2589,40.31,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,39.0,0,0.0,"Brightwood Park, Crestwood, Petworth","Woodridge, Fort Lincoln, Gateway",,,,,,"Union Station, Stanton Park, Kingman Park"
+neighbourhood_group_cleansed,empty,,6423,100.0,,,,,,,,
 latitude,continuous,4958.0,0,0.0,38.82028,38.99447,0.17419000000000295,38.90940082901012,38.90885554193135,0.025112924797331602,14.0,38.9034
 longitude,continuous,5040.0,0,0.0,-77.11286177614646,-76.91092,0.20194177614645525,-77.01294319136689,-77.01468,0.03052269230122133,14.0,-77.00522
+property_type,discrete_categorical,42.0,0,0.0,Casa particular,Treehouse,,,,,,Entire rental unit
 room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,490.0,1577,24.55,10.0,50000.0,49990.0,392.25567478332647,135.0,3126.66800641453,1.0,100.0
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,3.772847579012922,3.0,2.415420221306576,0.0,2
+bathrooms,discrete_numeric,13.0,1561,24.3,0.0,7.0,7.0,1.2992595639654463,1.0,0.6770212804030246,0.0,1.0
+bathrooms_text,discrete_categorical,25.0,3,0.05,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,12.0,217,3.38,0.0,12.0,12.0,1.589429584273284,1.0,1.0824113246366114,0.0,1.0
+beds,discrete_numeric,15.0,1576,24.54,0.0,14.0,14.0,1.9422323086445223,2.0,1.31782166888168,0.0,1.0
+amenities,discrete_categorical,5708.0,0,0.0,"[""25 inch HDTV with standard cable, Roku"", ""Hot water"", ""Refrigerator"", ""Fire extinguisher"", ""Smoke alarm"", ""Free street parking"", ""Cooking basics"", ""Wifi"", ""Hair dryer"", ""Hangers"", ""Central air conditioning"", ""Essentials"", ""Smart lock"", ""Dishes and silverware"", ""Free washer \u2013 In unit"", ""Body soap"", ""Coffee maker"", ""Dedicated workspace"", ""Free dryer \u2013 In unit"", ""Bed linens"", ""Carbon monoxide alarm"", ""Stove"", ""Self check-in"", ""Microwave"", ""Kitchen"", ""Exterior security cameras on property"", ""Heating"", ""Free parking on premises"", ""Blender"", ""Cleaning products""]",[],,,,,,"[""Hot water"", ""Freezer"", ""Elevator"", ""Refrigerator"", ""Smoke alarm"", ""Baking sheet"", ""Cooking basics"", ""Wifi"", ""Hair dryer"", ""Hangers"", ""Window guards"", ""Essentials"", ""Hot water kettle"", ""Smart lock"", ""Toaster"", ""TV"", ""Long term stays allowed"", ""Washer"", ""Dishes and silverware"", ""Dining table"", ""Body soap"", ""Dishwasher"", ""Coffee maker"", ""Shower gel"", ""Outdoor pool - available seasonally"", ""Paid parking off premises"", ""Extra pillows and blankets"", ""Dedicated workspace"", ""Bed linens"", ""Crib - available upon request"", ""Clothing storage"", ""Air conditioning"", ""Carbon monoxide alarm"", ""Stove"", ""Outdoor furniture"", ""Shampoo"", ""Microwave"", ""Oven"", ""Kitchen"", ""Wine glasses"", ""Pets allowed"", ""Exercise equipment"", ""Self check-in"", ""Conditioner"", ""Bathtub"", ""Iron"", ""Heating"", ""Ethernet connection"", ""Blender"", ""Coffee"", ""Gym"", ""Dryer"", ""Cleaning products""]"
+price,discrete_categorical,490.0,1577,24.55,"$1,000.00",$999.00,,,,,,$100.00
 minimum_nights,continuous,53.0,0,0.0,1,701,700.0,13.003425190720847,2.0,28.20164170630554,0.0,1
-number_of_reviews,continuous,485.0,0,0.0,0,1332,1332.0,68.63023509263584,21.0,111.62025537043269,0.0,0
-last_review,discrete_categorical,821.0,1095,17.05,2013-06-15,2025-06-17,,,,,,2025-06-16
-reviews_per_month,continuous,732.0,1095,17.05,0.01,29.0,28.99,2.0546865615615615,1.55,1.9742421431784838,2.0,1.0
-calculated_host_listings_count,discrete_numeric,38.0,0,0.0,1,257,256.0,26.38502257512066,3.0,61.26056794177389,0.0,1
+maximum_nights,continuous,140.0,0,0.0,1,3650,3649.0,434.9361669002024,365.0,405.92636246654087,0.0,365
+minimum_minimum_nights,continuous,54.0,0,0.0,1,701,700.0,11.794799937723806,2.0,24.169447327241812,0.0,1
+maximum_minimum_nights,continuous,62.0,0,0.0,1,701,700.0,21.849291608282734,3.0,58.420550987494714,0.0,2
+minimum_maximum_nights,continuous,124.0,0,0.0,1,3650,3649.0,635.7899735326172,365.0,472.0369523765622,0.0,1125
+maximum_maximum_nights,continuous,121.0,0,0.0,1,3650,3649.0,688.1307800093414,731.0,457.5800543024365,0.0,1125
+minimum_nights_avg_ntm,continuous,235.0,0,0.0,1.0,701.0,700.0,12.970683481239297,3.0,24.951678026300584,1.0,31.0
+maximum_nights_avg_ntm,continuous,350.0,0,0.0,1.0,3650.0,3649.0,670.7107270745757,700.0,454.851388526846,1.0,1125.0
+calendar_updated,empty,,6423,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,41,0.64,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,10.868285847734704,9.0,10.294560565596731,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,27.627121282889615,27.0,20.640514155007793,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,48.74357776739841,51.0,29.33828159299894,0.0,0
 availability_365,continuous,366.0,0,0.0,0,365,365.0,216.0126109294722,244.0,119.47622376017625,0.0,0
+calendar_last_scraped,discrete_categorical,1.0,0,0.0,2025-06-17,2025-06-17,,,,,,2025-06-17
+number_of_reviews,continuous,485.0,0,0.0,0,1332,1332.0,68.63023509263584,21.0,111.62025537043269,0.0,0
 number_of_reviews_ltm,continuous,125.0,0,0.0,0,339,339.0,15.515646893974779,5.0,21.494461192523325,0.0,0
+number_of_reviews_l30d,discrete_numeric,18.0,0,0.0,0,29,29.0,1.4614666043904718,0.0,2.0929882862684557,0.0,0
+availability_eoy,continuous,199.0,0,0.0,0,198,198.0,123.0319165498988,144.0,63.77674200757262,0.0,0
+number_of_reviews_ly,continuous,126.0,0,0.0,0,347,347.0,14.763350459286938,3.0,22.363111019251694,0.0,0
+estimated_occupancy_l365d,continuous,84.0,0,0.0,0,255,255.0,95.07675541024443,62.0,95.12038231456857,0.0,0
+estimated_revenue_l365d,continuous,2132.0,1577,24.55,0.0,1500000.0,1500000.0,16814.319851423854,10260.0,29375.466093454317,1.0,0.0
+first_review,discrete_categorical,2390.0,1095,17.05,2009-05-09,2025-06-16,,,,,,2025-01-21
+last_review,discrete_categorical,821.0,1095,17.05,2013-06-15,2025-06-17,,,,,,2025-06-16
+review_scores_rating,continuous,118.0,1095,17.05,0.0,5.0,5.0,4.769316816816817,4.87,0.3672101205218972,2.0,5.0
+review_scores_accuracy,continuous,113.0,1096,17.06,1.0,5.0,4.0,4.806418246667918,4.9,0.34918510901518507,2.0,5.0
+review_scores_cleanliness,continuous,131.0,1096,17.06,1.0,5.0,4.0,4.791299042613103,4.89,0.34457482239496795,2.0,5.0
+review_scores_checkin,continuous,106.0,1096,17.06,1.0,5.0,4.0,4.861428571428572,4.95,0.3083954296046218,2.0,5.0
+review_scores_communication,continuous,114.0,1096,17.06,1.0,5.0,4.0,4.8559902384081095,4.95,0.33579626965625703,2.0,5.0
+review_scores_location,continuous,145.0,1096,17.06,1.0,5.0,4.0,4.74819973718791,4.87,0.37022347522427695,2.0,5.0
+review_scores_value,continuous,121.0,1096,17.06,1.0,5.0,4.0,4.6974225642951,4.8,0.3952247614402893,2.0,5.0
 license,discrete_categorical,2617.0,1484,23.1,Exempt,Unhosted License: 5567423323008765,,,,,,Exempt
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
+calculated_host_listings_count,discrete_numeric,38.0,0,0.0,1,257,256.0,26.38502257512066,3.0,61.26056794177389,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,35.0,0,0.0,0,253,253.0,22.159738439981318,1.0,59.43984094384466,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,19.0,0,0.0,0,124,124.0,3.795267009185739,0.0,17.465960024993958,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,6.0,0,0.0,0,7,7.0,0.03549743110695937,0.0,0.43008668194618926,0.0,0
+reviews_per_month,continuous,732.0,1095,17.05,0.01,29.0,28.99,2.0546865615615615,1.55,1.9742421431784838,2.0,1.0
 price_clean,continuous,490.0,1577,24.55,10.0,50000.0,49990.0,392.25567478332647,135.0,3126.66800641453,1.0,100.0

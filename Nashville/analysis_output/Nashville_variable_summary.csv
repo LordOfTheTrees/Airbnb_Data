@@ -1,20 +1,84 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
 id,continuous,9443.0,0,0.0,6422,1516029466193367799,1.5160294661933614e+18,6.912618070170267e+17,8.086586610677426e+17,5.612843004347704e+17,0.0,6422
+listing_url,discrete_categorical,9443.0,0,0.0,https://www.airbnb.com/rooms/1000062405961161698,https://www.airbnb.com/rooms/999767742589915836,,,,,,https://www.airbnb.com/rooms/1000062405961161698
+scrape_id,discrete_numeric,1.0,0,0.0,20250923202825,20250923202825,0.0,20250923202825.0,20250923202825.0,0.0,0.0,20250923202825
+last_scraped,discrete_categorical,2.0,0,0.0,2025-09-23,2025-09-24,,,,,,2025-09-24
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
 name,discrete_categorical,9034.0,0,0.0,!!DOWNTOWN CONDO W/ POOL & VIEW - WALK EVERYWHERE!,🥂NASH DISTillerie 3BRs Walk2Germantown Rooftop Firepit Downtown Skyline King Suite 2-Car Garage🥂,,,,,,Wyndham Nashville Resort | 2BR/2BA King Bed Suite
+description,discrete_categorical,7929.0,169,1.79,"""Experience Nashville in this modern luxury home with 4 bedrooms, 3.5 baths, 10 beds and a game room. Located in one of Nashville's nicest and safest neighborhoods!  You'll be just 5-7 minutes away from the heart of Broadway, where you'll discover all the best attractions in Music City! This brand-new home has it all and is beautifully decorated with designer finishes. You'll enjoy a beautiful living and dining space, and a complete kitchen. ! I can't wait to host you in this New home!""",󱀁<br />Entire home<br />You’ll have the house to yourself.<br /><br />󰀢<br />Sparkling clean<br /><br />󰀄<br />Experienced host,,,,,,"A contact-free, no frills motel just 4 miles south of downtown.<br /><br />• Free WiFi & cable <br />• Free on-site parking<br />• Mini-fridge and dual drip/Keurig coffee maker<br />• Private bath<br />• Contact-free check-in<br />• Located off of I-65 & Thompson Lane; mins by car to downtown, Nissan Stadium, Music City Center, Bridgestone Arena, Ascend Amphitheater, Vanderbilt, Belmont, Opry,  the Airport, & more<br />• Walking distance to recording studios, coffee, & local restaurants<br /><br />Please read our listing fully before booking."
+neighborhood_overview,discrete_categorical,3855.0,3486,36.92,"!!well the neighborhood.. its flipping awesome!!<br /><br />this is SOO central to everything East Nash + if you aren't an East Nash fan yet, you will be.<br /><br />Food, booze, bars, donuts, coffee, shopping.. its all right here. Check out our recs!<br /><br />->For the downtown goers, you can see the city from the property + it’s a short 8 minute Uber/Lyft/Bird right to get there. Easy peasy!","📍 Welcome to Charlotte Avenue – Where Local Vibes Meet City Convenience<br />Your stay places you in one of Nashville’s most dynamic and walkable neighborhoods, right along the popular Charlotte Avenue corridor. This area offers the perfect balance of local charm, trendy eateries, and quick access to downtown.<br /><br />🧡 What You’ll Love About the Neighborhood:<br />✔️ Minutes to Broadway & Downtown<br />Only a 10-minute drive (or short Uber ride) to Nashville’s iconic honky-tonks, live music, and nightlife.<br /><br />✔️ Walkable Dining Scene<br />Enjoy walkable access to some of Nashville’s best eats — including local favorites like Hattie B’s Hot Chicken, M.L. Rose, Edley’s BBQ, and Five Points Pizza.<br /><br />✔️ The Nations & The Gulch Nearby<br />Trendy neighborhoods like The Nations and The Gulch are just a few minutes away — great for shopping, brunch, and boutique bars.<br /><br />✔️ Local Coffee & Breweries<br />Fuel up at local cafés or unwind at neighborhood breweries wi",,,,,,"• CW Nashville is located in Nashville, TN."
+picture_url,discrete_categorical,9264.0,0,0.0,https://a0.muscache.com/pictures/000f06de-0a2a-4f45-9ec8-4ed818da3b63.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-999297225113264177/original/aa5252be-e6ee-4af1-9194-c181ab25f843.jpeg,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1410200959004906335/original/d477f0c4-e59d-422c-9eb9-094d43b3f158.png
 host_id,continuous,3787.0,0,0.0,12172,719651872,719639700.0,226849976.45631686,151080494.0,200725626.2614545,0.0,338667310
+host_url,discrete_categorical,3787.0,0,0.0,https://www.airbnb.com/users/show/10002073,https://www.airbnb.com/users/show/9975454,,,,,,https://www.airbnb.com/users/show/338667310
 host_name,discrete_categorical,1857.0,11,0.12,203,Zion,,,,,,AvantStay Nashville
-neighbourhood_group,empty,,9443,100.0,,,,,,,,
-neighbourhood,discrete_categorical,35.0,0,0.0,District 1,District 9,,,,,,District 19
+host_since,discrete_categorical,2492.0,11,0.12,2009-04-03,2025-09-18,,,,,,2020-02-24
+host_location,discrete_categorical,349.0,2045,21.66,"Aberdeen, NC","Yucaipa, CA",,,,,,"Nashville, TN"
+host_about,discrete_categorical,2204.0,2805,29.7,"
+Hi!  My husband and I live in Nashville, TN with our 10 year old daughter.  We've had great luck with airbnb.com when we travel all over Europe and Southeast Asia and have loved hosting people at our first airbnb in Nashville since February 2014.  We are constantly making improvements and special additions to our airbnb even if the pictures do not always show all the updates! Patio furniture, lights on the back patio, charging port for an electric vehicle, extra large mirrors in the guest rooms, complimentary toiletries, etc… 
+
+As of Fall 2022, we added 2 new listings to our vacation rental offerings.  Our luxury home, Houndcock Estate in East Nashville and Houndcock Perch, a treehouse in Ashland City (only 20 min from downtown Nashville.  Please enjoy all of our properties when visiting Nashville!  We strive to create beautiful, boutique experiences with tons of surprising, fun amenities.  So, welcome! We hope to host you soon!","★ Hi there! Mom of 2 awesome girls and happily married to my fantastic wife. I'm not a morning person and definitely need my matcha latte before I can become a human. I'm a serial entrepreneur, travel agent, (rarely) pharmacist, and SAHM. I'm a vegan travel-loving extroverted homebody—soaking up adventures and enjoying cozy nights in. Ready to make your stay fab and memorable! #LetsGoGirls",,,,,,AvantStay Nashville.
+host_response_time,discrete_categorical,4.0,634,6.71,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,45.0,634,6.71,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,86.0,430,4.55,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,397,4.2,f,t,,,,,,t
+host_thumbnail_url,discrete_categorical,3723.0,11,0.12,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z1.muscache.cn/im/users/31138198/profile_pic/1428931561/original.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/im/pictures/user/9cb62289-c9bb-4835-983e-45b63f2d04e9.jpg?aki_policy=profile_small
+host_picture_url,discrete_categorical,3723.0,11,0.12,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z1.muscache.cn/im/users/31138198/profile_pic/1428931561/original.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/im/pictures/user/9cb62289-c9bb-4835-983e-45b63f2d04e9.jpg?aki_policy=profile_x_medium
+host_neighbourhood,discrete_categorical,392.0,1414,14.97,12 South,Woodycrest,,,,,,Downtown
+host_listings_count,continuous,148.0,11,0.12,1.0,3909.0,3908.0,100.33905852417303,9.0,334.3902338756046,1.0,1.0
+host_total_listings_count,continuous,168.0,11,0.12,1.0,9702.0,9701.0,167.92589058524172,12.0,583.87568989367,1.0,1.0
+host_verifications,discrete_categorical,6.0,11,0.12,"['email', 'phone', 'work_email']",['phone'],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,11,0.12,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,11,0.12,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,3486,36.92,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,35.0,0,0.0,District 1,District 9,,,,,,District 19
+neighbourhood_group_cleansed,empty,,9443,100.0,,,,,,,,
 latitude,continuous,6743.0,0,0.0,35.98489,36.3967,0.4118100000000027,36.165302363510065,36.15991,0.040499095992557584,14.0,36.1548886
 longitude,continuous,6889.0,0,0.0,-87.03596,-86.54606,0.4899000000000058,-86.76708473591826,-86.77541389999999,0.050153673757735814,14.0,-86.77541389999999
+property_type,discrete_categorical,48.0,0,0.0,Barn,Yurt,,,,,,Entire home
 room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,706.0,2809,29.75,0.0,50000.0,50000.0,223.39960807959,158.0,735.2324135199656,1.0,99.0
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,6.813512654876628,6.0,3.8487419548686344,0.0,4
+bathrooms,continuous,28.0,2801,29.66,0.0,50.0,50.0,2.1707317073170733,2.0,1.5464445596507002,1.0,1.0
+bathrooms_text,discrete_categorical,42.0,13,0.14,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,19.0,227,2.4,0.0,50.0,50.0,2.4385850694444446,2.0,1.7313062995636863,0.0,1.0
+beds,continuous,36.0,2801,29.66,0.0,153.0,153.0,4.300210779885576,3.0,4.197312720888499,1.0,2.0
+amenities,discrete_categorical,8442.0,0,0.0,"[""2 burner glass top stove electric stove"", ""Carbon monoxide alarm"", ""Pack \u2019n play/Travel crib - available upon request"", ""Microwave"", ""Coffee maker: french press, Keurig coffee machine"", ""Blender"", ""Room-darkening shades"", ""Dedicated workspace"", ""Kitchen"", ""Barbecue utensils"", ""Dining table"", ""Clothing storage: wardrobe"", ""Dishes and silverware"", ""Books and reading material"", ""Private entrance"", ""Heating - split type ductless system"", ""Shared patio or balcony"", ""Self check-in"", ""Courtyard view"", ""Wifi"", ""Laundromat nearby"", ""Outdoor dining area"", ""Single level home"", ""Bed linens"", ""AC - split type ductless system"", ""Long term stays allowed"", ""Mini fridge with freezer refrigerator"", ""Hair dryer"", ""Luggage dropoff allowed"", ""Fire extinguisher"", ""Private BBQ grill: charcoal"", ""Smart lock"", ""Body soap"", ""Conditioner"", ""Freezer"", ""Cooking basics"", ""Hangers"", ""Babysitter recommendations"", ""Wine glasses"", ""Hot water"", ""Free street parking"", ""Shower gel"", ""Shared backyard \u2013 Fully fenced"", ""Pets allowed"", ""Exterior security cameras on property"", ""Outdoor furniture"", ""Hot water kettle"", ""Coffee"", ""50 inch HDTV with Roku"", ""Toaster"", ""Smoke alarm"", ""Extra pillows and blankets"", ""Mini fridge"", ""Fire pit"", ""Cleaning products"", ""Free parking on premises"", ""Essentials"", ""Portable fans"", ""Iron"", ""Shampoo""]",[],,,,,,"[""Carbon monoxide alarm"", ""Microwave"", ""Crib"", ""Blender"", ""First aid kit"", ""Room-darkening shades"", ""Building staff"", ""Dedicated workspace"", ""Kitchen"", ""Dining table"", ""Clothing storage"", ""Gym"", ""Air conditioning"", ""Dishes and silverware"", ""Refrigerator"", ""Private entrance"", ""Self check-in"", ""Stove"", ""Wifi"", ""Ceiling fan"", ""BBQ grill"", ""Safe"", ""Bed linens"", ""Backyard"", ""Hair dryer"", ""Luggage dropoff allowed"", ""Dryer"", ""Fire extinguisher"", ""Dishwasher"", ""Body soap"", ""Coffee maker"", ""Conditioner"", ""Freezer"", ""Cooking basics"", ""Washer"", ""Hangers"", ""Resort access"", ""Bathtub"", ""Oven"", ""Wine glasses"", ""Hot water"", ""Hot tub"", ""Heating"", ""Shower gel"", ""Ping pong table"", ""TV"", ""Outdoor furniture"", ""Baking sheet"", ""Coffee"", ""Pool"", ""Toaster"", ""Smoke alarm"", ""Extra pillows and blankets"", ""Free parking on premises"", ""Essentials"", ""Pack \u2019n play/Travel crib"", ""Iron"", ""Shampoo""]"
+price,discrete_categorical,706.0,2809,29.75,$0.00,$999.00,,,,,,$99.00
 minimum_nights,discrete_numeric,32.0,0,0.0,1,730,729.0,6.231494228529069,2.0,16.361677995960914,0.0,1
-number_of_reviews,continuous,610.0,0,0.0,0,3427,3427.0,83.11913586783861,33.0,137.5235255421475,0.0,0
-last_review,discrete_categorical,764.0,994,10.53,2015-06-29,2025-09-23,,,,,,2025-09-14
-reviews_per_month,continuous,846.0,994,10.53,0.01,76.42,76.41,2.213570836785418,1.77,2.465142309491147,2.0,1.0
-calculated_host_listings_count,continuous,59.0,0,0.0,1,229,228.0,28.215291750503017,6.0,49.07336142030443,0.0,1
+maximum_nights,continuous,118.0,0,0.0,1,1500,1499.0,449.0620565498253,365.0,395.6346676670206,0.0,365
+minimum_minimum_nights,continuous,33.0,10,0.11,1.0,730.0,729.0,5.990671048446941,2.0,16.507237402665744,1.0,1.0
+maximum_minimum_nights,continuous,40.0,10,0.11,1.0,730.0,729.0,8.565885720343475,3.0,23.495184079700604,1.0,3.0
+minimum_maximum_nights,continuous,98.0,10,0.11,1.0,2147483647.0,2147483646.0,3643119.184458815,365.0,88372919.77585585,1.0,1125.0
+maximum_maximum_nights,continuous,134.0,10,0.11,1.0,2147483647.0,2147483646.0,5009127.133785646,430.0,103593412.73500869,1.0,1125.0
+minimum_nights_avg_ntm,continuous,153.0,0,0.0,1.0,730.0,729.0,6.797680821772742,2.1,17.131581554267505,1.0,2.0
+maximum_nights_avg_ntm,continuous,594.0,0,0.0,1.0,2147483647.0,2147483646.0,4608761.285227152,365.0,96919458.68194239,1.0,1125.0
+calendar_updated,empty,,9443,100.0,,,,,,,,
+has_availability,discrete_categorical,2.0,50,0.53,f,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,13.428465530022239,14.0,8.768519473080469,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,33.144233823996615,36.0,17.326333043275802,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,56.159377316530765,63.0,25.320979345928198,0.0,0
 availability_365,continuous,366.0,0,0.0,0,365,365.0,249.8231494228529,300.0,112.34306508347896,0.0,0
+calendar_last_scraped,discrete_categorical,2.0,0,0.0,2025-09-23,2025-09-24,,,,,,2025-09-24
+number_of_reviews,continuous,610.0,0,0.0,0,3427,3427.0,83.11913586783861,33.0,137.5235255421475,0.0,0
 number_of_reviews_ltm,continuous,150.0,0,0.0,0,1140,1140.0,18.20459599703484,11.0,26.354621190506197,0.0,0
+number_of_reviews_l30d,discrete_numeric,26.0,0,0.0,0,129,129.0,1.3305093720216032,1.0,2.5112220119744855,0.0,0
+availability_eoy,continuous,101.0,0,0.0,0,100,100.0,62.92131737795192,70.0,27.855941139528667,0.0,0
+number_of_reviews_ly,continuous,148.0,0,0.0,0,828,828.0,16.47929683363338,6.0,25.3911628833005,0.0,0
+estimated_occupancy_l365d,continuous,71.0,0,0.0,0,255,255.0,102.33538070528434,78.0,90.29156967552433,0.0,0
+estimated_revenue_l365d,continuous,2992.0,2809,29.75,0.0,3900000.0,3900000.0,23212.85408501658,17634.0,53844.1412982625,1.0,0.0
+first_review,discrete_categorical,2505.0,994,10.53,2009-04-30,2025-09-23,,,,,,2025-02-16
+last_review,discrete_categorical,764.0,994,10.53,2015-06-29,2025-09-23,,,,,,2025-09-14
+review_scores_rating,continuous,122.0,994,10.53,1.0,5.0,4.0,4.832065333175524,4.91,0.29245310504034244,2.0,5.0
+review_scores_accuracy,continuous,111.0,994,10.53,1.0,5.0,4.0,4.855077523967334,4.93,0.28154966658057634,2.0,5.0
+review_scores_cleanliness,continuous,123.0,994,10.53,1.0,5.0,4.0,4.815885903657238,4.89,0.2784948370995227,2.0,5.0
+review_scores_checkin,continuous,119.0,994,10.53,1.0,5.0,4.0,4.876366433897503,4.95,0.2622135543725157,2.0,5.0
+review_scores_communication,continuous,101.0,994,10.53,1.0,5.0,4.0,4.894716534501124,4.97,0.25014388522763614,2.0,5.0
+review_scores_location,continuous,146.0,994,10.53,1.0,5.0,4.0,4.770938572612143,4.86,0.3031640003650299,2.0,5.0
+review_scores_value,continuous,123.0,994,10.53,1.0,5.0,4.0,4.767940584684579,4.83,0.31063930256641364,2.0,5.0
 license,discrete_categorical,848.0,8410,89.06,#2021028369,Т2025004683,,,,,,620313552
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
+calculated_host_listings_count,continuous,59.0,0,0.0,1,229,228.0,28.215291750503017,6.0,49.07336142030443,0.0,1
+calculated_host_listings_count_entire_homes,continuous,56.0,0,0.0,0,229,229.0,26.46934237000953,4.0,48.60024576518477,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,19.0,0,0.0,0,45,45.0,1.4970877898972783,0.0,6.565256400390004,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,2.0,0,0.0,0,1,1.0,0.0024356666313671504,0.0,0.049294943878673204,0.0,0
+reviews_per_month,continuous,846.0,994,10.53,0.01,76.42,76.41,2.213570836785418,1.77,2.465142309491147,2.0,1.0
 price_clean,continuous,706.0,2809,29.75,0.0,50000.0,50000.0,223.39960807959,158.0,735.2324135199656,1.0,99.0

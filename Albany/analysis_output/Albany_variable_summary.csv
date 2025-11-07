@@ -1,20 +1,85 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
 id,continuous,461.0,0,0.0,2992450,1522036487464000982,1.5220364874610086e+18,8.341498471579222e+17,9.925545496721597e+17,5.544073191659621e+17,0.0,2992450
+listing_url,discrete_categorical,461.0,0,0.0,https://www.airbnb.com/rooms/1004978540001566331,https://www.airbnb.com/rooms/999161887055542119,,,,,,https://www.airbnb.com/rooms/1004978540001566331
+scrape_id,discrete_numeric,1.0,0,0.0,20251005230129,20251005230129,0.0,20251005230128.996,20251005230129.0,0.003910493618850522,0.0,20251005230129
+last_scraped,discrete_categorical,2.0,0,0.0,2025-10-05,2025-10-06,,,,,,2025-10-05
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
 name,discrete_categorical,457.0,0,0.0,"""The Albany Allen Home"" Private Bedroom 1",🪴 Historic & Homey 1 Bdrm Apt @ Downtown Albany,,,,,,Funky Urban Gem: Prime Central Location - Parking!
+description,discrete_categorical,396.0,9,1.95,"""The Red House,"" an inspiring 4-bedroom, 2nd-floor apartment nestled in the heart of Albany. This charming space features beautifully refinished 130-year-old hardwood floors, creating a warm and inviting atmosphere. A custom stone fireplace, complete with a 50-inch Samsung Smart TV, serves as the focal point of the living area. The kitchen is fully equipped for whipping up a meal. The dishwasher and laundry are conveniently located in the unit. Front and back balconies! Free street parking.","✔ 4 Bedrooms with 5 Beds, plus a sofa bed!  <br />✔ Dedicated workspaces<br />✔ Washer & dryer and much more <br />✔ Ideal for corporate housing, travel nurses, or friends/family vacations!<br />✔ Clean.  WiFi.  Quick host responses.<br />✔ Universities, Hospitals and more; all close by!",,,,,,"Welcome to your cozy Albany retreat! Enjoy a comfortable stay in this well-appointed space, perfect for travelers looking for convenience and relaxation. Your booking includes free parking and a complimentary breakfast to start your day right. Located near shops, restaurants, and downtown Albany, this home offers easy access to local attractions. Whether you’re here for business or leisure, you’ll love the comfort and convenience of this stay. Book now for a relaxing experience!"
+neighborhood_overview,discrete_categorical,148.0,281,60.95,+ 92 Walkscore<br />+ 5-minute walk to MVP Arena<br />+ 13-minute walk to N.Y.S. Museum and Empire State Plaza<br />+ 4-minute drive to Palace Theatre<br />+ Numerous restaurants and fast food within 5-10 minute walk<br />+ Large open grassy area in rear of building,"minutes away from Movie theaters , Crossgates mall, downtown Albany,  museum , dining, establishments and suny Albany",,,,,,+ 92 Walkscore<br />+ 5-minute walk to MVP Arena<br />+ 13-minute walk to N.Y.S. Museum and Empire State Plaza<br />+ 4-minute drive to Palace Theatre<br />+ Numerous restaurants and fast food within 5-10 minute walk<br />+ Large open grassy area in rear of building
+picture_url,discrete_categorical,453.0,0,0.0,https://a0.muscache.com/pictures/094b32c2-2966-4b18-bdb8-af329393b8cc.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-932642358896439621/original/f8d1e519-5393-4537-91bf-6bfb6f3aeff5.jpeg,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1158059552251999833/original/7b3e628d-eab2-4de5-ad1c-49658e8fa898.jpeg
 host_id,continuous,190.0,0,0.0,649068,710552538,709903470.0,249119265.11930585,232967878.0,196316241.21065432,0.0,232967878
+host_url,discrete_categorical,190.0,0,0.0,https://www.airbnb.com/users/show/1017349,https://www.airbnb.com/users/show/98744672,,,,,,https://www.airbnb.com/users/show/232967878
 host_name,discrete_categorical,169.0,0,0.0,Abdelrahman,Zuhair,,,,,,Diana
-neighbourhood_group,empty,,461,100.0,,,,,,,,
-neighbourhood,discrete_categorical,15.0,0,0.0,EIGHTH WARD,TWELFTH WARD,,,,,,SIXTH WARD
+host_since,discrete_categorical,187.0,0,0.0,2011-05-31,2025-07-30,,,,,,2018-12-28
+host_location,discrete_categorical,33.0,107,23.21,"Albany, NY","Zürich, Switzerland",,,,,,"Albany, NY"
+host_about,discrete_categorical,92.0,213,46.2,"
+
+
+I am a mechanical engineer. I'm easy going and love meeting people of different background. ","hi, I’m Tim.  
+Living in Albany after leaving  Ireland ( Up Tipp) years ago. My family have worked hard to provide for you a comfortable home from home,  in The Mansion Neighborhood of Historical Albany, NY. ",,,,,,"Airbnb has transformed every part of my life for the better. What began as a small side hustle has grown into a cornerstone of my own American Dream. As a high school teacher, I’ve always cherished shaping the future, but hosting on Airbnb allows me to fully embrace and enhance my present. It’s become a creative outlet, enabling me to express my passion for art and design by curating unique, welcoming spaces for my guests. I hope to see you soon!"
+host_response_time,discrete_categorical,4.0,26,5.64,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,13.0,26,5.64,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,38.0,13,2.82,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,3,0.65,f,t,,,,,,t
+host_thumbnail_url,discrete_categorical,178.0,0,0.0,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z0.muscache.cn/im/pictures/user/c33b52e9-2425-4718-9180-bfb7bf719901.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/im/pictures/user/User/original/952815a2-d283-482a-bfcc-036e6b13dbcd.jpeg?aki_policy=profile_small
+host_picture_url,discrete_categorical,178.0,0,0.0,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z0.muscache.cn/im/pictures/user/c33b52e9-2425-4718-9180-bfb7bf719901.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/im/pictures/user/User/original/952815a2-d283-482a-bfcc-036e6b13dbcd.jpeg?aki_policy=profile_x_medium
+host_neighbourhood,discrete_categorical,35.0,81,17.57,Arbor Hill,West Hill,,,,,,Pine Hills
+host_listings_count,discrete_numeric,21.0,0,0.0,1,1250,1249.0,34.69631236442516,5.0,158.58455078361618,0.0,1
+host_total_listings_count,discrete_numeric,25.0,0,0.0,1,2692,2691.0,57.27765726681128,7.0,313.665352204591,0.0,1
+host_verifications,discrete_categorical,3.0,0,0.0,"['email', 'phone', 'work_email']",['phone'],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,281,60.95,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,15.0,0,0.0,EIGHTH WARD,TWELFTH WARD,,,,,,SIXTH WARD
+neighbourhood_group_cleansed,empty,,461,100.0,,,,,,,,
 latitude,continuous,440.0,0,0.0,42.63066,42.7149,0.0842400000000012,42.65913449391677,42.65783832009679,0.010649554317929069,15.0,42.64535
 longitude,continuous,448.0,0,0.0,-73.87649,-73.73825,0.13824000000001035,-73.77641015898,-73.77434,0.01845990289465985,14.0,-73.82402
+property_type,discrete_categorical,19.0,0,0.0,Entire condo,Room in hotel,,,,,,Entire rental unit
 room_type,discrete_categorical,3.0,0,0.0,Entire home/apt,Private room,,,,,,Entire home/apt
-price,continuous,166.0,36,7.81,24.0,1314.0,1290.0,119.88,94.0,119.95503166871121,1.0,56.0
+accommodates,discrete_numeric,15.0,0,0.0,1,16,15.0,3.4446854663774404,2.0,2.461812463892258,0.0,2
+bathrooms,discrete_numeric,11.0,36,7.81,0.0,7.0,7.0,1.2317647058823529,1.0,0.6358421404129899,0.0,1.0
+bathrooms_text,discrete_categorical,19.0,0,0.0,0 baths,Private half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,9.0,8,1.74,0.0,9.0,9.0,1.598233995584989,1.0,1.0999583531903594,0.0,1.0
+beds,discrete_numeric,10.0,36,7.81,0.0,10.0,10.0,1.8376470588235294,1.0,1.3155435484881994,0.0,1.0
+amenities,discrete_categorical,448.0,0,0.0,"[""32 inch HDTV with Amazon Prime Video, Netflix, DVD player"", ""Coffee maker: Keurig coffee machine"", ""Wine glasses"", ""Bathtub"", ""Heating"", ""Private entrance"", ""Oven"", ""Dishes and silverware"", ""Refrigerator"", ""Cooking basics"", ""Essentials"", ""Private backyard \u2013 Fully fenced"", ""Lockbox"", ""Books and reading material"", ""Hot water"", ""Park view"", ""Bed linens"", ""Extra pillows and blankets"", ""Wifi"", ""Kitchen"", ""Microwave"", ""Dining table"", ""Self check-in"", ""Cleaning products"", ""Gas stove"", ""Hot water kettle"", ""Long term stays allowed"", ""Carbon monoxide alarm"", ""Conditioner"", ""Toaster"", ""Laundromat nearby"", ""Window AC unit"", ""Shampoo"", ""Clothing storage"", ""Body soap"", ""Hangers"", ""Smoke alarm"", ""First aid kit"", ""Free parking on premises"", ""Fire extinguisher"", ""Coffee"", ""Freezer"", ""Free street parking"", ""Drying rack for clothing"", ""Iron"", ""Hair dryer"", ""Dedicated workspace"", ""Luggage dropoff allowed""]","[""Wine glasses"", ""Wolf stove"", ""Oven"", ""Dishes and silverware"", ""Refrigerator"", ""Coffee maker: drip coffee maker"", ""Dishwasher"", ""Shared patio or balcony"", ""Outdoor furniture"", ""Cooking basics"", ""Keypad"", ""Essentials"", ""Exterior security cameras on property"", ""Books and reading material"", ""Hot water"", ""Bed linens"", ""Shower gel"", ""Extra pillows and blankets"", ""Wifi"", ""Kitchen"", ""Microwave"", ""Dining table"", ""Hammock"", ""Shared pool - available seasonally"", ""Cleaning products"", ""Shared hot tub"", ""Free washer \u2013 In unit"", ""Self check-in"", ""Baking sheet"", ""Hot water kettle"", ""Outdoor shower"", ""Long term stays allowed"", ""Carbon monoxide alarm"", ""Lock on bedroom door"", ""Pool table"", ""Free dryer \u2013 In unit"", ""Toaster"", ""BBQ grill"", ""Shampoo"", ""Noise decibel monitors on property"", ""Body soap"", ""Hangers"", ""Crib"", ""Smoke alarm"", ""Indoor fireplace: gas"", ""Free parking on premises"", ""Radiant heating"", ""Room-darkening shades"", ""Outdoor dining area"", ""Fire extinguisher"", ""Coffee"", ""Central air conditioning"", ""Freezer"", ""Blender"", ""52 inch HDTV with Amazon Prime Video"", ""Clothing storage: closet and dresser"", ""Barbecue utensils"", ""Free street parking"", ""Iron"", ""Board games"", ""Private living room"", ""Hair dryer"", ""Dedicated workspace"", ""Luggage dropoff allowed"", ""Pack \u2019n play/Travel crib"", ""Shared backyard \u2013 Fully fenced"", ""Fire pit""]",,,,,,"[""Fire extinguisher"", ""Carbon monoxide alarm"", ""Air conditioning"", ""TV"", ""First aid kit"", ""Wifi"", ""Smoke alarm"", ""Kitchen"", ""Free parking on premises"", ""Self check-in"", ""Building staff"", ""Outdoor dining area""]"
+price,discrete_categorical,166.0,36,7.81,"$1,050.00",$99.00,,,,,,$56.00
 minimum_nights,discrete_numeric,20.0,0,0.0,1,365,364.0,7.10412147505423,2.0,22.227431258870656,0.0,1
-number_of_reviews,continuous,153.0,0,0.0,0,962,962.0,60.44251626898048,20.0,111.35059913430042,0.0,0
-last_review,discrete_categorical,152.0,61,13.23,2022-08-17,2025-10-05,,,,,,2025-09-28
-reviews_per_month,continuous,266.0,61,13.23,0.05,11.56,11.51,2.007175,1.395,1.9644103541454072,2.0,1.0
-calculated_host_listings_count,discrete_numeric,13.0,0,0.0,1,21,20.0,7.086767895878525,4.0,6.847806580619504,0.0,1
+maximum_nights,discrete_numeric,39.0,0,0.0,1,1125,1124.0,487.2819956616052,365.0,396.1091893288911,0.0,365
+minimum_minimum_nights,discrete_numeric,21.0,0,0.0,1,365,364.0,6.7960954446854664,2.0,22.10827274690947,0.0,1
+maximum_minimum_nights,discrete_numeric,20.0,0,0.0,1,365,364.0,7.7982646420824295,2.0,23.576528426258186,0.0,1
+minimum_maximum_nights,discrete_numeric,34.0,0,0.0,1,1125,1124.0,632.5726681127983,365.0,437.6989009125333,0.0,1125
+maximum_maximum_nights,discrete_numeric,33.0,0,0.0,1,1125,1124.0,644.8308026030369,365.0,437.6379603661968,0.0,1125
+minimum_nights_avg_ntm,continuous,50.0,0,0.0,1.0,365.0,364.0,7.391540130151844,2.0,22.528706180960768,1.0,1.0
+maximum_nights_avg_ntm,continuous,37.0,0,0.0,1.0,1125.0,1124.0,644.1466377440347,365.0,436.95533212985754,1.0,1125.0
+calendar_updated,empty,,461,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,7,1.52,t,t,,,,,,t
+availability_30,discrete_numeric,30.0,0,0.0,0,30,30.0,15.607375271149674,17.0,11.199760762592216,0.0,0
+availability_60,continuous,58.0,0,0.0,0,60,60.0,37.05639913232104,44.0,21.462734824248265,0.0,0
+availability_90,continuous,75.0,0,0.0,0,90,90.0,59.8763557483731,71.0,30.538712149238343,0.0,0
 availability_365,continuous,195.0,0,0.0,0,365,365.0,239.7462039045553,272.0,122.64231578630557,0.0,365
+calendar_last_scraped,discrete_categorical,2.0,0,0.0,2025-10-05,2025-10-06,,,,,,2025-10-05
+number_of_reviews,continuous,153.0,0,0.0,0,962,962.0,60.44251626898048,20.0,111.35059913430042,0.0,0
 number_of_reviews_ltm,continuous,70.0,0,0.0,0,143,143.0,14.377440347071584,6.0,20.064045572572883,0.0,0
+number_of_reviews_l30d,discrete_numeric,11.0,0,0.0,0,11,11.0,1.0672451193058567,0.0,1.8207233400740095,0.0,0
+availability_eoy,continuous,76.0,0,0.0,0,88,88.0,58.06290672451193,69.0,29.943903193957645,0.0,0
+number_of_reviews_ly,continuous,70.0,0,0.0,0,139,139.0,13.188720173535792,4.0,21.3238273210827,0.0,0
+estimated_occupancy_l365d,continuous,63.0,0,0.0,0,255,255.0,82.79175704989154,54.0,84.15746122437481,0.0,0
+estimated_revenue_l365d,continuous,314.0,36,7.81,0.0,90780.0,90780.0,9753.905882352941,4806.0,12366.630670370461,1.0,0.0
+first_review,discrete_categorical,352.0,61,13.23,2014-07-01,2025-09-26,,,,,,2023-11-05
+last_review,discrete_categorical,152.0,61,13.23,2022-08-17,2025-10-05,,,,,,2025-09-28
+review_scores_rating,continuous,72.0,61,13.23,1.0,5.0,4.0,4.717425,4.85,0.46940331064566726,2.0,5.0
+review_scores_accuracy,continuous,69.0,61,13.23,2.0,5.0,3.0,4.769975,4.895,0.3912440788024721,2.0,5.0
+review_scores_cleanliness,continuous,80.0,61,13.23,1.0,5.0,4.0,4.734025,4.86,0.43277278111635903,2.0,5.0
+review_scores_checkin,continuous,57.0,61,13.23,1.0,5.0,4.0,4.835375,4.94,0.37138210922529863,2.0,5.0
+review_scores_communication,continuous,60.0,61,13.23,1.0,5.0,4.0,4.854875,4.96,0.3304822698750334,2.0,5.0
+review_scores_location,continuous,98.0,61,13.23,1.0,5.0,4.0,4.6208,4.78,0.4820578902204688,2.0,5.0
+review_scores_value,continuous,77.0,61,13.23,1.0,5.0,4.0,4.6959,4.81,0.465833330419071,2.0,5.0
 license,empty,,461,100.0,,,,,,,,
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
+calculated_host_listings_count,discrete_numeric,13.0,0,0.0,1,21,20.0,7.086767895878525,4.0,6.847806580619504,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,14.0,0,0.0,0,21,21.0,5.266811279826464,2.0,6.3331739093823405,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,9.0,0,0.0,0,13,13.0,1.8177874186550975,0.0,3.8143590672407033,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,1.0,0,0.0,0,0,0.0,0.0,0.0,0.0,0.0,0
+reviews_per_month,continuous,266.0,61,13.23,0.05,11.56,11.51,2.007175,1.395,1.9644103541454072,2.0,1.0
 price_clean,continuous,166.0,36,7.81,24.0,1314.0,1290.0,119.88,94.0,119.95503166871121,1.0,56.0

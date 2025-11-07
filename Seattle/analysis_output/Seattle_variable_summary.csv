@@ -1,20 +1,84 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
-id,continuous,6996,0,0.0,6606,1516825888737631052,1.5168258887376243e+18,6.685860759905975e+17,7.646665581873393e+17,5.5974140945564896e+17,0.0,6606
-name,discrete_categorical,6727,0,0.0,"""B House"" Modern West Seattle Townhome 2br/2bth",🌟 3BR Comfy Modern Townhouse Between Airport & DT,,,,,,"Blueground | First Hill, fitness & coworking"
-host_id,continuous,3558,0,0.0,2536,718660999,718658463.0,173547731.12221268,90757469.5,193008628.43696344,0.0,107434423
-host_name,discrete_categorical,1954,351,5.02,A-Team,Zz,,,,,,Melissa
-neighbourhood_group,discrete_categorical,17,0,0.0,Ballard,West Seattle,,,,,,Other neighborhoods
-neighbourhood,discrete_categorical,88,0,0.0,Adams,Yesler Terrace,,,,,,Belltown
-latitude,continuous,5839,0,0.0,47.49803,47.73401,0.23597999999999786,47.62618138902856,47.62426,0.04922193351198033,6.0,47.6415
-longitude,continuous,5700,0,0.0,-122.419478,-122.24087,0.178607999999997,-122.3344139956828,-122.33263500000001,0.033362819250629804,5.0,-122.3237693
-room_type,discrete_categorical,4,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,593,775,11.08,15.0,50039.0,50024.0,571.7161228098377,149.0,4137.408760744384,1.0,152.0
-minimum_nights,discrete_numeric,43,0,0.0,1,365,364.0,10.990708976558032,2.0,18.71823502705361,0.0,2
-number_of_reviews,continuous,562,0,0.0,0,1577,1577.0,82.3076043453402,32.0,126.64142534196533,0.0,0
-last_review,discrete_categorical,788,887,12.68,2015-03-07,2025-09-24,,,,,,2025-09-21
-reviews_per_month,continuous,774,887,12.68,0.01,60.33,60.32,2.2263169094778195,1.84,2.116236447357348,2.0,1.0
-calculated_host_listings_count,discrete_numeric,40,0,0.0,1,344,343.0,28.839908519153802,2.0,76.091529753921,0.0,1
-availability_365,continuous,366,0,0.0,0,365,365.0,207.7094053744997,234.0,122.92855728436417,0.0,0
-number_of_reviews_ltm,continuous,128,0,0.0,0,562,562.0,16.992138364779873,9.0,21.979380055433023,0.0,0
-license,discrete_categorical,3910,1211,17.31,0008395980754312,str-opli-60-550061,,,,,,Exempt
-price_clean,continuous,593,775,11.08,15.0,50039.0,50024.0,571.7161228098377,149.0,4137.408760744384,1.0,152.0
+id,continuous,6996.0,0,0.0,6606,1516825888737631052,1.5168258887376243e+18,6.685860759905975e+17,7.646665581873393e+17,5.5974140945564896e+17,0.0,6606
+listing_url,discrete_categorical,6996.0,0,0.0,https://www.airbnb.com/rooms/1000480973835873959,https://www.airbnb.com/rooms/999983371573230526,,,,,,https://www.airbnb.com/rooms/1000480973835873959
+scrape_id,discrete_numeric,1.0,0,0.0,20250925032813,20250925032813,0.0,20250925032813.0,20250925032813.0,0.0,0.0,20250925032813
+last_scraped,discrete_categorical,1.0,0,0.0,2025-09-25,2025-09-25,,,,,,2025-09-25
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
+name,discrete_categorical,6727.0,0,0.0,"""B House"" Modern West Seattle Townhome 2br/2bth",🌟 3BR Comfy Modern Townhouse Between Airport & DT,,,,,,"Blueground | First Hill, fitness & coworking"
+description,discrete_categorical,6286.0,117,1.67, Don't miss  this light and airy apartment just 1/2 block from all that the friendly Greenlake neighborhood has to offer.  Fix gourmet meals in your chef's kitchen or enjoy one of the many restaurants and coffee shops just minutes away.  Sleeps five.,"🛏️ Queen bed with soft linens, perfect for solo travelers or couples<br />💻 Work desk + fast Wi-Fi, ideal for business or remote work<br />🍴 Full kitchen with utensils, coffee maker (no dishwasher)<br />🛁 Clean full bath with towels and toiletries<br />🧺 In-unit washer/dryer + iron for longer stays<br />🚗 Free on-site parking, self check-in, quiet backyard<br />🏥 5 min to hospitals, 7 min to Seattle U, 8 min to downtown<br />🐶 1 pet allowed (select pet option while booking), leash & cleanup required",,,,,,Level South Lake Union promises an unrivaled hospitality experience in the heart of one of Seattle’s most exciting neighborhoods. Available for nightly and extended stays discover your home-away-from-home with spacious studio one two and three-bedroom suites boasting fully-equipped kitchens in-suite laundry 24hour Guest Services and access to unparalleled lifestyle amenities. Think Basketball court state-of-the-art fitness center rock climbing wall rooftop pool and luxurious entertaining spaces.
+neighborhood_overview,discrete_categorical,3162.0,2820,40.31,"""Madrona"" is one of the most central/desired  neighborhoods in Seattle.  You can walk 45 minutes to downtown, or in the other direction to Lake Washington or in another direction to the vibrant Capitol Hill.  Or take a 20-30 minute bus ride to each, or drive there in 10 minutes.  Within a 10 minute walk you have access to a supermarket, roughly 15 restaurants, 2 coffee shops, and a bakery around the corner from our house.",🚶Walk score 87/100<br />🚴 Bike score 88/100,,,,,,"This furnished apartment is situated in South Lake Union, a hub for Amazon and the Seattle Times as well as the entire biotech industry. It’s constantly buzzing thanks to the numerous bars, restaurants and food trucks. In Lake Union Park, along the water sits the Museum of History &amp; Industry which highlights the city’s history as well as business and innovation. Locals often head out to the lake for boating and paddle boarding. This neighborhood is also the home of Denny Park, which is the oldest green space in the city. To access other parts of the city from here, simply hop on the streetcar."
+picture_url,discrete_categorical,6882.0,0,0.0,https://a0.muscache.com/pictures/002e5db5-235e-46c4-af19-64f8fa95c71d.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-996470170138355240/original/adafde23-822f-4d64-8eb0-59e214029dc8.jpeg,,,,,,https://a0.muscache.com/pictures/3d5fbe04-6154-4e2c-8255-be1520e9bc81.jpg
+host_id,continuous,3558.0,0,0.0,2536,718660999,718658463.0,173547731.12221268,90757469.5,193008628.43696344,0.0,107434423
+host_url,discrete_categorical,3558.0,0,0.0,https://www.airbnb.com/users/show/100051568,https://www.airbnb.com/users/show/99971437,,,,,,https://www.airbnb.com/users/show/107434423
+host_name,discrete_categorical,1954.0,351,5.02,A-Team,Zz,,,,,,Melissa
+host_since,discrete_categorical,2367.0,351,5.02,2008-08-26,2025-09-12,,,,,,2012-07-27
+host_location,discrete_categorical,205.0,1422,20.33,"Alameda, CA","Yakima, WA",,,,,,"Seattle, WA"
+host_about,discrete_categorical,2245.0,2431,34.75,"
+",我是三个孩子的单亲妈妈，平常喜欢带孩子到公园散步，或者参加一些户外的活动.我的房源都需要提早一天预定，这样我才有足够的时间整理打扫干净房子.,,,,,,"Used to be a professor (Ph.D. in Political Economy), then a homeschooling mom and  a religious non profit organization founder, now like to travel, read / review books and manage properties. The best cities I like are Seattle, Florence, Sanya and Taipei.  (Taipei is chosen as the #1 out of 26 Remarkable Places For Solo Travel by BuzzFeed!  (Website hidden by Airbnb) We have  a few nicely furnished studios and one bedrooms condo apt conveniently located near University of Washington in Seattle with your own private kitchen and bathroom.  You will enjoy the convenient locations and quietness of all these buildings. You will also be surprised how quickly we respond to your requests as long as I am in town.  My motto is Providing Quality Places at Fair Prices and my life motto is in Philippians 4:13. 
+BTW, I am praised for responsiveness. But I usually do not answer the phone calls on Sundays due to church meetings unless it is urgent, if not,  but need to let me know prefer you just text me next day or on Sunday afternoon.  Thank you. 
+"
+host_response_time,discrete_categorical,4.0,1069,15.28,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,34.0,1069,15.28,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,77.0,884,12.64,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,333,4.76,f,t,,,,,,t
+host_thumbnail_url,discrete_categorical,3494.0,351,5.02,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z0.muscache.cn/im/pictures/user/f3e52bff-e14b-4b99-b16f-cd39dbdcae30.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/im/users/3074414/profile_pic/1408093668/original.jpg?aki_policy=profile_small
+host_picture_url,discrete_categorical,3494.0,351,5.02,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z0.muscache.cn/im/pictures/user/f3e52bff-e14b-4b99-b16f-cd39dbdcae30.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/im/users/3074414/profile_pic/1408093668/original.jpg?aki_policy=profile_x_medium
+host_neighbourhood,discrete_categorical,218.0,649,9.28,Adams,Yesler Terrace,,,,,,Capitol Hill
+host_listings_count,continuous,81.0,351,5.02,1.0,2989.0,2988.0,42.310609480812644,3.0,189.62403505141418,1.0,1.0
+host_total_listings_count,continuous,96.0,351,5.02,1.0,8403.0,8402.0,86.618359668924,4.0,505.6384380227027,1.0,1.0
+host_verifications,discrete_categorical,6.0,351,5.02,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,351,5.02,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,351,5.02,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,2820,40.31,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,88.0,0,0.0,Adams,Yesler Terrace,,,,,,Belltown
+neighbourhood_group_cleansed,discrete_categorical,17.0,0,0.0,Ballard,West Seattle,,,,,,Other neighborhoods
+latitude,continuous,5839.0,0,0.0,47.49803,47.73401,0.23597999999999786,47.62618138902856,47.62426,0.04922193351198033,6.0,47.6415
+longitude,continuous,5700.0,0,0.0,-122.419478,-122.24087,0.178607999999997,-122.3344139956828,-122.33263500000001,0.033362819250629804,5.0,-122.3237693
+property_type,discrete_categorical,57.0,0,0.0,Barn,Treehouse,,,,,,Entire home
+room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,4.0102915951972555,4.0,2.595571612384692,0.0,2
+bathrooms,discrete_numeric,17.0,708,10.12,0.0,16.0,16.0,1.456265903307888,1.0,0.8346207976324163,0.0,1.0
+bathrooms_text,discrete_categorical,28.0,11,0.16,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,12.0,151,2.16,0.0,13.0,13.0,1.6610664718772827,1.0,1.1821086256589495,0.0,1.0
+beds,discrete_numeric,15.0,711,10.16,0.0,15.0,15.0,2.157677008750994,2.0,1.5194863116296087,0.0,1.0
+amenities,discrete_categorical,6526.0,0,0.0,"[""30 inch HDTV with Amazon Prime Video, Fire TV, Netflix"", ""Self check-in"", ""Dishes and silverware"", ""Coffee maker: french press"", ""Kitchen"", ""Wifi"", ""Private entrance"", ""Hangers"", ""Central air conditioning"", ""Stove"", ""Iron"", ""AC - split type ductless system"", ""Carbon monoxide alarm"", ""Shampoo"", ""Keypad"", ""Hair dryer"", ""Hot water"", ""Smoke alarm"", ""Bed linens"", ""Fire extinguisher"", ""Coffee"", ""Private patio or balcony"", ""Microwave"", ""Cooking basics"", ""Refrigerator"", ""Oven"", ""Heating"", ""Essentials"", ""Free street parking"", ""First aid kit"", ""Extra pillows and blankets""]","[""Wifi"", ""Dedicated workspace"", ""Self check-in"", ""BBQ grill"", ""Washer"", ""TV"", ""Carbon monoxide alarm"", ""Lockbox"", ""Air conditioning"", ""Kitchen"", ""First aid kit"", ""Pets allowed""]",,,,,,"[""Self check-in"", ""High chair"", ""TV"", ""Bathtub"", ""Kitchen"", ""Wifi"", ""Private entrance"", ""Washer \u2013\u00a0In unit"", ""Hangers"", ""Crib"", ""Iron"", ""Carbon monoxide alarm"", ""BBQ grill"", ""Gym"", ""Shampoo"", ""Elevator"", ""Hair dryer"", ""Hot water"", ""Coffee maker"", ""Dryer \u2013\u00a0In unit"", ""Lockbox"", ""Smoke alarm"", ""Bed linens"", ""Pets allowed"", ""Microwave"", ""Cooking basics"", ""Refrigerator"", ""Dishwasher"", ""Oven"", ""Paid parking on premises"", ""Heating"", ""Essentials"", ""Long term stays allowed""]"
+price,discrete_categorical,593.0,775,11.08,"$1,000.00",$998.00,,,,,,$152.00
+minimum_nights,discrete_numeric,43.0,0,0.0,1,365,364.0,10.990708976558032,2.0,18.71823502705361,0.0,2
+maximum_nights,continuous,124.0,0,0.0,1,10000,9999.0,389.6992567181246,365.0,429.11201415407874,0.0,365
+minimum_minimum_nights,continuous,46.0,16,0.23,1.0,365.0,364.0,10.349140401146132,2.0,17.873246794392553,1.0,1.0
+maximum_minimum_nights,continuous,53.0,16,0.23,1.0,365.0,364.0,26.24297994269341,3.0,70.10952264083535,1.0,30.0
+minimum_maximum_nights,continuous,104.0,16,0.23,1.0,10000.0,9999.0,641.7388252148997,365.0,491.38399411421483,1.0,1125.0
+maximum_maximum_nights,continuous,100.0,16,0.23,1.0,10000.0,9999.0,679.9032951289398,1000.0,479.8181417633563,1.0,1125.0
+minimum_nights_avg_ntm,continuous,244.0,0,0.0,1.0,365.0,364.0,11.723227558604917,3.0,18.88477167503647,1.0,30.0
+maximum_nights_avg_ntm,continuous,381.0,0,0.0,1.0,10000.0,9999.0,658.4156946826758,571.1,481.09952484769826,1.0,1125.0
+calendar_updated,empty,,6996,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,38,0.54,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,13.083047455688964,13.0,10.541647886421412,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,32.43624928530589,37.0,20.947357576718975,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,52.89851343624929,62.0,30.820506769559866,0.0,0
+availability_365,continuous,366.0,0,0.0,0,365,365.0,207.7094053744997,234.0,122.92855728436417,0.0,0
+calendar_last_scraped,discrete_categorical,1.0,0,0.0,2025-09-25,2025-09-25,,,,,,2025-09-25
+number_of_reviews,continuous,562.0,0,0.0,0,1577,1577.0,82.3076043453402,32.0,126.64142534196533,0.0,0
+number_of_reviews_ltm,continuous,128.0,0,0.0,0,562,562.0,16.992138364779873,9.0,21.979380055433023,0.0,0
+number_of_reviews_l30d,discrete_numeric,20.0,0,0.0,0,28,28.0,1.4895654659805604,1.0,2.101166777502136,0.0,0
+availability_eoy,continuous,99.0,0,0.0,0,98,98.0,57.85205831903945,67.0,33.246349916245315,0.0,0
+number_of_reviews_ly,continuous,135.0,0,0.0,0,713,713.0,16.201829616923956,5.0,24.657595183350804,0.0,0
+estimated_occupancy_l365d,continuous,82.0,0,0.0,0,255,255.0,105.0773299028016,86.0,93.14785157846867,0.0,0
+estimated_revenue_l365d,continuous,2493.0,775,11.08,0.0,2100000.0,2100000.0,18736.337727053527,13338.0,35451.028044842984,1.0,0.0
+first_review,discrete_categorical,2643.0,887,12.68,2009-07-17,2025-09-22,,,,,,2025-05-18
+last_review,discrete_categorical,788.0,887,12.68,2015-03-07,2025-09-24,,,,,,2025-09-21
+review_scores_rating,continuous,124.0,887,12.68,1.0,5.0,4.0,4.808836143394991,4.9,0.3380302899329743,2.0,5.0
+review_scores_accuracy,continuous,111.0,887,12.68,1.0,5.0,4.0,4.837687019152071,4.92,0.3014804709944974,2.0,5.0
+review_scores_cleanliness,continuous,117.0,887,12.68,1.0,5.0,4.0,4.8162841708954005,4.91,0.33491689599541447,2.0,5.0
+review_scores_checkin,continuous,107.0,887,12.68,1.0,5.0,4.0,4.879179898510395,4.95,0.255026094717436,2.0,5.0
+review_scores_communication,continuous,103.0,887,12.68,1.0,5.0,4.0,4.883393354067769,4.97,0.2909536956416945,2.0,5.0
+review_scores_location,continuous,108.0,887,12.68,1.0,5.0,4.0,4.834426256343101,4.9,0.262944236641386,2.0,5.0
+review_scores_value,continuous,139.0,887,12.68,1.0,5.0,4.0,4.717763954820756,4.81,0.3574838980035822,2.0,5.0
+license,discrete_categorical,3910.0,1211,17.31,0008395980754312,str-opli-60-550061,,,,,,Exempt
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
+calculated_host_listings_count,discrete_numeric,40.0,0,0.0,1,344,343.0,28.839908519153802,2.0,76.091529753921,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,36.0,0,0.0,0,344,344.0,25.62292738707833,2.0,75.41095348818186,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,21.0,0,0.0,0,75,75.0,3.074328187535735,0.0,10.971933453531236,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,6.0,0,0.0,0,8,8.0,0.029016580903373355,0.0,0.44305612797272514,0.0,0
+reviews_per_month,continuous,774.0,887,12.68,0.01,60.33,60.32,2.2263169094778195,1.84,2.116236447357348,2.0,1.0
+price_clean,continuous,593.0,775,11.08,15.0,50039.0,50024.0,571.7161228098377,149.0,4137.408760744384,1.0,152.0

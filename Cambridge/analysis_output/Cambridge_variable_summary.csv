@@ -1,20 +1,92 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
 id,continuous,1358.0,0,0.0,8521,1517697900266995668,1.5176979002669873e+18,6.303908356353009e+17,6.827959573939089e+17,5.6687327669083315e+17,0.0,8521
+listing_url,discrete_categorical,1358.0,0,0.0,https://www.airbnb.com/rooms/1004102324803384826,https://www.airbnb.com/rooms/999611564853363629,,,,,,https://www.airbnb.com/rooms/1004102324803384826
+scrape_id,discrete_numeric,1.0,0,0.0,20250928035003,20250928035003,0.0,20250928035003.0,20250928035003.0,0.0,0.0,20250928035003
+last_scraped,discrete_categorical,1.0,0,0.0,2025-09-28,2025-09-28,,,,,,2025-09-28
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
 name,discrete_categorical,1243.0,0,0.0,"""Green"" House + parking Harvard/MIT",宁静套房（紧临高尔夫球场）,,,,,,"Blueground | E Cambridge, gym & w/d, nr lechmere t"
+description,discrete_categorical,1090.0,11,0.81,#### This is  a special listing to make a package reservation<br /><br />Guest will stay in room labeled X 25 from September 26 to October 6 and then stay in room labeled X 12 from October 6 to November 17<br /><br />airbnb.com/h/x12n,"🌿 Keep it simple at this peaceful, centrally located home in the heart of Cambridge.<br /><br />📍 Located just minutes from Harvard, MIT, Boston University, MGH, the Charles River, Whole Foods, and Trader Joe’s.<br /><br />🏠 This sun-drenched, two-story single-family home is a rare find in central Cambridge—recently ranked #22 among the Best Places to Live in America (2025).<br /><br />🚗 Includes free off-street parking for two vehicles.<br /><br />🐾 Dog-friendly and perfectly suited for guests traveling with pets.",,,,,,"You’ll be at the heart of Cambridge with stunning Charles River vistas, immersed in culture with MIT and Harvard nearby, steps from Inman Square’s shops, and a short walk to Faneuil Hall and Boston's top attractions."
+neighborhood_overview,discrete_categorical,376.0,664,48.9,"* Safe neighborhood down the street from  Davis and Porter Squares. Easy access to subway for Harvard (15-20 minutes) or downtown Boston (25-30 minutes). <br /><br /><br />* Short walk to ""Best of Boston"" restaurants serving Thai, Cambodian, Indian, American, Nepali, Japanese, etc.","🌆 Neighborhood Vibes<br />Stay right in the heart of Downtown Boston’s historic Financial District, where old-world charm meets modern city living. Step outside and you’ll find cobblestone streets lined with beautifully preserved architecture, lively plazas, and some of the city’s most iconic landmarks.<br /><br />🚶‍♀️ Walkable & Connected<br />Everything you need is just a short walk away — from the Rose Kennedy Greenway’s parks and paths to the Boston Harbor waterfront. World-famous spots like Faneuil Hall Marketplace, Quincy Market, and the Custom House Tower are nearby, and the neighborhood has excellent public transit connections that make exploring the rest of the city effortless.<br /><br />🍴 Food, Coffee & Culture<br />Guests love being surrounded by trendy cafes, world-class restaurants, and local pubs. Whether you’re in the mood for a quick coffee, seafood by the water, or a romantic dinner in a historic setting, you’ll find it just steps away.<br /><br />✨ Perfect for Every ",,,,,,"This furnished apartment is located in Central Square, Cambridge, which is centered on the junction of Massachusetts Avenue, Prospect Street and Western Avenue. The diverse area is well known for its wide variety of ethnic restaurants, bars, live music and theatre venues. Many startups have moved research and office operations into the Square to take advantage of the relatively low costs and the proximity to MIT. Nearly demolished in the 1950s, the neighborhood was spared and went so far as to experience a sort of renaissance. In 2012, the state of Massachusetts designated Central Square as an official Cultural District."
+picture_url,discrete_categorical,1329.0,0,0.0,https://a0.muscache.com/pictures/012e0a6c-dfef-4f4b-b98b-d49877204c23.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-990127857931944993/original/d15f2c1d-653c-4979-9be7-a7ee1f53734e.jpeg,,,,,,https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6NjU3OTcwMzMxMTk1MzQxOTgz/original/855c5f8b-bcf5-4377-a2b3-acd3f9a1ad67.jpeg
 host_id,continuous,448.0,0,0.0,35384,720731863,720696479.0,177736911.92562592,107434423.0,194991580.8084605,0.0,107434423
+host_url,discrete_categorical,448.0,0,0.0,https://www.airbnb.com/users/show/1000338,https://www.airbnb.com/users/show/999992,,,,,,https://www.airbnb.com/users/show/107434423
 host_name,discrete_categorical,385.0,0,0.0,Aaron,Zhengyi,,,,,,Blueground
-neighbourhood_group,empty,,1358,100.0,,,,,,,,
-neighbourhood,discrete_categorical,13.0,0,0.0,Agassiz,West Cambridge,,,,,,East Cambridge
+host_since,discrete_categorical,413.0,0,0.0,2009-09-01,2025-09-24,,,,,,2016-12-16
+host_location,discrete_categorical,50.0,250,18.41,"Athens, GA","Zürich, Switzerland",,,,,,"Cambridge, MA"
+host_about,discrete_categorical,272.0,480,35.35,.,大学老师,,,,,,"We’re Blueground, a global proptech company with several thousand move-in-ready apartments in a growing number of major cities around the world. With flexible terms and homes in vibrant, centrally based neighborhoods, you’ll feel at home and free to roam for as long as you want — a month, a year, or longer. 
+
+Each apartment is thoughtfully designed with exclusive furnishings, fully equipped kitchens, and incredible amenities – making every day a five-star experience. From day one, you’ll enjoy high-speed Wi-Fi, premium linens, and smart home entertainment. Plus, access to pools, gyms, and outdoor spaces in select buildings.
+
+Why stress over your apartment? We provide a hassle-free alternative — a consistent, quality guest experience that starts even before you arrive. Because we let you book our most up-to-date apartment listings online, confirm with a click, pay securely, and check in easily. 
+
+Even better? You can enhance your stay with car rentals, grocery delivery, laundry services, and more through our special partnerships. 
+
+During your stay
+Upon arrival, you’ll either be greeted personally by a Blueground team member or given self-check-in instructions. The entire apartment is yours! You’ll enjoy reliable support via email, phone, and our Guest App, where you can request everything from a home cleaning to extra towels. 
+
+We’ll share all details upon confirmation of your stay."
+host_response_time,discrete_categorical,4.0,111,8.17,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,28.0,111,8.17,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,52.0,86,6.33,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,41,3.02,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,445.0,0,0.0,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://a0.muscache.com/im/users/9939488/profile_pic/1384184496/original.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/im/pictures/user/d0ad9599-6fc0-4be6-865e-ffe99142517c.jpg?aki_policy=profile_small
+host_picture_url,discrete_categorical,445.0,0,0.0,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://a0.muscache.com/im/users/9939488/profile_pic/1384184496/original.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/im/pictures/user/d0ad9599-6fc0-4be6-865e-ffe99142517c.jpg?aki_policy=profile_x_medium
+host_neighbourhood,discrete_categorical,59.0,34,2.5,Agassiz,Wynwood,,,,,,Cambridge
+host_listings_count,continuous,50.0,0,0.0,1,5143,5142.0,698.7702503681885,16.0,1681.4707708050014,0.0,1
+host_total_listings_count,continuous,59.0,0,0.0,1,5933,5932.0,851.9241531664212,24.0,1939.485396423152,0.0,5933
+host_verifications,discrete_categorical,5.0,0,0.0,"['email', 'phone', 'work_email']",['phone'],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,664,48.9,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,13.0,0,0.0,Agassiz,West Cambridge,,,,,,East Cambridge
+neighbourhood_group_cleansed,empty,,1358,100.0,,,,,,,,
 latitude,continuous,1043.0,0,0.0,42.35367,42.40018,0.04650999999999783,42.37391248322406,42.370598867235756,0.010624807668220491,15.0,42.3667097
 longitude,continuous,1095.0,0,0.0,-71.15758,-71.07123926551715,0.08634073448284596,-71.10647147690638,-71.10584,0.019022541305000196,14.0,-71.0748939
+property_type,discrete_categorical,25.0,0,0.0,Boat,Tiny home,,,,,,Entire rental unit
 room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,418.0,303,22.31,29.0,50031.0,50002.0,1186.0947867298578,204.0,6211.42122606038,1.0,77.0
+accommodates,discrete_numeric,14.0,0,0.0,1,16,15.0,3.2702503681885124,2.0,2.3158513262772087,0.0,2
+bathrooms,discrete_numeric,8.0,293,21.58,0.0,4.0,4.0,1.307981220657277,1.0,0.5952365420573473,0.0,1.0
+bathrooms_text,discrete_categorical,15.0,1,0.07,0 shared baths,4.5 baths,,,,,,1 bath
+bedrooms,discrete_numeric,8.0,93,6.85,0.0,8.0,8.0,1.5636363636363637,1.0,0.9796696326736728,0.0,1.0
+beds,discrete_numeric,10.0,300,22.09,0.0,9.0,9.0,1.8780718336483933,1.0,1.4793665276471049,0.0,1.0
+amenities,discrete_categorical,1153.0,0,0.0,"[""52 inch HDTV with standard cable"", ""Hangers"", ""Free driveway parking on premises \u2013 2 spaces"", ""Extra pillows and blankets"", ""Essentials"", ""Laundromat nearby"", ""Window AC unit"", ""Fire extinguisher"", ""Wifi"", ""Oven"", ""Dining table"", ""Keypad"", ""Hot water kettle"", ""Clothing storage: closet and dresser"", ""Dishes and silverware"", ""Wine glasses"", ""Microwave"", ""Cooking basics"", ""Carbon monoxide alarm"", ""Park view"", ""Bed linens"", ""Shampoo"", ""Hot water"", ""In the bath tub liquid  body soap"", ""Refrigerator"", ""Coffee maker: drip coffee maker"", ""Kitchen"", ""Self check-in"", ""Toaster"", ""Free washer \u2013 In unit"", ""Free street parking"", ""Dishwasher"", ""GE electric stove"", ""Central heating"", ""Smoke alarm"", ""Luggage dropoff allowed"", ""Cleaning products"", ""Shower gel"", ""Free dryer \u2013 In unit"", ""Private entrance"", ""Bathtub""]",[],,,,,,"[""Pets allowed"", ""TV"", ""Air conditioning"", ""Paid parking on premises"", ""Hangers"", ""First aid kit"", ""Extra pillows and blankets"", ""Essentials"", ""Wifi"", ""Fire extinguisher"", ""Building staff"", ""Coffee maker"", ""Microwave"", ""Carbon monoxide alarm"", ""Bed linens"", ""Shampoo"", ""Hair dryer"", ""Iron"", ""Refrigerator"", ""Dedicated workspace"", ""Self check-in"", ""Gym"", ""Smoke alarm"", ""Pool"", ""Heating""]"
+price,discrete_categorical,418.0,303,22.31,"$1,018.00",$998.00,,,,,,"$40,000.00"
 minimum_nights,discrete_numeric,38.0,0,0.0,1,700,699.0,21.87776141384389,20.0,33.951911334533385,0.0,1
-number_of_reviews,continuous,266.0,0,0.0,0,1038,1038.0,56.58247422680412,10.0,114.08481848630973,0.0,0
-last_review,discrete_categorical,370.0,333,24.52,2013-10-25,2025-09-27,,,,,,2025-09-21
-reviews_per_month,continuous,372.0,333,24.52,0.01,24.22,24.209999999999997,1.5258341463414635,0.85,1.9090161569011015,2.0,0.07
-calculated_host_listings_count,discrete_numeric,23.0,0,0.0,1,169,168.0,38.865979381443296,8.0,56.9517993479259,0.0,1
+maximum_nights,continuous,67.0,0,0.0,2,11250,11248.0,563.0552282768778,365.0,509.44889296693106,0.0,365
+minimum_minimum_nights,discrete_numeric,39.0,0,0.0,1,700,699.0,18.86156111929308,3.0,34.141950561274896,0.0,1
+maximum_minimum_nights,discrete_numeric,46.0,0,0.0,1,700,699.0,54.49337260677467,26.0,101.28208141126873,0.0,30
+minimum_maximum_nights,continuous,63.0,0,0.0,1,11250,11249.0,624.5419734904272,365.0,524.6026261213951,0.0,1125
+maximum_maximum_nights,continuous,62.0,0,0.0,2,11250,11248.0,663.0493372606775,365.0,515.2982421185205,0.0,1125
+minimum_nights_avg_ntm,continuous,165.0,0,0.0,1.0,700.0,699.0,22.518335787923416,20.85,34.245350323020666,1.0,1.0
+maximum_nights_avg_ntm,continuous,110.0,0,0.0,2.0,11250.0,11248.0,639.369293078056,365.0,514.7631004377002,1.0,1125.0
+calendar_updated,empty,,1358,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,22,1.62,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,6.45139911634757,2.0,8.537329376484966,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,19.757731958762886,17.0,19.73257640838926,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,36.773932253313696,37.5,31.189127562578406,0.0,0
 availability_365,continuous,338.0,0,0.0,0,365,365.0,181.22680412371133,194.5,122.44917777611693,0.0,0
+calendar_last_scraped,discrete_categorical,1.0,0,0.0,2025-09-28,2025-09-28,,,,,,2025-09-28
+number_of_reviews,continuous,266.0,0,0.0,0,1038,1038.0,56.58247422680412,10.0,114.08481848630973,0.0,0
 number_of_reviews_ltm,continuous,89.0,0,0.0,0,244,244.0,11.159057437407952,2.0,19.856182314811353,0.0,0
+number_of_reviews_l30d,discrete_numeric,14.0,0,0.0,0,19,19.0,0.9027982326951399,0.0,1.7256932576192674,0.0,0
+availability_eoy,continuous,96.0,0,0.0,0,95,95.0,39.76288659793814,42.0,32.82451105166371,0.0,0
+number_of_reviews_ly,continuous,95.0,0,0.0,0,137,137.0,10.086156111929307,1.0,19.63005155117834,0.0,0
+estimated_occupancy_l365d,continuous,73.0,0,0.0,0,255,255.0,87.14874815905743,48.0,99.64668591532309,0.0,0
+estimated_revenue_l365d,continuous,580.0,303,22.31,0.0,2101302.0,2101302.0,24503.267298578197,13770.0,90264.15649644034,1.0,0.0
+first_review,discrete_categorical,852.0,333,24.52,2009-07-23,2025-09-27,,,,,,2022-04-21
+last_review,discrete_categorical,370.0,333,24.52,2013-10-25,2025-09-27,,,,,,2025-09-21
+review_scores_rating,continuous,81.0,333,24.52,1.0,5.0,4.0,4.769521951219512,4.87,0.40122501109407305,2.0,5.0
+review_scores_accuracy,continuous,79.0,333,24.52,1.0,5.0,4.0,4.795414634146342,4.9,0.3756297430811292,2.0,5.0
+review_scores_cleanliness,continuous,97.0,333,24.52,1.0,5.0,4.0,4.744243902439025,4.88,0.4176275055863252,2.0,5.0
+review_scores_checkin,continuous,63.0,333,24.52,1.0,5.0,4.0,4.870019512195122,4.95,0.30355221121151865,2.0,5.0
+review_scores_communication,continuous,64.0,333,24.52,1.0,5.0,4.0,4.838770731707317,4.95,0.38000314955771153,2.0,5.0
+review_scores_location,continuous,58.0,333,24.52,1.0,5.0,4.0,4.872526829268293,4.93,0.281348863721498,2.0,5.0
+review_scores_value,continuous,97.0,333,24.52,1.0,5.0,4.0,4.616556097560975,4.72,0.4801435566419236,2.0,5.0
 license,discrete_categorical,270.0,892,65.68,0000000,str-171078,,,,,,C0015760490
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
+calculated_host_listings_count,discrete_numeric,23.0,0,0.0,1,169,168.0,38.865979381443296,8.0,56.9517993479259,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,16.0,0,0.0,0,169,169.0,27.3100147275405,2.0,54.64419974532256,0.0,0
+calculated_host_listings_count_private_rooms,discrete_numeric,19.0,0,0.0,0,71,71.0,10.977172312223859,1.0,20.183577021594715,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,2.0,0,0.0,0,1,1.0,0.0007363770250368188,0.0,0.02713626770646286,0.0,0
+reviews_per_month,continuous,372.0,333,24.52,0.01,24.22,24.209999999999997,1.5258341463414635,0.85,1.9090161569011015,2.0,0.07
 price_clean,continuous,418.0,303,22.31,29.0,50031.0,50002.0,1186.0947867298578,204.0,6211.42122606038,1.0,77.0

@@ -1,21 +1,99 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
 id,continuous,5723.0,0,0.0,61878,1490255976511423868,1.490255976511362e+18,8.87572344692356e+17,1.0804654920299668e+18,5.421766470311634e+17,0.0,61878
-name,discrete_categorical,5444.0,0,0.0,! Home In The Heart Of Dallas !,"😌Spacious & Serene🌙 w/
-Hot Tub+Arcade+Ping-Pong+Fire Pit",,,,,,"Stunning Downtown Apt | Pool, Laundry, Parking"
+listing_url,discrete_categorical,5723.0,0,0.0,https://www.airbnb.com/rooms/1000131744901729645,https://www.airbnb.com/rooms/999346462727587735,,,,,,https://www.airbnb.com/rooms/1000131744901729645
+scrape_id,discrete_numeric,1.0,0,0.0,20250819035519,20250819035519,0.0,20250819035519.0,20250819035519.0,0.0,0.0,20250819035519
+last_scraped,discrete_categorical,1.0,0,0.0,2025-08-19,2025-08-19,,,,,,2025-08-19
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
+name,discrete_categorical,5444.0,0,0.0,! Home In The Heart Of Dallas !,😌Spacious & Serene🌙 w/ Hot Tub+Arcade+Ping-Pong+Fire Pit,,,,,,"Stunning Downtown Apt | Pool, Laundry, Parking"
+description,discrete_categorical,4676.0,32,0.56,"""My first time staying in an Airbnb and my experience staying at Joe's was surpassed my expectations. I loved his amenities most especially the cable and fast speed internet."" <br />If you are looking for a home away from home don't look no further. <br /><br />*Walk in closet<br /><br />*Patio<br /><br />*Washer/dryer in unit","🛏️ Sleeping & Comfort<br />• Queen bed with new pillows<br />• Ceiling fan with remote light access<br /><br />🚿 Private Bathroom<br />• Private tub/shower<br />• Towels and basic toiletries included<br /><br />🧳 Storage & Privacy<br />• Closet space<br />• Private, secure room<br /><br />💻 Work & Entertainment<br />• Workstation and high-speed Wi-Fi<br />• Smart TV with streaming<br /><br />🍽️ Kitchen Access<br />• Pots, pans, utensils, and fridge access<br /><br />🚉 Location<br />• Close to public transit, shops, and restaurants",,,,,,Keep it simple at this peaceful and centrally-located place.
+neighborhood_overview,discrete_categorical,1690.0,3160,55.22,"""Desirable Downtown Dallas Airbnb with Free Parking near American Airlines Center - Vibrant and Chic Stay for Your City Adventure!""","📍Near LTV Towers in Dallas, Texas, there are plenty of activities to explore, catering to diverse interests. From cultural experiences to outdoor adventures, visitors can immerse themselves in the vibrant atmosphere of the city. Highlights include:<br /><br />🔹**American Airlines Center:** A premier multi-purpose arena home to the Dallas Mavericks NBA team and the Dallas Stars NHL team, it hosts an array of thrilling sporting events, concerts, and live entertainment spectacles year-round. With its central location and world-class facilities, the American Airlines Center is a must-visit destination for sports enthusiasts and entertainment seekers in the heart of Dallas.<br /><br />🔸 **Visit Dealey Plaza:** Explore the historic site where President John F. Kennedy was assassinated. Take a walk through the plaza, visit the Sixth Floor Museum, and learn about this pivotal moment in American history.<br /><br />🔹**Discover The Dallas World Aquarium:** Just a short distance away, this impres",,,,,,"Dallas is one of the largest cities in America, combining urban sophistication with an incomparable Texan personality. Dallas is an altogether unique blend of cultures, styles, and flavors, with more than one million people calling the city proper home.<br /><br />Living in Dallas puts you right in the thick of it all, with endless options to customize your experience. Corporate professionals seeking to avoid long commutes may want to look for apartments in Downtown or Uptown, which are both home to major business centers as well as residential communities, affording many residents walkable access to work. Culture enthusiasts should consider apartments near the Dallas Arts District, which is home to the Nasher Sculpture Center, the Dallas Museum of Art, the Winspear Opera House, and more. Creatives may enjoy places like Old East Dallas and North Oak Cliff, where artistic pursuits abound.<br /><br />Dallas offers some of the most diverse nightlife in Texas, from laid-back lounges to thu"
+picture_url,discrete_categorical,5633.0,0,0.0,https://a0.muscache.com/pictures/0017d99e-8968-463d-8903-0df3010237a6.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-997218690294582232/original/a7cbeb19-c912-4a16-8613-b7463fa892da.jpeg,,,,,,https://a0.muscache.com/pictures/hosting/Hosting-1352681937064468896/original/8c95d87d-2185-4ad6-81e9-c56d0a155afc.jpeg
 host_id,continuous,2435.0,0,0.0,43422,712894118,712850696.0,292185660.7052245,263502162.0,221422269.5552395,0.0,108514926
+host_url,discrete_categorical,2435.0,0,0.0,https://www.airbnb.com/users/show/100371487,https://www.airbnb.com/users/show/998462,,,,,,https://www.airbnb.com/users/show/108514926
 host_name,discrete_categorical,1626.0,0,0.0,A-Solutions BnB,Zykeisha,,,,,,Zachi
-neighbourhood_group,empty,,5723,100.0,,,,,,,,
-neighbourhood,discrete_categorical,14.0,0,0.0,District 1,District 9,,,,,,District 2
+host_since,discrete_categorical,1859.0,0,0.0,2009-10-05,2025-08-11,,,,,,2016-12-26
+host_location,discrete_categorical,224.0,1659,28.99,"Addison, TX","Écully, France",,,,,,"Dallas, TX"
+host_about,discrete_categorical,1103.0,2758,48.19,"
+I love to garden and cook; I keep an herb and small vegetable garden in my back yard. I have two adoring cats that keep me company.
+
+I speak Spanish and Italian and some German. I understand Portuguese and some French. 
+
+My life's goal is to see myself as God sees me. Plus I want to see many places around the world that I have yet to see:
+Mendoza, Argentina
+The Klimt Museum in Austria
+The gypsy caves in the S of Spain
+Matchu Pitchu (sp?)
+The Lavender fields in Hawaii
+
+I want to fly first class.
+I want to be remembered for my kindness.
+My current desire is to travel to Cities that have a great art exhibition.","“Travel is about the gorgeous feeling of teetering in the unknown.” - Anthony Bourdain
+
+Exploring the world, experiencing different cultures and meeting new people are the things that make life an adventure. I hope I can bring some joy and comfort to my guests as they create their own adventures.
+
+My mission is to provide great hospitality to everyone traveling, whether it's for pleasure or for work - Let me provide a bit of delight on your journey.",,,,,,"Welcome to Dallas! As a lifelong resident, I specialize in the historic communities of East Dallas and Deep Ellum. Through Ritzy Room, I professionally manage properties to ensure a seamless, memorable stay. I’m committed to providing the best experience and welcome all feedback to continually improve. Thank you for choosing to stay with us!"
+host_response_time,discrete_categorical,4.0,515,9.0,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,41.0,515,9.0,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,79.0,348,6.08,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,290,5.07,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,2333.0,0,0.0,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z1.muscache.cn/im/pictures/user/617a3902-066a-410d-8e3e-f15c5d1b2824.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/im/pictures/user/96ee849f-a7f0-4190-9f33-6c6606bd8d6c.jpg?aki_policy=profile_small
+host_picture_url,discrete_categorical,2333.0,0,0.0,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z1.muscache.cn/im/pictures/user/617a3902-066a-410d-8e3e-f15c5d1b2824.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/im/pictures/user/96ee849f-a7f0-4190-9f33-6c6606bd8d6c.jpg?aki_policy=profile_x_medium
+host_neighbourhood,discrete_categorical,285.0,505,8.82,544 Place,Wolf Creek,,,,,,Old East Dallas
+host_listings_count,continuous,93.0,0,0.0,1,2945,2944.0,77.87925912982702,6.0,330.6800084864419,0.0,1
+host_total_listings_count,continuous,116.0,0,0.0,1,8274,8273.0,146.63515638651057,8.0,696.13320119106,0.0,1
+host_verifications,discrete_categorical,7.0,0,0.0,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,3160,55.22,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,14.0,0,0.0,District 1,District 9,,,,,,District 2
+neighbourhood_group_cleansed,empty,,5723,100.0,,,,,,,,
 latitude,continuous,4881.0,0,0.0,32.63379,33.01515,0.3813600000000008,32.80945654009216,32.80094129031481,0.06345793946949509,15.0,32.77766
 longitude,continuous,4842.0,0,0.0,-96.99269693344831,-96.48124,0.511456933448315,-96.79500023456191,-96.79497983516926,0.04758063255619596,14.0,-96.79487
+property_type,discrete_categorical,38.0,0,0.0,Barn,Treehouse,,,,,,Entire rental unit
 room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,585.0,350,6.12,11.0,50000.0,49989.0,386.69849246231155,110.0,3088.202570681648,1.0,86.0
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,5.037392975712039,4.0,3.5536040431891527,0.0,2
+bathrooms,continuous,22.0,352,6.15,0.0,18.0,18.0,1.630236455036306,1.0,1.0013166006651528,1.0,1.0
+bathrooms_text,discrete_categorical,31.0,17,0.3,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,13.0,58,1.01,0.0,33.0,33.0,1.884730803177405,1.0,1.33521203367554,0.0,1.0
+beds,continuous,21.0,351,6.13,0.0,39.0,39.0,2.5519359642591213,2.0,2.157135171431238,1.0,1.0
+amenities,discrete_categorical,5250.0,0,0.0,"[""25 inch HDTV with standard cable"", ""Carbon monoxide alarm"", ""Dishwasher"", ""Extra pillows and blankets"", ""Body soap"", ""Essentials"", ""Indoor fireplace: electric"", ""Shampoo"", ""Pack \u2019n play/Travel crib - always at the listing"", ""Wifi"", ""Clothing storage: walk-in closet, closet, and wardrobe"", ""Free dryer \u2013 In unit"", ""Ethernet connection"", ""Free washer \u2013 In unit"", ""Baking sheet"", ""Books and reading material"", ""Whirlpool  stainless steel single oven"", ""Crib"", ""Hammock"", ""Microwave"", ""Central air conditioning"", ""Iron"", ""Refrigerator"", ""Smart lock"", ""BBQ grill"", ""N/a conditioner"", ""Fire extinguisher"", ""Dishes and silverware"", ""Freezer"", ""Bed linens"", ""Smoke alarm"", ""Hair dryer"", ""Coffee"", ""Self check-in"", ""Room-darkening shades"", ""Coffee maker"", ""Portable fans"", ""Dedicated workspace"", ""Exterior security cameras on property"", ""Kitchen"", ""Cooking basics"", ""Outdoor dining area"", ""Free parking on premises"", ""Board games"", ""Housekeeping available from 10:00\u202fAM to 6:30\u202fPM, Monday to Saturday - available at extra cost"", ""Long term stays allowed"", ""Cleaning products"", ""Wine glasses"", ""Toaster"", ""Heating"", ""Hot water kettle"", ""Hot water"", ""Shower gel"", ""Hangers""]",[],,,,,,"[""Carbon monoxide alarm"", ""Extra pillows and blankets"", ""Essentials"", ""Building staff"", ""Shampoo"", ""Wifi"", ""Pool"", ""TV"", ""Pets allowed"", ""Microwave"", ""Iron"", ""Refrigerator"", ""Air conditioning"", ""Fire extinguisher"", ""Bed linens"", ""Smoke alarm"", ""Hair dryer"", ""Self check-in"", ""Coffee maker"", ""Dedicated workspace"", ""Free parking on premises"", ""First aid kit"", ""Heating"", ""Hangers""]"
+price,discrete_categorical,585.0,350,6.12,"$1,000.00",$999.00,,,,,,$86.00
 minimum_nights,continuous,58.0,0,0.0,1,365,364.0,8.221037917176305,2.0,19.63347024785026,0.0,1
-number_of_reviews,continuous,367.0,0,0.0,0,1363,1363.0,42.23501659968548,13.0,83.73121652364865,0.0,0
-last_review,discrete_categorical,718.0,906,15.83,2015-12-06,2025-08-18,,,,,,2025-08-03
-reviews_per_month,continuous,734.0,906,15.83,0.01,27.28,27.27,2.027238945401702,1.44,1.9938097348331656,2.0,1.0
-calculated_host_listings_count,discrete_numeric,39.0,0,0.0,1,116,115.0,13.546217019045955,4.0,23.289609142765798,0.0,1
+maximum_nights,continuous,117.0,0,0.0,1,1125,1124.0,455.0384413769002,365.0,339.55001205357286,0.0,365
+minimum_minimum_nights,continuous,60.0,8,0.14,1.0,365.0,364.0,6.9839020122484685,2.0,18.77448707396934,1.0,1.0
+maximum_minimum_nights,continuous,60.0,8,0.14,1.0,365.0,364.0,9.44601924759405,3.0,20.03664868007237,1.0,1.0
+minimum_maximum_nights,continuous,99.0,8,0.14,1.0,2147483647.0,2147483646.0,2255207.3720034994,365.0,69551603.79648574,1.0,1125.0
+maximum_maximum_nights,continuous,104.0,8,0.14,2.0,2147483647.0,2147483645.0,2255241.645319335,365.0,69551602.68522842,1.0,1125.0
+minimum_nights_avg_ntm,continuous,228.0,0,0.0,1.0,365.0,364.0,8.81488729687227,2.2,19.362965528153058,1.0,1.0
+maximum_nights_avg_ntm,continuous,264.0,0,0.0,2.0,2147483647.0,2147483645.0,2252076.183120741,365.0,69503016.69813281,1.0,1125.0
+calendar_updated,empty,,5723,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,59,1.03,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,18.667482089813035,22.0,10.943614967934288,0.0,30
+availability_60,continuous,61.0,0,0.0,0,60,60.0,39.97099423379346,48.0,20.689407621752828,0.0,60
+availability_90,continuous,91.0,0,0.0,0,90,90.0,63.55198322558099,77.0,29.958911874971854,0.0,90
 availability_365,continuous,364.0,0,0.0,0,365,365.0,253.24148174034596,299.0,118.14089293024206,0.0,365
+calendar_last_scraped,discrete_categorical,1.0,0,0.0,2025-08-19,2025-08-19,,,,,,2025-08-19
+number_of_reviews,continuous,367.0,0,0.0,0,1363,1363.0,42.23501659968548,13.0,83.73121652364865,0.0,0
 number_of_reviews_ltm,continuous,119.0,0,0.0,0,401,401.0,13.438930630788049,5.0,19.726243377280504,0.0,0
+number_of_reviews_l30d,discrete_numeric,16.0,0,0.0,0,47,47.0,1.1189935348593396,0.0,1.9621535064480222,0.0,0
+availability_eoy,continuous,136.0,0,0.0,0,135,135.0,97.2126507076708,117.0,43.840461386051835,0.0,135
+number_of_reviews_ly,continuous,121.0,0,0.0,0,332,332.0,10.593045605451687,1.0,19.155059997971346,0.0,0
+estimated_occupancy_l365d,continuous,86.0,0,0.0,0,255,255.0,83.27240957539752,54.0,88.44405960882547,0.0,0
+estimated_revenue_l365d,continuous,2160.0,350,6.12,0.0,1500000.0,1500000.0,12867.296110180532,5814.0,36988.985905664755,1.0,0.0
+first_review,discrete_categorical,1840.0,906,15.83,2010-12-29,2025-08-18,,,,,,2024-10-13
+last_review,discrete_categorical,718.0,906,15.83,2015-12-06,2025-08-18,,,,,,2025-08-03
+review_scores_rating,continuous,125.0,906,15.83,1.0,5.0,4.0,4.746942080132862,4.87,0.45247530191778323,2.0,5.0
+review_scores_accuracy,continuous,121.0,906,15.83,1.0,5.0,4.0,4.785075773302886,4.9,0.43475768381282326,2.0,5.0
+review_scores_cleanliness,continuous,129.0,906,15.83,1.0,5.0,4.0,4.740323853020552,4.87,0.4425350969595125,2.0,5.0
+review_scores_checkin,continuous,115.0,906,15.83,1.0,5.0,4.0,4.818737803612207,4.94,0.410646501734302,2.0,5.0
+review_scores_communication,continuous,106.0,906,15.83,1.0,5.0,4.0,4.843853020552211,4.96,0.39927334534899467,2.0,5.0
+review_scores_location,continuous,148.0,906,15.83,1.0,5.0,4.0,4.692869005605149,4.83,0.4455336562578636,2.0,5.0
+review_scores_value,continuous,131.0,906,15.83,1.0,5.0,4.0,4.701828939173759,4.82,0.4683959930233077,2.0,5.0
 license,empty,,5723,100.0,,,,,,,,
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
+calculated_host_listings_count,discrete_numeric,39.0,0,0.0,1,116,115.0,13.546217019045955,4.0,23.289609142765798,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,39.0,0,0.0,0,116,116.0,12.825441202166695,3.0,23.291830544388784,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,14.0,0,0.0,0,15,15.0,0.5584483662414818,0.0,1.896813818003736,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,6.0,0,0.0,0,8,8.0,0.03634457452385113,0.0,0.48472658445155636,0.0,0
+reviews_per_month,continuous,734.0,906,15.83,0.01,27.28,27.27,2.027238945401702,1.44,1.9938097348331656,2.0,1.0
 price_clean,continuous,585.0,350,6.12,11.0,50000.0,49989.0,386.69849246231155,110.0,3088.202570681648,1.0,86.0

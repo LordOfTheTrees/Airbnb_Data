@@ -1,20 +1,85 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
 id,continuous,4425.0,0,0.0,37676,1502342378545523430,1.5023423785454858e+18,5.2379260962529766e+17,53532169.0,5.7170203453132506e+17,0.0,37676
+listing_url,discrete_categorical,4425.0,0,0.0,https://www.airbnb.com/rooms/1000814547576538131,https://www.airbnb.com/rooms/9995993,,,,,,https://www.airbnb.com/rooms/1000814547576538131
+scrape_id,discrete_numeric,1.0,0,0.0,20250906174546,20250906174546,0.0,20250906174546.0,20250906174546.0,0.0,0.0,20250906174546
+last_scraped,discrete_categorical,2.0,0,0.0,2025-09-06,2025-09-07,,,,,,2025-09-07
+source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
 name,discrete_categorical,4368.0,0,0.0,"""Crown Vic"" - sweet modern renovated Victorian",🧚‍♂️🐅🪞The Gem on Hawthorne🌱🌈 🪩,,,,,,Wyndham Portland Waterfront Park Resort | Studio
+description,discrete_categorical,3983.0,65,1.47,""" The Maple""<br /><br />Comfortable bedroom in the quiet St. John's neighborhood in North Portland. Walking distance to brewpubs, restaurants, food carts, coffee shops, movie theaters and the St. John's bridge. Room has a desk, internet TV and a comfortable double bed.  House and the room have keyless entry. Monthly discounts are offered. <br /><br />Portland has a occupancy tax if the rental is less than 31 days so if you want to save approximately 200 dollars of tax, book for  31+ days !","🏡 Chic Urban Retreat in NW Portland Walkable, Cozy & Fully Equipped!<br /><br />Welcome to your perfect home away from home in the heart of Portland’s vibrant Northwest District! <br /><br />This stylish and comfortable 1-br apartment accommodates up to 4 guests and is ideal for couples, travelers, or small families looking to experience the best of the city.<br /><br />Nestled in a charming neighborhood just minutes from trendy boutiques, local coffee shops, craft breweries, and award winning restaurants",,,,,,"Experience the very best of Oregon in downtown Portland. The property provides quick and hassle-free access to many of the state’s hidden gems, including the famed Portland Japanese Gardens, Portland Art Museum, Mission Theater, and Portland Saturday Market. The natural beauty of surrounding mountains, nearby lakes, and magnificent vistas is irresistible, offering numerous hiking, climbing, and kayaking options. Downtown Portland is renowned for its culinary diversity, museums, and artists."
+neighborhood_overview,discrete_categorical,2470.0,1507,34.06,""" Restaurant Row"" is a roughly T-shaped dining and retail district four blocks from the house.  This diverse neighborhood comprises a slew of mostly food-related ventures along East Burnside Street from about 22nd to 28th avenues. Then, where Burnside meets 28th Avenue, you'll find several blocks of first-rate eateries as well as a handful of boutiques in either direction, heading north up to about Glisan Street and south down to about Stark Street. The historic Laurelhurst Theater anchors the intersection of 28th and Burnside, and top foodie haunts in these parts include Heart Coffee Roasters, Davenport, Screen Door, Tusk, Matador, Pambiche Cuban, Navarre, Alma Chocolate, Fifty Licks Ice Cream, PaaDee Thai, Laurelhurst Market, Crema Coffee & Bakery (and the small but excellent food-cart pod containing Wolf and Bear's for Middle Eastern food and Le Pantry for French bistro fare), Vino wine shop, Ken's Artisan Pizza, Bamboo Sushi, and Canteen vegan restaurant and juice bar.","❤︎ As far as Portland locations go, ours is perfect! Tucked into a residential neighborhood of NE Portland, just 10 minutes to the Convention Center, MODA, or PDX, the Alberta Arts District is a vibrant locally -focused arts and foodie paradise – quintessential Portland and a destination unto itself. Yet also easily accessible to downtown, to the Coast and the Gorge, and to the greater Portland area.<br />We are just three blocks to vibrant Alberta Street, Kennedy School, New Seasons Grocery, Walgreens, the dispensary and the liquor store. Minutes on foot to coffeehouses, bars, and restaurants headlined by well-known chefs: farm-to-table cuisine, fusion meals, craft cocktails, artisan bread, freshly roasted coffee, and so much more – a real foodie haven!<br /><br />❤︎ Here, we’re a city not just of eaters, but of explorers: in Portland and the Alberta Arts District, in particular, we brew, ferment (kombucha and cider), distill liqueur, frequent taprooms, offer growler fill-ups, and we ",,,,,,- Tender Loving Empire - 0.2 mile; <br />- Portland Art Museum - 0.3 mile; <br />- Tom McCall Waterfront Park - 0.7 mile; <br />- Mission Theater - 0.9 mile; <br />- Portland Paddle Sports Center - 1.2 miles; <br />- Oregon Museum of Science & Industry - 1.7 miles; <br />- International Rose Test Garden - 1.8 miles; <br />- Japanese Garden - 2.4 miles; <br />- House of Vintage - 2.7 miles; <br />- Hoyt Arboretum - 3.4 miles; <br />- Portland International Airport - 12.0 miles
+picture_url,discrete_categorical,4378.0,0,0.0,https://a0.muscache.com/pictures/0013d752-1c1c-4d49-91b8-f95009043cf6.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-991377971675951867/original/e8467930-d720-4e0d-9743-90e04e467c6c.jpeg,,,,,,https://a0.muscache.com/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6Mzk2MjcxMzM%3D/original/dc25e76e-012a-4534-add3-cac811b1af9a.jpeg
 host_id,continuous,2929.0,0,0.0,1618,716123682,716122064.0,137576627.61468926,45533700.0,183954654.92410004,0.0,592522307
+host_url,discrete_categorical,2929.0,0,0.0,https://www.airbnb.com/users/show/10042363,https://www.airbnb.com/users/show/9996037,,,,,,https://www.airbnb.com/users/show/592522307
 host_name,discrete_categorical,1474.0,7,0.16,Aaliyah Mumtaz,Zosia,,,,,,Trevor
-neighbourhood_group,empty,,4425,100.0,,,,,,,,
-neighbourhood,discrete_categorical,92.0,0,0.0,Alameda,Woodstock,,,,,,Northwest District
+host_since,discrete_categorical,2002.0,7,0.16,2008-08-08,2025-08-29,,,,,,2024-07-27
+host_location,discrete_categorical,173.0,655,14.8,"Ajijic, Mexico","Zagreb, Croatia",,,,,,"Portland, OR"
+host_about,discrete_categorical,1955.0,1465,33.11,"
+""We wander for distraction, but we travel for fulfillment.""
+-- someone brainy",最大的梦想是周游世界 有了Airbnb可以轻松的梦想成真 每一次身在异国他乡 都会遇到贴心的房东 终于有一天 自己也可以做房东了 结交世界各地的朋友们,,,,,,"Here at Leavetown we are passionate about providing our guests with genuine, local engagement that goes above and beyond expectations. When you choose to book with Leavetown, you are guaranteed to receive a personalized and simplified vacation experience. We are your complete travel solution for booking a fabulous global getaway from start to finish.
+Call or email us anytime, we’re available 24/7.
+Make the world your home & Leavetown with us!"
+host_response_time,discrete_categorical,4.0,677,15.3,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,33.0,677,15.3,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,79.0,542,12.25,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,63,1.42,f,t,,,,,,t
+host_thumbnail_url,discrete_categorical,2893.0,7,0.16,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z1.muscache.cn/im/pictures/user/User-580627153/original/b2df584c-3877-4bf9-bf6f-31249477aa48.jpeg?aki_policy=profile_small,,,,,,https://a0.muscache.com/im/pictures/user/User/original/10318e10-2e19-486a-8de5-79a6fe46f50e.jpeg?aki_policy=profile_small
+host_picture_url,discrete_categorical,2893.0,7,0.16,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z1.muscache.cn/im/pictures/user/User-580627153/original/b2df584c-3877-4bf9-bf6f-31249477aa48.jpeg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/im/pictures/user/User/original/10318e10-2e19-486a-8de5-79a6fe46f50e.jpeg?aki_policy=profile_x_medium
+host_neighbourhood,discrete_categorical,187.0,211,4.77,Alameda,Woodstock,,,,,,Northwest Portland
+host_listings_count,continuous,64.0,7,0.16,1.0,3883.0,3882.0,72.34608420099593,2.0,382.234194982255,1.0,1.0
+host_total_listings_count,continuous,71.0,7,0.16,1.0,9656.0,9655.0,184.00497962879132,2.0,1075.790296283665,1.0,1.0
+host_verifications,discrete_categorical,6.0,7,0.16,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2.0,7,0.16,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2.0,7,0.16,f,t,,,,,,t
+neighbourhood,discrete_categorical,1.0,1507,34.06,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_categorical,92.0,0,0.0,Alameda,Woodstock,,,,,,Northwest District
+neighbourhood_group_cleansed,empty,,4425,100.0,,,,,,,,
 latitude,continuous,3804.0,0,0.0,45.43340226867938,45.61596,0.18255773132062103,45.52694669903956,45.5255886,0.03273280795488252,15.0,45.5200553
 longitude,continuous,3864.0,0,0.0,-122.83344,-122.48413129553136,0.3493087044686405,-122.65203400754751,-122.65377,0.04681482818751605,14.0,-122.6800784
+property_type,discrete_categorical,46.0,0,0.0,Camper/RV,Yurt,,,,,,Entire home
 room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-price,continuous,443.0,627,14.17,17.0,50000.0,49983.0,526.3575566087414,110.0,4027.599368320814,1.0,100.0
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,3.6194350282485876,3.0,2.206922805683634,0.0,2
+bathrooms,discrete_numeric,16.0,599,13.54,0.0,12.0,12.0,1.318086774699425,1.0,0.7356271425527608,0.0,1.0
+bathrooms_text,discrete_categorical,27.0,23,0.52,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,10.0,125,2.82,0.0,9.0,9.0,1.514186046511628,1.0,1.0650110709921485,0.0,1.0
+beds,discrete_numeric,17.0,599,13.54,0.0,17.0,17.0,1.9466806063774176,2.0,1.415610710833918,0.0,1.0
+amenities,discrete_categorical,4211.0,0,0.0,"[""32 inch TV with HBO Max, Hulu, Netflix"", ""Microwave"", ""Books and reading material"", ""Conditioner"", ""Kitchenette"", ""Private entrance"", ""Portable fans"", ""Smoke alarm"", ""Private patio or balcony"", ""Body soap"", ""Wine glasses"", ""Free street parking"", ""Fast wifi \u2013 309 Mbps"", ""Hot water"", ""Fire extinguisher"", ""Exterior security cameras on property"", ""Bed linens"", ""Outdoor dining area"", ""Hot water kettle"", ""Hangers"", ""Carbon monoxide alarm"", ""Shower gel"", ""Single level home"", ""Self check-in"", ""Coffee"", ""First aid kit"", ""Heating - split type ductless system"", ""Cleaning products"", ""Coffee maker: french press, Keurig coffee machine"", ""Essentials"", ""Iron"", ""Keypad"", ""Hair dryer"", ""Dishes and silverware"", ""Laundromat nearby"", ""Shampoo"", ""Toaster"", ""AC - split type ductless system"", ""Mini fridge""]",[],,,,,,"[""Pets allowed"", ""Gym"", ""Wifi"", ""Smoke alarm"", ""Refrigerator"", ""Extra pillows and blankets"", ""Paid parking on premises"", ""Fire extinguisher"", ""Bed linens"", ""Heating"", ""Dedicated workspace"", ""TV"", ""Hangers"", ""Carbon monoxide alarm"", ""Building staff"", ""Self check-in"", ""First aid kit"", ""Essentials"", ""Iron"", ""Hair dryer"", ""Air conditioning"", ""Shampoo""]"
+price,discrete_categorical,443.0,627,14.17,"$1,042.00",$999.00,,,,,,$100.00
 minimum_nights,discrete_numeric,35.0,0,0.0,1,730,729.0,14.028474576271186,2.0,21.910204362344075,0.0,30
-number_of_reviews,continuous,605.0,0,0.0,0,1813,1813.0,109.52225988700565,36.0,169.5789488836272,0.0,0
-last_review,discrete_categorical,774.0,587,13.27,2014-07-18,2025-09-06,,,,,,2025-09-01
-reviews_per_month,continuous,740.0,587,13.27,0.01,46.1,46.09,2.136380927566441,1.5,2.2467661311842444,2.0,1.0
-calculated_host_listings_count,discrete_numeric,26.0,0,0.0,1,87,86.0,5.531977401129944,1.0,13.027753491305804,0.0,1
+maximum_nights,continuous,119.0,0,0.0,1,1125,1124.0,376.06418079096045,365.0,396.7895785668774,0.0,365
+minimum_minimum_nights,continuous,35.0,1,0.02,1.0,365.0,364.0,13.52757685352622,2.0,18.860990798855404,1.0,1.0
+maximum_minimum_nights,continuous,41.0,1,0.02,1.0,730.0,729.0,14.693716094032549,3.0,23.92253298228178,1.0,30.0
+minimum_maximum_nights,continuous,108.0,1,0.02,1.0,1125.0,1124.0,647.5551537070525,524.0,474.6419997554289,1.0,1125.0
+maximum_maximum_nights,continuous,108.0,1,0.02,1.0,1125.0,1124.0,675.6641048824594,731.0,463.37577899754007,1.0,1125.0
+minimum_nights_avg_ntm,continuous,124.0,0,0.0,1.0,726.0,725.0,14.095254237288136,2.8,21.80933976904424,1.0,30.0
+maximum_nights_avg_ntm,continuous,222.0,0,0.0,1.0,1125.0,1124.0,656.7342598870057,730.0,468.79423486670447,1.0,1125.0
+calendar_updated,empty,,4425,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,68,1.54,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,11.924067796610169,10.0,10.593513731432207,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,29.03819209039548,31.0,21.187574755887702,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,49.12361581920904,57.0,31.48454435171346,0.0,0
 availability_365,continuous,364.0,0,0.0,0,365,365.0,214.25988700564972,244.0,126.97761931517404,0.0,0
+calendar_last_scraped,discrete_categorical,2.0,0,0.0,2025-09-06,2025-09-07,,,,,,2025-09-07
+number_of_reviews,continuous,605.0,0,0.0,0,1813,1813.0,109.52225988700565,36.0,169.5789488836272,0.0,0
 number_of_reviews_ltm,continuous,129.0,0,0.0,0,682,682.0,16.81265536723164,5.0,25.16012773955207,0.0,0
+number_of_reviews_l30d,discrete_numeric,22.0,0,0.0,0,72,72.0,1.4748022598870056,0.0,2.4567433332769375,0.0,0
+availability_eoy,continuous,118.0,0,0.0,0,117,117.0,66.55209039548022,78.0,40.4219277500443,0.0,0
+number_of_reviews_ly,continuous,136.0,0,0.0,0,256,256.0,15.927909604519774,3.0,23.914300366457372,0.0,0
+estimated_occupancy_l365d,continuous,74.0,0,0.0,0,255,255.0,104.81559322033898,78.0,97.57881027303539,0.0,0
+estimated_revenue_l365d,continuous,1565.0,627,14.17,0.0,4800000.0,4800000.0,18811.73617693523,10920.0,123276.94083389701,1.0,0.0
+first_review,discrete_categorical,2232.0,587,13.27,2010-07-22,2025-09-01,,,,,,2023-02-19
+last_review,discrete_categorical,774.0,587,13.27,2014-07-18,2025-09-06,,,,,,2025-09-01
+review_scores_rating,continuous,85.0,587,13.27,1.0,5.0,4.0,4.861831683168317,4.93,0.2651317025940874,2.0,5.0
+review_scores_accuracy,continuous,85.0,587,13.27,1.0,5.0,4.0,4.879645648775404,4.95,0.2609830446935138,2.0,5.0
+review_scores_cleanliness,continuous,97.0,587,13.27,1.0,5.0,4.0,4.853051068264722,4.93,0.27314773983041574,2.0,5.0
+review_scores_checkin,continuous,69.0,587,13.27,1.0,5.0,4.0,4.920945805106826,4.97,0.24384829893239707,2.0,5.0
+review_scores_communication,continuous,74.0,587,13.27,1.0,5.0,4.0,4.9177931214174055,4.97,0.24836436938243536,2.0,5.0
+review_scores_location,continuous,92.0,587,13.27,1.0,5.0,4.0,4.8535487232933825,4.92,0.25732048145628533,2.0,5.0
+review_scores_value,continuous,98.0,587,13.27,1.0,5.0,4.0,4.794775924960918,4.86,0.2899025913241682,2.0,5.0
 license,discrete_categorical,2157.0,1407,31.8,00-000000-000-00-ho,Exempt,,,,,,Exempt
+instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
+calculated_host_listings_count,discrete_numeric,26.0,0,0.0,1,87,86.0,5.531977401129944,1.0,13.027753491305804,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,23.0,0,0.0,0,87,87.0,4.563841807909604,1.0,12.690734815439233,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,12.0,0,0.0,0,14,14.0,0.584632768361582,0.0,1.8393033602073188,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,3.0,0,0.0,0,2,2.0,0.005875706214689265,0.0,0.0972581058769624,0.0,0
+reviews_per_month,continuous,740.0,587,13.27,0.01,46.1,46.09,2.136380927566441,1.5,2.2467661311842444,2.0,1.0
 price_clean,continuous,443.0,627,14.17,17.0,50000.0,49983.0,526.3575566087414,110.0,4027.599368320814,1.0,100.0

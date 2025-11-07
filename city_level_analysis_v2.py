@@ -5,7 +5,7 @@ Run this from your main Airbnb_Data directory
 
 Usage:
     python city_level_analysis.py           # Uses simple 19-column listings.csv
-    python city_level_analysis.py -all      # Uses detailed 79-column listings_csv.gz
+    python city_level_analysis.py -all      # Uses detailed 79-column listings.csv.gz
 """
 
 import pandas as pd
@@ -189,9 +189,9 @@ def create_all_correlation_matrices(df, city_name, output_dir):
         
         # Save top correlations
         corr_df.to_csv(output_dir / f'{city_name}_top_correlations.csv', index=False)
-        
-        # Print top 10
-        print(corr_df.head(10).to_string(index=False))
+
+        # Print top 25
+        print(corr_df.head(25).to_string(index=False))
     
     # Create individual scatter plots for top correlations
     if len(available_key_vars) >= 2:
@@ -247,7 +247,7 @@ def analyze_city(city_folder, base_dir='.', use_detailed=False):
     Args:
         city_folder: Name of the city folder
         base_dir: Base directory containing city folders
-        use_detailed: If True, use listings_csv.gz (79 vars), else listings.csv (19 vars)
+        use_detailed: If True, use listings.csv.gz (79 vars), else listings.csv (19 vars)
     """
     city_path = Path(base_dir) / city_folder
     city_name = city_folder
@@ -255,22 +255,22 @@ def analyze_city(city_folder, base_dir='.', use_detailed=False):
     # Choose which file to load based on use_detailed flag
     if use_detailed:
         # When -all is specified, ONLY try the detailed .gz file
-        listings_file = city_path / 'listings_csv.gz'
+        listings_file = city_path / 'listings.csv.gz'
         if not listings_file.exists():
-            print(f"⚠️  Detailed file (listings_csv.gz) not found for {city_name}")
+            print(f"⚠️  Detailed file (listings.csv.gz) not found for {city_name}")
             print(f"    Falling back to simple listings.csv...")
             listings_file = city_path / 'listings.csv'
             if listings_file.exists():
                 print(f"📊 Using SIMPLE dataset (19 variables) as fallback")
         else:
-            print(f"📊 Using DETAILED dataset (79 variables) from listings_csv.gz")
+            print(f"📊 Using DETAILED dataset (79 variables) from listings.csv.gz")
     else:
         # When -all is NOT specified, use the simple file
         listings_file = city_path / 'listings.csv'
         if not listings_file.exists():
             print(f"⚠️  Simple file (listings.csv) not found for {city_name}")
-            print(f"    Trying detailed listings_csv.gz...")
-            listings_file = city_path / 'listings_csv.gz'
+            print(f"    Trying detailed listings.csv.gz...")
+            listings_file = city_path / 'listings.csv.gz'
             if listings_file.exists():
                 print(f"📊 Using DETAILED dataset (79 variables) as fallback")
         else:
@@ -346,7 +346,7 @@ def analyze_all_cities(city_folders, base_dir='.', use_detailed=False):
     print(f"{'#'*80}")
     
     if use_detailed:
-        print(f"\n🔍 MODE: DETAILED ANALYSIS (79 variables from listings_csv.gz)")
+        print(f"\n🔍 MODE: DETAILED ANALYSIS (79 variables from listings.csv.gz)")
     else:
         print(f"\n🔍 MODE: SIMPLE ANALYSIS (19 variables from listings.csv)")
     
@@ -393,10 +393,10 @@ if __name__ == "__main__":
         city_level_analysis.py  (this file)
         Austin/
             listings.csv        (19 variables - simple)
-            listings_csv.gz     (79 variables - detailed)
+            listings.csv.gz     (79 variables - detailed)
         Boston/
             listings.csv
-            listings_csv.gz
+            listings.csv.gz
         ... etc
     
     Usage:

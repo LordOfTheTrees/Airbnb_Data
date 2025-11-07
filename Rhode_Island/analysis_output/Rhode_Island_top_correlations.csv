@@ -4,8 +4,8 @@ minimum_nights,reviews_per_month,-0.19950735664332722
 number_of_reviews,calculated_host_listings_count,-0.17445292789990305
 reviews_per_month,calculated_host_listings_count,-0.1723618262671738
 number_of_reviews,minimum_nights,-0.13050882050728882
-availability_365,reviews_per_month,0.11352570179949631
-availability_365,calculated_host_listings_count,-0.09873323143727156
+availability_365,reviews_per_month,0.11352570179949628
+availability_365,calculated_host_listings_count,-0.09873323143727157
 price_clean,availability_365,0.09310829038445141
 price_clean,number_of_reviews,-0.07758856891943312
 price_clean,reviews_per_month,-0.0663212877651832

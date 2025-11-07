@@ -9,7 +9,7 @@ availability_365,calculated_host_listings_count,0.1188941510887986
 price_clean,availability_365,0.06756846656039607
 number_of_reviews,availability_365,-0.06563992549041163
 price_clean,number_of_reviews,-0.05047413329008228
-availability_365,reviews_per_month,-0.043452575981509554
+availability_365,reviews_per_month,-0.04345257598150956
 price_clean,minimum_nights,-0.03889881192589144
 availability_365,minimum_nights,0.03567559908658078
 price_clean,reviews_per_month,-0.032958449586162994
