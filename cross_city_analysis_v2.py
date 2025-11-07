@@ -5,6 +5,8 @@ Run AFTER city_level_analysis.py
 
 This script loads data from all cities and creates comparative visualizations
 
+⚠️ IMPORTANT: The detailed file is named listings.csv.gz (not listings_csv.gz)
+
 Usage:
     python cross_city_analysis.py           # Uses simple 19-column listings.csv
     python cross_city_analysis.py -all      # Uses detailed 79-column listings.csv.gz
@@ -40,7 +42,7 @@ class CrossCityAnalyzer:
         print("="*80)
         
         if self.use_detailed:
-            print("🔍 MODE: DETAILED ANALYSIS (79 variables from listings.csv.gz)\n")
+            print("🔍 MODE: DETAILED ANALYSIS (79 variables from listings_csv.gz)\n")
         else:
             print("🔍 MODE: SIMPLE ANALYSIS (19 variables from listings.csv)\n")
         
@@ -127,7 +129,7 @@ class CrossCityAnalyzer:
         print("="*80)
         
         import os
-        os.makedirs('outputs', exist_ok=True)
+        os.makedirs('city_comparison_outputs', exist_ok=True)
         
         df = self.combined_data
         
@@ -157,8 +159,8 @@ class CrossCityAnalyzer:
         city_comparison.columns = ['_'.join(col).strip() for col in city_comparison.columns.values]
         
         # Save
-        city_comparison.to_csv('outputs/city_comparison_table.csv')
-        print("✓ Saved: outputs/city_comparison_table.csv")
+        city_comparison.to_csv('city_comparison_outputs/city_comparison_table.csv')
+        print("✓ Saved: city_comparison_outputs/city_comparison_table.csv")
         
         # Print to console
         print("\n" + city_comparison.to_string())
@@ -172,7 +174,7 @@ class CrossCityAnalyzer:
         print("="*80)
         
         import os
-        os.makedirs('outputs', exist_ok=True)
+        os.makedirs('city_comparison_outputs', exist_ok=True)
         
         df = self.combined_data
         
@@ -222,8 +224,8 @@ class CrossCityAnalyzer:
             ax.grid(axis='x', alpha=0.3)
         
         plt.tight_layout()
-        plt.savefig('outputs/city_comparison_charts.png', dpi=300, bbox_inches='tight')
-        print("✓ Saved: outputs/city_comparison_charts.png")
+        plt.savefig('city_comparison_outputs/city_comparison_charts.png', dpi=300, bbox_inches='tight')
+        print("✓ Saved: city_comparison_outputs/city_comparison_charts.png")
         plt.close()
     
     def create_scatter_plots(self):
@@ -233,7 +235,7 @@ class CrossCityAnalyzer:
         print("="*80)
         
         import os
-        os.makedirs('outputs', exist_ok=True)
+        os.makedirs('city_comparison_outputs', exist_ok=True)
         
         df = self.combined_data
         
@@ -344,8 +346,8 @@ class CrossCityAnalyzer:
             print("  ✓ Plot 4: Reviews per Month vs Price")
         
         plt.tight_layout()
-        plt.savefig('outputs/scatter_plots_comparison.png', dpi=300, bbox_inches='tight')
-        print("\n✓ Saved: outputs/scatter_plots_comparison.png")
+        plt.savefig('city_comparison_outputs/scatter_plots_comparison.png', dpi=300, bbox_inches='tight')
+        print("\n✓ Saved: city_comparison_outputs/scatter_plots_comparison.png")
         plt.close()
     
     def create_room_type_analysis(self):
@@ -355,7 +357,7 @@ class CrossCityAnalyzer:
         print("="*80)
         
         import os
-        os.makedirs('outputs', exist_ok=True)
+        os.makedirs('city_comparison_outputs', exist_ok=True)
         
         df = self.combined_data
         
@@ -374,13 +376,13 @@ class CrossCityAnalyzer:
         
         room_summary = df.groupby('room_type').agg(agg_dict).round(2)
         room_summary.columns = ['_'.join(col).strip() for col in room_summary.columns.values]
-        room_summary.to_csv('outputs/room_type_analysis.csv')
-        print("✓ Saved: outputs/room_type_analysis.csv")
+        room_summary.to_csv('city_comparison_outputs/room_type_analysis.csv')
+        print("✓ Saved: city_comparison_outputs/room_type_analysis.csv")
         
         # Room type distribution by city
         room_dist = pd.crosstab(df['city'], df['room_type'])
-        room_dist.to_csv('outputs/room_type_by_city.csv')
-        print("✓ Saved: outputs/room_type_by_city.csv")
+        room_dist.to_csv('city_comparison_outputs/room_type_by_city.csv')
+        print("✓ Saved: city_comparison_outputs/room_type_by_city.csv")
         
         # Visualization
         fig, axes = plt.subplots(1, 2, figsize=(18, 7))
@@ -414,8 +416,8 @@ class CrossCityAnalyzer:
             ax.get_figure().suptitle('')  # Remove automatic title
         
         plt.tight_layout()
-        plt.savefig('outputs/room_type_visualizations.png', dpi=300, bbox_inches='tight')
-        print("✓ Saved: outputs/room_type_visualizations.png")
+        plt.savefig('city_comparison_outputs/room_type_visualizations.png', dpi=300, bbox_inches='tight')
+        print("✓ Saved: city_comparison_outputs/room_type_visualizations.png")
         plt.close()
         
         return self
@@ -427,7 +429,7 @@ class CrossCityAnalyzer:
         print("="*80)
         
         import os
-        os.makedirs('outputs', exist_ok=True)
+        os.makedirs('city_comparison_outputs', exist_ok=True)
         
         df = self.combined_data
         
@@ -446,9 +448,9 @@ class CrossCityAnalyzer:
         corr_matrix = df[available_vars].corr()
         
         # Save CSV
-        corr_matrix.to_csv('outputs/overall_correlation_matrix.csv')
-        print("✓ Saved: outputs/overall_correlation_matrix.csv")
-        
+        corr_matrix.to_csv('city_comparison_outputs/overall_correlation_matrix.csv')
+        print("✓ Saved: city_comparison_outputs/overall_correlation_matrix.csv")
+
         # Create heatmap
         plt.figure(figsize=(12, 10))
         sns.heatmap(corr_matrix, annot=True, fmt='.3f', cmap='coolwarm',
@@ -456,8 +458,8 @@ class CrossCityAnalyzer:
         plt.title('Correlation Matrix - All Cities Combined', 
                  fontsize=16, fontweight='bold')
         plt.tight_layout()
-        plt.savefig('outputs/overall_correlation_heatmap.png', dpi=300, bbox_inches='tight')
-        print("✓ Saved: outputs/overall_correlation_heatmap.png")
+        plt.savefig('city_comparison_outputs/overall_correlation_heatmap.png', dpi=300, bbox_inches='tight')
+        print("✓ Saved: city_comparison_outputs/overall_correlation_heatmap.png")
         plt.close()
         
         return self
@@ -532,7 +534,7 @@ if __name__ == "__main__":
      .run_full_analysis())
     
     print("\n" + "#"*80)
-    print("ALL DONE! Check the 'outputs' folder for results.")
+    print("ALL DONE! Check the 'city_comparison_outputs' folder for results.")
     print("#"*80)
     
     if use_detailed:

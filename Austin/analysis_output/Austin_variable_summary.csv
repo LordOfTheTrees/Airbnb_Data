@@ -1,90 +1,81 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
-id,continuous,15187.0,0,0.0,5456,1441660813139987358,1.4416608131399818e+18,5.995245002723891e+17,6.97316005746794e+17,5.520277694802328e+17,0.0,5456
-listing_url,discrete_categorical,15187.0,0,0.0,https://www.airbnb.com/rooms/1000016109686428185,https://www.airbnb.com/rooms/999823,,,,,,https://www.airbnb.com/rooms/1000016109686428185
-scrape_id,discrete_numeric,1.0,0,0.0,20250613040113,20250613040113,0.0,20250613040112.996,20250613040113.0,0.003906378611408381,0.0,20250613040113
-last_scraped,discrete_categorical,2.0,0,0.0,2025-06-13,2025-06-14,,,,,,2025-06-13
-source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
-name,discrete_categorical,14826.0,0,0.0,! Hip East Austin Bungalow Haven with Backyard !,🤟🏽This Must Be The Place👌🏼,,,,,,Wyndham Austin Resort|1BR/1BA King Bed w/ Gym&Pool
-description,discrete_categorical,13245.0,347,2.28,"        <br />  This is a modern two-bedroom house in the heart of the Bouldin Creek neighborhood in South Austin. Downtown, Zilker Park, Barton Springs, and South Congress are all within a 15 minute walk from here. Come and enjoy Southby in style!<br />  ","🦋 Welcome to Mariposa House. If you appreciate eclectic and creative places with a pinch of magic and elegance you'll love it here. The house was a garage - converted to a home with a spiral stair case up to the loft- your private space.  Downstairs is a large open space, with an antique Chinese wedding bed (200 years old) -  musical instruments, and a kitchen with available tea and coffee for you! My partner and I live in the house, our “bedroom” is downstairs in a curtained off section. 🦋",,,,,,Please click on -show more- and read the description of the listing PRIOR to making the reservation. DONT BOOK WITHOUT READING
-neighborhood_overview,discrete_categorical,6332.0,7273,47.89,"""A mile from downtown, East Austin has historically been a working-class neighborhood, a vibrant enclave heavily populated by African-Americans because of an earlier era of segregationist laws — and later, a home to Mexican-American residents. These days, it’s also the city’s newly fashionable arts district, with studios, galleries, cocktail bars, cafes and all manner of food trucks popping up on most every block. Beloved taquerias and barbecue joints, ramshackle carwashes and Christian outreach ministries now jostle against shiny condos, fancy restaurants and, in refurbished bungalows, groovy hair salons with names like Peacock and Orbit."" - Bonnie Tsui, NY Times",🧭 Prime Location = Endless Possibilities<br />🎓 0.5 mi to St. Edward’s University<br /><br />🏫 6.6 mi to UT Austin<br /><br />🌮 Walk to SoCo’s famous foodie scene & Downtown restaurants<br /><br />✈️ 7 mi to Austin-Bergstrom Airport<br /><br />🏥 1.3 mi to St. David’s Medical Center<br /><br />💼 Near major business + meeting hubs,,,,,,"• CW Austin Resort is in Austin, Texas."
-picture_url,discrete_categorical,14750.0,1,0.01,https://a0.muscache.com/pictures/001c5c6a-d2b7-495f-bd38-1cceabdf5712.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-999355052712961791/original/d4836488-158a-4968-be7a-e2bce553bd1d.jpeg,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1400747442355622112/original/9334941f-4948-4c32-8e54-660e509984dd.png
-host_id,continuous,8877.0,0,0.0,23,700650145,700650122.0,181790758.82004344,84767145.0,200863059.2830459,0.0,107434423
-host_url,discrete_categorical,8877.0,0,0.0,https://www.airbnb.com/users/show/100075823,https://www.airbnb.com/users/show/9999092,,,,,,https://www.airbnb.com/users/show/107434423
-host_name,discrete_categorical,3566.0,2,0.01,A,Zvi,,,,,,RoomPicks
-host_since,discrete_categorical,3881.0,2,0.01,2008-03-03,2025-06-11,,,,,,2023-02-20
-host_location,discrete_categorical,527.0,2567,16.9,"Abilene, TX","Yellowstone National Park, WY",,,,,,"Austin, TX"
-host_about,discrete_categorical,4790.0,5836,38.43,"
-","저는 텍사스 에서만 40여년 살고있는 교포 입니다.
-집에 빈방이 있어 여행객들이 편하게 여행하도록 돕고 싶습니다.
-저는 한국음식을 맛있게 하고 사람들과 만나 이야기 하는것을 좋아합니다.
-세계일주하는것이 꿈이지만 기다리고 있는 중 입니다.",,,,,,"Vacasa
-Vacation Home Management
-
-Vacasa unlocks the possibilities of how we enjoy vacation homes. We take care of managing our homeowners’ vacation houses so they can have peace of mind (and their home when they want to). And our guests book vacations confidently knowing they’re going to find exactly what they’re looking for without any surprises.
-
-Each vacation home is always cared for by our professional local teams who implement our high cleanliness and maintenance values, while the hands-off tasks of vacation rental management--marketing, filing taxes, and maintaining a website--are handled by a specialized central support team. Our passion and focus remain true: to empower our homeowners, guests, and employees to invest in vacation."
-host_response_time,discrete_categorical,4.0,4319,28.44,a few days or more,within an hour,,,,,,within an hour
-host_response_rate,discrete_categorical,43.0,4319,28.44,0%,99%,,,,,,100%
-host_acceptance_rate,discrete_categorical,96.0,3499,23.04,0%,99%,,,,,,100%
-host_is_superhost,discrete_categorical,2.0,478,3.15,f,t,,,,,,f
-host_thumbnail_url,discrete_categorical,8701.0,2,0.01,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z0.muscache.cn/im/users/9586902/profile_pic/1382509877/original.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3
-host_picture_url,discrete_categorical,8701.0,2,0.01,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z0.muscache.cn/im/users/9586902/profile_pic/1382509877/original.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3
-host_neighbourhood,discrete_categorical,733.0,1629,10.73,Academy Acres North,Zona Romántica,,,,,,South Austin
-host_listings_count,continuous,155.0,2,0.01,1.0,4889.0,4888.0,120.09535726045439,2.0,575.9284852491298,1.0,1.0
-host_total_listings_count,continuous,192.0,2,0.01,1.0,8202.0,8201.0,183.40230490615738,3.0,858.9306960880215,1.0,1.0
-host_verifications,discrete_categorical,8.0,2,0.01,"['email', 'phone', 'photographer', 'work_email']",[],,,,,,"['email', 'phone']"
-host_has_profile_pic,discrete_categorical,2.0,2,0.01,f,t,,,,,,t
-host_identity_verified,discrete_categorical,2.0,2,0.01,f,t,,,,,,t
-neighbourhood,discrete_categorical,1.0,7273,47.89,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
-neighbourhood_cleansed,discrete_numeric,44.0,0,0.0,78701,78759,58.0,78724.37597945612,78723.0,20.806128409894857,0.0,78704
-neighbourhood_group_cleansed,empty,,15187,100.0,,,,,,,,
-latitude,continuous,12078.0,0,0.0,30.07844,30.51835,0.43991000000000113,30.28034746131011,30.2692387,0.06418304092322102,15.0,30.2748812
-longitude,continuous,11773.0,0,0.0,-98.05335,-97.5593,0.49405000000000143,-97.75036072779933,-97.74142755164011,0.06447359781237023,14.0,-97.757196
-property_type,discrete_categorical,68.0,0,0.0,Barn,Yurt,,,,,,Entire home
-room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,5.008559952591032,4.0,3.426457197993696,0.0,2
-bathrooms,continuous,24.0,4473,29.45,0.0,17.0,17.0,1.73837969012507,1.0,1.0466429321265862,1.0,1.0
-bathrooms_text,discrete_categorical,35.0,14,0.09,0 baths,Shared half-bath,,,,,,1 bath
-bedrooms,discrete_numeric,17.0,939,6.18,0.0,23.0,23.0,2.095101066816395,2.0,1.4419376731115914,0.0,1.0
-beds,continuous,32.0,4491,29.57,0.0,132.0,132.0,2.9720456245325355,2.0,2.9818312480018205,1.0,1.0
-amenities,discrete_categorical,13936.0,0,0.0,"[""32 inch HDTV with Netflix"", ""Carbon monoxide alarm"", ""Wifi"", ""Lockbox"", ""Dishwasher"", ""Oven"", ""Free street parking"", ""Hair dryer"", ""Dishes and silverware"", ""Refrigerator"", ""Conditioner"", ""Baking sheet"", ""Shampoo"", ""Stove"", ""Private backyard"", ""Microwave"", ""Free parking on premises"", ""Portable fans"", ""Clothing storage: walk-in closet, closet, and dresser"", ""Freezer"", ""Private entrance"", ""Hot water"", ""Bed linens"", ""Wine glasses"", ""Blender"", ""Long term stays allowed"", ""Kitchen"", ""Cooking basics"", ""Dedicated workspace"", ""Dryer \u2013\u00a0In unit"", ""Private patio or balcony"", ""Hangers"", ""Smoke alarm"", ""Central air conditioning"", ""First aid kit"", ""Self check-in"", ""Fire extinguisher"", ""Hot water kettle"", ""Coffee maker"", ""Ceiling fan"", ""Body soap"", ""Exterior security cameras on property"", ""Coffee"", ""Washer \u2013\u00a0In unit"", ""Toaster"", ""Essentials"", ""Cleaning products"", ""Central heating"", ""Dining table""]",[],,,,,,"[""Extra pillows and blankets"", ""Carbon monoxide alarm"", ""Safe"", ""Wifi"", ""Fire pit"", ""Dishwasher"", ""Oven"", ""Elevator"", ""Luggage dropoff allowed"", ""Hair dryer"", ""Dishes and silverware"", ""Heating"", ""Conditioner"", ""Refrigerator"", ""Baking sheet"", ""City skyline view"", ""Shampoo"", ""TV"", ""Stove"", ""Microwave"", ""Pool"", ""Freezer"", ""Room-darkening shades"", ""Private entrance"", ""Hot water"", ""Bed linens"", ""Wine glasses"", ""Blender"", ""Trash compactor"", ""Resort access"", ""Air conditioning"", ""Long term stays allowed"", ""Kitchen"", ""Shower gel"", ""Dedicated workspace"", ""Cooking basics"", ""Hangers"", ""Pack \u2019n play/Travel crib"", ""Bathtub"", ""Iron"", ""Smoke alarm"", ""Laundromat nearby"", ""Clothing storage"", ""BBQ grill"", ""Gym"", ""Paid parking off premises"", ""First aid kit"", ""Self check-in"", ""Building staff"", ""Fire extinguisher"", ""Crib"", ""Dryer"", ""Coffee maker"", ""Body soap"", ""Coffee"", ""Toaster"", ""Outdoor furniture"", ""Washer"", ""Cleaning available during stay"", ""Essentials"", ""Cleaning products"", ""Dining table""]"
-price,discrete_categorical,992.0,4479,29.49,"$1,000.00",$999.00,,,,,,$90.00
-minimum_nights,continuous,73.0,0,0.0,1,1124,1123.0,7.888983999473234,2.0,30.206797265112595,0.0,1
-maximum_nights,continuous,167.0,0,0.0,1,1825,1824.0,461.8631724501218,365.0,432.04588440529346,0.0,365
-minimum_minimum_nights,continuous,73.0,0,0.0,1,1124,1123.0,7.339698426285639,2.0,30.122595652667922,0.0,1
-maximum_minimum_nights,continuous,83.0,0,0.0,1,1124,1123.0,10.869361954303022,3.0,40.731181659326175,0.0,2
-minimum_maximum_nights,continuous,149.0,0,0.0,1,2147483647,2147483646.0,1273239.8330809246,365.0,52263750.95018995,0.0,1125
-maximum_maximum_nights,continuous,167.0,0,0.0,1,2147483647,2147483646.0,5798162.93869757,365.0,111432774.5114463,0.0,1125
-minimum_nights_avg_ntm,continuous,313.0,0,0.0,1.0,1124.0,1123.0,8.316830183709753,2.0,30.56367965908194,1.0,2.0
-maximum_nights_avg_ntm,continuous,574.0,0,0.0,1.0,2147483647.0,2147483646.0,5785746.027813262,365.0,111194568.29160747,1.0,1125.0
-calendar_updated,empty,,15187,100.0,,,,,,,,
-has_availability,discrete_categorical,1.0,1331,8.76,t,t,,,,,,t
-availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,12.48962928820702,12.0,11.731816877042563,0.0,0
-availability_60,continuous,61.0,0,0.0,0,60,60.0,28.745045104365577,33.0,24.151030579700787,0.0,0
-availability_90,continuous,91.0,0,0.0,0,90,90.0,46.35826693882926,57.0,36.23388588520076,0.0,0
-availability_365,continuous,366.0,0,0.0,0,365,365.0,174.44301046948047,177.0,140.90082552296923,0.0,0
-calendar_last_scraped,discrete_categorical,2.0,0,0.0,2025-06-13,2025-06-14,,,,,,2025-06-13
-number_of_reviews,continuous,531.0,0,0.0,0,1291,1291.0,44.177454401791,10.0,91.25597525593726,0.0,0
-number_of_reviews_ltm,continuous,129.0,0,0.0,0,334,334.0,9.756304734312241,2.0,16.743167803723036,0.0,0
-number_of_reviews_l30d,discrete_numeric,20.0,0,0.0,0,31,31.0,0.7083689998024626,0.0,1.4878534124395504,0.0,0
-availability_eoy,continuous,203.0,0,0.0,0,202,202.0,104.30420754592744,127.0,79.53837682981948,0.0,0
-number_of_reviews_ly,continuous,130.0,0,0.0,0,217,217.0,9.278527688154343,1.0,16.882991915923245,0.0,0
-estimated_occupancy_l365d,continuous,80.0,0,0.0,0,255,255.0,62.13603740040824,18.0,82.42493759534102,0.0,0
-estimated_revenue_l365d,continuous,3419.0,4479,29.49,0.0,3900000.0,3900000.0,15186.667818453492,7077.0,52452.83931651729,1.0,0.0
-first_review,discrete_categorical,2997.0,2911,19.17,2009-03-08,2025-06-12,,,,,,2024-10-20
-last_review,discrete_categorical,1639.0,2911,19.17,2011-04-25,2025-06-13,,,,,,2025-05-26
-review_scores_rating,continuous,124.0,2911,19.17,0.0,5.0,5.0,4.8324340175953076,4.94,0.343546078524545,2.0,5.0
-review_scores_accuracy,continuous,120.0,2911,19.17,1.0,5.0,4.0,4.851586836102966,4.95,0.3383837092698211,2.0,5.0
-review_scores_cleanliness,continuous,137.0,2911,19.17,1.0,5.0,4.0,4.807499999999999,4.92,0.3629937721436434,2.0,5.0
-review_scores_checkin,continuous,107.0,2912,19.17,1.0,5.0,4.0,4.8938052953156825,4.98,0.2961932111578165,2.0,5.0
-review_scores_communication,continuous,111.0,2911,19.17,1.0,5.0,4.0,4.897551319648094,4.99,0.3015994825513534,2.0,5.0
-review_scores_location,continuous,134.0,2913,19.18,0.0,5.0,5.0,4.820203682581066,4.91,0.32371369411257994,2.0,5.0
-review_scores_value,continuous,132.0,2913,19.18,0.0,5.0,5.0,4.772873553853675,4.86,0.370725344430981,2.0,5.0
-license,empty,,15187,100.0,,,,,,,,
-instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
-calculated_host_listings_count,discrete_numeric,48.0,0,0.0,1,116,115.0,9.715480345031935,2.0,20.144832480966837,0.0,1
-calculated_host_listings_count_entire_homes,discrete_numeric,44.0,0,0.0,0,116,116.0,7.181405149140712,1.0,16.730664489378917,0.0,1
-calculated_host_listings_count_private_rooms,discrete_numeric,21.0,0,0.0,0,57,57.0,1.2713504971357081,0.0,5.491494354578298,0.0,0
-calculated_host_listings_count_shared_rooms,discrete_numeric,4.0,0,0.0,0,60,60.0,0.37604530190294333,0.0,4.706305230372308,0.0,0
-reviews_per_month,continuous,783.0,2911,19.17,0.01,23.08,23.069999999999997,1.4558675464320625,0.9,1.6811800884094479,2.0,0.01
-price_clean,continuous,992.0,4479,29.49,9.0,50000.0,49991.0,386.4705827418752,138.0,2620.1983217195275,1.0,90.0
+id,continuous,15187,0,0,5456,1.44166E+18,1.44E+18,6.00E+17,6.97E+17,5.52E+17,0,5456
+listing_url,discrete_categorical,15187,0,0,https://www.airbnb.com/rooms/1000016109686428185,https://www.airbnb.com/rooms/999823,,,,,,https://www.airbnb.com/rooms/1000016109686428185
+scrape_id,discrete_numeric,1,0,0,2.02506E+13,2.02506E+13,0,2.02506E+13,2.02506E+13,0.003906379,0,2.02506E+13
+last_scraped,discrete_categorical,2,0,0,6/13/2025,6/14/2025,,,,,,6/13/2025
+source,discrete_categorical,2,0,0,city scrape,previous scrape,,,,,,city scrape
+name,discrete_categorical,14826,0,0,! Hip East Austin Bungalow Haven with Backyard !,🤟🏽This Must Be The Place👌🏼,,,,,,Wyndham Austin Resort|1BR/1BA King Bed w/ Gym&Pool
+description,discrete_categorical,13245,347,2.28,This is a modern two-bedroom house in the heart of...,🦋 Welcome to Mariposa House. If you appreciate ecl...,,,,,,Please click on -show more- and read the descripti...
+neighborhood_overview,discrete_categorical,6332,7273,47.89,"""A mile from downtown, East Austin has historicall...",🧭 Prime Location = Endless Possibilities 🎓 0.5 mi ...,,,,,,"• CW Austin Resort is in Austin, Texas."
+picture_url,discrete_categorical,14750,1,0.01,https://a0.muscache.com/pictures/001c5c6a-d2b7-495...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1400...
+host_id,continuous,8877,0,0,23,700650145,700650122,181790758.8,84767145,200863059.3,0,107434423
+host_url,discrete_categorical,8877,0,0,https://www.airbnb.com/users/show/100075823,https://www.airbnb.com/users/show/9999092,,,,,,https://www.airbnb.com/users/show/107434423
+host_name,discrete_categorical,3566,2,0.01,A,Zvi,,,,,,RoomPicks
+host_since,discrete_categorical,3881,2,0.01,3/3/2008,6/11/2025,,,,,,2/20/2023
+host_location,discrete_categorical,527,2567,16.9,"Abilene, TX","Yellowstone National Park, WY",,,,,,"Austin, TX"
+host_about,discrete_categorical,4790,5836,38.43,,저는 텍사스 에서만 40여년 살고있는 교포 입니다. 집에 빈방이 있어 여행객들이 편하게 여...,,,,,,Vacasa Vacation Home Management Vacasa unlocks the...
+host_response_time,discrete_categorical,4,4319,28.44,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,43,4319,28.44,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,96,3499,23.04,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2,478,3.15,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,8701,2,0.01,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z0.muscache.cn/im/users/9586902/profile_pi...,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.pn...
+host_picture_url,discrete_categorical,8701,2,0.01,https://a0.muscache.com/defaults/user_pic-225x225....,https://z0.muscache.cn/im/users/9586902/profile_pi...,,,,,,https://a0.muscache.com/defaults/user_pic-225x225....
+host_neighbourhood,discrete_categorical,733,1629,10.73,Academy Acres North,Zona Romántica,,,,,,South Austin
+host_listings_count,continuous,155,2,0.01,1,4889,4888,120.0953573,2,575.9284852,1,1
+host_total_listings_count,continuous,192,2,0.01,1,8202,8201,183.4023049,3,858.9306961,1,1
+host_verifications,discrete_categorical,8,2,0.01,"['email', 'phone', 'photographer', 'work_email']",[],,,,,,"['email', 'phone']"
+host_has_profile_pic,discrete_categorical,2,2,0.01,f,t,,,,,,t
+host_identity_verified,discrete_categorical,2,2,0.01,f,t,,,,,,t
+neighbourhood,discrete_categorical,1,7273,47.89,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_numeric,44,0,0,78701,78759,58,78724.37598,78723,20.80612841,0,78704
+neighbourhood_group_cleansed,empty,,15187,100,,,,,,,,
+latitude,continuous,12078,0,0,30.07844,30.51835,0.43991,30.28034746,30.2692387,0.064183041,15,30.2748812
+longitude,continuous,11773,0,0,-98.05335,-97.5593,0.49405,-97.75036073,-97.74142755,0.064473598,14,-97.757196
+property_type,discrete_categorical,68,0,0,Barn,Yurt,,,,,,Entire home
+room_type,discrete_categorical,4,0,0,Entire home/apt,Shared room,,,,,,Entire home/apt
+accommodates,discrete_numeric,16,0,0,1,16,15,5.008559953,4,3.426457198,0,2
+bathrooms,continuous,24,4473,29.45,0,17,17,1.73837969,1,1.046642932,1,1
+bathrooms_text,discrete_categorical,35,14,0.09,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,17,939,6.18,0,23,23,2.095101067,2,1.441937673,0,1
+beds,continuous,32,4491,29.57,0,132,132,2.972045625,2,2.981831248,1,1
+amenities,discrete_categorical,13936,0,0,"[""32 inch HDTV with Netflix"", ""Carbon monoxide ala...",[],,,,,,"[""Extra pillows and blankets"", ""Carbon monoxide al..."
+price,discrete_categorical,992,4479,29.49,"$1,000.00 ",$999.00 ,,,,,,$90.00 
+minimum_nights,continuous,73,0,0,1,1124,1123,7.888983999,2,30.20679727,0,1
+maximum_nights,continuous,167,0,0,1,1825,1824,461.8631725,365,432.0458844,0,365
+minimum_minimum_nights,continuous,73,0,0,1,1124,1123,7.339698426,2,30.12259565,0,1
+maximum_minimum_nights,continuous,83,0,0,1,1124,1123,10.86936195,3,40.73118166,0,2
+minimum_maximum_nights,continuous,149,0,0,1,2147483647,2147483646,1273239.833,365,52263750.95,0,1125
+maximum_maximum_nights,continuous,167,0,0,1,2147483647,2147483646,5798162.939,365,111432774.5,0,1125
+minimum_nights_avg_ntm,continuous,313,0,0,1,1124,1123,8.316830184,2,30.56367966,1,2
+maximum_nights_avg_ntm,continuous,574,0,0,1,2147483647,2147483646,5785746.028,365,111194568.3,1,1125
+calendar_updated,empty,,15187,100,,,,,,,,
+has_availability,discrete_categorical,1,1331,8.76,t,t,,,,,,t
+availability_30,discrete_numeric,31,0,0,0,30,30,12.48962929,12,11.73181688,0,0
+availability_60,continuous,61,0,0,0,60,60,28.7450451,33,24.15103058,0,0
+availability_90,continuous,91,0,0,0,90,90,46.35826694,57,36.23388589,0,0
+availability_365,continuous,366,0,0,0,365,365,174.4430105,177,140.9008255,0,0
+calendar_last_scraped,discrete_categorical,2,0,0,6/13/2025,6/14/2025,,,,,,6/13/2025
+number_of_reviews,continuous,531,0,0,0,1291,1291,44.1774544,10,91.25597526,0,0
+number_of_reviews_ltm,continuous,129,0,0,0,334,334,9.756304734,2,16.7431678,0,0
+number_of_reviews_l30d,discrete_numeric,20,0,0,0,31,31,0.708369,0,1.487853412,0,0
+availability_eoy,continuous,203,0,0,0,202,202,104.3042075,127,79.53837683,0,0
+number_of_reviews_ly,continuous,130,0,0,0,217,217,9.278527688,1,16.88299192,0,0
+estimated_occupancy_l365d,continuous,80,0,0,0,255,255,62.1360374,18,82.4249376,0,0
+estimated_revenue_l365d,continuous,3419,4479,29.49,0,3900000,3900000,15186.66782,7077,52452.83932,1,0
+first_review,discrete_categorical,2997,2911,19.17,3/8/2009,6/12/2025,,,,,,10/20/2024
+last_review,discrete_categorical,1639,2911,19.17,4/25/2011,6/13/2025,,,,,,5/26/2025
+review_scores_rating,continuous,124,2911,19.17,0,5,5,4.832434018,4.94,0.343546079,2,5
+review_scores_accuracy,continuous,120,2911,19.17,1,5,4,4.851586836,4.95,0.338383709,2,5
+review_scores_cleanliness,continuous,137,2911,19.17,1,5,4,4.8075,4.92,0.362993772,2,5
+review_scores_checkin,continuous,107,2912,19.17,1,5,4,4.893805295,4.98,0.296193211,2,5
+review_scores_communication,continuous,111,2911,19.17,1,5,4,4.89755132,4.99,0.301599483,2,5
+review_scores_location,continuous,134,2913,19.18,0,5,5,4.820203683,4.91,0.323713694,2,5
+review_scores_value,continuous,132,2913,19.18,0,5,5,4.772873554,4.86,0.370725344,2,5
+license,empty,,15187,100,,,,,,,,
+instant_bookable,discrete_categorical,2,0,0,f,t,,,,,,f
+calculated_host_listings_count,discrete_numeric,48,0,0,1,116,115,9.715480345,2,20.14483248,0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,44,0,0,0,116,116,7.181405149,1,16.73066449,0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,21,0,0,0,57,57,1.271350497,0,5.491494355,0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,4,0,0,0,60,60,0.376045302,0,4.70630523,0,0
+reviews_per_month,continuous,783,2911,19.17,0.01,23.08,23.07,1.455867546,0.9,1.681180088,2,0.01
+price_clean,continuous,992,4479,29.49,9,50000,49991,386.4705827,138,2620.198322,1,90

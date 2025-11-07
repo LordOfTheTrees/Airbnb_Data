@@ -5,30 +5,21 @@ scrape_id,discrete_numeric,1.0,0,0.0,20251001171547,20251001171547,0.0,202510011
 last_scraped,discrete_categorical,2.0,0,0.0,2025-10-01,2025-10-02,,,,,,2025-10-02
 source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
 name,discrete_categorical,34446.0,2,0.01,! Hamilton Studio. priv bathrm. near subways,🪴🛋🌞 Unique sunny clean brownstone studio 1st floor,,,,,,Water View King Bed Hotel Room
-description,discrete_categorical,29846.0,958,2.65,        <br /> Cozy & clean on the corner of 5th Street and 2nd Avenue. 1 room (Queen bed) in 3 bedroom apartment (2 roommates are boys - 25 year old Finance professionals). Great kitchen and bathroom. Easy 2 minute walk to all subways and Union Sq.<br />  ,"🪹🔮 This magical nest was designed to be my comfy, safe haven from the hectic BK bustle. It's full of plants, art, soft lighting, and surround sound music. <br /><br />🌞 It has a back deck with loungers and outdoor dining to soak in the sun or have a nice twinkle lit evening, and is situated just 3 blocks from a gorgeous little park or a half hour stroll west on Eastern Parkway to Brooklyn Museum, Prospect Park, and the Botanical Gardens 🪴🌷<br /><br />Old school AirBnB host for over a decade now. Not in 'the biz'",,,,,,You'll have a great time at this comfortable place to stay.
-neighborhood_overview,discrete_categorical,13989.0,17407,48.2," Bushwick Brooklyn is a great neighborhood with many art galleries, bars , cafés, restaurants and stores very hip young  crowd in bushwick...","🛒 Supermarkets & Grocery Stores<br /><br />The Food Emporium<br />	•	📍 452 W 43rd St (between 9th & 10th Ave)<br />	•	🕒 Open daily 7 AM – 12 AM<br />	•	Offers organic produce, prepared meals, and a wide selection of groceries.   <br /><br />Target	<br />1. •📍 615 10th Ave (at W 45th St)<br /><br />	• 🕒 Open daily 8 AM – 11 PM<br /><br />	• Offers a wide selection of groceries, including organic and international products.<br /><br />Starbucks, Groceries, Liquor store across the street.",,,,,,"This furnished apartment is located in Midtown East. This bustling neighborhood is home to NYC landmarks like the Empire State Building, the United Nations' headquarters, and Grand Central Station. Midtown East is also home to a thriving dining scene, with everything from humble food carts selling hotdogs to white-tablecloth restaurants with multiple Michelin stars. There are also many cultural attractions, including the Museum of Modern Art, the lovely Japan Society, the historic Morgan Library, and more. Midtown East is also home to some incredible shopping, from the international flagship stores along Fifth Avenue to Bloomingdale's, one of the city's best-loved department stores."
-picture_url,discrete_categorical,35367.0,0,0.0,https://a0.muscache.com/pictures/0004b780-88ce-4ff8-b623-e3bb4ad35838.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-999775215264479826/original/8f3aec01-3fda-4cbb-9929-9e1173de706c.jpeg,,,,,,https://a0.muscache.com/pictures/6998e77e-4564-49e8-b652-61c90e84ee65.jpg
+description,discrete_categorical,29846.0,958,2.65,Cozy & clean on the corner of 5th Street and 2nd A...,"🪹🔮 This magical nest was designed to be my comfy, ...",,,,,,You'll have a great time at this comfortable place...
+neighborhood_overview,discrete_categorical,13989.0,17407,48.2,Bushwick Brooklyn is a great neighborhood with man...,🛒 Supermarkets & Grocery Stores The Food Emporium ...,,,,,,This furnished apartment is located in Midtown Eas...
+picture_url,discrete_categorical,35367.0,0,0.0,https://a0.muscache.com/pictures/0004b780-88ce-4ff...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/6998e77e-4564-49e...
 host_id,continuous,21382.0,0,0.0,1678,721443059,721441381.0,175619453.1080834,88326021.0,194562427.80721432,0.0,107434423
 host_url,discrete_categorical,21382.0,0,0.0,https://www.airbnb.com/users/show/10001551,https://www.airbnb.com/users/show/9997747,,,,,,https://www.airbnb.com/users/show/107434423
-host_name,discrete_categorical,8296.0,1166,3.23, Valéria,진,,,,,,Eugene
+host_name,discrete_categorical,8296.0,1166,3.23,Valéria,진,,,,,,Eugene
 host_since,discrete_categorical,5176.0,1167,3.23,2008-08-11,2025-09-29,,,,,,2012-08-11
 host_location,discrete_categorical,981.0,8700,24.09,"Aalborg, Denmark","İstanbul, Turkey",,,,,,"New York, NY"
-host_about,discrete_categorical,11252.0,16496,45.68,"
-","한국분 선호합니다. 
-지내는 분들이 모두 한국사람입니다. 
-
-I am working and living in the city.
-The roommates in this home are very friendly and nice.
-This area is so easy commute and safe.
-
-Since this is not a hotel or the place for the making money, I don't have any towels and other stuff. I will share mine,if you need anything like toothbrush, towel,blanket and more. - need to let me know before you come!-
-",,,,,,"my number: (Phone number hidden by Airbnb) , my email: (Email hidden by Airbnb)"
+host_about,discrete_categorical,11252.0,16496,45.68,,한국분 선호합니다. 지내는 분들이 모두 한국사람입니다. I am working and li...,,,,,,"my number: (Phone number hidden by Airbnb) , my em..."
 host_response_time,discrete_categorical,4.0,15774,43.68,a few days or more,within an hour,,,,,,within an hour
 host_response_rate,discrete_categorical,70.0,15774,43.68,0%,99%,,,,,,100%
 host_acceptance_rate,discrete_categorical,97.0,15595,43.19,0%,99%,,,,,,100%
 host_is_superhost,discrete_categorical,2.0,384,1.06,f,t,,,,,,f
-host_thumbnail_url,discrete_categorical,20795.0,1167,3.23,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z1.muscache.cn/im/pictures/user/afba8615-652b-47f8-9a87-4a8e9c2a7c04.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3
-host_picture_url,discrete_categorical,20795.0,1167,3.23,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z1.muscache.cn/im/pictures/user/afba8615-652b-47f8-9a87-4a8e9c2a7c04.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3
+host_thumbnail_url,discrete_categorical,20795.0,1167,3.23,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/pictures/user/afba8615-6...,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.pn...
+host_picture_url,discrete_categorical,20795.0,1167,3.23,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/pictures/user/afba8615-6...,,,,,,https://a0.muscache.com/defaults/user_pic-225x225....
 host_neighbourhood,discrete_categorical,523.0,8484,23.49,Abbotsford,Zona Romántica,,,,,,Bedford-Stuyvesant
 host_listings_count,continuous,117.0,1167,3.23,1.0,5478.0,5477.0,112.26465201465201,2.0,592.4173474930365,1.0,1.0
 host_total_listings_count,continuous,154.0,1167,3.23,1.0,9764.0,9763.0,194.00706845238096,3.0,900.407345059767,1.0,1.0
@@ -47,7 +38,7 @@ bathrooms,discrete_numeric,19.0,14411,39.91,0.0,15.5,15.5,1.1927880184331798,1.0
 bathrooms_text,discrete_categorical,32.0,114,0.32,0 baths,Shared half-bath,,,,,,1 bath
 bedrooms,discrete_numeric,15.0,5949,16.47,0.0,16.0,16.0,1.3860155162124528,1.0,0.9449314819663737,0.0,1.0
 beds,discrete_numeric,19.0,14468,40.07,0.0,40.0,40.0,1.6215866561936885,1.0,1.2115406823464174,0.0,1.0
-amenities,discrete_categorical,29271.0,0,0.0,"["" Eco Botanics Travel Size  shampoo"", ""Exterior security cameras on property"", ""Extra pillows and blankets"", ""Dedicated workspace"", ""Clothing storage: closet and dresser"", "" Eco Botanics Travel Size  conditioner"", ""Laundromat nearby"", ""Room-darkening shades"", ""Microwave"", ""Iron"", ""Fireplace guards"", ""Essentials"", ""Hot water kettle"", ""Self check-in"", ""Freezer"", ""Hair dryer"", ""Central heating"", "" Eco Botanics Travel Size body soap"", ""Cleaning products"", ""Shower gel"", ""Smoke alarm"", ""Luggage dropoff allowed"", ""Board games"", ""AC - split type ductless system"", ""Kitchen"", ""Wifi"", ""Carbon monoxide alarm"", ""Frigidaire stainless steel gas stove"", ""Ethernet connection"", ""Indoor fireplace: electric"", ""Fire extinguisher"", ""Frigidaire stainless steel oven"", ""Dining table"", ""Wine glasses"", ""Lockbox"", ""Lock on bedroom door"", ""Cooking basics"", ""Hot water"", ""Hangers"", ""Free street parking"", ""Long term stays allowed"", ""Bed linens"", ""Stainless Steel Frigidaire Gallery refrigerator"", ""Single level home"", ""Dishes and silverware"", ""Ceiling fan"", ""50 inch HDTV with Hulu, Netflix, Roku"", ""First aid kit""]",[],,,,,,"[""Smoke alarm"", ""Air conditioning"", ""Wifi"", ""Carbon monoxide alarm"", ""TV"", ""Washer"", ""Kitchen""]"
+amenities,discrete_categorical,29271.0,0,0.0,"["" Eco Botanics Travel Size shampoo"", ""Exterior se...",[],,,,,,"[""Smoke alarm"", ""Air conditioning"", ""Wifi"", ""Carbo..."
 price,discrete_categorical,1150.0,14783,40.94,"$1,000.00",$999.00,,,,,,$150.00
 minimum_nights,continuous,106.0,0,0.0,1,1124,1123.0,28.61009110797264,30.0,29.166475675296244,0.0,30
 maximum_nights,continuous,256.0,0,0.0,1,2147483647,2147483646.0,60035.534186259036,365.0,11300820.93721458,0.0,1125

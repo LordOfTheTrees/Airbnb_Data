@@ -3,6 +3,8 @@ City-Level Analysis Script
 Generates comprehensive statistics and correlation matrices for each city individually
 Run this from your main Airbnb_Data directory
 
+⚠️ IMPORTANT: The detailed file is named listings.csv.gz (not listings_csv.gz)
+
 Usage:
     python city_level_analysis.py           # Uses simple 19-column listings.csv
     python city_level_analysis.py -all      # Uses detailed 79-column listings.csv.gz
@@ -20,6 +22,40 @@ warnings.filterwarnings('ignore')
 # Set visualization style
 sns.set_style("whitegrid")
 plt.rcParams['figure.figsize'] = (12, 10)
+
+# ============================================================================
+# CONFIGURATION
+# ============================================================================
+MAX_TEXT_LENGTH = 100  # Maximum characters for text fields in variable summary
+TOP_CORRELATIONS_N = 25  # Number of top correlations to save and display
+# ============================================================================
+
+def sanitize_text(text, max_length=MAX_TEXT_LENGTH):
+    """
+    Sanitize text for safe CSV storage
+    - Truncate to max_length
+    - Remove newlines and extra spaces
+    - Remove problematic characters
+    """
+    if pd.isna(text) or text is None:
+        return text
+    
+    text = str(text)
+    
+    # Remove newlines and tabs
+    text = text.replace('\n', ' ').replace('\r', ' ').replace('\t', ' ')
+    
+    # Remove <br /> tags
+    text = text.replace('<br />', ' ').replace('<br>', ' ')
+    
+    # Collapse multiple spaces
+    text = ' '.join(text.split())
+    
+    # Truncate to max length
+    if len(text) > max_length:
+        text = text[:max_length] + '...'
+    
+    return text
 
 def analyze_variable(series, var_name):
     """
@@ -86,11 +122,14 @@ def analyze_variable(series, var_name):
         # Categorical/text variable
         stats['data_type'] = 'discrete_categorical'
         stats['n_unique'] = clean_series.nunique()
-        stats['mode'] = clean_series.mode().iloc[0] if len(clean_series.mode()) > 0 else None
+        
+        # Sanitize text values for min, max, mode
+        mode_val = clean_series.mode().iloc[0] if len(clean_series.mode()) > 0 else None
+        stats['mode'] = sanitize_text(mode_val, max_length=50)
         
         # For categorical, min/max are first/last alphabetically
-        stats['min'] = clean_series.min()
-        stats['max'] = clean_series.max()
+        stats['min'] = sanitize_text(clean_series.min(), max_length=50)
+        stats['max'] = sanitize_text(clean_series.max(), max_length=50)
     
     return stats
 
@@ -118,9 +157,15 @@ def create_variable_summary_table(df, city_name):
     
     return summary_df
 
-def create_all_correlation_matrices(df, city_name, output_dir):
+def create_all_correlation_matrices(df, city_name, output_dir, top_n=25):
     """
     Create correlation matrices for all combinations of numeric variables
+    
+    Args:
+        df: DataFrame with city data
+        city_name: Name of the city
+        output_dir: Directory to save outputs
+        top_n: Number of top correlations to analyze (default 25)
     """
     print(f"\n{'='*80}")
     print(f"CREATING CORRELATION MATRICES FOR {city_name.upper()}")
@@ -189,15 +234,16 @@ def create_all_correlation_matrices(df, city_name, output_dir):
         
         # Save top correlations
         corr_df.to_csv(output_dir / f'{city_name}_top_correlations.csv', index=False)
-
-        # Print top 25
-        print(corr_df.head(25).to_string(index=False))
+        
+        # Print top N
+        print(f"\n  📊 TOP {top_n} CORRELATIONS:")
+        print(corr_df.head(top_n).to_string(index=False))
     
     # Create individual scatter plots for top correlations
     if len(available_key_vars) >= 2:
         print(f"\n  Creating correlation scatter plots...")
         
-        # Select top 6 correlation pairs
+        # Select top 6 correlation pairs for visualization
         top_pairs = corr_df.head(6)
         
         fig, axes = plt.subplots(2, 3, figsize=(18, 12))
@@ -247,7 +293,7 @@ def analyze_city(city_folder, base_dir='.', use_detailed=False):
     Args:
         city_folder: Name of the city folder
         base_dir: Base directory containing city folders
-        use_detailed: If True, use listings.csv.gz (79 vars), else listings.csv (19 vars)
+        use_detailed: If True, use listings_csv.gz (79 vars), else listings.csv (19 vars)
     """
     city_path = Path(base_dir) / city_folder
     city_name = city_folder
@@ -317,7 +363,7 @@ def analyze_city(city_folder, base_dir='.', use_detailed=False):
     print(summary_table.to_string(index=False))
     
     # 2. Create correlation matrices
-    create_all_correlation_matrices(df, city_name, output_dir)
+    create_all_correlation_matrices(df, city_name, output_dir, top_n=TOP_CORRELATIONS_N)
     
     print(f"\n{'='*80}")
     print(f"✅ ANALYSIS COMPLETE FOR {city_name.upper()}")
@@ -346,7 +392,7 @@ def analyze_all_cities(city_folders, base_dir='.', use_detailed=False):
     print(f"{'#'*80}")
     
     if use_detailed:
-        print(f"\n🔍 MODE: DETAILED ANALYSIS (79 variables from listings.csv.gz)")
+        print(f"\n🔍 MODE: DETAILED ANALYSIS (79 variables from listings_csv.gz)")
     else:
         print(f"\n🔍 MODE: SIMPLE ANALYSIS (19 variables from listings.csv)")
     
@@ -393,7 +439,7 @@ if __name__ == "__main__":
         city_level_analysis.py  (this file)
         Austin/
             listings.csv        (19 variables - simple)
-            listings.csv.gz     (79 variables - detailed)
+            listings.csv.gz     (79 variables - detailed)  ⚠️ NOTE: .csv.gz not _csv.gz
         Boston/
             listings.csv
             listings.csv.gz

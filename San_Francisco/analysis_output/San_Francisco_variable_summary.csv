@@ -5,35 +5,21 @@ scrape_id,discrete_numeric,1.0,0,0.0,20250901181253,20250901181253,0.0,202509011
 last_scraped,discrete_categorical,1.0,0,0.0,2025-09-01,2025-09-01,,,,,,2025-09-01
 source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
 name,discrete_categorical,7312.0,0,0.0,"!B Upper Room w/private bath, 1 guest only",🎷 Stay in the Heart of Fillmore & Japantown 🎶,,,,,,Chic King Suite at Wyndham Donatello in SF
-description,discrete_categorical,6137.0,92,1.18,"    Large and sunny one bedroom with views of Candlestick Park and the Bay. Easy access to the South Bay and Downtown San Francisco : 7 minutes from San Francisco International, 10 minutes to downtown by car. Gated entrance, individual parking. <br />  ","🥰 Beautiful fully detached corner house in a very desirable neighborhood in close proximity to great Restaurants, shopping, Golden Gate park, Ocean Beach etc. Larsen park Infront of the house, Transits.  Larsen Park extends into a children's play ground, Charlie Sava Swimming Pool and Stern Grove.<br />Property is 3 Bedrooms with 4 beds and 2 Bathrooms.<br /><br />The whole group will enjoy easy access to everything from this centrally located home.<br />Downtown SF is just minutes away.",,,,,,"This 250 sqft room has a queen bed and a private bathroom. It's perfect for couples, families, and business travelers. The airport and transit are just minutes away, and the Golden Gate Bridge and other attractions are nearby. Enjoy bar hopping, shopping, dining, and thrift shopping while you stay."
-neighborhood_overview,discrete_categorical,3159.0,3097,39.81, located in historical Nob Hill district. on the intersection of Sacrament & Polk. extremely convenient neighborhood. there are lots of unique restaurants and shops right out the door.<br />the neighborhood is bustling with life day and night.,"📍Set just one block from Fisherman’s Wharf, the Marriott Vacation Club Pulse, San Francisco offers stylish, modern lodging in the heart of the city. Walk to Coit Tower, Pier 39, Ghirardelli Square, or hop on the cable car to explore Union Square and Chinatown!",,,,,,"Russian Hill is a vibrant and desirable neighborhood in San Francisco, centrally located and close to parks, beaches, restaurants, and downtown. It is known for its luxurious homes, charming streets, and stunning views of the city and the bay.<br /><br />Residents of Russian Hill enjoy a variety of amenities, including:<br /><br />- Parks and recreation.<br />- Beaches.<br />- Restaurants and shops.<br />- Downtown access.<br /><br />If you are looking for a prestigious neighborhood in the heart of San Francisco, Russian Hill is the perfect place for you. With its stunning views, convenient location, and wide variety of amenities, Russian Hill has something to offer everyone."
-picture_url,discrete_categorical,7233.0,0,0.0,https://a0.muscache.com/pictures/0014cebc-a57f-4673-b7a1-311189124c37.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-996480798730280552/original/f56c2726-5d47-4b5f-a568-5f893a69cf17.jpeg,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1003516198863121163/original/dbdaf7a3-e395-4e7b-b93b-54e0d7175e6c.jpeg
+description,discrete_categorical,6137.0,92,1.18,Large and sunny one bedroom with views of Candlest...,🥰 Beautiful fully detached corner house in a very ...,,,,,,This 250 sqft room has a queen bed and a private b...
+neighborhood_overview,discrete_categorical,3159.0,3097,39.81,located in historical Nob Hill district. on the in...,"📍Set just one block from Fisherman’s Wharf, the Ma...",,,,,,Russian Hill is a vibrant and desirable neighborho...
+picture_url,discrete_categorical,7233.0,0,0.0,https://a0.muscache.com/pictures/0014cebc-a57f-467...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1003...
 host_id,continuous,3699.0,0,0.0,1169,716069750,716068581.0,194905516.03264782,90891621.5,216275275.51313674,0.0,542041520
 host_url,discrete_categorical,3699.0,0,0.0,https://www.airbnb.com/users/show/100238132,https://www.airbnb.com/users/show/9999808,,,,,,https://www.airbnb.com/users/show/542041520
 host_name,discrete_categorical,2122.0,1,0.01,1906 Mission,戸上,,,,,,Ronald Alan
 host_since,discrete_categorical,2476.0,1,0.01,2008-07-31,2025-08-28,,,,,,2023-10-16
 host_location,discrete_categorical,227.0,1863,23.95,"Adair Village, OR","Yucca Valley, CA",,,,,,"San Francisco, CA"
-host_about,discrete_categorical,2303.0,3084,39.64,"
-
-","我喜歡旅行，美食，音樂，閱讀和運動！
-I love travelling, food, music, reading and sports!!",,,,,,"We’re Blueground, a global proptech company with several thousand move-in-ready apartments in a growing number of major cities around the world. With flexible terms and homes in vibrant, centrally based neighborhoods, you’ll feel at home and free to roam for as long as you want — a month, a year, or longer. 
-
-Each apartment is thoughtfully designed with exclusive furnishings, fully equipped kitchens, and incredible amenities – making every day a five-star experience. From day one, you’ll enjoy high-speed Wi-Fi, premium linens, and smart home entertainment. Plus, access to pools, gyms, and outdoor spaces in select buildings.
-
-Why stress over your apartment? We provide a hassle-free alternative — a consistent, quality guest experience that starts even before you arrive. Because we let you book our most up-to-date apartment listings online, confirm with a click, pay securely, and check in easily. 
-
-Even better? You can enhance your stay with car rentals, grocery delivery, laundry services, and more through our special partnerships. 
-
-During your stay
-Upon arrival, you’ll either be greeted personally by a Blueground team member or given self-check-in instructions. The entire apartment is yours! You’ll enjoy reliable support via email, phone, and our Guest App, where you can request everything from a home cleaning to extra towels. 
-
-We’ll share all details upon confirmation of your stay."
+host_about,discrete_categorical,2303.0,3084,39.64,,"我喜歡旅行，美食，音樂，閱讀和運動！ I love travelling, food, music,...",,,,,,"We’re Blueground, a global proptech company with s..."
 host_response_time,discrete_categorical,4.0,1153,14.82,a few days or more,within an hour,,,,,,within an hour
 host_response_rate,discrete_categorical,50.0,1153,14.82,0%,99%,,,,,,100%
 host_acceptance_rate,discrete_categorical,98.0,809,10.4,0%,99%,,,,,,100%
 host_is_superhost,discrete_categorical,2.0,137,1.76,f,t,,,,,,f
-host_thumbnail_url,discrete_categorical,3637.0,1,0.01,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z1.muscache.cn/im/pictures/user/7406e94f-e5b0-4ba4-9739-eb90b739bef5.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/im/pictures/user/User-542041520/original/d2a766f4-93a6-4f8e-95a0-30b6d8eff742.jpeg?aki_policy=profile_small
-host_picture_url,discrete_categorical,3637.0,1,0.01,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z1.muscache.cn/im/pictures/user/7406e94f-e5b0-4ba4-9739-eb90b739bef5.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/im/pictures/user/User-542041520/original/d2a766f4-93a6-4f8e-95a0-30b6d8eff742.jpeg?aki_policy=profile_x_medium
+host_thumbnail_url,discrete_categorical,3637.0,1,0.01,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/pictures/user/7406e94f-e...,,,,,,https://a0.muscache.com/im/pictures/user/User-5420...
+host_picture_url,discrete_categorical,3637.0,1,0.01,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/pictures/user/7406e94f-e...,,,,,,https://a0.muscache.com/im/pictures/user/User-5420...
 host_neighbourhood,discrete_categorical,246.0,336,4.32,Alameda,ж.к. Стрелбище,,,,,,Mission District
 host_listings_count,continuous,113.0,1,0.01,1.0,5445.0,5444.0,293.9059005013498,4.0,1014.788246523114,1.0,1.0
 host_total_listings_count,continuous,132.0,1,0.01,1.0,9551.0,9550.0,389.5892788276128,6.0,1335.978069430294,1.0,1.0
@@ -52,7 +38,7 @@ bathrooms,discrete_numeric,13.0,1934,24.86,0.0,10.0,10.0,1.3226137529934998,1.0,
 bathrooms_text,discrete_categorical,29.0,51,0.66,0 baths,Shared half-bath,,,,,,1 bath
 bedrooms,discrete_numeric,11.0,489,6.29,0.0,11.0,11.0,1.4323138115484844,1.0,0.9836347355619374,0.0,1.0
 beds,discrete_numeric,14.0,1958,25.17,0.0,16.0,16.0,1.7703538302988664,1.0,1.2132212075809743,0.0,1.0
-amenities,discrete_categorical,6432.0,0,0.0,"[""32 inch HDTV with standard cable"", ""Carbon monoxide alarm"", ""Dedicated workspace"", ""Shampoo"", ""Hair dryer"", ""Essentials"", ""Hangers"", ""Smoke alarm"", ""Fire extinguisher"", ""Paid parking off premises"", ""Crib"", ""First aid kit"", ""Luggage dropoff allowed"", ""Heating"", ""Extra pillows and blankets"", ""Iron"", ""Wifi"", ""Hot water""]",[],,,,,,"[""Dedicated workspace"", ""Essentials"", ""Hangers"", ""Fire extinguisher"", ""Conditioner"", ""Bed linens"", ""Extra pillows and blankets"", ""Laundromat nearby"", ""Outlet covers"", ""Self check-in"", ""Hair dryer"", ""Room-darkening shades"", ""Elevator"", ""Clothing storage"", ""Carbon monoxide alarm"", ""Body soap"", ""TV"", ""Kitchenette"", ""Cooking basics"", ""Private entrance"", ""Paid parking off premises"", ""First aid kit"", ""Luggage dropoff allowed"", ""Smart lock"", ""Mini fridge"", ""Exterior security cameras on property"", ""Wifi"", ""Hot water"", ""Long term stays allowed"", ""Shampoo"", ""Smoke alarm"", ""Microwave"", ""Heating"", ""Cleaning available during stay"", ""Shower gel""]"
+amenities,discrete_categorical,6432.0,0,0.0,"[""32 inch HDTV with standard cable"", ""Carbon monox...",[],,,,,,"[""Dedicated workspace"", ""Essentials"", ""Hangers"", ""..."
 price,discrete_categorical,749.0,1985,25.51,"$1,000.00",$999.00,,,,,,$263.00
 minimum_nights,continuous,52.0,0,0.0,1,1125,1124.0,19.860925449871466,3.0,48.25564437935462,0.0,30
 maximum_nights,continuous,159.0,0,0.0,1,999999,999998.0,512.2961439588689,365.0,11340.9121779674,0.0,365

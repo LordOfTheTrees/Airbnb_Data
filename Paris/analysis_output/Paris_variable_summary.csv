@@ -5,32 +5,22 @@ scrape_id,discrete_numeric,1.0,0,0.0,20250912034503,20250912034503,0.0,202509120
 last_scraped,discrete_categorical,4.0,0,0.0,2025-09-12,2025-09-15,,,,,,2025-09-15
 source,discrete_categorical,1.0,0,0.0,previous scrape,previous scrape,,,,,,previous scrape
 name,discrete_categorical,76096.0,0,0.0,! PARIS! Cosy flat Anvers,🥐Charmant T2 - Paris 11 - 4 people - 🥐,,,,,,Appartement
-description,discrete_categorical,75528.0,2713,3.31,"            Fully renovated 28sqm studio with designer furniture in the heart of Paris, walking distance to major tourist spots. Located 30 meters from metro station, this is an ideal apartment for your visit to The City of Love!<br />  <br />  <br />  ","🥐 Luxury, quiet and elegance a stone's throw from Montmartre<br /><br />Welcome to this beautiful luxury furnished apartment, ideally located in Jules Joffrin (18th arrondissement), a few minutes' walk from Sacré-Cœur.<br /><br />This 2-room apartment of 37 m², new and renovated by architects, is located on the 1st floor of a quiet and secure Haussmann building with a digital code. It offers you all the comforts of a 5-star hotel, in an intimate atmosphere.<br /><br />A typical Parisian apartment for you to fully experience.",,,,,,"Our mission is to allow individuals to immerse themselves in new places with a home away from home. To do this, we provide fully furnished and equipped apartments, designed with art, for stays of a month or more. We are currently present in some of the most important cities in Europe."
-neighborhood_overview,discrete_categorical,34559.0,42253,51.62,"	Paris, République metro 100 meters away (M3, M5, M8, M9, M11). <br />	Located on a lively pedestrian street with all local shops within 50 meters (Franprix, Picard, Smoking, Pharmacy...)<br />	In a quiet and flowery condominium, with 2 security gates and bike parking in the inner courtyard<br />	On the 5th and top floor, no elevator, not overlooked","🦦 Ideally located close to the banks of the Seine and the Eiffel Tower, the apartment is close to tourist sites, and in the heart of a pleasant and lively neighborhood!<br /><br />🏛️ An ideal base to explore the iconic treasures of the City of Light while enjoying the authentic and lively charm of the 15th arrondissement.<br /><br />Direct access to Roland Garros, Parc des Princes and Hippodromes d 'Auteuil and Paris Longchamp",,,,,,.
-picture_url,discrete_categorical,81195.0,2,0.0,https://a0.muscache.com/pictures/0002e7a4-3c8e-4e81-96d6-44169c077bfa.jpg,https://a0.muscache.com/pictures/prohost-api/Hosting-999947328277927587/original/2b07e17a-a47d-4de8-8df3-0ab959204e92.jpeg,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1044828531756863875/original/916bfea8-42b5-47df-b01f-b2875d20a560.jpeg
+description,discrete_categorical,75528.0,2713,3.31,Fully renovated 28sqm studio with designer furnitu...,"🥐 Luxury, quiet and elegance a stone's throw from ...",,,,,,Our mission is to allow individuals to immerse the...
+neighborhood_overview,discrete_categorical,34559.0,42253,51.62,"Paris, République metro 100 meters away (M3, M5, M...",🦦 Ideally located close to the banks of the Seine ...,,,,,,.
+picture_url,discrete_categorical,81195.0,2,0.0,https://a0.muscache.com/pictures/0002e7a4-3c8e-4e8...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1044...
 host_id,continuous,59587.0,0,0.0,2626,717175691,717173065.0,188163859.59784004,74266499.0,210517274.02392858,0.0,314994947
 host_url,discrete_categorical,59587.0,0,0.0,https://www.airbnb.com/users/show/100004575,https://www.airbnb.com/users/show/99999726,,,,,,https://www.airbnb.com/users/show/314994947
 host_name,discrete_categorical,11296.0,20,0.02,1 Rue Affre,지민,,,,,,Joffrey Sally
 host_since,discrete_categorical,5432.0,20,0.02,2008-08-30,2025-09-04,,,,,,2019-12-06
 host_location,discrete_categorical,1924.0,16485,20.14,"Aarhus, Denmark","İstanbul, Turkey",,,,,,"Paris, France"
-host_about,discrete_categorical,21362.0,45350,55.4,"
-",파리와 여행을 사랑하는 사람입니다,,,,,,"We’re Blueground, a global proptech company with several thousand move-in-ready apartments in a growing number of major cities around the world. With flexible terms and homes in vibrant, centrally based neighborhoods, you’ll feel at home and free to roam for as long as you want — a month, a year, or longer. 
-
-Each apartment is thoughtfully designed with exclusive furnishings, fully equipped kitchens, and incredible amenities – making every day a five-star experience. From day one, you’ll enjoy high-speed Wi-Fi, premium linens, and smart home entertainment. Plus, access to pools, gyms, and outdoor spaces in select buildings.
-
-Why stress over your apartment? We provide a hassle-free alternative — a consistent, quality guest experience that starts even before you arrive. Because we let you book our most up-to-date apartment listings online, confirm with a click, pay securely, and check in easily. 
-
-During your stay
-Upon arrival, you’ll either be greeted personally by a Blueground team member or given self-check-in instructions. The entire apartment is yours! You’ll enjoy reliable support via email, phone, and our Guest App, where you can request everything from a home cleaning to extra towels. 
-
-We’ll share all details upon confirmation of your stay."
+host_about,discrete_categorical,21362.0,45350,55.4,,파리와 여행을 사랑하는 사람입니다,,,,,,"We’re Blueground, a global proptech company with s..."
 host_response_time,discrete_categorical,4.0,32205,39.34,a few days or more,within an hour,,,,,,within an hour
 host_response_rate,discrete_categorical,91.0,32205,39.34,0%,99%,,,,,,100%
 host_acceptance_rate,discrete_categorical,101.0,26130,31.92,0%,99%,,,,,,100%
 host_is_superhost,discrete_categorical,2.0,2313,2.83,f,t,,,,,,f
-host_thumbnail_url,discrete_categorical,57058.0,20,0.02,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3,https://z1.muscache.cn/im/users/597149/profile_pic/1305654635/original.jpg?aki_policy=profile_small,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.png?v=3
-host_picture_url,discrete_categorical,57058.0,20,0.02,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3,https://z1.muscache.cn/im/users/597149/profile_pic/1305654635/original.jpg?aki_policy=profile_x_medium,,,,,,https://a0.muscache.com/defaults/user_pic-225x225.png?v=3
-host_neighbourhood,discrete_categorical,306.0,53855,65.79, Rio Vermelho,جنوب البرشاء,,,,,,Le Marais
+host_thumbnail_url,discrete_categorical,57058.0,20,0.02,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/users/597149/profile_pic...,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.pn...
+host_picture_url,discrete_categorical,57058.0,20,0.02,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/users/597149/profile_pic...,,,,,,https://a0.muscache.com/defaults/user_pic-225x225....
+host_neighbourhood,discrete_categorical,306.0,53855,65.79,Rio Vermelho,جنوب البرشاء,,,,,,Le Marais
 host_listings_count,continuous,155.0,20,0.02,0.0,8301.0,8301.0,30.16021653856024,1.0,116.08172777710917,1.0,1.0
 host_total_listings_count,continuous,200.0,20,0.02,0.0,8769.0,8769.0,39.74516393142131,2.0,155.4662140612704,1.0,1.0
 host_verifications,discrete_categorical,8.0,20,0.02,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
@@ -48,7 +38,7 @@ bathrooms,empty,,81853,100.0,,,,,,,,
 bathrooms_text,discrete_categorical,36.0,67,0.08,0 baths,Shared half-bath,,,,,,1 bath
 bedrooms,discrete_numeric,19.0,15427,18.85,0.0,41.0,41.0,1.4698160358895613,1.0,0.8670958380430928,0.0,1.0
 beds,empty,,81853,100.0,,,,,,,,
-amenities,discrete_categorical,71479.0,0,0.0,"[""1 inch HDTV with standard cable"", ""Mini fridge"", ""Paid parking on premises"", ""Wifi"", ""Portable fans"", ""Dishwasher"", ""Freezer"", ""Bosch refrigerator"", ""Dining table"", ""Free street parking"", ""Self check-in"", ""Hot water"", ""Coffee"", ""Cleaning products"", ""Long term stays allowed"", ""Smoke alarm"", ""Kitchen"", ""Carbon monoxide alarm"", ""Hair dryer"", ""Ethernet connection"", ""Books and reading material"", ""Iron"", ""Dishes and silverware"", ""Coffee maker: Nespresso, pour-over coffee"", ""Extra pillows and blankets"", ""Bed linens"", ""Room-darkening shades"", ""Dedicated workspace"", ""Hangers"", ""Body soap"", ""Toaster"", ""Lockbox"", ""Drying rack for clothing"", ""Central heating"", ""Cooking basics"", ""Shower gel"", ""Siemens oven"", ""Wine glasses"", ""Essentials"", ""Washer"", ""Blender"", ""Shampoo""]",[],,,,,,"[""TV"", ""Wifi"", ""Smoke alarm"", ""Washer"", ""Kitchen""]"
+amenities,discrete_categorical,71479.0,0,0.0,"[""1 inch HDTV with standard cable"", ""Mini fridge"",...",[],,,,,,"[""TV"", ""Wifi"", ""Smoke alarm"", ""Washer"", ""Kitchen""]"
 price,empty,,81853,100.0,,,,,,,,
 minimum_nights,continuous,108.0,0,0.0,1,1000,999.0,44.04735318192369,3.0,110.07825494411308,0.0,2
 maximum_nights,continuous,272.0,0,0.0,1,10000000,9999999.0,589.7330702601005,365.0,34953.99527961595,0.0,365
@@ -81,7 +71,7 @@ review_scores_checkin,continuous,166.0,17978,21.96,0.0,5.0,5.0,4.817172133072407
 review_scores_communication,continuous,156.0,17969,21.95,0.0,5.0,5.0,4.835650241061925,4.95,0.3509832401060542,2.0,5.0
 review_scores_location,continuous,163.0,17977,21.96,0.0,5.0,5.0,4.822042238086293,4.92,0.3038806978295464,2.0,5.0
 review_scores_value,continuous,182.0,17978,21.96,0.0,5.0,5.0,4.633288140900197,4.73,0.42716317336052617,2.0,5.0
-license,discrete_categorical,52486.0,17256,21.08,0610029488,Exempt - hotel-type listing,,,,,,"Available with a mobility lease only (""bail mobilité"")"
+license,discrete_categorical,52486.0,17256,21.08,0610029488,Exempt - hotel-type listing,,,,,,"Available with a mobility lease only (""bail mobili..."
 instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
 calculated_host_listings_count,continuous,95.0,0,0.0,1,816,815.0,23.151246747217574,1.0,92.45202403329561,0.0,1
 calculated_host_listings_count_entire_homes,continuous,96.0,0,0.0,0,816,816.0,21.924620966855215,1.0,90.7471579760661,0.0,1
