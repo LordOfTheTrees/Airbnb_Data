@@ -1,14 +1,83 @@
-1) finish the fulll decompression and analysis for all 70+ variables.
-
 2) start digging deeper around variables using scatter plots
+
+4. Create Activity/Velocity Metrics
+Why: Proxies for occupancy (1.3) and market health signals (question 2)
+
+reviews_per_month = number_of_reviews / months_since_first_review
+log_reviews_per_month
+recent_review_velocity - reviews in last 3 months vs historical average
+Active listings = attractive markets
+5. Calculate Price-per-Capacity Metrics
+Why: Essential for question 3.1.1 (sizing) and comparing property types apples-to-apples
+
+review_score_ratio = review_score / city_median_review_score
+price_premium_for_quality = price_zscore - expected_price_given_bedrooms_baths
+quality_segment - categorize as budget/standard/premium based on scores + amenities
+8. Create Market Structure Variables
+Why: Helps answer question 2 (predict future attractiveness) - market dynamics matter
+
+host_listing_count - is this from a professional or casual host?
+superhosts_pct_by_city - market professionalization level
+entire_home_pct_by_city - market composition
+median_host_experience_months - mature vs emerging market
+Markets with more professionals may be saturated OR more stable
+9. Construct Trend/Growth Indicators (if you have historical data)
+Why: Questions 1.1.3, 1.2.3, 1.3.2, 1.4.2 - all ask about trends
+
+review_growth_rate = (recent_reviews - old_reviews) / old_reviews
+new_listing_rate_by_city - supply growth
+price_change_yoy if you have snapshots
+Growing activity = growing markets = opportunity
+10. Build Cross-Variable Interaction Terms
+Why: Some effects only matter in combination - reveals hidden patterns
+
+property_type × log_accommodates - does size matter differently for houses vs apartments?
+superhost × review_score - does superhosts status amplify quality premium?
+bedrooms × city_tier - are extra bedrooms worth more in bigger cities?
+Test: "Being a superhosts adds 12% premium in competitive markets, only 3% in small ones"
 
 3) insert computed metrics for profitability into the data
 
+estimated_annual_revenue = price × (365 - availability_365) × occupancy_proxy
+revenue_per_accommodates - size-adjusted returns
+estimated_revenue_zscore_within_city - relative performance
+Note: You'll need to infer occupancy from reviews or availability
+
+price_per_accommodates
+price_per_bedroom (handle studios carefully)
+revenue_per_bed
+Reveals which property configurations have best unit economics
+6. Segment by Property Type + Size Combinations
+Why: Directly addresses question 3 (what types provide highest returns?)
+
+Create bins: studio, 1BR, 2BR, 3+BR × property_type (entire home, private room, etc.)
+Calculate median metrics for each segment within each city
+Find: "2BR entire homes in Austin have 23% higher revenue/accommodates than 1BR"
+7. Build Quality-Adjusted Metrics
+Why: Question 1.4 (quality of stay) - need to separate premium pricing from quality premium
+
 4) identify hotspots of profitability by lat / long boundaries.
 
-5) link those areas of profitability by correlations
+6) reason into causal chains and build models
 
-6) reason into causal chains
+Simple OLS: log_price ~ log_accommodates + bedrooms + bathrooms + review_scores_rating + city_dummies
+
+Purpose: Baseline hedonic model
+Interpretation: Percentage effects of each attribute
+
+Revenue Model: log_est_revenue ~ log_price + occupancy_proxy + reviews_per_month + city_dummies
+
+Purpose: Revenue decomposition - what matters more, price or occupancy?
+
+Property Type Comparison: Same models as above, but run separately for property_type segments
+
+Purpose: "Entire homes follow different rules than private rooms"
+
+City Rankings: Calculate predicted revenue for "standard property" (median attributes) in each city
+
+Purpose: Direct answer to "which markets are most attractive?"
+
+Only then: If patterns are clear and you want risk assessment → Monte Carlo simulation
 
 7) explore how they are replicated or validated in training vs testing sets 
 
