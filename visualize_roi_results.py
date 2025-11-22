@@ -14,8 +14,15 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from pathlib import Path
 import sys
+import io
+from scipy.stats import linregress
 from city_level_analysis import apply_all_feature_engineering
 from analyze_property_segments import load_city_data, create_size_bins
+
+# Set UTF-8 encoding for Windows compatibility
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
 # Set style
 sns.set_style("whitegrid")
@@ -377,16 +384,33 @@ def create_roi_visualizations(df, city_name, output_dir=None, use_primary=True):
                 bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5),
                 verticalalignment='top')
     
-    # Add trend line (using original data for calculation, but plot within clipped range)
+    # Add trend line with equation (using original data for calculation, but plot within clipped range)
     if len(df_roi) > 1:
-        z = np.polyfit(df_roi[occupancy_col] * 100, df_roi[roi_col], 1)
-        p = np.poly1d(z)
+        x_data = df_roi[occupancy_col].values * 100
+        y_data = df_roi[roi_col].values
+        
+        # Linear regression
+        slope, intercept, r_value, p_value, std_err = linregress(x_data, y_data)
+        
+        # Generate regression line
         x_trend = np.linspace(df_roi[occupancy_col].min() * 100, 
                             df_roi[occupancy_col].max() * 100, 100)
-        y_trend = p(x_trend)
+        y_trend = slope * x_trend + intercept
         # Clip trend line to visible range
         y_trend_clipped = np.clip(y_trend, y_min, y_max)
-        ax4.plot(x_trend, y_trend_clipped, "r--", alpha=0.8, linewidth=2, label='Trend line')
+        ax4.plot(x_trend, y_trend_clipped, "r--", alpha=0.8, linewidth=2, label='Linear Fit')
+        
+        # Format equation
+        if intercept >= 0:
+            eq_text = f'y = {slope:.4f}x + {intercept:.4f}'
+        else:
+            eq_text = f'y = {slope:.4f}x - {abs(intercept):.4f}'
+        
+        # Add equation to chart
+        ax4.text(0.05, 0.85, f'Linear Fit: {eq_text}\nR² = {r_value**2:.4f}', 
+                transform=ax4.transAxes, fontsize=10, fontweight='bold',
+                bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.7),
+                verticalalignment='top')
     
     # Create individual figure for Chart 4
     fig4 = plt.figure(figsize=(12, 8))
@@ -412,13 +436,30 @@ def create_roi_visualizations(df, city_name, output_dir=None, use_primary=True):
                     transform=ax4_ind.transAxes, fontsize=11, fontweight='bold',
                     bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5),
                     verticalalignment='top')
-        z = np.polyfit(df_roi[occupancy_col] * 100, df_roi[roi_col], 1)
-        p = np.poly1d(z)
+        x_data = df_roi[occupancy_col].values * 100
+        y_data = df_roi[roi_col].values
+        
+        # Linear regression
+        slope, intercept, r_value, p_value, std_err = linregress(x_data, y_data)
+        
+        # Generate regression line
         x_trend = np.linspace(df_roi[occupancy_col].min() * 100, 
                             df_roi[occupancy_col].max() * 100, 100)
-        y_trend = p(x_trend)
+        y_trend = slope * x_trend + intercept
         y_trend_clipped = np.clip(y_trend, y_min, y_max)
-        ax4_ind.plot(x_trend, y_trend_clipped, "r--", alpha=0.8, linewidth=2, label='Trend line')
+        ax4_ind.plot(x_trend, y_trend_clipped, "r--", alpha=0.8, linewidth=2, label='Linear Fit')
+        
+        # Format equation
+        if intercept >= 0:
+            eq_text = f'y = {slope:.4f}x + {intercept:.4f}'
+        else:
+            eq_text = f'y = {slope:.4f}x - {abs(intercept):.4f}'
+        
+        # Add equation to chart
+        ax4_ind.text(0.05, 0.85, f'Linear Fit: {eq_text}\nR² = {r_value**2:.4f}', 
+                    transform=ax4_ind.transAxes, fontsize=10, fontweight='bold',
+                    bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.7),
+                    verticalalignment='top')
     fig4.tight_layout()
     individual_figures.append(('4_roi_vs_occupancy', fig4))
     

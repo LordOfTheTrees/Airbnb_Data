@@ -70,8 +70,7 @@
 
 **Occupancy Data**:
 - `availability_365`: Calendar availability (days available in next 365 days)
-- `estimated_occupancy_l365d`: Airbnb's estimate of booked days (last 365 days)
-- **Critical Finding**: `estimated_occupancy_l365d` is capped at 255 days (69.9% occupancy) due to 8-bit integer limitation
+- `estimated_occupancy_l365d`: **Raw field from Airbnb data** - Actual booked days in last 365 days (from Airbnb booking data). **NOT created by us** - comes directly from `listings.csv.gz`. Capped at 255 days (69.9%) due to 8-bit integer limitation
 - This cap creates artificial ceiling and downward bias in analysis
 
 **Size Attributes**:
@@ -79,6 +78,44 @@
 - `bedrooms`: Number of bedrooms (0 = studio)
 - `beds`: Number of beds
 - `bathrooms`: Number of bathrooms
+
+**Property Size vs. Price Relationships (Linear Regression Analysis)**:
+
+To understand how property size attributes affect pricing, we performed linear regression analysis on log-transformed prices against each size metric. Outliers were filtered (bathrooms > 8, bedrooms > 10, beds > 20) to focus on typical residential properties.
+
+**Example Results (Austin, TX)**:
+- **Accommodates vs. Log Price**: 
+  - Equation: `y = 0.1480x + 4.2362`
+  - R² = 0.4082 (r = 0.6389)
+  - **Interpretation**: Each additional guest capacity increases log(price) by 0.1480, meaning approximately 15.9% price increase per additional guest (e^(0.1480) - 1 ≈ 0.159)
+
+- **Bathrooms vs. Log Price**:
+  - Equation: `y = 0.5453x + 4.0778`
+  - R² = 0.4075 (r = 0.6383)
+  - **Interpretation**: Each additional bathroom increases log(price) by 0.5453, meaning approximately 72.5% price increase per additional bathroom (e^(0.5453) - 1 ≈ 0.725)
+
+- **Bedrooms vs. Log Price**:
+  - Equation: `y = 0.3591x + 4.2658`
+  - R² = 0.3790 (r = 0.6156)
+  - **Interpretation**: Each additional bedroom increases log(price) by 0.3591, meaning approximately 43.2% price increase per additional bedroom (e^(0.3591) - 1 ≈ 0.432)
+
+- **Beds vs. Log Price**:
+  - Equation: `y = 0.1911x + 4.4608`
+  - R² = 0.3196 (r = 0.5653)
+  - **Interpretation**: Each additional bed increases log(price) by 0.1911, meaning approximately 21.1% price increase per additional bed (e^(0.1911) - 1 ≈ 0.211)
+
+**Key Insights**:
+1. **Bathrooms have the strongest marginal effect** on price (72.5% per bathroom), followed by bedrooms (43.2%)
+2. **Accommodates shows moderate effect** (15.9% per guest), indicating capacity is valued but with diminishing returns
+3. **Beds show weakest effect** (21.1% per bed), likely because beds are more flexible than fixed rooms
+4. **All relationships are statistically significant** (p < 0.001) with moderate-to-strong correlations (r = 0.57-0.64)
+5. **R² values (32-41%)** indicate size attributes explain a substantial portion of price variation, but other factors (location, quality, amenities) also matter significantly
+
+**Methodology Notes**:
+- Outlier filtering: Removed listings with bathrooms > 8, bedrooms > 10, beds > 20 to focus on typical residential properties
+- Log transformation: Used log(price) as dependent variable to enable percentage-based interpretation
+- All regression results saved to `{city}/exploration_output/{city}_linear_regression_results.csv`
+- Linear fit lines and equations displayed on all scatter plots (both combined and individual charts)
 
 **Property Characteristics**:
 - `property_type`: Self-selected type (House, Apartment, Condo, etc.)
@@ -90,9 +127,10 @@
 ### Data Quality Issues Identified
 
 1. **Occupancy Capping**: 255-day cap on `estimated_occupancy_l365d` affects ~7% of listings
-2. **Missing Price Data**: ~30% of listings lack price information
-3. **Host-Blocked Days**: Calendar shows unavailability but doesn't distinguish booked vs. host-blocked
-4. **Metro-Level Prices**: Zillow data is metro-level, not property-specific
+2. **Negative Host-Blocked Days**: 26.65% of listings have negative host-blocked days (when `availability_365 + estimated_occupancy_l365d > 365`). This suggests the two metrics may be calculated over different time periods or using different methodologies. See `DATA_QUALITY_NOTES.md` for details.
+3. **Missing Price Data**: ~30% of listings lack price information
+4. **Host-Blocked Days**: Calendar shows unavailability but doesn't distinguish booked vs. host-blocked
+5. **Metro-Level Prices**: Zillow data is metro-level, not property-specific
 
 ---
 

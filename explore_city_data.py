@@ -19,6 +19,7 @@ from pathlib import Path
 import warnings
 import sys
 import io
+from scipy import stats
 
 # Set UTF-8 encoding for Windows compatibility
 if sys.platform == 'win32':
@@ -135,6 +136,21 @@ def create_size_vs_price_scatter_plots(df, city_name, output_dir=None, price_var
     plot_vars = available_size + available_price
     df_plot = df[plot_vars].dropna()
     
+    # Filter outliers for log_price scatter plots
+    # Remove listings with: bathrooms > 8, bedrooms > 10, beds > 20
+    if 'log_price' in available_price:
+        initial_count = len(df_plot)
+        if 'bathrooms' in df_plot.columns:
+            df_plot = df_plot[df_plot['bathrooms'] <= 8]
+        if 'bedrooms' in df_plot.columns:
+            df_plot = df_plot[df_plot['bedrooms'] <= 10]
+        if 'beds' in df_plot.columns:
+            df_plot = df_plot[df_plot['beds'] <= 20]
+        filtered_count = len(df_plot)
+        if initial_count != filtered_count:
+            print(f"  Filtered outliers: {initial_count:,} → {filtered_count:,} listings")
+            print(f"    (Removed: bathrooms > 8, bedrooms > 10, beds > 20)")
+    
     print(f"\nUsing {len(df_plot):,} listings with complete data")
     
     # Create figure with subplots: 4 rows (size vars) × 3 cols (price vars)
@@ -147,14 +163,64 @@ def create_size_vs_price_scatter_plots(df, city_name, output_dir=None, price_var
     if len(available_price) == 1:
         axes = axes.reshape(-1, 1)
     
+    # Store regression results for documentation
+    regression_results = []
+    
     # Create scatter plots
     for i, size_var in enumerate(available_size):
         for j, price_var in enumerate(available_price):
             ax = axes[i, j]
             
+            # Get data for this specific plot
+            plot_data = df_plot[[size_var, price_var]].dropna()
+            
+            if len(plot_data) == 0:
+                continue
+            
             # Create scatter plot
-            ax.scatter(df_plot[size_var], df_plot[price_var], 
+            ax.scatter(plot_data[size_var], plot_data[price_var], 
                       alpha=0.4, s=30, edgecolors='none')
+            
+            # Calculate linear regression
+            if pd.api.types.is_numeric_dtype(plot_data[size_var]) and \
+               pd.api.types.is_numeric_dtype(plot_data[price_var]):
+                x = plot_data[size_var].values
+                y = plot_data[price_var].values
+                
+                # Linear regression
+                slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
+                
+                # Generate regression line
+                x_line = np.linspace(x.min(), x.max(), 100)
+                y_line = slope * x_line + intercept
+                ax.plot(x_line, y_line, 'r-', linewidth=2, label='Linear Fit', alpha=0.8)
+                
+                # Calculate correlation
+                corr = plot_data[size_var].corr(plot_data[price_var])
+                
+                # Format equation
+                if intercept >= 0:
+                    eq_text = f'y = {slope:.4f}x + {intercept:.4f}'
+                else:
+                    eq_text = f'y = {slope:.4f}x - {abs(intercept):.4f}'
+                
+                # Add title with correlation and equation
+                ax.set_title(f'r = {corr:.3f}\n{eq_text}', 
+                           fontsize=11, fontweight='bold')
+                
+                # Store results for documentation
+                regression_results.append({
+                    'city': city_name,
+                    'size_var': size_var,
+                    'price_var': price_var,
+                    'slope': slope,
+                    'intercept': intercept,
+                    'r_value': r_value,
+                    'r_squared': r_value**2,
+                    'p_value': p_value,
+                    'std_err': std_err,
+                    'n': len(plot_data)
+                })
             
             # Add labels
             ax.set_xlabel(size_var.replace('_', ' ').title(), 
@@ -162,17 +228,8 @@ def create_size_vs_price_scatter_plots(df, city_name, output_dir=None, price_var
             ax.set_ylabel(price_var.replace('_', ' ').title(), 
                          fontweight='bold', fontsize=11)
             
-            # Calculate correlation if both are numeric
-            if pd.api.types.is_numeric_dtype(df_plot[size_var]) and \
-               pd.api.types.is_numeric_dtype(df_plot[price_var]):
-                corr = df_plot[size_var].corr(df_plot[price_var])
-                ax.set_title(f'r = {corr:.3f}', fontsize=12, fontweight='bold')
-            
             # Add grid
             ax.grid(True, alpha=0.3)
-            
-            # Remove extreme outliers for better visualization (optional)
-            # This is already handled by using dropna() above
     
     # Add overall title
     price_vars_str = ', '.join([v.replace('_', ' ').title() for v in available_price])
@@ -208,20 +265,39 @@ def create_size_vs_price_scatter_plots(df, city_name, output_dir=None, price_var
         for price_var in available_price:
             fig, ax = plt.subplots(figsize=(10, 7))
             
-            # Filter data
-            plot_data = df[[size_var, price_var]].dropna()
+            # Filter data (apply same outlier filtering)
+            plot_data = df_plot[[size_var, price_var]].dropna()
             
             if len(plot_data) > 0:
                 ax.scatter(plot_data[size_var], plot_data[price_var], 
                           alpha=0.5, s=40, edgecolors='none')
                 
-                # Calculate and display correlation
+                # Calculate linear regression
                 if pd.api.types.is_numeric_dtype(plot_data[size_var]) and \
                    pd.api.types.is_numeric_dtype(plot_data[price_var]):
+                    x = plot_data[size_var].values
+                    y = plot_data[price_var].values
+                    
+                    # Linear regression
+                    slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
+                    
+                    # Generate regression line
+                    x_line = np.linspace(x.min(), x.max(), 100)
+                    y_line = slope * x_line + intercept
+                    ax.plot(x_line, y_line, 'r-', linewidth=2, label='Linear Fit', alpha=0.8)
+                    
+                    # Calculate correlation
                     corr = plot_data[size_var].corr(plot_data[price_var])
+                    
+                    # Format equation
+                    if intercept >= 0:
+                        eq_text = f'y = {slope:.4f}x + {intercept:.4f}'
+                    else:
+                        eq_text = f'y = {slope:.4f}x - {abs(intercept):.4f}'
+                    
                     ax.set_title(f'{city_name.upper()}: {size_var} vs {price_var}\n'
-                               f'Correlation: r = {corr:.3f}', 
-                               fontsize=13, fontweight='bold')
+                               f'Correlation: r = {corr:.3f} | {eq_text}', 
+                               fontsize=12, fontweight='bold')
                 
                 ax.set_xlabel(size_var.replace('_', ' ').title(), 
                              fontweight='bold', fontsize=12)
@@ -236,6 +312,30 @@ def create_size_vs_price_scatter_plots(df, city_name, output_dir=None, price_var
                 plt.close()
     
     print(f"Saved {len(available_size) * len(available_price)} individual plots to: {individual_dir}/")
+    
+    # Print regression results
+    if regression_results:
+        print(f"\n{'='*80}")
+        print(f"LINEAR REGRESSION RESULTS")
+        print(f"{'='*80}")
+        for result in regression_results:
+            if result['price_var'] == 'log_price':  # Only print for log_price
+                print(f"\n{result['size_var'].replace('_', ' ').title()} vs {result['price_var'].replace('_', ' ').title()}:")
+                if result['intercept'] >= 0:
+                    print(f"  Equation: y = {result['slope']:.4f}x + {result['intercept']:.4f}")
+                else:
+                    print(f"  Equation: y = {result['slope']:.4f}x - {abs(result['intercept']):.4f}")
+                print(f"  R² = {result['r_squared']:.4f} (r = {result['r_value']:.4f})")
+                print(f"  p-value = {result['p_value']:.2e}")
+                print(f"  n = {result['n']:,}")
+                print(f"  Interpretation: Each additional {result['size_var'].replace('_', ' ')} increases log(price) by {result['slope']:.4f}")
+    
+    # Save regression results to CSV for documentation
+    if regression_results:
+        regression_df = pd.DataFrame(regression_results)
+        regression_file = output_dir / f'{city_name}_linear_regression_results.csv'
+        regression_df.to_csv(regression_file, index=False)
+        print(f"\n✓ Saved regression results to: {regression_file}")
     
     # Print summary statistics
     print(f"\n{'='*80}")
@@ -331,13 +431,32 @@ def create_size_vs_occupancy_scatter_plots(df, city_name, output_dir=None):
         ax.set_ylabel('Occupancy Rate (0-1)', 
                      fontweight='bold', fontsize=12)
         
-        # Calculate correlation if both are numeric
+        # Calculate linear regression if both are numeric
         if pd.api.types.is_numeric_dtype(df_plot[size_var]) and \
            pd.api.types.is_numeric_dtype(df_plot[occupancy_var]):
+            x = df_plot[size_var].values
+            y = df_plot[occupancy_var].values
+            
+            # Linear regression
+            slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
+            
+            # Generate regression line
+            x_line = np.linspace(x.min(), x.max(), 100)
+            y_line = slope * x_line + intercept
+            ax.plot(x_line, y_line, 'r-', linewidth=2, label='Linear Fit', alpha=0.8)
+            
+            # Calculate correlation
             corr = df_plot[size_var].corr(df_plot[occupancy_var])
+            
+            # Format equation
+            if intercept >= 0:
+                eq_text = f'y = {slope:.4f}x + {intercept:.4f}'
+            else:
+                eq_text = f'y = {slope:.4f}x - {abs(intercept):.4f}'
+            
             ax.set_title(f'{size_var.replace("_", " ").title()} vs Occupancy\n'
-                        f'Correlation: r = {corr:.3f}', 
-                        fontsize=13, fontweight='bold')
+                        f'Correlation: r = {corr:.3f} | {eq_text} | R² = {r_value**2:.4f}', 
+                        fontsize=12, fontweight='bold')
         
         # Add grid
         ax.grid(True, alpha=0.3)
@@ -378,13 +497,32 @@ def create_size_vs_occupancy_scatter_plots(df, city_name, output_dir=None):
             ax.scatter(plot_data[size_var], plot_data[occupancy_var], 
                       alpha=0.5, s=40, edgecolors='none')
             
-            # Calculate and display correlation
+            # Calculate linear regression
             if pd.api.types.is_numeric_dtype(plot_data[size_var]) and \
                pd.api.types.is_numeric_dtype(plot_data[occupancy_var]):
+                x = plot_data[size_var].values
+                y = plot_data[occupancy_var].values
+                
+                # Linear regression
+                slope, intercept, r_value, p_value, std_err = stats.linregress(x, y)
+                
+                # Generate regression line
+                x_line = np.linspace(x.min(), x.max(), 100)
+                y_line = slope * x_line + intercept
+                ax.plot(x_line, y_line, 'r-', linewidth=2, label='Linear Fit', alpha=0.8)
+                
+                # Calculate correlation
                 corr = plot_data[size_var].corr(plot_data[occupancy_var])
+                
+                # Format equation
+                if intercept >= 0:
+                    eq_text = f'y = {slope:.4f}x + {intercept:.4f}'
+                else:
+                    eq_text = f'y = {slope:.4f}x - {abs(intercept):.4f}'
+                
                 ax.set_title(f'{city_name.upper()}: {size_var} vs Occupancy\n'
-                           f'Correlation: r = {corr:.3f}', 
-                           fontsize=13, fontweight='bold')
+                           f'Correlation: r = {corr:.3f} | {eq_text} | R² = {r_value**2:.4f}', 
+                           fontsize=12, fontweight='bold')
             
             ax.set_xlabel(size_var.replace('_', ' ').title(), 
                          fontweight='bold', fontsize=12)
@@ -509,14 +647,27 @@ def create_size_vs_occupancy_boxplots(df, city_name, output_dir=None, use_log=Fa
         
         # Determine which variable to use and binning strategy
         if use_log:
-            # Use log-transformed variables if available
+            # Use log-transformed variables if available, but bin in log space and convert back to original scale for labels
             if size_var == 'accommodates' and 'log_accommodates' in df_plot.columns:
                 var_to_use = 'log_accommodates'
-                # Create bins for log space (use quantiles for better distribution)
+                # Create bins in log space using quantiles
                 log_values = df_plot[var_to_use].dropna()
                 if len(log_values) > 0:
-                    bins = [log_values.min()] + list(log_values.quantile([0.2, 0.4, 0.6, 0.8])) + [log_values.max()]
-                    labels = [f'Q{j+1}' for j in range(len(bins)-1)]
+                    log_bins = [log_values.min()] + list(log_values.quantile([0.2, 0.4, 0.6, 0.8])) + [log_values.max()]
+                    # Convert log bin edges back to original scale for labels
+                    original_bins = [np.exp(b) for b in log_bins]
+                    # Create meaningful labels showing the range in original scale
+                    labels = []
+                    for j in range(len(original_bins)-1):
+                        low = int(np.round(original_bins[j]))
+                        high = int(np.round(original_bins[j+1]))
+                        if j == 0:
+                            labels.append(f'{low}-{high}')
+                        elif j == len(original_bins)-2:
+                            labels.append(f'{low}+')
+                        else:
+                            labels.append(f'{low}-{high}')
+                    bins = log_bins
                 else:
                     var_to_use = size_var
                     bins = binning_strategies[size_var]['bins']
@@ -525,14 +676,27 @@ def create_size_vs_occupancy_boxplots(df, city_name, output_dir=None, use_log=Fa
                 var_to_use = 'log_beds'
                 log_values = df_plot[var_to_use].dropna()
                 if len(log_values) > 0:
-                    bins = [log_values.min()] + list(log_values.quantile([0.2, 0.4, 0.6, 0.8])) + [log_values.max()]
-                    labels = [f'Q{j+1}' for j in range(len(bins)-1)]
+                    log_bins = [log_values.min()] + list(log_values.quantile([0.2, 0.4, 0.6, 0.8])) + [log_values.max()]
+                    # Convert log bin edges back to original scale for labels
+                    original_bins = [np.exp(b) - 1 for b in log_bins]  # log_beds uses log1p, so reverse with exp-1
+                    labels = []
+                    for j in range(len(original_bins)-1):
+                        low = int(np.round(original_bins[j]))
+                        high = int(np.round(original_bins[j+1]))
+                        if j == 0:
+                            labels.append(f'{low}-{high}')
+                        elif j == len(original_bins)-2:
+                            labels.append(f'{low}+')
+                        else:
+                            labels.append(f'{low}-{high}')
+                    bins = log_bins
                 else:
                     var_to_use = size_var
                     bins = binning_strategies[size_var]['bins']
                     labels = binning_strategies[size_var]['labels']
             else:
-                # For bathrooms and bedrooms, use original (no log transform available)
+                # For bathrooms and bedrooms, no log transform available, so skip log version
+                # (they would be identical to non-log version)
                 var_to_use = size_var
                 bins = binning_strategies[size_var]['bins']
                 labels = binning_strategies[size_var]['labels']
@@ -747,11 +911,11 @@ def main():
         price_vars = ['price_clean', 'log_price', 'price_percentile']
     elif '-price' in sys.argv or '--price' in sys.argv:
         explore_mode = 'price'
-        # Check if specific price vars requested
-        if '-price-vars' in sys.argv:
-            idx = sys.argv.index('-price-vars')
-            if idx + 1 < len(sys.argv):
-                price_vars = sys.argv[idx + 1].split(',')
+    # Check if specific price vars requested
+    if '-price-vars' in sys.argv:
+        idx = sys.argv.index('-price-vars')
+        if idx + 1 < len(sys.argv):
+            price_vars = sys.argv[idx + 1].split(',')
     
     # Get city name (first non-flag argument)
     flags = ['-all', '-occupancy', '--occupancy', '-all-prices', '--all-prices', 
@@ -770,11 +934,13 @@ def main():
         print("  -all              Use detailed dataset (79 variables)")
         print("  -occupancy        Explore size vs occupancy (default: size vs price)")
         print("  -all-prices       Plot all price variables (price_clean, log_price, price_percentile)")
-        print("                    (default: just log_price)")
+        print("                    (default: log_price only)")
+        print("  -price-vars VAR1,VAR2  Specify custom price variables (e.g., price_clean,log_price)")
         print("\nExamples:")
         print("  python explore_city_data.py Austin -all")
         print("  python explore_city_data.py Austin -all -occupancy")
         print("  python explore_city_data.py Austin -all -all-prices")
+        print("  python explore_city_data.py Austin -all -price-vars price_clean")
         sys.exit(1)
     
     city_name = city_args[0]
@@ -789,10 +955,11 @@ def main():
         print(f"\nMODE: SIMPLE ANALYSIS (19 variables)")
     
     print(f"\nEXPLORATION MODE: {explore_mode.upper()}")
-    if explore_mode == 'price' and price_vars:
-        print(f"Price variables: {', '.join(price_vars)}")
-    elif explore_mode == 'price':
-        print(f"Price variables: log_price (default)")
+    if explore_mode == 'price':
+        if price_vars:
+            print(f"Price variables: {', '.join(price_vars)}")
+        else:
+            print(f"Price variables: log_price (default - use -all-prices or -price-vars for others)")
     
     try:
         # Load data
@@ -807,11 +974,9 @@ def main():
             # Original scatter plots
             create_size_vs_occupancy_scatter_plots(df, city_name, output_dir=output_dir)
             
-            # Box plots (without log transform)
+            # Box plots (log transform removed - not meaningful for categorical binning)
+            # The log transformation is better suited for scatter plots where we can see the continuous relationship
             create_size_vs_occupancy_boxplots(df, city_name, output_dir=output_dir, use_log=False)
-            
-            # Box plots (with log transform)
-            create_size_vs_occupancy_boxplots(df, city_name, output_dir=output_dir, use_log=True)
             
             # Hexbin density plots
             create_size_vs_occupancy_hexbin(df, city_name, output_dir=output_dir)
@@ -822,7 +987,6 @@ def main():
             print(f"\nOutput saved to: {output_dir}/")
             print(f"  - {city_name}_size_vs_occupancy_scatter.png (scatter plots)")
             print(f"  - {city_name}_size_vs_occupancy_boxplots.png (box plots)")
-            print(f"  - {city_name}_size_vs_occupancy_boxplots_log.png (box plots, log-transformed)")
             print(f"  - {city_name}_size_vs_occupancy_hexbin.png (hexbin density plots)")
             print(f"  - {city_name}_occupancy_individual_plots/ (individual scatter plots)")
             print(f"  - {city_name}_occupancy_hexbin_individual/ (individual hexbin plots)")
