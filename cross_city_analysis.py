@@ -19,6 +19,16 @@ import seaborn as sns
 from pathlib import Path
 import warnings
 import sys
+import io
+
+# Import feature engineering functions
+from city_level_analysis import apply_all_feature_engineering
+
+# Set UTF-8 encoding for Windows compatibility
+if sys.platform == 'win32':
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+
 warnings.filterwarnings('ignore')
 
 # Set visualization style
@@ -118,8 +128,13 @@ class CrossCityAnalyzer:
             if col in df.columns:
                 df[col] = pd.to_datetime(df[col], errors='coerce')
         
+        # Apply feature engineering to combined data
+        print("\n🔧 Applying feature engineering to combined data...")
+        # Apply feature engineering (using "Combined" as city name for display)
+        df = apply_all_feature_engineering(df, "Combined")
+        
         self.combined_data = df
-        print("\n✓ Data cleaning complete")
+        print("\n✓ Data cleaning and feature engineering complete")
         return self
     
     def create_city_comparison_table(self):
@@ -464,6 +479,303 @@ class CrossCityAnalyzer:
         
         return self
     
+    def create_size_vs_logprice_scatter(self):
+        """Create scatter plots: size metrics vs log_price across all cities"""
+        print("\n" + "="*80)
+        print("CREATING SIZE vs LOG PRICE SCATTER PLOTS (ALL CITIES)")
+        print("="*80)
+        
+        import os
+        os.makedirs('city_comparison_outputs', exist_ok=True)
+        
+        df = self.combined_data
+        
+        # Define variables
+        size_vars = ['accommodates', 'bathrooms', 'bedrooms', 'beds']
+        price_var = 'log_price'
+        
+        # Check which variables are available
+        available_size = [v for v in size_vars if v in df.columns]
+        
+        if price_var not in df.columns:
+            print(f"WARNING: {price_var} not found in data")
+            return self
+        
+        if not available_size:
+            print("WARNING: No size variables found in data")
+            return self
+        
+        print(f"\nSize variables: {', '.join(available_size)}")
+        print(f"Price variable: {price_var}")
+        
+        # Filter out missing values
+        plot_vars = available_size + [price_var, 'city']
+        df_plot = df[plot_vars].dropna()
+        
+        # Filter to 95th percentile to focus on main data
+        for var in available_size:
+            p95 = df_plot[var].quantile(0.95)
+            df_plot = df_plot[df_plot[var] <= p95]
+        
+        print(f"\nUsing {len(df_plot):,} listings with complete data")
+        
+        # Create figure with subplots: 2x2 grid
+        fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+        axes = axes.flatten()
+        
+        # Get unique cities for color palette
+        cities = df_plot['city'].unique()
+        n_cities = len(cities)
+        
+        # Use a color palette that can handle many cities
+        if n_cities <= 10:
+            colors = sns.color_palette("tab10", n_cities)
+        elif n_cities <= 20:
+            colors = sns.color_palette("tab20", n_cities)
+        else:
+            colors = sns.color_palette("husl", n_cities)
+        
+        city_colors = dict(zip(cities, colors))
+        
+        # Create scatter plots
+        for i, size_var in enumerate(available_size):
+            if i >= 4:
+                break
+                
+            ax = axes[i]
+            
+            # Plot each city with different color
+            for city in sorted(cities):
+                city_data = df_plot[df_plot['city'] == city]
+                ax.scatter(city_data[size_var], city_data[price_var], 
+                          alpha=0.3, s=15, label=city, color=city_colors[city])
+            
+            ax.set_xlabel(size_var.replace('_', ' ').title(), 
+                         fontweight='bold', fontsize=12)
+            ax.set_ylabel('Log Price', fontweight='bold', fontsize=12)
+            ax.set_title(f'{size_var.replace("_", " ").title()} vs Log Price', 
+                        fontsize=13, fontweight='bold')
+            ax.grid(True, alpha=0.3)
+            
+            # Add legend (only for first plot to avoid clutter)
+            if i == 0:
+                ax.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=8, ncol=2)
+        
+        fig.suptitle('Property Size vs Log Price Across All Cities', 
+                     fontsize=16, fontweight='bold', y=0.995)
+        plt.tight_layout()
+        plt.savefig('city_comparison_outputs/size_vs_logprice_scatter.png', 
+                   dpi=300, bbox_inches='tight')
+        print("✓ Saved: city_comparison_outputs/size_vs_logprice_scatter.png")
+        plt.close()
+        
+        return self
+    
+    def create_occupancy_hexbin(self):
+        """Create hexbin density plots: size metrics vs occupancy across all cities"""
+        print("\n" + "="*80)
+        print("CREATING SIZE vs OCCUPANCY HEXBIN PLOTS (ALL CITIES)")
+        print("="*80)
+        
+        import os
+        os.makedirs('city_comparison_outputs', exist_ok=True)
+        
+        df = self.combined_data
+        
+        # Define variables
+        size_vars = ['accommodates', 'bathrooms', 'bedrooms', 'beds']
+        # Prefer occupancy_rate (from estimated_occupancy_l365d), fallback to calendar_unavailable_proxy
+        if 'occupancy_rate' in df.columns:
+            occupancy_var = 'occupancy_rate'
+        elif 'calendar_unavailable_proxy' in df.columns:
+            occupancy_var = 'calendar_unavailable_proxy'
+            print("WARNING: Using calendar_unavailable_proxy (less accurate than occupancy_rate)")
+        else:
+            print("WARNING: No occupancy metrics found in data")
+            return self
+        
+        # Check which variables are available
+        available_size = [v for v in size_vars if v in df.columns]
+        
+        if occupancy_var not in df.columns:
+            print(f"WARNING: {occupancy_var} not found in data")
+            return self
+        
+        if not available_size:
+            print("WARNING: No size variables found in data")
+            return self
+        
+        print(f"\nSize variables: {', '.join(available_size)}")
+        
+        # Filter out missing values
+        plot_vars = available_size + [occupancy_var]
+        df_plot = df[plot_vars].dropna()
+        
+        # Filter to 95th percentile
+        for var in available_size:
+            p95 = df_plot[var].quantile(0.95)
+            df_plot = df_plot[df_plot[var] <= p95]
+        
+        print(f"\nUsing {len(df_plot):,} listings with complete data")
+        
+        # Create figure with subplots: 2x2 grid
+        fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+        axes = axes.flatten()
+        
+        # Create hexbin plots
+        for i, size_var in enumerate(available_size):
+            if i >= 4:
+                break
+                
+            ax = axes[i]
+            
+            # Create hexbin plot
+            hb = ax.hexbin(df_plot[size_var], df_plot[occupancy_var], 
+                          gridsize=25, cmap='YlOrRd', mincnt=1)
+            
+            ax.set_xlabel(size_var.replace('_', ' ').title(), 
+                         fontweight='bold', fontsize=12)
+            ax.set_ylabel('Occupancy Rate (0-1)', 
+                         fontweight='bold', fontsize=12)
+            ax.set_ylim(-0.05, 1.05)
+            ax.set_title(f'{size_var.replace("_", " ").title()} vs Occupancy (Density)', 
+                        fontsize=13, fontweight='bold')
+            ax.grid(True, alpha=0.3)
+            
+            # Add colorbar
+            cb = plt.colorbar(hb, ax=ax)
+            cb.set_label('Count', fontweight='bold')
+        
+        fig.suptitle('Occupancy Density by Property Size (All Cities Combined)', 
+                     fontsize=16, fontweight='bold', y=0.995)
+        plt.tight_layout()
+        plt.savefig('city_comparison_outputs/occupancy_hexbin.png', 
+                   dpi=300, bbox_inches='tight')
+        print("✓ Saved: city_comparison_outputs/occupancy_hexbin.png")
+        plt.close()
+        
+        return self
+    
+    def create_occupancy_boxplots(self):
+        """Create box plots: occupancy by size categories across all cities"""
+        print("\n" + "="*80)
+        print("CREATING SIZE vs OCCUPANCY BOX PLOTS (ALL CITIES)")
+        print("="*80)
+        
+        import os
+        os.makedirs('city_comparison_outputs', exist_ok=True)
+        
+        df = self.combined_data
+        
+        # Define variables
+        size_vars = ['accommodates', 'bathrooms', 'bedrooms', 'beds']
+        # Prefer occupancy_rate (from estimated_occupancy_l365d), fallback to calendar_unavailable_proxy
+        if 'occupancy_rate' in df.columns:
+            occupancy_var = 'occupancy_rate'
+        elif 'calendar_unavailable_proxy' in df.columns:
+            occupancy_var = 'calendar_unavailable_proxy'
+            print("WARNING: Using calendar_unavailable_proxy (less accurate than occupancy_rate)")
+        else:
+            print("WARNING: No occupancy metrics found in data")
+            return self
+        
+        # Check which variables are available
+        available_size = [v for v in size_vars if v in df.columns]
+        
+        if occupancy_var not in df.columns:
+            print(f"WARNING: {occupancy_var} not found in data")
+            return self
+        
+        if not available_size:
+            print("WARNING: No size variables found in data")
+            return self
+        
+        print(f"\nSize variables: {', '.join(available_size)}")
+        
+        # Filter out missing values
+        plot_vars = available_size + [occupancy_var]
+        df_plot = df[plot_vars].dropna().copy()
+        
+        print(f"\nUsing {len(df_plot):,} listings with complete data")
+        
+        # Create figure with subplots: 2x2 grid
+        fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+        axes = axes.flatten()
+        
+        # Define binning strategy
+        binning_strategies = {
+            'accommodates': {
+                'bins': [0, 2, 4, 6, 8, 20],
+                'labels': ['1-2', '3-4', '5-6', '7-8', '9+'],
+            },
+            'bathrooms': {
+                'bins': [0, 1, 2, 3, 4, 20],
+                'labels': ['1', '1.5-2', '2.5-3', '3.5-4', '4+'],
+            },
+            'bedrooms': {
+                'bins': [-0.5, 0.5, 1.5, 2.5, 3.5, 20],
+                'labels': ['Studio', '1BR', '2BR', '3BR', '4+'],
+            },
+            'beds': {
+                'bins': [0, 2, 4, 6, 8, 20],
+                'labels': ['1-2', '3-4', '5-6', '7-8', '9+'],
+            }
+        }
+        
+        # Create box plots
+        for i, size_var in enumerate(available_size):
+            if i >= 4:
+                break
+                
+            ax = axes[i]
+            
+            bins = binning_strategies[size_var]['bins']
+            labels = binning_strategies[size_var]['labels']
+            
+            # Create bins
+            df_plot['binned'] = pd.cut(df_plot[size_var], bins=bins, labels=labels, include_lowest=True)
+            
+            # Prepare data for box plot
+            box_data = []
+            box_labels = []
+            for label in labels:
+                subset = df_plot[df_plot['binned'] == label][occupancy_var]
+                if len(subset) > 0:
+                    box_data.append(subset.values)
+                    box_labels.append(label)
+            
+            if len(box_data) > 0:
+                bp = ax.boxplot(box_data, labels=box_labels, patch_artist=True)
+                
+                # Color the boxes
+                for patch in bp['boxes']:
+                    patch.set_facecolor('lightblue')
+                    patch.set_alpha(0.7)
+                
+                ax.set_title(f'{size_var.replace("_", " ").title()} vs Occupancy', 
+                           fontsize=13, fontweight='bold')
+                ax.set_xlabel('Size Category', fontweight='bold', fontsize=11)
+                ax.set_ylabel('Occupancy Rate (0-1)', fontweight='bold', fontsize=11)
+                ax.set_ylim(-0.05, 1.05)
+                ax.grid(True, alpha=0.3, axis='y')
+                
+                # Calculate and print median occupancy by bin
+                medians = df_plot.groupby('binned')[occupancy_var].median()
+                print(f"\n{size_var} - Median Occupancy by Category (All Cities):")
+                for cat, med in medians.items():
+                    count = len(df_plot[df_plot['binned'] == cat])
+                    print(f"  {cat}: {med:.3f} (n={count:,})")
+        
+        fig.suptitle('Occupancy Distribution by Size Category (All Cities Combined)', 
+                     fontsize=16, fontweight='bold', y=0.995)
+        plt.tight_layout()
+        plt.savefig('city_comparison_outputs/occupancy_boxplots.png', 
+                   dpi=300, bbox_inches='tight')
+        print("\n✓ Saved: city_comparison_outputs/occupancy_boxplots.png")
+        plt.close()
+        
+        return self
+    
     def run_full_analysis(self):
         """Run complete cross-city analysis"""
         self.create_city_comparison_table()
@@ -472,10 +784,15 @@ class CrossCityAnalyzer:
         self.create_room_type_analysis()
         self.create_correlation_heatmap()
         
+        # New visualizations
+        self.create_size_vs_logprice_scatter()
+        self.create_occupancy_hexbin()
+        self.create_occupancy_boxplots()
+        
         print("\n" + "="*80)
         print("✅ CROSS-CITY ANALYSIS COMPLETE!")
         print("="*80)
-        print("\nGenerated files in outputs/:")
+        print("\nGenerated files in city_comparison_outputs/:")
         print("  1. city_comparison_table.csv")
         print("  2. city_comparison_charts.png")
         print("  3. scatter_plots_comparison.png")
@@ -484,6 +801,9 @@ class CrossCityAnalyzer:
         print("  6. room_type_visualizations.png")
         print("  7. overall_correlation_matrix.csv")
         print("  8. overall_correlation_heatmap.png")
+        print("  9. size_vs_logprice_scatter.png (NEW)")
+        print("  10. occupancy_hexbin.png (NEW)")
+        print("  11. occupancy_boxplots.png (NEW)")
         
         return self
 

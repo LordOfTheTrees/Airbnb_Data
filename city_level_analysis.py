@@ -197,55 +197,453 @@ def add_revenue_proxies(df):
     - Size-adjusted metrics enable fair comparison
     - These metrics directly answer "which property makes more money?"
     
+    OCCUPANCY METRIC RATIONALE:
+    We use calendar-based occupancy (calendar_unavailable_proxy) as PRIMARY because:
+    
+    1. OPPORTUNITY COST ARGUMENT: When hosts block days, they implicitly value those days
+       at least as much as the revenue they forego. This represents potential revenue
+       under different management strategies, which is relevant for investment decisions.
+    
+    2. MARKET CAPACITY ARGUMENT: Calendar unavailability (booked + blocked) reflects
+       total market demand. Whether unavailable due to booking or blocking, the property
+       was in demand, showing its market capacity.
+    
+    3. DISTRIBUTION COMPLETENESS: estimated_occupancy_l365d is capped at 255 days (69.9%),
+       creating artificial ceiling and downward bias. Calendar proxy provides full range.
+    
+    4. INVESTMENT VALUATION: For ROI analysis, we want maximum potential revenue.
+       Host-blocked days represent revenue that could be captured with optimal management.
+    
+    5. BEHAVIORAL SIGNAL: High host-blocking rates signal high property value - hosts
+       are willing to forego rental income, indicating desirability.
+    
+    6. COMPARABILITY: Calendar proxy enables fair comparison across all properties,
+       distinguishing truly high-occupancy properties from those artificially capped.
+    
+    We keep estimated_occupancy_l365d as SECONDARY (occupancy_rate_booked) for comparison
+    and to understand the difference between booked days and total unavailability.
+    
     Metrics:
-    - est_annual_revenue: Estimated yearly revenue based on availability
+    - occupancy_rate: PRIMARY - Calendar-based (booked + host-blocked days) / 365
+    - occupancy_rate_booked: SECONDARY - Actual booked days from Airbnb / 365
+    - est_annual_revenue: PRIMARY - Revenue using calendar-based occupancy
+    - est_annual_revenue_booked: SECONDARY - Revenue using actual booked days
     - revenue_per_accommodates: Revenue per guest capacity (unit economics)
     - revenue_per_bedroom: Revenue per bedroom (if bedrooms available)
-    - occupancy_proxy: Estimated occupancy rate from availability
-    
-    NOTE: True occupancy is not available, so we use (365 - availability_365)
-    as a proxy. This assumes unavailable days = booked days, which is imperfect
-    but the best we can do with this data.
     
     Args:
-        df: DataFrame with price_clean and availability_365
+        df: DataFrame with price_clean, availability_365, and optionally estimated_occupancy_l365d
     
     Returns:
         DataFrame with added revenue proxy columns
     """
     print(f"\n  🔧 Priority 3: Adding revenue proxy metrics...")
+    print(f"     Using calendar-based occupancy as PRIMARY (includes host-blocked days)")
+    print(f"     Rationale: Captures full market capacity and potential revenue")
     
     df = df.copy()
     
-    # Occupancy proxy: assume unavailable days are booked days
+    # PRIMARY: Calendar-based occupancy (includes booked + host-blocked days)
     if 'availability_365' in df.columns:
-        df['occupancy_proxy'] = (365 - df['availability_365']) / 365
-        print(f"     ✓ Created occupancy_proxy (1 - availability_365/365)")
+        df['occupancy_rate'] = (365 - df['availability_365']) / 365
+        valid_occ = df['occupancy_rate'].notna()
+        print(f"     ✓ Created occupancy_rate (PRIMARY) from calendar availability ({valid_occ.sum():,} valid values)")
+        print(f"        Includes booked days + host-blocked days (full market capacity)")
+    else:
+        print(f"     ⚠️  availability_365 not found - cannot create primary occupancy_rate")
+    
+    # SECONDARY: Actual booked days from Airbnb (for comparison)
+    if 'estimated_occupancy_l365d' in df.columns:
+        df['occupancy_rate_booked'] = df['estimated_occupancy_l365d'] / 365
+        valid_booked = df['occupancy_rate_booked'].notna()
         
-        # Estimated annual revenue
-        if 'price_clean' in df.columns:
-            df['est_annual_revenue'] = df['price_clean'] * (365 - df['availability_365'])
-            print(f"     ✓ Created est_annual_revenue (price × occupied_days)")
-            
-            # Size-adjusted revenue metrics
-            if 'accommodates' in df.columns:
-                df['revenue_per_accommodates'] = df['est_annual_revenue'] / df['accommodates']
-                print(f"     ✓ Created revenue_per_accommodates (unit economics)")
-            
-            if 'bedrooms' in df.columns:
-                # Handle 0 bedrooms (studios)
-                valid_br = df['bedrooms'] > 0
-                df.loc[valid_br, 'revenue_per_bedroom'] = (
-                    df.loc[valid_br, 'est_annual_revenue'] / df.loc[valid_br, 'bedrooms']
-                )
-                print(f"     ✓ Created revenue_per_bedroom ({valid_br.sum():,} valid values)")
-            
-            # Log-transformed revenue for percentage analysis
-            valid_rev = df['est_annual_revenue'] > 0
-            df.loc[valid_rev, 'log_est_revenue'] = np.log(
-                df.loc[valid_rev, 'est_annual_revenue']
+        # Flag capped listings (255 days = 69.9% max due to 8-bit integer cap)
+        df['occupancy_is_capped'] = (df['estimated_occupancy_l365d'] == 255).astype(int)
+        n_capped = df['occupancy_is_capped'].sum()
+        
+        print(f"     ✓ Created occupancy_rate_booked (SECONDARY) from estimated_occupancy_l365d ({valid_booked.sum():,} valid values)")
+        print(f"        {n_capped:,} listings capped at 255 days ({n_capped/valid_booked.sum()*100:.1f}%)")
+        print(f"        Only includes actual booked days (excludes host-blocked days)")
+    else:
+        print(f"     ⚠️  estimated_occupancy_l365d not found - cannot create secondary occupancy_rate_booked")
+    
+    # PRIMARY: Estimated annual revenue using calendar-based occupancy
+    if 'price_clean' in df.columns and 'availability_365' in df.columns:
+        df['est_annual_revenue'] = df['price_clean'] * (365 - df['availability_365'])
+        valid_rev = df['est_annual_revenue'].notna()
+        print(f"     ✓ Created est_annual_revenue (PRIMARY) using calendar-based occupancy ({valid_rev.sum():,} valid values)")
+        print(f"        Revenue = Price × (Booked + Host-blocked days)")
+    
+    # SECONDARY: Estimated annual revenue using actual booked days (for comparison)
+    if 'price_clean' in df.columns and 'estimated_occupancy_l365d' in df.columns:
+        df['est_annual_revenue_booked'] = df['price_clean'] * df['estimated_occupancy_l365d']
+        valid_rev_booked = df['est_annual_revenue_booked'].notna()
+        print(f"     ✓ Created est_annual_revenue_booked (SECONDARY) using actual booked days ({valid_rev_booked.sum():,} valid values)")
+        print(f"        Revenue = Price × Booked days only")
+    
+    # Size-adjusted revenue metrics (using PRIMARY revenue)
+    if 'est_annual_revenue' in df.columns:
+        if 'accommodates' in df.columns:
+            df['revenue_per_accommodates'] = df['est_annual_revenue'] / df['accommodates']
+            print(f"     ✓ Created revenue_per_accommodates (unit economics)")
+        
+        if 'bedrooms' in df.columns:
+            # Handle 0 bedrooms (studios)
+            valid_br = (df['bedrooms'] > 0) & df['est_annual_revenue'].notna()
+            df.loc[valid_br, 'revenue_per_bedroom'] = (
+                df.loc[valid_br, 'est_annual_revenue'] / df.loc[valid_br, 'bedrooms']
             )
-            print(f"     ✓ Created log_est_revenue ({valid_rev.sum():,} valid values)")
+            print(f"     ✓ Created revenue_per_bedroom ({valid_br.sum():,} valid values)")
+        
+        # Log-transformed revenue for percentage analysis
+        valid_rev = df['est_annual_revenue'] > 0
+        df.loc[valid_rev, 'log_est_revenue'] = np.log(
+            df.loc[valid_rev, 'est_annual_revenue']
+        )
+        print(f"     ✓ Created log_est_revenue ({valid_rev.sum():,} valid values)")
+    
+    return df
+
+
+# ============================================================================
+# FEATURE ENGINEERING - PRIORITY 4: PROFESSIONALIZATION METRICS
+# ============================================================================
+
+def add_professionalization_metrics(df, city_name):
+    """
+    Priority 4: Add professionalization metrics based on host listing counts
+    
+    WHY:
+    - Professional operators (multiple properties) behave differently than casual hosts
+    - Professional markets may be more stable but also more competitive
+    - Helps identify market maturity and investment opportunities
+    - Professional hosts may have different pricing, occupancy, and quality strategies
+    
+    Listing-Level Metrics:
+    - host_is_professional: Binary indicator (1 if host has 2+ listings in city)
+    - host_listings_in_city: Number of listings host has in this city
+    - host_professional_tier: Categorization (casual=1, small=2-5, medium=6-20, large=21+)
+    
+    Market-Level Metrics (calculated per city):
+    - pct_professional_hosts: % of listings from hosts with 2+ properties
+    - pct_large_operators: % of listings from hosts with 21+ properties
+    - median_host_listings: Median number of listings per host
+    - gini_host_concentration: Gini coefficient of host concentration (0=even, 1=monopoly)
+    - market_professionalization_score: Composite score (0-100)
+    
+    Args:
+        df: DataFrame with listing data
+        city_name: Name of city (for display purposes)
+    
+    Returns:
+        DataFrame with added professionalization metrics
+    """
+    print(f"\n  🔧 Priority 4: Adding professionalization metrics for {city_name}...")
+    
+    df = df.copy()
+    
+    # Use calculated_host_listings_count (city-specific) as primary metric
+    if 'calculated_host_listings_count' in df.columns:
+        # Convert to numeric if needed
+        if df['calculated_host_listings_count'].dtype == 'object':
+            df['calculated_host_listings_count'] = pd.to_numeric(
+                df['calculated_host_listings_count'], errors='coerce'
+            )
+        
+        # Listing-level professionalization
+        df['host_listings_in_city'] = df['calculated_host_listings_count']
+        
+        # Binary professional indicator (2+ listings = professional)
+        df['host_is_professional'] = (df['calculated_host_listings_count'] >= 2).astype(int)
+        n_professional = df['host_is_professional'].sum()
+        print(f"     ✓ Created host_is_professional ({n_professional:,} professional hosts, {n_professional/len(df)*100:.1f}%)")
+        
+        # Professional tier categorization
+        def categorize_professional(count):
+            if pd.isna(count) or count < 1:
+                return 'unknown'
+            elif count == 1:
+                return 'casual'
+            elif count <= 5:
+                return 'small_professional'
+            elif count <= 20:
+                return 'medium_professional'
+            else:
+                return 'large_professional'
+        
+        df['host_professional_tier'] = df['calculated_host_listings_count'].apply(categorize_professional)
+        tier_counts = df['host_professional_tier'].value_counts()
+        print(f"     ✓ Created host_professional_tier")
+        for tier, count in tier_counts.items():
+            print(f"        {tier}: {count:,} listings ({count/len(df)*100:.1f}%)")
+        
+        # Market-level metrics (aggregated)
+        total_listings = len(df)
+        professional_listings = df['host_is_professional'].sum()
+        large_operator_listings = (df['calculated_host_listings_count'] >= 21).sum()
+        
+        df['pct_professional_hosts'] = (professional_listings / total_listings) * 100
+        df['pct_large_operators'] = (large_operator_listings / total_listings) * 100
+        df['median_host_listings'] = df['calculated_host_listings_count'].median()
+        
+        # Gini coefficient for host concentration (measure of market concentration)
+        # Gini = 0 means perfectly even distribution, 1 means one host owns everything
+        # Calculate based on distribution of listings across hosts
+        host_listing_counts = df['calculated_host_listings_count'].dropna()
+        if len(host_listing_counts) > 1:
+            # Sort in ascending order
+            sorted_counts = np.sort(host_listing_counts.values)
+            n = len(sorted_counts)
+            cumsum = np.cumsum(sorted_counts)
+            total = cumsum[-1]
+            
+            if total > 0:
+                # Gini coefficient formula
+                gini = (2 * np.sum((np.arange(1, n + 1)) * sorted_counts)) / (n * total) - (n + 1) / n
+                gini = abs(gini)  # Ensure positive, bound between 0 and 1
+                gini = min(gini, 1.0)
+            else:
+                gini = 0
+        else:
+            gini = 0
+        
+        df['gini_host_concentration'] = gini
+        
+        # Composite professionalization score (0-100)
+        # Based on: % professional, % large operators, median listings, Gini coefficient
+        pct_prof = df['pct_professional_hosts'].iloc[0]
+        pct_large = df['pct_large_operators'].iloc[0]
+        median_listings = df['median_host_listings'].iloc[0]
+        
+        # Normalize components (0-100 scale)
+        # % professional: already 0-100
+        # % large operators: scale to 0-100 (assuming max is ~50%)
+        pct_large_scaled = min(pct_large * 2, 100)
+        # Median listings: scale assuming max is ~50
+        median_scaled = min(median_listings / 50 * 100, 100)
+        # Gini: already 0-1, scale to 0-100
+        gini_scaled = gini * 100
+        
+        # Weighted average (can adjust weights)
+        professionalization_score = (
+            0.3 * pct_prof +
+            0.3 * pct_large_scaled +
+            0.2 * median_scaled +
+            0.2 * gini_scaled
+        )
+        
+        df['market_professionalization_score'] = professionalization_score
+        
+        print(f"     ✓ Market-level metrics:")
+        print(f"        % Professional hosts: {pct_prof:.1f}%")
+        print(f"        % Large operators (21+): {pct_large:.1f}%")
+        print(f"        Median listings per host: {median_listings:.1f}")
+        print(f"        Gini coefficient: {gini:.3f}")
+        print(f"        Professionalization score: {professionalization_score:.1f}/100")
+    
+    return df
+
+
+# ============================================================================
+# FEATURE ENGINEERING - ZILLOW PRICE INTEGRATION
+# ============================================================================
+
+def add_zillow_prices(df, city_name, zillow_data=None):
+    """
+    Add Zillow purchase prices to listings based on metro matching.
+    
+    Args:
+        df: DataFrame with listing data
+        city_name: Name of Airbnb city (e.g., "New_York", "Austin")
+        zillow_data: DataFrame from load_all_zillow_data() (if None, will load)
+    
+    Returns:
+        DataFrame with added columns: purchase_price, monthly_payment, zori_rent
+    """
+    print(f"\n  🔧 Adding Zillow purchase prices for {city_name}...")
+    
+    # Load Zillow data if not provided
+    if zillow_data is None:
+        try:
+            from load_zillow_data import load_all_zillow_data
+            zillow_data = load_all_zillow_data()
+        except Exception as e:
+            print(f"     ⚠️  Could not load Zillow data: {e}")
+            return df
+    
+    # Match city to Zillow metro
+    try:
+        from match_cities_to_zillow import match_city_to_zillow
+        metro_data = match_city_to_zillow(city_name, zillow_data)
+        
+        if metro_data is None:
+            print(f"     ⚠️  No Zillow data available for {city_name}")
+            return df
+        
+        # Add metro-level prices to all listings
+        df['purchase_price'] = metro_data['zhvi_price']
+        df['monthly_payment'] = metro_data['monthly_payment']
+        df['zori_rent'] = metro_data['zori_rent']
+        df['zillow_metro'] = metro_data['RegionName']
+        
+        n_valid = df['purchase_price'].notna().sum()
+        print(f"     ✓ Added Zillow prices from {metro_data['RegionName']}")
+        print(f"        Purchase price: ${metro_data['zhvi_price']:,.0f}")
+        if pd.notna(metro_data['monthly_payment']):
+            print(f"        Monthly payment: ${metro_data['monthly_payment']:,.0f}")
+        print(f"        Applied to {n_valid:,} listings")
+        
+    except Exception as e:
+        print(f"     ⚠️  Error matching city to Zillow: {e}")
+        return df
+    
+    return df
+
+
+def add_roi_metrics(df):
+    """
+    Calculate ROI metrics using Zillow purchase prices and Airbnb revenue.
+    
+    Calculates ROI for BOTH primary (calendar-based) and secondary (booked days) revenue metrics
+    to enable comparison and show profitability under both scenarios.
+    
+    PRIMARY Metrics (using calendar-based occupancy):
+    - annual_cash_flow: est_annual_revenue - (monthly_payment * 12)
+    - cash_on_cash_roi: annual_cash_flow / (purchase_price * 0.20) [20% downpayment]
+    - cap_rate: est_annual_revenue / purchase_price [gross cap rate]
+    - price_to_rent_ratio: purchase_price / (est_annual_revenue / 12) [months to pay off]
+    - revenue_yield: est_annual_revenue / purchase_price [annual revenue as % of purchase]
+    
+    SECONDARY Metrics (using booked days only, for comparison):
+    - annual_cash_flow_booked: est_annual_revenue_booked - (monthly_payment * 12)
+    - cash_on_cash_roi_booked: annual_cash_flow_booked / (purchase_price * 0.20)
+    - cap_rate_booked: est_annual_revenue_booked / purchase_price
+    - revenue_yield_booked: est_annual_revenue_booked / purchase_price
+    
+    Args:
+        df: DataFrame with purchase_price, monthly_payment, est_annual_revenue, est_annual_revenue_booked
+    
+    Returns:
+        DataFrame with added ROI metric columns (both primary and secondary)
+    """
+    print(f"\n  🔧 Adding ROI metrics...")
+    print(f"     Calculating ROI for both PRIMARY (calendar-based) and SECONDARY (booked days) revenue")
+    
+    df = df.copy()
+    
+    # Check if we have the required data
+    has_price = 'purchase_price' in df.columns and df['purchase_price'].notna().any()
+    has_revenue = 'est_annual_revenue' in df.columns and df['est_annual_revenue'].notna().any()
+    has_revenue_booked = 'est_annual_revenue_booked' in df.columns and df['est_annual_revenue_booked'].notna().any()
+    has_payment = 'monthly_payment' in df.columns and df['monthly_payment'].notna().any()
+    
+    if not has_price or not has_revenue:
+        print(f"     ⚠️  Missing required data for ROI calculations")
+        if not has_price:
+            print(f"        Missing: purchase_price")
+        if not has_revenue:
+            print(f"        Missing: est_annual_revenue")
+        return df
+    
+    # ============================================================================
+    # PRIMARY ROI METRICS (using calendar-based occupancy)
+    # ============================================================================
+    
+    # Annual cash flow (revenue - annual payments)
+    if has_payment:
+        df['annual_cash_flow'] = df['est_annual_revenue'] - (df['monthly_payment'] * 12)
+        valid_cf = df['annual_cash_flow'].notna()
+        print(f"     ✓ Created annual_cash_flow (PRIMARY) ({valid_cf.sum():,} valid values)")
+    else:
+        # If no monthly payment data, cash flow = revenue (simplified)
+        df['annual_cash_flow'] = df['est_annual_revenue']
+        print(f"     ✓ Created annual_cash_flow (PRIMARY, simplified, no payment data)")
+    
+    # Cash-on-cash ROI (assuming 20% downpayment)
+    # ROI = Annual Cash Flow / Down Payment
+    downpayment = df['purchase_price'] * 0.20
+    valid_roi = (df['annual_cash_flow'].notna() & (downpayment > 0))
+    df.loc[valid_roi, 'cash_on_cash_roi'] = (
+        df.loc[valid_roi, 'annual_cash_flow'] / downpayment.loc[valid_roi]
+    )
+    # Convert to percentage
+    df.loc[valid_roi, 'cash_on_cash_roi'] = df.loc[valid_roi, 'cash_on_cash_roi'] * 100
+    print(f"     ✓ Created cash_on_cash_roi (PRIMARY) ({valid_roi.sum():,} valid values)")
+    
+    # Cap rate (gross cap rate = revenue / purchase price)
+    valid_cap = (df['est_annual_revenue'].notna() & (df['purchase_price'] > 0))
+    df.loc[valid_cap, 'cap_rate'] = (
+        df.loc[valid_cap, 'est_annual_revenue'] / df.loc[valid_cap, 'purchase_price']
+    )
+    # Convert to percentage
+    df.loc[valid_cap, 'cap_rate'] = df.loc[valid_cap, 'cap_rate'] * 100
+    print(f"     ✓ Created cap_rate (PRIMARY) ({valid_cap.sum():,} valid values)")
+    
+    # Price-to-rent ratio (months to pay off at current revenue)
+    monthly_revenue = df['est_annual_revenue'] / 12
+    valid_ptr = (monthly_revenue.notna() & (monthly_revenue > 0) & (df['purchase_price'] > 0))
+    df.loc[valid_ptr, 'price_to_rent_ratio'] = (
+        df.loc[valid_ptr, 'purchase_price'] / monthly_revenue.loc[valid_ptr]
+    )
+    print(f"     ✓ Created price_to_rent_ratio (PRIMARY) ({valid_ptr.sum():,} valid values)")
+    
+    # Revenue yield (annual revenue as % of purchase price, same as cap rate but different interpretation)
+    df.loc[valid_cap, 'revenue_yield'] = df.loc[valid_cap, 'cap_rate']
+    print(f"     ✓ Created revenue_yield (PRIMARY) ({valid_cap.sum():,} valid values)")
+    
+    # ============================================================================
+    # SECONDARY ROI METRICS (using booked days only, for comparison)
+    # ============================================================================
+    
+    if has_revenue_booked:
+        # Annual cash flow (booked days)
+        if has_payment:
+            df['annual_cash_flow_booked'] = df['est_annual_revenue_booked'] - (df['monthly_payment'] * 12)
+        else:
+            df['annual_cash_flow_booked'] = df['est_annual_revenue_booked']
+        valid_cf_booked = df['annual_cash_flow_booked'].notna()
+        print(f"     ✓ Created annual_cash_flow_booked (SECONDARY) ({valid_cf_booked.sum():,} valid values)")
+        
+        # Cash-on-cash ROI (booked days)
+        valid_roi_booked = (df['annual_cash_flow_booked'].notna() & (downpayment > 0))
+        df.loc[valid_roi_booked, 'cash_on_cash_roi_booked'] = (
+            df.loc[valid_roi_booked, 'annual_cash_flow_booked'] / downpayment.loc[valid_roi_booked]
+        ) * 100
+        print(f"     ✓ Created cash_on_cash_roi_booked (SECONDARY) ({valid_roi_booked.sum():,} valid values)")
+        
+        # Cap rate (booked days)
+        valid_cap_booked = (df['est_annual_revenue_booked'].notna() & (df['purchase_price'] > 0))
+        df.loc[valid_cap_booked, 'cap_rate_booked'] = (
+            df.loc[valid_cap_booked, 'est_annual_revenue_booked'] / df.loc[valid_cap_booked, 'purchase_price']
+        ) * 100
+        print(f"     ✓ Created cap_rate_booked (SECONDARY) ({valid_cap_booked.sum():,} valid values)")
+        
+        # Revenue yield (booked days)
+        df.loc[valid_cap_booked, 'revenue_yield_booked'] = df.loc[valid_cap_booked, 'cap_rate_booked']
+        print(f"     ✓ Created revenue_yield_booked (SECONDARY) ({valid_cap_booked.sum():,} valid values)")
+    
+    # Summary statistics (PRIMARY)
+    if valid_roi.any():
+        median_roi = df.loc[valid_roi, 'cash_on_cash_roi'].median()
+        print(f"        Median cash-on-cash ROI (PRIMARY): {median_roi:.1f}%")
+    
+    if valid_cap.any():
+        median_cap = df.loc[valid_cap, 'cap_rate'].median()
+        print(f"        Median cap rate (PRIMARY): {median_cap:.2f}%")
+    
+    # Summary statistics (SECONDARY, if available)
+    if has_revenue_booked:
+        if 'cash_on_cash_roi_booked' in df.columns:
+            valid_roi_booked = df['cash_on_cash_roi_booked'].notna()
+            if valid_roi_booked.any():
+                median_roi_booked = df.loc[valid_roi_booked, 'cash_on_cash_roi_booked'].median()
+                print(f"        Median cash-on-cash ROI (SECONDARY): {median_roi_booked:.1f}%")
+        
+        if 'cap_rate_booked' in df.columns:
+            valid_cap_booked = df['cap_rate_booked'].notna()
+            if valid_cap_booked.any():
+                median_cap_booked = df.loc[valid_cap_booked, 'cap_rate_booked'].median()
+                print(f"        Median cap rate (SECONDARY): {median_cap_booked:.2f}%")
     
     return df
 
@@ -254,7 +652,7 @@ def add_revenue_proxies(df):
 # MASTER FEATURE ENGINEERING FUNCTION
 # ============================================================================
 
-def apply_all_feature_engineering(df, city_name):
+def apply_all_feature_engineering(df, city_name, include_zillow=True):
     """
     Apply all feature engineering transformations in sequence
     
@@ -273,12 +671,30 @@ def apply_all_feature_engineering(df, city_name):
     print(f"{'='*80}")
     print(f"Starting with {len(df):,} listings and {len(df.columns)} columns")
     
+    # Exclude hotel rooms from analysis
+    # Rationale: Hotel rooms represent commercial operations, not residential
+    # rental investments, which is the focus of this analysis
+    if 'room_type' in df.columns:
+        n_hotel = (df['room_type'] == 'Hotel room').sum()
+        if n_hotel > 0:
+            df = df[df['room_type'] != 'Hotel room'].copy()
+            print(f"  🏨 Excluded {n_hotel:,} hotel room listings from analysis")
+            print(f"     Focus: Residential rental investments (Entire home/apt, Private room, Shared room)")
+    
+    print(f"After filtering: {len(df):,} listings")
+    
     original_cols = len(df.columns)
     
     # Apply transformations in priority order
     df = add_log_transforms(df)
     df = add_within_city_metrics(df, city_name)
     df = add_revenue_proxies(df)
+    df = add_professionalization_metrics(df, city_name)
+    
+    # Add Zillow prices and ROI metrics (if requested)
+    if include_zillow:
+        df = add_zillow_prices(df, city_name)
+        df = add_roi_metrics(df)
     
     new_cols = len(df.columns)
     added_cols = new_cols - original_cols

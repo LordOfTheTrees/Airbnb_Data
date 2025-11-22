@@ -1,0 +1,44 @@
+Variables that are interesting:
+
+Misc:
+license (permit #)
+host listings count
+host total listings count (how is this different)
+neighbourhood cleansed ???
+
+accommodation attributes
+	accommodates
+		log accommodates?
+	bathrooms
+	bedrooms
+	beds
+
+Business attributes
+	availability
+	estimated occupancy 365
+	estimated revenue 365
+		how is this different from est_annual_revenue
+	revenue_per_accomodates
+	revenue_per_bedroom
+	log_est_revenue
+	price_clean
+		& log_price
+	price_per_accomodates
+		& log_price
+	price Z scores & percentiles
+	occupancy_proxy
+
+market attributes
+	calculated_host_listings_<type>
+	review count metrics
+		bubbling up interest
+	Lat & long
+
+hard to use well
+review score metrics
+
+
+
+why is accommodates pegged to 1, but the others are pegged to 0?
+
+
