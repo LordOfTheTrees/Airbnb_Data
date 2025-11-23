@@ -364,6 +364,138 @@ def create_professionalization_visualizations(metrics_df, output_dir='city_compa
                dpi=300, bbox_inches='tight')
     print(f"✓ Saved: {output_dir}/market_professionalization_relationships.png")
     plt.close()
+    
+    # Figure 3: Individual listings by market professionalization score
+    # This replicates the Austin-style scatter plots but across all cities
+    print(f"\n  Creating individual listing scatter plots by professionalization score...")
+    
+    # Load individual listing data from all cities and merge with professionalization scores
+    all_listings = []
+    for _, city_row in metrics_df.iterrows():
+        city_name = city_row['city']
+        prof_score = city_row['professionalization_score']
+        
+        try:
+            df = load_city_data(city_name, base_dir='.', use_detailed=False)
+            
+            # Filter to valid data
+            if 'occupancy_rate' in df.columns and 'log_price' in df.columns:
+                df_valid = df[['occupancy_rate', 'log_price']].dropna()
+                if len(df_valid) > 0:
+                    df_valid['city'] = city_name
+                    df_valid['market_professionalization_score'] = prof_score
+                    all_listings.append(df_valid)
+        except Exception as e:
+            print(f"    ⚠️  Skipping {city_name}: {e}")
+            continue
+    
+    if all_listings:
+        combined_listings = pd.concat(all_listings, ignore_index=True)
+        
+        # Sample if too large (for performance)
+        if len(combined_listings) > 50000:
+            combined_listings = combined_listings.sample(n=50000, random_state=42)
+            print(f"    Sampled {len(combined_listings):,} listings for visualization")
+        
+        # Create color map: green for high professionalization (good), red for low
+        # Normalize professionalization score to 0-1 for color mapping
+        prof_min = combined_listings['market_professionalization_score'].min()
+        prof_max = combined_listings['market_professionalization_score'].max()
+        combined_listings['prof_normalized'] = (combined_listings['market_professionalization_score'] - prof_min) / (prof_max - prof_min)
+        
+        # Create color array: green (high) to red (low)
+        colors = combined_listings['prof_normalized'].apply(
+            lambda x: plt.cm.RdYlGn(x)  # Red-Yellow-Green colormap
+        )
+        
+        fig, axes = plt.subplots(2, 1, figsize=(16, 12))
+        
+        # Plot 1: Professionalization Score vs Occupancy Rate
+        ax = axes[0]
+        scatter = ax.scatter(combined_listings['market_professionalization_score'], 
+                            combined_listings['occupancy_rate'],
+                            c=combined_listings['prof_normalized'],
+                            cmap='RdYlGn',  # Red (low) to Green (high)
+                            alpha=0.3, s=10, edgecolors='none')
+        ax.set_xlabel('Market Professionalization Score (0-100)', fontweight='bold', fontsize=12)
+        ax.set_ylabel('Occupancy Rate', fontweight='bold', fontsize=12)
+        ax.set_title('Occupancy Rate by Market Professionalization Score\n(Green = High Professionalization, Red = Low)', 
+                    fontweight='bold', fontsize=13)
+        ax.grid(True, alpha=0.3)
+        
+        # Add colorbar
+        cbar = plt.colorbar(scatter, ax=ax)
+        cbar.set_label('Professionalization Score (High=Green)', fontweight='bold', fontsize=10)
+        
+        # Add linear regression line
+        from scipy.stats import linregress
+        x_data = combined_listings['market_professionalization_score'].values
+        y_data = combined_listings['occupancy_rate'].values
+        slope, intercept, r_value, p_value, std_err = linregress(x_data, y_data)
+        r_squared = r_value**2
+        
+        x_line = np.linspace(x_data.min(), x_data.max(), 100)
+        y_line = slope * x_line + intercept
+        ax.plot(x_line, y_line, 'k--', linewidth=2, alpha=0.7, label='Trend line')
+        
+        if intercept >= 0:
+            eq_text = f'y = {slope:.4f}x + {intercept:.4f}'
+        else:
+            eq_text = f'y = {slope:.4f}x - {abs(intercept):.4f}'
+        
+        ax.text(0.05, 0.95, f'{eq_text}\nR² = {r_squared:.4f}', 
+                transform=ax.transAxes, fontsize=10, fontweight='bold',
+                bbox=dict(boxstyle='round,pad=0.5', facecolor='wheat', alpha=0.7),
+                verticalalignment='top')
+        ax.legend(loc='lower right', fontsize=9)
+        
+        # Plot 2: Professionalization Score vs Log Price
+        ax = axes[1]
+        scatter = ax.scatter(combined_listings['market_professionalization_score'], 
+                            combined_listings['log_price'],
+                            c=combined_listings['prof_normalized'],
+                            cmap='RdYlGn',  # Red (low) to Green (high)
+                            alpha=0.3, s=10, edgecolors='none')
+        ax.set_xlabel('Market Professionalization Score (0-100)', fontweight='bold', fontsize=12)
+        ax.set_ylabel('Log Price', fontweight='bold', fontsize=12)
+        ax.set_title('Log Price by Market Professionalization Score\n(Green = High Professionalization, Red = Low)', 
+                    fontweight='bold', fontsize=13)
+        ax.grid(True, alpha=0.3)
+        
+        # Add colorbar
+        cbar = plt.colorbar(scatter, ax=ax)
+        cbar.set_label('Professionalization Score (High=Green)', fontweight='bold', fontsize=10)
+        
+        # Add linear regression line
+        x_data = combined_listings['market_professionalization_score'].values
+        y_data = combined_listings['log_price'].values
+        slope, intercept, r_value, p_value, std_err = linregress(x_data, y_data)
+        r_squared = r_value**2
+        
+        x_line = np.linspace(x_data.min(), x_data.max(), 100)
+        y_line = slope * x_line + intercept
+        ax.plot(x_line, y_line, 'k--', linewidth=2, alpha=0.7, label='Trend line')
+        
+        if intercept >= 0:
+            eq_text = f'y = {slope:.4f}x + {intercept:.4f}'
+        else:
+            eq_text = f'y = {slope:.4f}x - {abs(intercept):.4f}'
+        
+        ax.text(0.05, 0.95, f'{eq_text}\nR² = {r_squared:.4f}', 
+                transform=ax.transAxes, fontsize=10, fontweight='bold',
+                bbox=dict(boxstyle='round,pad=0.5', facecolor='wheat', alpha=0.7),
+                verticalalignment='top')
+        ax.legend(loc='lower right', fontsize=9)
+        
+        fig.suptitle('Individual Listings by Market Professionalization Score\n(Cross-City Comparison)', 
+                    fontsize=16, fontweight='bold', y=0.995)
+        plt.tight_layout()
+        plt.savefig(f'{output_dir}/market_professionalization_listings_scatter.png', 
+                   dpi=300, bbox_inches='tight')
+        print(f"✓ Saved: {output_dir}/market_professionalization_listings_scatter.png")
+        plt.close()
+    else:
+        print(f"    ⚠️  No listing data available for scatter plots")
 
 
 def main():
@@ -372,10 +504,10 @@ def main():
     
     # List of all cities
     all_cities = [
-        'Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge',
+        'Albany', 'Asheville', 'Austin', 'Boston', 'Bozeman', 'Cambridge',
         'Chicago', 'Columbus', 'Dallas', 'Denver', 'Hawaii',
         'Jersey_City', 'Los_Angeles', 'Nashville', 'New_Orleans',
-        'New_York', 'Oakland', 'Oregon', 'Paris',
+        'New_York', 'Oakland', 'Portland', 'Paris',
         'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC'
     ]
     

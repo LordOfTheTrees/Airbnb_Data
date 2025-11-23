@@ -26,7 +26,7 @@ Create mapping dictionary for Airbnb cities → Zillow metros:
 Direct matches: "Austin" → "Austin, TX", "Chicago" → "Chicago, IL", etc.
 Name transformations: "New_York" → "New York, NY", "Los_Angeles" → "Los Angeles, CA"
 Sub-city to metro: "Jersey_City" → "New York, NY", "Cambridge" → "Boston, MA", "Oakland" → "San Francisco, CA"
-Handle special cases: "Hawaii" → check for Honolulu metro?, "Oregon" → "Portland, OR"?, "Rhode_Island" → "Providence, RI"?
+Handle special cases: "Hawaii" → check for Honolulu metro?, "Portland" → "Portland, OR", "Rhode_Island" → "Providence, RI"?
 Handle unmatchable cities: "Paris" (France - no Zillow data)
 Output: Dictionary mapping each Airbnb city to Zillow metro (or None if unmatchable)
 

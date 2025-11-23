@@ -1,81 +1,122 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
-id,continuous,5723.0,0,0.0,61878,1490255976511423868,1.490255976511362e+18,8.87572344692356e+17,1.0804654920299668e+18,5.421766470311634e+17,0.0,61878
-listing_url,discrete_categorical,5723.0,0,0.0,https://www.airbnb.com/rooms/1000131744901729645,https://www.airbnb.com/rooms/999346462727587735,,,,,,https://www.airbnb.com/rooms/1000131744901729645
+id,continuous,5673.0,0,0.0,61878,1490255976511423868,1.490255976511362e+18,8.850628818506282e+17,1.0797585964004214e+18,5.43597486020408e+17,0.0,61878
+listing_url,discrete_categorical,5673.0,0,0.0,https://www.airbnb.com/rooms/1000131744901729645,https://www.airbnb.com/rooms/999346462727587735,,,,,,https://www.airbnb.com/rooms/1000131744901729645
 scrape_id,discrete_numeric,1.0,0,0.0,20250819035519,20250819035519,0.0,20250819035519.0,20250819035519.0,0.0,0.0,20250819035519
 last_scraped,discrete_categorical,1.0,0,0.0,2025-08-19,2025-08-19,,,,,,2025-08-19
 source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
-name,discrete_categorical,5444.0,0,0.0,! Home In The Heart Of Dallas !,😌Spacious & Serene🌙 w/ Hot Tub+Arcade+Ping-Pong+Fi...,,,,,,"Stunning Downtown Apt | Pool, Laundry, Parking"
-description,discrete_categorical,4676.0,32,0.56,"""My first time staying in an Airbnb and my experie...",🛏️ Sleeping & Comfort • Queen bed with new pillows...,,,,,,Keep it simple at this peaceful and centrally-loca...
-neighborhood_overview,discrete_categorical,1690.0,3160,55.22,"""Desirable Downtown Dallas Airbnb with Free Parkin...","📍Near LTV Towers in Dallas, Texas, there are plent...",,,,,,"Dallas is one of the largest cities in America, co..."
-picture_url,discrete_categorical,5633.0,0,0.0,https://a0.muscache.com/pictures/0017d99e-8968-463...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/hosting/Hosting-1...
-host_id,continuous,2435.0,0,0.0,43422,712894118,712850696.0,292185660.7052245,263502162.0,221422269.5552395,0.0,108514926
-host_url,discrete_categorical,2435.0,0,0.0,https://www.airbnb.com/users/show/100371487,https://www.airbnb.com/users/show/998462,,,,,,https://www.airbnb.com/users/show/108514926
-host_name,discrete_categorical,1626.0,0,0.0,A-Solutions BnB,Zykeisha,,,,,,Zachi
-host_since,discrete_categorical,1859.0,0,0.0,2009-10-05,2025-08-11,,,,,,2016-12-26
-host_location,discrete_categorical,224.0,1659,28.99,"Addison, TX","Écully, France",,,,,,"Dallas, TX"
-host_about,discrete_categorical,1103.0,2758,48.19,I love to garden and cook; I keep an herb and smal...,“Travel is about the gorgeous feeling of teetering...,,,,,,"Welcome to Dallas! As a lifelong resident, I speci..."
-host_response_time,discrete_categorical,4.0,515,9.0,a few days or more,within an hour,,,,,,within an hour
-host_response_rate,discrete_categorical,41.0,515,9.0,0%,99%,,,,,,100%
-host_acceptance_rate,discrete_categorical,79.0,348,6.08,0%,99%,,,,,,100%
-host_is_superhost,discrete_categorical,2.0,290,5.07,f,t,,,,,,f
-host_thumbnail_url,discrete_categorical,2333.0,0,0.0,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/pictures/user/617a3902-0...,,,,,,https://a0.muscache.com/im/pictures/user/96ee849f-...
-host_picture_url,discrete_categorical,2333.0,0,0.0,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/pictures/user/617a3902-0...,,,,,,https://a0.muscache.com/im/pictures/user/96ee849f-...
-host_neighbourhood,discrete_categorical,285.0,505,8.82,544 Place,Wolf Creek,,,,,,Old East Dallas
-host_listings_count,continuous,93.0,0,0.0,1,2945,2944.0,77.87925912982702,6.0,330.6800084864419,0.0,1
-host_total_listings_count,continuous,116.0,0,0.0,1,8274,8273.0,146.63515638651057,8.0,696.13320119106,0.0,1
+name,discrete_categorical,5394.0,0,0.0,! Home In The Heart Of Dallas !,😌Spacious & Serene🌙 w/ Hot Tub+Arcade+Ping-Pong+Fi...,,,,,,"Stunning Downtown Apt | Pool, Laundry, Parking"
+description,discrete_categorical,4671.0,32,0.56,"""My first time staying in an Airbnb and my experie...",🛏️ Sleeping & Comfort • Queen bed with new pillows...,,,,,,Keep it simple at this peaceful and centrally-loca...
+neighborhood_overview,discrete_categorical,1683.0,3160,55.7,"""Desirable Downtown Dallas Airbnb with Free Parkin...","📍Near LTV Towers in Dallas, Texas, there are plent...",,,,,,"Dallas is one of the largest cities in America, co..."
+picture_url,discrete_categorical,5583.0,0,0.0,https://a0.muscache.com/pictures/0017d99e-8968-463...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/hosting/Hosting-1...
+host_id,continuous,2431.0,0,0.0,43422,712894118,712850696.0,291980278.3990834,263131842.0,221050666.12897238,0.0,108514926
+host_url,discrete_categorical,2431.0,0,0.0,https://www.airbnb.com/users/show/100371487,https://www.airbnb.com/users/show/998462,,,,,,https://www.airbnb.com/users/show/108514926
+host_name,discrete_categorical,1625.0,0,0.0,A-Solutions BnB,Zykeisha,,,,,,Zachi
+host_since,discrete_categorical,1858.0,0,0.0,2009-10-05,2025-08-11,,,,,,2016-12-26
+host_location,discrete_categorical,224.0,1617,28.5,"Addison, TX","Écully, France",,,,,,"Dallas, TX"
+host_about,discrete_categorical,1102.0,2729,48.11,I love to garden and cook; I keep an herb and smal...,“Travel is about the gorgeous feeling of teetering...,,,,,,"Welcome to Dallas! As a lifelong resident, I speci..."
+host_response_time,discrete_categorical,4.0,515,9.08,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,41.0,515,9.08,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,79.0,348,6.13,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,290,5.11,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,2329.0,0,0.0,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/pictures/user/617a3902-0...,,,,,,https://a0.muscache.com/im/pictures/user/96ee849f-...
+host_picture_url,discrete_categorical,2329.0,0,0.0,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/pictures/user/617a3902-0...,,,,,,https://a0.muscache.com/im/pictures/user/96ee849f-...
+host_neighbourhood,discrete_categorical,283.0,505,8.9,544 Place,Wolf Creek,,,,,,Old East Dallas
+host_listings_count,continuous,90.0,0,0.0,1,2851,2850.0,67.97637934073683,6.0,298.41092800456283,0.0,1
+host_total_listings_count,continuous,113.0,0,0.0,1,8274,8273.0,115.30530583465539,8.0,547.9698692869753,0.0,1
 host_verifications,discrete_categorical,7.0,0,0.0,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
 host_has_profile_pic,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
 host_identity_verified,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
-neighbourhood,discrete_categorical,1.0,3160,55.22,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood,discrete_categorical,1.0,3160,55.7,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
 neighbourhood_cleansed,discrete_categorical,14.0,0,0.0,District 1,District 9,,,,,,District 2
-neighbourhood_group_cleansed,empty,,5723,100.0,,,,,,,,
-latitude,continuous,4881.0,0,0.0,32.63379,33.01515,0.3813600000000008,32.80945654009216,32.80094129031481,0.06345793946949509,15.0,32.77766
-longitude,continuous,4842.0,0,0.0,-96.99269693344831,-96.48124,0.511456933448315,-96.79500023456191,-96.79497983516926,0.04758063255619596,14.0,-96.79487
+neighbourhood_group_cleansed,empty,,5673,100.0,,,,,,,,
+latitude,continuous,4873.0,0,0.0,32.63379,33.01515,0.3813600000000008,32.80893575652167,32.800648730131485,0.0632023402989524,15.0,32.77766
+longitude,continuous,4834.0,0,0.0,-96.99269693344831,-96.48124,0.511456933448315,-96.7951894916971,-96.7949901,0.04772028673900099,14.0,-96.79487
 property_type,discrete_categorical,38.0,0,0.0,Barn,Treehouse,,,,,,Entire rental unit
-room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,5.037392975712039,4.0,3.5536040431891527,0.0,2
-bathrooms,continuous,22.0,352,6.15,0.0,18.0,18.0,1.630236455036306,1.0,1.0013166006651528,1.0,1.0
-bathrooms_text,discrete_categorical,31.0,17,0.3,0 baths,Shared half-bath,,,,,,1 bath
-bedrooms,discrete_numeric,13.0,58,1.01,0.0,33.0,33.0,1.884730803177405,1.0,1.33521203367554,0.0,1.0
-beds,continuous,21.0,351,6.13,0.0,39.0,39.0,2.5519359642591213,2.0,2.157135171431238,1.0,1.0
-amenities,discrete_categorical,5250.0,0,0.0,"[""25 inch HDTV with standard cable"", ""Carbon monox...",[],,,,,,"[""Carbon monoxide alarm"", ""Extra pillows and blank..."
-price,discrete_categorical,585.0,350,6.12,"$1,000.00",$999.00,,,,,,$86.00
-minimum_nights,continuous,58.0,0,0.0,1,365,364.0,8.221037917176305,2.0,19.63347024785026,0.0,1
-maximum_nights,continuous,117.0,0,0.0,1,1125,1124.0,455.0384413769002,365.0,339.55001205357286,0.0,365
-minimum_minimum_nights,continuous,60.0,8,0.14,1.0,365.0,364.0,6.9839020122484685,2.0,18.77448707396934,1.0,1.0
-maximum_minimum_nights,continuous,60.0,8,0.14,1.0,365.0,364.0,9.44601924759405,3.0,20.03664868007237,1.0,1.0
-minimum_maximum_nights,continuous,99.0,8,0.14,1.0,2147483647.0,2147483646.0,2255207.3720034994,365.0,69551603.79648574,1.0,1125.0
-maximum_maximum_nights,continuous,104.0,8,0.14,2.0,2147483647.0,2147483645.0,2255241.645319335,365.0,69551602.68522842,1.0,1125.0
-minimum_nights_avg_ntm,continuous,228.0,0,0.0,1.0,365.0,364.0,8.81488729687227,2.2,19.362965528153058,1.0,1.0
-maximum_nights_avg_ntm,continuous,264.0,0,0.0,2.0,2147483647.0,2147483645.0,2252076.183120741,365.0,69503016.69813281,1.0,1125.0
-calendar_updated,empty,,5723,100.0,,,,,,,,
-has_availability,discrete_categorical,1.0,59,1.03,t,t,,,,,,t
-availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,18.667482089813035,22.0,10.943614967934288,0.0,30
-availability_60,continuous,61.0,0,0.0,0,60,60.0,39.97099423379346,48.0,20.689407621752828,0.0,60
-availability_90,continuous,91.0,0,0.0,0,90,90.0,63.55198322558099,77.0,29.958911874971854,0.0,90
-availability_365,continuous,364.0,0,0.0,0,365,365.0,253.24148174034596,299.0,118.14089293024206,0.0,365
+room_type,discrete_categorical,3.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,5.029085140137493,4.0,3.544304539273563,0.0,2
+bathrooms,continuous,22.0,337,5.94,0.0,18.0,18.0,1.6309970014992503,1.0,1.0014921478488066,1.0,1.0
+bathrooms_text,discrete_categorical,31.0,3,0.05,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,13.0,58,1.02,0.0,33.0,33.0,1.8879786286731968,1.0,1.3380072382798416,0.0,1.0
+beds,continuous,21.0,336,5.92,0.0,39.0,39.0,2.5611766910249205,2.0,2.1567280719780344,1.0,1.0
+amenities,discrete_categorical,5244.0,0,0.0,"[""25 inch HDTV with standard cable"", ""Carbon monox...",[],,,,,,"[""Carbon monoxide alarm"", ""Extra pillows and blank..."
+price,discrete_categorical,582.0,335,5.91,"$1,000.00",$999.00,,,,,,$86.00
+minimum_nights,continuous,58.0,0,0.0,1,365,364.0,8.284681826194253,2.0,19.708056275718995,0.0,1
+maximum_nights,continuous,117.0,0,0.0,1,1125,1124.0,450.87519830777364,365.0,336.6699848657745,0.0,365
+minimum_minimum_nights,continuous,60.0,8,0.14,1.0,365.0,364.0,7.036716681376875,2.0,18.84871548345159,1.0,1.0
+maximum_minimum_nights,continuous,60.0,8,0.14,1.0,365.0,364.0,9.520564872021183,3.0,20.109103251492055,1.0,1.0
+minimum_maximum_nights,continuous,99.0,8,0.14,1.0,2147483647.0,2147483646.0,2275111.182524272,365.0,69857594.89145124,1.0,1125.0
+maximum_maximum_nights,continuous,104.0,8,0.14,2.0,2147483647.0,2147483645.0,2275138.1823477494,365.0,69857594.0121626,1.0,1125.0
+minimum_nights_avg_ntm,continuous,228.0,0,0.0,1.0,365.0,364.0,8.88376520359598,2.2,19.43415465624813,1.0,1.0
+maximum_nights_avg_ntm,continuous,246.0,0,0.0,2.0,2147483647.0,2147483645.0,2271919.6446853518,365.0,69808364.30137467,1.0,1125.0
+calendar_updated,empty,,5673,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,59,1.04,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,18.637934073682356,22.0,10.969475507530955,0.0,30
+availability_60,continuous,61.0,0,0.0,0,60,60.0,39.91732769257888,48.0,20.739477367797626,0.0,60
+availability_90,continuous,91.0,0,0.0,0,90,90.0,63.477525118984666,77.0,30.029103726246472,0.0,90
+availability_365,continuous,364.0,0,0.0,0,365,365.0,252.96474528468184,299.0,118.51346009521721,0.0,365
 calendar_last_scraped,discrete_categorical,1.0,0,0.0,2025-08-19,2025-08-19,,,,,,2025-08-19
-number_of_reviews,continuous,367.0,0,0.0,0,1363,1363.0,42.23501659968548,13.0,83.73121652364865,0.0,0
-number_of_reviews_ltm,continuous,119.0,0,0.0,0,401,401.0,13.438930630788049,5.0,19.726243377280504,0.0,0
-number_of_reviews_l30d,discrete_numeric,16.0,0,0.0,0,47,47.0,1.1189935348593396,0.0,1.9621535064480222,0.0,0
-availability_eoy,continuous,136.0,0,0.0,0,135,135.0,97.2126507076708,117.0,43.840461386051835,0.0,135
-number_of_reviews_ly,continuous,121.0,0,0.0,0,332,332.0,10.593045605451687,1.0,19.155059997971346,0.0,0
-estimated_occupancy_l365d,continuous,86.0,0,0.0,0,255,255.0,83.27240957539752,54.0,88.44405960882547,0.0,0
-estimated_revenue_l365d,continuous,2160.0,350,6.12,0.0,1500000.0,1500000.0,12867.296110180532,5814.0,36988.985905664755,1.0,0.0
-first_review,discrete_categorical,1840.0,906,15.83,2010-12-29,2025-08-18,,,,,,2024-10-13
-last_review,discrete_categorical,718.0,906,15.83,2015-12-06,2025-08-18,,,,,,2025-08-03
-review_scores_rating,continuous,125.0,906,15.83,1.0,5.0,4.0,4.746942080132862,4.87,0.45247530191778323,2.0,5.0
-review_scores_accuracy,continuous,121.0,906,15.83,1.0,5.0,4.0,4.785075773302886,4.9,0.43475768381282326,2.0,5.0
-review_scores_cleanliness,continuous,129.0,906,15.83,1.0,5.0,4.0,4.740323853020552,4.87,0.4425350969595125,2.0,5.0
-review_scores_checkin,continuous,115.0,906,15.83,1.0,5.0,4.0,4.818737803612207,4.94,0.410646501734302,2.0,5.0
-review_scores_communication,continuous,106.0,906,15.83,1.0,5.0,4.0,4.843853020552211,4.96,0.39927334534899467,2.0,5.0
-review_scores_location,continuous,148.0,906,15.83,1.0,5.0,4.0,4.692869005605149,4.83,0.4455336562578636,2.0,5.0
-review_scores_value,continuous,131.0,906,15.83,1.0,5.0,4.0,4.701828939173759,4.82,0.4683959930233077,2.0,5.0
-license,empty,,5723,100.0,,,,,,,,
+number_of_reviews,continuous,367.0,0,0.0,0,1363,1363.0,42.596862330336684,13.0,84.00989034408859,0.0,0
+number_of_reviews_ltm,continuous,119.0,0,0.0,0,401,401.0,13.550326106116692,5.0,19.775591701203407,0.0,0
+number_of_reviews_l30d,discrete_numeric,16.0,0,0.0,0,47,47.0,1.1286797109113345,0.0,1.9680121694195785,0.0,0
+availability_eoy,continuous,136.0,0,0.0,0,135,135.0,97.07597391151066,117.0,43.93305799962246,0.0,135
+number_of_reviews_ly,continuous,121.0,0,0.0,0,332,332.0,10.680592279217345,1.0,19.215682658075334,0.0,0
+estimated_occupancy_l365d,continuous,86.0,0,0.0,0,255,255.0,83.96404019037546,54.0,88.5120045010658,0.0,0
+estimated_revenue_l365d,continuous,2156.0,335,5.91,0.0,1500000.0,1500000.0,12618.553765455226,5868.0,34470.645445343784,1.0,0.0
+first_review,discrete_categorical,1840.0,875,15.42,2010-12-29,2025-08-18,,,,,,2024-10-13
+last_review,discrete_categorical,713.0,875,15.42,2015-12-06,2025-08-18,,,,,,2025-08-03
+review_scores_rating,continuous,125.0,875,15.42,1.0,5.0,4.0,4.749593580658607,4.87,0.4467295064405254,2.0,5.0
+review_scores_accuracy,continuous,121.0,875,15.42,1.0,5.0,4.0,4.788088786994581,4.9,0.4263271530128321,2.0,5.0
+review_scores_cleanliness,continuous,129.0,875,15.42,1.0,5.0,4.0,4.742680283451438,4.87,0.43647137490574883,2.0,5.0
+review_scores_checkin,continuous,115.0,875,15.42,1.0,5.0,4.0,4.821131721550646,4.94,0.4049701010311768,2.0,5.0
+review_scores_communication,continuous,106.0,875,15.42,1.0,5.0,4.0,4.8467215506461025,4.96,0.39220519840401274,2.0,5.0
+review_scores_location,continuous,148.0,875,15.42,1.0,5.0,4.0,4.694974989578991,4.83,0.4401308736606546,2.0,5.0
+review_scores_value,continuous,131.0,875,15.42,1.0,5.0,4.0,4.705218841183826,4.82,0.4605674686813856,2.0,5.0
+license,empty,,5673,100.0,,,,,,,,
 instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
-calculated_host_listings_count,discrete_numeric,39.0,0,0.0,1,116,115.0,13.546217019045955,4.0,23.289609142765798,0.0,1
-calculated_host_listings_count_entire_homes,discrete_numeric,39.0,0,0.0,0,116,116.0,12.825441202166695,3.0,23.291830544388784,0.0,1
-calculated_host_listings_count_private_rooms,discrete_numeric,14.0,0,0.0,0,15,15.0,0.5584483662414818,0.0,1.896813818003736,0.0,0
-calculated_host_listings_count_shared_rooms,discrete_numeric,6.0,0,0.0,0,8,8.0,0.03634457452385113,0.0,0.48472658445155636,0.0,0
-reviews_per_month,continuous,734.0,906,15.83,0.01,27.28,27.27,2.027238945401702,1.44,1.9938097348331656,2.0,1.0
-price_clean,continuous,585.0,350,6.12,11.0,50000.0,49989.0,386.69849246231155,110.0,3088.202570681648,1.0,86.0
+calculated_host_listings_count,discrete_numeric,39.0,0,0.0,1,116,115.0,13.538515776485104,4.0,23.35796374005235,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,39.0,0,0.0,0,116,116.0,12.904107174334568,3.0,23.35329864341886,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,14.0,0,0.0,0,15,15.0,0.553146483342147,0.0,1.8837993493438236,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,6.0,0,0.0,0,8,8.0,0.03666490393090076,0.0,0.48684632135560457,0.0,0
+reviews_per_month,continuous,734.0,875,15.42,0.01,27.28,27.27,2.0341329720716965,1.45,1.9945860087999945,2.0,1.0
+price_clean,continuous,582.0,335,5.91,11.0,50000.0,49989.0,212.40989134507305,110.0,1448.2425832516335,1.0,86.0
+log_price,continuous,582.0,335,5.91,2.3978952727983707,10.819778284410283,8.421883011611913,4.807539234551332,4.700480365792417,0.7066175169825637,16.0,4.454347296253507
+price_per_accommodates,continuous,1267.0,335,5.91,3.0,25000.0,24997.0,53.884019238068035,29.5,534.8509974892233,16.0,25.0
+log_price_per_accommodates,continuous,1267.0,335,5.91,1.0986122886681098,10.126631103850338,9.028018815182229,3.4054312490794474,3.3843902633457743,0.6494316847688811,16.0,3.2188758248682006
+log_reviews,continuous,367.0,0,0.0,0.0,7.218176838403408,7.218176838403408,2.5437250178150617,2.6390573296152584,1.6815777680473671,16.0,0.0
+log_accommodates,discrete_numeric,16.0,0,0.0,0.0,2.772588722239781,2.772588722239781,1.3910315494435206,1.3862943611198906,0.6714593847301134,0.0,0.6931471805599453
+log_beds,continuous,21.0,336,5.92,0.0,3.6888794541139363,3.6888794541139363,1.132677181363074,1.0986122886681098,0.5042724514800216,16.0,0.6931471805599453
+price_zscore,continuous,582.0,335,5.91,-0.1390719301271076,34.37793549535774,34.51700742548485,5.324411658000001e-18,-0.07071321650765135,0.9999999999999997,19.0,-0.08728502586994377
+price_percentile,continuous,582.0,335,5.91,0.00018733608092918696,0.9998126639190709,0.9996253278381417,0.5000936680404646,0.5003746721618584,0.28869649279628384,20.0,0.3176283252154365
+log_price_zscore,continuous,582.0,335,5.91,-3.410110708892066,8.508477224754827,11.918587933646894,6.069829290120002e-16,-0.1515089368518408,1.0,18.0,-0.4998346769070265
+reviews_zscore,continuous,367.0,0,0.0,-0.5070458032484986,15.717234390635939,16.22428019388444,-2.003998549649498e-17,-0.35230211834717967,1.0,18.0,-0.5070458032484986
+reviews_percentile,continuous,367.0,0,0.0,0.07720782654680064,1.0,0.9227921734531994,0.5000881367882954,0.49894235854045477,0.2880886278591431,17.0,0.07720782654680064
+reviews_per_month_zscore,continuous,734.0,875,15.42,-1.0148135819369748,12.657196489168703,13.672010071105678,0.0,-0.2928592547498763,1.0,18.0,-0.5184699819958445
+occupancy_rate,continuous,364.0,0,0.0,0.0,1.0,1.0,0.30694590332963884,0.18082191780821918,0.32469441121977316,19.0,0.0
+occupancy_rate_booked,continuous,86.0,0,0.0,0.0,0.6986301369863014,0.6986301369863014,0.2300384662750013,0.14794520547945206,0.24249864246867345,18.0,0.0
+occupancy_is_capped,discrete_numeric,2.0,0,0.0,0,1,1.0,0.10611669310770315,0.0,0.3080140647688178,0.0,0
+est_annual_revenue,continuous,3639.0,335,5.91,0.0,18250000.0,18250000.0,29688.445110528286,6120.0,412940.09699778043,1.0,0.0
+est_annual_revenue_booked,continuous,2156.0,335,5.91,0.0,1500000.0,1500000.0,12618.553765455226,5868.0,34470.645445343784,1.0,0.0
+revenue_per_accommodates,continuous,3897.0,335,5.91,0.0,9125000.0,9125000.0,8284.682745470725,1440.4166666666665,167117.58912044388,15.0,0.0
+revenue_per_bedroom,continuous,3633.0,501,8.83,0.0,18250000.0,18250000.0,22599.167220500774,3922.666666666667,418708.8678901796,13.0,0.0
+log_est_revenue,continuous,3638.0,858,15.12,3.2188758248682006,16.719675637992776,13.500799813124575,8.706435588784844,9.01602720232985,1.7697637673763484,16.0,5.703782474656201
+host_listings_in_city,discrete_numeric,39.0,0,0.0,1,116,115.0,13.538515776485104,4.0,23.35796374005235,0.0,1
+host_is_professional,discrete_numeric,2.0,0,0.0,0,1,1.0,0.7070333157059757,1.0,0.4551634052088865,0.0,1
+host_professional_tier,discrete_categorical,4.0,0,0.0,casual,small_professional,,,,,,casual
+pct_professional_hosts,discrete_numeric,1.0,0,0.0,70.70333157059757,70.70333157059757,0.0,70.70333157059757,70.70333157059757,0.0,0.0,70.70333157059757
+pct_large_operators,discrete_numeric,1.0,0,0.0,18.15617838885951,18.15617838885951,0.0,18.156178388859505,18.15617838885951,3.5530268449766835e-15,0.0,18.15617838885951
+median_host_listings,discrete_numeric,1.0,0,0.0,4.0,4.0,0.0,4.0,4.0,0.0,0.0,4.0
+gini_host_concentration,discrete_numeric,1.0,0,0.0,0.697150157242989,0.697150157242989,0.0,0.697150157242989,0.697150157242989,0.0,0.0,0.697150157242989
+market_professionalization_score,discrete_numeric,1.0,0,0.0,47.64770964935476,47.64770964935476,0.0,47.64770964935475,47.64770964935476,7.106053689953367e-15,0.0,47.64770964935476
+purchase_price,discrete_numeric,1.0,0,0.0,362053.0121803816,362053.0121803816,0.0,362053.0121803815,362053.0121803816,5.821279182809798e-11,0.0,362053.0121803816
+monthly_payment,discrete_numeric,1.0,0,0.0,2578.714291162045,2578.714291162045,0.0,2578.7142911620454,2578.714291162045,4.547874361570155e-13,0.0,2578.714291162045
+zori_rent,discrete_numeric,1.0,0,0.0,1678.4715978572096,1678.4715978572096,0.0,1678.4715978572096,1678.4715978572096,0.0,0.0,1678.4715978572096
+zillow_metro,discrete_categorical,1.0,0,0.0,"Dallas, TX","Dallas, TX",,,,,,"Dallas, TX"
+annual_cash_flow,continuous,3639.0,335,5.91,-30944.57149394454,18219055.428506054,18250000.0,-1256.126383416247,-24824.57149394454,412940.09699778043,13.0,-30944.57149394454
+cash_on_cash_roi,continuous,3639.0,335,5.91,-42.73486264841152,25160.75659581722,25203.491458465633,-1.7347271548046412,-34.28306167713428,570.275737399536,16.0,-42.73486264841152
+cap_rate,continuous,3639.0,335,5.91,0.0,5040.6982916931265,5040.6982916931265,8.200027098721375,1.6903601942554483,114.05514747990715,18.0,0.0
+price_to_rent_ratio,continuous,3638.0,858,15.12,0.2380622545843605,173785.44584658314,173785.20778432855,3824.9629458940203,527.6458763862739,11023.440889151185,15.0,14482.120487215263
+revenue_yield,continuous,3639.0,335,5.91,0.0,5040.6982916931265,5040.6982916931265,8.200027098721375,1.6903601942554483,114.05514747990715,18.0,0.0
+annual_cash_flow_booked,continuous,2156.0,335,5.91,-30944.57149394454,1469055.4285060554,1500000.0,-18326.017728489307,-25076.57149394454,34470.645445343784,14.0,-30944.57149394454
+cash_on_cash_roi_booked,continuous,2156.0,335,5.91,-42.73486264841152,2028.7849832528732,2071.5198459012845,-25.308472947269593,-34.631077011245694,47.604417427370926,17.0,-42.73486264841152
+cap_rate_booked,continuous,2156.0,335,5.91,0.0,414.30396918025696,414.30396918025696,3.485277940228385,1.6207571274331651,9.520883485474183,17.0,0.0
+revenue_yield_booked,continuous,2156.0,335,5.91,0.0,414.30396918025696,414.30396918025696,3.485277940228385,1.6207571274331651,9.520883485474183,17.0,0.0

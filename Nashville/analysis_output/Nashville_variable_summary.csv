@@ -1,81 +1,122 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
-id,continuous,9443.0,0,0.0,6422,1516029466193367799,1.5160294661933614e+18,6.912618070170267e+17,8.086586610677426e+17,5.612843004347704e+17,0.0,6422
-listing_url,discrete_categorical,9443.0,0,0.0,https://www.airbnb.com/rooms/1000062405961161698,https://www.airbnb.com/rooms/999767742589915836,,,,,,https://www.airbnb.com/rooms/1000062405961161698
+id,continuous,9373.0,0,0.0,6422,1516029466193367799,1.5160294661933614e+18,6.911093478535187e+17,8.081451947775578e+17,5.62152444129765e+17,0.0,6422
+listing_url,discrete_categorical,9373.0,0,0.0,https://www.airbnb.com/rooms/1000062405961161698,https://www.airbnb.com/rooms/999767742589915836,,,,,,https://www.airbnb.com/rooms/1000062405961161698
 scrape_id,discrete_numeric,1.0,0,0.0,20250923202825,20250923202825,0.0,20250923202825.0,20250923202825.0,0.0,0.0,20250923202825
 last_scraped,discrete_categorical,2.0,0,0.0,2025-09-23,2025-09-24,,,,,,2025-09-24
 source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
-name,discrete_categorical,9034.0,0,0.0,!!DOWNTOWN CONDO W/ POOL & VIEW - WALK EVERYWHERE!,🥂NASH DISTillerie 3BRs Walk2Germantown Rooftop Fir...,,,,,,Wyndham Nashville Resort | 2BR/2BA King Bed Suite
-description,discrete_categorical,7929.0,169,1.79,"""Experience Nashville in this modern luxury home w...",󱀁 Entire home You’ll have the house to yourself. 󰀢...,,,,,,"A contact-free, no frills motel just 4 miles south..."
-neighborhood_overview,discrete_categorical,3855.0,3486,36.92,!!well the neighborhood.. its flipping awesome!! t...,📍 Welcome to Charlotte Avenue – Where Local Vibes ...,,,,,,"• CW Nashville is located in Nashville, TN."
-picture_url,discrete_categorical,9264.0,0,0.0,https://a0.muscache.com/pictures/000f06de-0a2a-4f4...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1410...
-host_id,continuous,3787.0,0,0.0,12172,719651872,719639700.0,226849976.45631686,151080494.0,200725626.2614545,0.0,338667310
-host_url,discrete_categorical,3787.0,0,0.0,https://www.airbnb.com/users/show/10002073,https://www.airbnb.com/users/show/9975454,,,,,,https://www.airbnb.com/users/show/338667310
-host_name,discrete_categorical,1857.0,11,0.12,203,Zion,,,,,,AvantStay Nashville
+name,discrete_categorical,8980.0,0,0.0,!!DOWNTOWN CONDO W/ POOL & VIEW - WALK EVERYWHERE!,🥂NASH DISTillerie 3BRs Walk2Germantown Rooftop Fir...,,,,,,Wyndham Nashville Resort | 2BR/2BA King Bed Suite
+description,discrete_categorical,7922.0,169,1.8,"""Experience Nashville in this modern luxury home w...",󱀁 Entire home You’ll have the house to yourself. 󰀢...,,,,,,"A contact-free, no frills motel just 4 miles south..."
+neighborhood_overview,discrete_categorical,3850.0,3486,37.19,!!well the neighborhood.. its flipping awesome!! t...,📍 Welcome to Charlotte Avenue – Where Local Vibes ...,,,,,,"• CW Nashville is located in Nashville, TN."
+picture_url,discrete_categorical,9194.0,0,0.0,https://a0.muscache.com/pictures/000f06de-0a2a-4f4...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1410...
+host_id,continuous,3785.0,0,0.0,12172,719651872,719639700.0,226065894.8306839,149105487.0,200578752.8882921,0.0,338667310
+host_url,discrete_categorical,3785.0,0,0.0,https://www.airbnb.com/users/show/10002073,https://www.airbnb.com/users/show/9975454,,,,,,https://www.airbnb.com/users/show/338667310
+host_name,discrete_categorical,1855.0,11,0.12,203,Zion,,,,,,AvantStay Nashville
 host_since,discrete_categorical,2492.0,11,0.12,2009-04-03,2025-09-18,,,,,,2020-02-24
-host_location,discrete_categorical,349.0,2045,21.66,"Aberdeen, NC","Yucaipa, CA",,,,,,"Nashville, TN"
-host_about,discrete_categorical,2204.0,2805,29.7,"Hi! My husband and I live in Nashville, TN with ou...",★ Hi there! Mom of 2 awesome girls and happily mar...,,,,,,AvantStay Nashville.
-host_response_time,discrete_categorical,4.0,634,6.71,a few days or more,within an hour,,,,,,within an hour
-host_response_rate,discrete_categorical,45.0,634,6.71,0%,99%,,,,,,100%
-host_acceptance_rate,discrete_categorical,86.0,430,4.55,0%,99%,,,,,,100%
-host_is_superhost,discrete_categorical,2.0,397,4.2,f,t,,,,,,t
-host_thumbnail_url,discrete_categorical,3723.0,11,0.12,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/users/31138198/profile_p...,,,,,,https://a0.muscache.com/im/pictures/user/9cb62289-...
-host_picture_url,discrete_categorical,3723.0,11,0.12,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/users/31138198/profile_p...,,,,,,https://a0.muscache.com/im/pictures/user/9cb62289-...
-host_neighbourhood,discrete_categorical,392.0,1414,14.97,12 South,Woodycrest,,,,,,Downtown
-host_listings_count,continuous,148.0,11,0.12,1.0,3909.0,3908.0,100.33905852417303,9.0,334.3902338756046,1.0,1.0
-host_total_listings_count,continuous,168.0,11,0.12,1.0,9702.0,9701.0,167.92589058524172,12.0,583.87568989367,1.0,1.0
+host_location,discrete_categorical,349.0,1997,21.31,"Aberdeen, NC","Yucaipa, CA",,,,,,"Nashville, TN"
+host_about,discrete_categorical,2202.0,2765,29.5,"Hi! My husband and I live in Nashville, TN with ou...",★ Hi there! Mom of 2 awesome girls and happily mar...,,,,,,AvantStay Nashville.
+host_response_time,discrete_categorical,4.0,634,6.76,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,45.0,634,6.76,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,86.0,430,4.59,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,397,4.24,f,t,,,,,,t
+host_thumbnail_url,discrete_categorical,3721.0,11,0.12,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/users/31138198/profile_p...,,,,,,https://a0.muscache.com/im/pictures/user/9cb62289-...
+host_picture_url,discrete_categorical,3721.0,11,0.12,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/users/31138198/profile_p...,,,,,,https://a0.muscache.com/im/pictures/user/9cb62289-...
+host_neighbourhood,discrete_categorical,391.0,1414,15.09,12 South,Woodycrest,,,,,,Downtown
+host_listings_count,continuous,146.0,11,0.12,1.0,3909.0,3908.0,88.17923520615253,9.0,284.92808982338164,1.0,1.0
+host_total_listings_count,continuous,166.0,11,0.12,1.0,4923.0,4922.0,138.60628070925017,11.0,390.134259162233,1.0,1.0
 host_verifications,discrete_categorical,6.0,11,0.12,"['email', 'phone', 'work_email']",['phone'],,,,,,"['email', 'phone']"
 host_has_profile_pic,discrete_categorical,2.0,11,0.12,f,t,,,,,,t
 host_identity_verified,discrete_categorical,2.0,11,0.12,f,t,,,,,,t
-neighbourhood,discrete_categorical,1.0,3486,36.92,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood,discrete_categorical,1.0,3486,37.19,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
 neighbourhood_cleansed,discrete_categorical,35.0,0,0.0,District 1,District 9,,,,,,District 19
-neighbourhood_group_cleansed,empty,,9443,100.0,,,,,,,,
-latitude,continuous,6743.0,0,0.0,35.98489,36.3967,0.4118100000000027,36.165302363510065,36.15991,0.040499095992557584,14.0,36.1548886
-longitude,continuous,6889.0,0,0.0,-87.03596,-86.54606,0.4899000000000058,-86.76708473591826,-86.77541389999999,0.050153673757735814,14.0,-86.77541389999999
+neighbourhood_group_cleansed,empty,,9373,100.0,,,,,,,,
+latitude,continuous,6730.0,0,0.0,35.98489,36.3967,0.4118100000000027,36.165386740918116,36.16016,0.04062385885688346,14.0,36.1548886
+longitude,continuous,6876.0,0,0.0,-87.03596,-86.54606,0.4899000000000058,-86.76732460879931,-86.77541389999999,0.05007416477696912,14.0,-86.77541389999999
 property_type,discrete_categorical,48.0,0,0.0,Barn,Yurt,,,,,,Entire home
-room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,6.813512654876628,6.0,3.8487419548686344,0.0,4
-bathrooms,continuous,28.0,2801,29.66,0.0,50.0,50.0,2.1707317073170733,2.0,1.5464445596507002,1.0,1.0
-bathrooms_text,discrete_categorical,42.0,13,0.14,0 baths,Shared half-bath,,,,,,1 bath
-bedrooms,discrete_numeric,19.0,227,2.4,0.0,50.0,50.0,2.4385850694444446,2.0,1.7313062995636863,0.0,1.0
-beds,continuous,36.0,2801,29.66,0.0,153.0,153.0,4.300210779885576,3.0,4.197312720888499,1.0,2.0
-amenities,discrete_categorical,8442.0,0,0.0,"[""2 burner glass top stove electric stove"", ""Carbo...",[],,,,,,"[""Carbon monoxide alarm"", ""Microwave"", ""Crib"", ""Bl..."
-price,discrete_categorical,706.0,2809,29.75,$0.00,$999.00,,,,,,$99.00
-minimum_nights,discrete_numeric,32.0,0,0.0,1,730,729.0,6.231494228529069,2.0,16.361677995960914,0.0,1
-maximum_nights,continuous,118.0,0,0.0,1,1500,1499.0,449.0620565498253,365.0,395.6346676670206,0.0,365
-minimum_minimum_nights,continuous,33.0,10,0.11,1.0,730.0,729.0,5.990671048446941,2.0,16.507237402665744,1.0,1.0
-maximum_minimum_nights,continuous,40.0,10,0.11,1.0,730.0,729.0,8.565885720343475,3.0,23.495184079700604,1.0,3.0
-minimum_maximum_nights,continuous,98.0,10,0.11,1.0,2147483647.0,2147483646.0,3643119.184458815,365.0,88372919.77585585,1.0,1125.0
-maximum_maximum_nights,continuous,134.0,10,0.11,1.0,2147483647.0,2147483646.0,5009127.133785646,430.0,103593412.73500869,1.0,1125.0
-minimum_nights_avg_ntm,continuous,153.0,0,0.0,1.0,730.0,729.0,6.797680821772742,2.1,17.131581554267505,1.0,2.0
-maximum_nights_avg_ntm,continuous,594.0,0,0.0,1.0,2147483647.0,2147483646.0,4608761.285227152,365.0,96919458.68194239,1.0,1125.0
-calendar_updated,empty,,9443,100.0,,,,,,,,
+room_type,discrete_categorical,3.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,6.8301504320921795,6.0,3.8462169069203704,0.0,4
+bathrooms,continuous,28.0,2741,29.24,0.0,50.0,50.0,2.172496984318456,2.0,1.5469412442238832,1.0,1.0
+bathrooms_text,discrete_categorical,42.0,1,0.01,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,19.0,227,2.42,0.0,50.0,50.0,2.447408703258255,2.0,1.7338240472492636,0.0,1.0
+beds,continuous,36.0,2741,29.24,0.0,153.0,153.0,4.304885404101327,3.0,4.1985757420387,1.0,2.0
+amenities,discrete_categorical,8426.0,0,0.0,"[""2 burner glass top stove electric stove"", ""Carbo...",[],,,,,,"[""Carbon monoxide alarm"", ""Microwave"", ""Crib"", ""Bl..."
+price,discrete_categorical,705.0,2749,29.33,$0.00,$999.00,,,,,,$99.00
+minimum_nights,discrete_numeric,32.0,0,0.0,1,730,729.0,6.270457697642164,2.0,16.416427177613887,0.0,1
+maximum_nights,continuous,118.0,0,0.0,1,1500,1499.0,444.8605569188093,365.0,393.354387021069,0.0,365
+minimum_minimum_nights,continuous,33.0,10,0.11,1.0,730.0,729.0,6.027982484246502,2.0,16.56317222870785,1.0,1.0
+maximum_minimum_nights,continuous,40.0,10,0.11,1.0,730.0,729.0,8.616575883797928,3.0,23.575388055418273,1.0,3.0
+minimum_maximum_nights,continuous,98.0,10,0.11,1.0,2147483647.0,2147483646.0,3670353.8390473137,365.0,88702124.72310866,1.0,1125.0
+maximum_maximum_nights,continuous,134.0,10,0.11,1.0,2147483647.0,2147483646.0,5046568.67595856,365.0,103979068.76267608,1.0,1125.0
+minimum_nights_avg_ntm,continuous,153.0,0,0.0,1.0,730.0,729.0,6.840851381628081,2.1,17.188125026096245,1.0,2.0
+maximum_nights_avg_ntm,continuous,577.0,0,0.0,1.0,2147483647.0,2147483646.0,4643177.177819268,365.0,97279912.47309645,1.0,1125.0
+calendar_updated,empty,,9373,100.0,,,,,,,,
 has_availability,discrete_categorical,2.0,50,0.53,f,t,,,,,,t
-availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,13.428465530022239,14.0,8.768519473080469,0.0,0
-availability_60,continuous,61.0,0,0.0,0,60,60.0,33.144233823996615,36.0,17.326333043275802,0.0,0
-availability_90,continuous,91.0,0,0.0,0,90,90.0,56.159377316530765,63.0,25.320979345928198,0.0,0
-availability_365,continuous,366.0,0,0.0,0,365,365.0,249.8231494228529,300.0,112.34306508347896,0.0,0
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,13.370852448522351,14.0,8.747128770358797,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,33.055798570361674,36.0,17.313661984368693,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,56.04576976421637,63.0,25.317222069774065,0.0,0
+availability_365,continuous,366.0,0,0.0,0,365,365.0,249.44521497919555,300.0,112.40440293501644,0.0,0
 calendar_last_scraped,discrete_categorical,2.0,0,0.0,2025-09-23,2025-09-24,,,,,,2025-09-24
-number_of_reviews,continuous,610.0,0,0.0,0,3427,3427.0,83.11913586783861,33.0,137.5235255421475,0.0,0
-number_of_reviews_ltm,continuous,150.0,0,0.0,0,1140,1140.0,18.20459599703484,11.0,26.354621190506197,0.0,0
-number_of_reviews_l30d,discrete_numeric,26.0,0,0.0,0,129,129.0,1.3305093720216032,1.0,2.5112220119744855,0.0,0
-availability_eoy,continuous,101.0,0,0.0,0,100,100.0,62.92131737795192,70.0,27.855941139528667,0.0,0
-number_of_reviews_ly,continuous,148.0,0,0.0,0,828,828.0,16.47929683363338,6.0,25.3911628833005,0.0,0
-estimated_occupancy_l365d,continuous,71.0,0,0.0,0,255,255.0,102.33538070528434,78.0,90.29156967552433,0.0,0
-estimated_revenue_l365d,continuous,2992.0,2809,29.75,0.0,3900000.0,3900000.0,23212.85408501658,17634.0,53844.1412982625,1.0,0.0
-first_review,discrete_categorical,2505.0,994,10.53,2009-04-30,2025-09-23,,,,,,2025-02-16
-last_review,discrete_categorical,764.0,994,10.53,2015-06-29,2025-09-23,,,,,,2025-09-14
-review_scores_rating,continuous,122.0,994,10.53,1.0,5.0,4.0,4.832065333175524,4.91,0.29245310504034244,2.0,5.0
-review_scores_accuracy,continuous,111.0,994,10.53,1.0,5.0,4.0,4.855077523967334,4.93,0.28154966658057634,2.0,5.0
-review_scores_cleanliness,continuous,123.0,994,10.53,1.0,5.0,4.0,4.815885903657238,4.89,0.2784948370995227,2.0,5.0
-review_scores_checkin,continuous,119.0,994,10.53,1.0,5.0,4.0,4.876366433897503,4.95,0.2622135543725157,2.0,5.0
-review_scores_communication,continuous,101.0,994,10.53,1.0,5.0,4.0,4.894716534501124,4.97,0.25014388522763614,2.0,5.0
-review_scores_location,continuous,146.0,994,10.53,1.0,5.0,4.0,4.770938572612143,4.86,0.3031640003650299,2.0,5.0
-review_scores_value,continuous,123.0,994,10.53,1.0,5.0,4.0,4.767940584684579,4.83,0.31063930256641364,2.0,5.0
-license,discrete_categorical,848.0,8410,89.06,#2021028369,Т2025004683,,,,,,620313552
+number_of_reviews,continuous,610.0,0,0.0,0,3427,3427.0,83.63714925850849,34.0,137.88874389128028,0.0,0
+number_of_reviews_ltm,continuous,150.0,0,0.0,0,1140,1140.0,18.31345353675451,11.0,26.405738492653533,0.0,0
+number_of_reviews_l30d,discrete_numeric,26.0,0,0.0,0,129,129.0,1.3362850741491519,1.0,2.514279098682883,0.0,0
+availability_eoy,continuous,101.0,0,0.0,0,100,100.0,62.801664355062414,70.0,27.854723981841452,0.0,0
+number_of_reviews_ly,continuous,148.0,0,0.0,0,828,828.0,16.571962018563962,7.0,25.43752590651056,0.0,0
+estimated_occupancy_l365d,continuous,71.0,0,0.0,0,255,255.0,102.95689747146058,84.0,90.22408946353491,0.0,0
+estimated_revenue_l365d,continuous,2988.0,2749,29.33,0.0,718800.0,718800.0,22641.993659420288,17640.0,25172.05230021264,1.0,0.0
+first_review,discrete_categorical,2502.0,973,10.38,2009-04-30,2025-09-23,,,,,,2025-02-16
+last_review,discrete_categorical,762.0,973,10.38,2015-06-29,2025-09-23,,,,,,2025-09-14
+review_scores_rating,continuous,122.0,973,10.38,1.0,5.0,4.0,4.833920238095239,4.91,0.2846046979487134,2.0,5.0
+review_scores_accuracy,continuous,111.0,973,10.38,1.0,5.0,4.0,4.856702380952381,4.93,0.27494489721727855,2.0,5.0
+review_scores_cleanliness,continuous,123.0,973,10.38,1.0,5.0,4.0,4.816747619047619,4.89,0.2757763063313304,2.0,5.0
+review_scores_checkin,continuous,119.0,973,10.38,1.0,5.0,4.0,4.878084523809524,4.95,0.2524316507507754,2.0,5.0
+review_scores_communication,continuous,101.0,973,10.38,1.0,5.0,4.0,4.896309523809524,4.97,0.2434100116479604,2.0,5.0
+review_scores_location,continuous,146.0,973,10.38,1.0,5.0,4.0,4.771554761904761,4.86,0.2987299573665296,2.0,5.0
+review_scores_value,continuous,123.0,973,10.38,1.0,5.0,4.0,4.7702285714285715,4.84,0.3012459662395484,2.0,5.0
+license,discrete_categorical,847.0,8343,89.01,#2021028369,Т2025004683,,,,,,620313552
 instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
-calculated_host_listings_count,continuous,59.0,0,0.0,1,229,228.0,28.215291750503017,6.0,49.07336142030443,0.0,1
-calculated_host_listings_count_entire_homes,continuous,56.0,0,0.0,0,229,229.0,26.46934237000953,4.0,48.60024576518477,0.0,1
-calculated_host_listings_count_private_rooms,discrete_numeric,19.0,0,0.0,0,45,45.0,1.4970877898972783,0.0,6.565256400390004,0.0,0
-calculated_host_listings_count_shared_rooms,discrete_numeric,2.0,0,0.0,0,1,1.0,0.0024356666313671504,0.0,0.049294943878673204,0.0,0
-reviews_per_month,continuous,846.0,994,10.53,0.01,76.42,76.41,2.213570836785418,1.77,2.465142309491147,2.0,1.0
-price_clean,continuous,706.0,2809,29.75,0.0,50000.0,50000.0,223.39960807959,158.0,735.2324135199656,1.0,99.0
+calculated_host_listings_count,continuous,59.0,0,0.0,1,229,228.0,28.177744585511576,5.0,49.231210711737155,0.0,1
+calculated_host_listings_count_entire_homes,continuous,56.0,0,0.0,0,229,229.0,26.65539315053878,4.0,48.73299184561677,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,19.0,0,0.0,0,45,45.0,1.435932999039795,0.0,6.46800769438031,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,2.0,0,0.0,0,1,1.0,0.0024538568227888617,0.0,0.049478243658251646,0.0,0
+reviews_per_month,continuous,846.0,973,10.38,0.01,76.42,76.41,2.2225392857142854,1.78,2.467952470369674,2.0,1.0
+price_clean,continuous,705.0,2749,29.33,0.0,23913.0,23913.0,215.93840579710144,158.0,408.9160643798696,1.0,99.0
+log_price,continuous,704.0,2750,29.34,3.091042453358316,10.082177523096034,6.991135069737718,5.109479405705626,5.062595033026967,0.6404295218351241,16.0,4.59511985013459
+price_per_accommodates,continuous,1465.0,2749,29.33,0.0,1582.5,1582.5,34.8624797268536,27.625,45.6286735670606,15.0,19.0
+log_price_per_accommodates,continuous,1464.0,2750,29.34,1.9328380674879606,7.366761154018331,5.4339230865303705,3.3622175508885728,3.3187211598379167,0.5418859628528281,16.0,2.9444389791664403
+log_reviews,continuous,610.0,0,0.0,0.0,8.13973227971767,8.13973227971767,3.2533313330821256,3.5553480614894135,1.79700398408045,16.0,0.0
+log_accommodates,discrete_numeric,16.0,0,0.0,0.0,2.772588722239781,2.772588722239781,1.7373418521792219,1.791759469228055,0.6454505127576475,0.0,1.3862943611198906
+log_beds,continuous,36.0,2741,29.24,0.0,5.0369526024136295,5.0369526024136295,1.481713007451312,1.3862943611198906,0.589366164069594,16.0,1.0986122886681098
+price_zscore,continuous,705.0,2749,29.33,-0.52807513474575,57.95091868092789,58.47899381567364,1.9308226515220113e-17,-0.14168777126662002,1.0,18.0,-0.2859716601607255
+price_percentile,continuous,705.0,2749,29.33,0.00015096618357487922,1.0,0.9998490338164251,0.5000754830917874,0.4988677536231884,0.28869450715688283,19.0,0.19278381642512077
+log_price_zscore,continuous,704.0,2750,29.34,-3.1516925493433887,7.764629749018047,10.916322298361436,3.132696343680345e-16,-0.07320770058243685,1.0,18.0,-0.8031477907157687
+reviews_zscore,continuous,610.0,0,0.0,-0.606555306098466,24.246814905918633,24.8533702120171,-2.425836716560675e-17,-0.3599797043451594,0.9999999999999999,18.0,-0.606555306098466
+reviews_percentile,continuous,610.0,0,0.0,0.0519577509868772,1.0,0.9480422490131228,0.5000533447135389,0.5021871332550945,0.28850332366735565,17.0,0.0519577509868772
+reviews_per_month_zscore,continuous,846.0,973,10.38,-0.8965080617548807,30.064379928342664,30.960887990097543,-4.3985978880387156e-17,-0.17931434702549112,1.0,19.0,-0.4953658145333577
+occupancy_rate,continuous,366.0,0,0.0,0.0,1.0,1.0,0.31658845211179304,0.1780821917808219,0.3079572683151135,19.0,1.0
+occupancy_rate_booked,continuous,71.0,0,0.0,0.0,0.6986301369863014,0.6986301369863014,0.2820736917026317,0.23013698630136986,0.2471892862014655,18.0,0.0
+occupancy_is_capped,discrete_numeric,2.0,0,0.0,0,1,1.0,0.1253600768163875,0.0,0.33114442039645464,0.0,0
+est_annual_revenue,continuous,4990.0,2749,29.33,0.0,5356512.0,5356512.0,21083.151721014492,10842.0,78217.36168300446,1.0,0.0
+est_annual_revenue_booked,continuous,2988.0,2749,29.33,0.0,718800.0,718800.0,22641.993659420288,17640.0,25172.05230021264,1.0,0.0
+revenue_per_accommodates,continuous,5336.0,2749,29.33,0.0,456250.0,456250.0,3727.0531808647356,1714.4,9233.417700324488,14.0,0.0
+revenue_per_bedroom,continuous,5041.0,2940,31.37,0.0,1825000.0,1825000.0,9890.173780549943,4781.25,27983.880788476483,2.0,0.0
+log_est_revenue,continuous,4989.0,2883,30.76,3.258096538021482,15.493823574951072,12.23572703692959,9.187357798611634,9.326522126265592,1.349120814328192,16.0,7.3901814282264295
+host_listings_in_city,continuous,59.0,0,0.0,1,229,228.0,28.177744585511576,5.0,49.231210711737155,0.0,1
+host_is_professional,discrete_numeric,2.0,0,0.0,0,1,1.0,0.6970020270991145,1.0,0.4595788675348118,0.0,1
+host_professional_tier,discrete_categorical,4.0,0,0.0,casual,small_professional,,,,,,large_professional
+pct_professional_hosts,discrete_numeric,1.0,0,0.0,69.70020270991145,69.70020270991145,0.0,69.70020270991144,69.70020270991145,1.4211612849840182e-14,0.0,69.70020270991145
+pct_large_operators,discrete_numeric,1.0,0,0.0,30.417155659874105,30.417155659874105,0.0,30.4171556598741,30.417155659874105,3.5529032124600454e-15,0.0,30.417155659874105
+median_host_listings,discrete_numeric,1.0,0,0.0,5.0,5.0,0.0,5.0,5.0,0.0,0.0,5.0
+gini_host_concentration,discrete_numeric,1.0,0,0.0,0.731250011033111,0.731250011033111,0.0,0.7312500110331113,0.731250011033111,2.2205645077875284e-16,0.0,0.731250011033111
+market_professionalization_score,discrete_numeric,1.0,0,0.0,55.78535442956012,55.78535442956012,0.0,55.78535442956012,55.78535442956012,0.0,0.0,55.78535442956012
+purchase_price,discrete_numeric,1.0,0,0.0,449989.2999423901,449989.2999423901,0.0,449989.2999423901,449989.2999423901,0.0,0.0,449989.2999423901
+monthly_payment,discrete_numeric,1.0,0,0.0,2733.586847946825,2733.586847946825,0.0,2733.586847946826,2733.586847946825,9.095432223897716e-13,0.0,2733.586847946825
+zori_rent,discrete_numeric,1.0,0,0.0,1800.6045810534172,1800.6045810534172,0.0,1800.604581053417,1800.6045810534172,2.273858055974429e-13,0.0,1800.6045810534172
+zillow_metro,discrete_categorical,1.0,0,0.0,"Nashville, TN","Nashville, TN",,,,,,"Nashville, TN"
+annual_cash_flow,continuous,4990.0,2749,29.33,-32803.0421753619,5323708.957824638,5356512.0,-11719.890454347404,-21961.0421753619,78217.36168300446,13.0,-32803.0421753619
+cash_on_cash_roi,continuous,4990.0,2749,29.33,-36.44869131283956,5915.372830538644,5951.821521851483,-13.022410150472298,-24.40173819485648,86.91024619142972,16.0,-36.44869131283956
+cap_rate,continuous,4990.0,2749,29.33,0.0,1190.3643043702966,1190.3643043702966,4.685256232473453,2.4093906235966163,17.38204923828594,18.0,0.0
+price_to_rent_ratio,continuous,4989.0,2883,30.76,1.008094745108138,207687.36920418008,207686.36110943498,2143.686715070437,480.7577990837501,10088.516469358065,15.0,659.3249816005716
+revenue_yield,continuous,4990.0,2749,29.33,0.0,1190.3643043702966,1190.3643043702966,4.685256232473453,2.4093906235966163,17.38204923828594,18.0,0.0
+annual_cash_flow_booked,continuous,2988.0,2749,29.33,-32803.0421753619,685996.9578246381,718800.0,-10161.04851594161,-15163.042175361901,25172.052300212643,13.0,-32803.0421753619
+cash_on_cash_roi_booked,continuous,2988.0,2749,29.33,-36.44869131283956,762.2369664261604,798.6856577389999,-11.290322366823478,-16.848225254804003,27.96961205903706,16.0,-36.44869131283956
+cap_rate_booked,continuous,2988.0,2749,29.33,0.0,159.7371315478,159.7371315478,5.031673789203216,3.920093211607112,5.593922411807412,17.0,0.0
+revenue_yield_booked,continuous,2988.0,2749,29.33,0.0,159.7371315478,159.7371315478,5.031673789203216,3.920093211607112,5.593922411807412,17.0,0.0

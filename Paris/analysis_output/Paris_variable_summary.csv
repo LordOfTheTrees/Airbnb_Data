@@ -1,81 +1,107 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
-id,continuous,81853.0,0,0.0,3109,1482028708285108528,1.4820287082851054e+18,6.474768960270866e+17,8.417509805807858e+17,5.533184161109961e+17,0.0,3109
-listing_url,discrete_categorical,81853.0,0,0.0,https://www.airbnb.com/rooms/1000001685404690147,https://www.airbnb.com/rooms/999958794447047824,,,,,,https://www.airbnb.com/rooms/1000001685404690147
+id,continuous,81189.0,0,0.0,3109,1482028708285108528,1.4820287082851054e+18,6.523295299313329e+17,8.49809054795954e+17,5.5251199497112237e+17,0.0,3109
+listing_url,discrete_categorical,81189.0,0,0.0,https://www.airbnb.com/rooms/1000001685404690147,https://www.airbnb.com/rooms/999958794447047824,,,,,,https://www.airbnb.com/rooms/1000001685404690147
 scrape_id,discrete_numeric,1.0,0,0.0,20250912034503,20250912034503,0.0,20250912034503.0,20250912034503.0,0.0,0.0,20250912034503
 last_scraped,discrete_categorical,4.0,0,0.0,2025-09-12,2025-09-15,,,,,,2025-09-15
 source,discrete_categorical,1.0,0,0.0,previous scrape,previous scrape,,,,,,previous scrape
-name,discrete_categorical,76096.0,0,0.0,! PARIS! Cosy flat Anvers,🥐Charmant T2 - Paris 11 - 4 people - 🥐,,,,,,Appartement
-description,discrete_categorical,75528.0,2713,3.31,Fully renovated 28sqm studio with designer furnitu...,"🥐 Luxury, quiet and elegance a stone's throw from ...",,,,,,Our mission is to allow individuals to immerse the...
-neighborhood_overview,discrete_categorical,34559.0,42253,51.62,"Paris, République metro 100 meters away (M3, M5, M...",🦦 Ideally located close to the banks of the Seine ...,,,,,,.
-picture_url,discrete_categorical,81195.0,2,0.0,https://a0.muscache.com/pictures/0002e7a4-3c8e-4e8...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1044...
-host_id,continuous,59587.0,0,0.0,2626,717175691,717173065.0,188163859.59784004,74266499.0,210517274.02392858,0.0,314994947
-host_url,discrete_categorical,59587.0,0,0.0,https://www.airbnb.com/users/show/100004575,https://www.airbnb.com/users/show/99999726,,,,,,https://www.airbnb.com/users/show/314994947
-host_name,discrete_categorical,11296.0,20,0.02,1 Rue Affre,지민,,,,,,Joffrey Sally
+name,discrete_categorical,75479.0,0,0.0,! PARIS! Cosy flat Anvers,🥐Charmant T2 - Paris 11 - 4 people - 🥐,,,,,,Appartement
+description,discrete_categorical,75187.0,2539,3.13,Fully renovated 28sqm studio with designer furnitu...,"🥐 Luxury, quiet and elegance a stone's throw from ...",,,,,,Our mission is to allow individuals to immerse the...
+neighborhood_overview,discrete_categorical,34417.0,41983,51.71,"Paris, République metro 100 meters away (M3, M5, M...",🦦 Ideally located close to the banks of the Seine ...,,,,,,.
+picture_url,discrete_categorical,80546.0,2,0.0,https://a0.muscache.com/pictures/0002e7a4-3c8e-4e8...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/miso/Hosting-1044...
+host_id,continuous,59472.0,0,0.0,2626,717175691,717173065.0,188265077.738031,73016338.0,211219626.84462556,0.0,314994947
+host_url,discrete_categorical,59472.0,0,0.0,https://www.airbnb.com/users/show/100004575,https://www.airbnb.com/users/show/99999726,,,,,,https://www.airbnb.com/users/show/314994947
+host_name,discrete_categorical,11244.0,20,0.02,1 Rue Affre,지민,,,,,,Joffrey Sally
 host_since,discrete_categorical,5432.0,20,0.02,2008-08-30,2025-09-04,,,,,,2019-12-06
-host_location,discrete_categorical,1924.0,16485,20.14,"Aarhus, Denmark","İstanbul, Turkey",,,,,,"Paris, France"
-host_about,discrete_categorical,21362.0,45350,55.4,,파리와 여행을 사랑하는 사람입니다,,,,,,"We’re Blueground, a global proptech company with s..."
-host_response_time,discrete_categorical,4.0,32205,39.34,a few days or more,within an hour,,,,,,within an hour
-host_response_rate,discrete_categorical,91.0,32205,39.34,0%,99%,,,,,,100%
-host_acceptance_rate,discrete_categorical,101.0,26130,31.92,0%,99%,,,,,,100%
-host_is_superhost,discrete_categorical,2.0,2313,2.83,f,t,,,,,,f
-host_thumbnail_url,discrete_categorical,57058.0,20,0.02,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/users/597149/profile_pic...,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.pn...
-host_picture_url,discrete_categorical,57058.0,20,0.02,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/users/597149/profile_pic...,,,,,,https://a0.muscache.com/defaults/user_pic-225x225....
-host_neighbourhood,discrete_categorical,306.0,53855,65.79,Rio Vermelho,جنوب البرشاء,,,,,,Le Marais
-host_listings_count,continuous,155.0,20,0.02,0.0,8301.0,8301.0,30.16021653856024,1.0,116.08172777710917,1.0,1.0
-host_total_listings_count,continuous,200.0,20,0.02,0.0,8769.0,8769.0,39.74516393142131,2.0,155.4662140612704,1.0,1.0
+host_location,discrete_categorical,1923.0,16273,20.04,"Aarhus, Denmark","İstanbul, Turkey",,,,,,"Paris, France"
+host_about,discrete_categorical,21298.0,45110,55.56,,파리와 여행을 사랑하는 사람입니다,,,,,,"We’re Blueground, a global proptech company with s..."
+host_response_time,discrete_categorical,4.0,31809,39.18,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,91.0,31809,39.18,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,101.0,25838,31.82,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,2313,2.85,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,56944.0,20,0.02,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/users/597149/profile_pic...,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.pn...
+host_picture_url,discrete_categorical,56944.0,20,0.02,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/users/597149/profile_pic...,,,,,,https://a0.muscache.com/defaults/user_pic-225x225....
+host_neighbourhood,discrete_categorical,306.0,53587,66.0,Rio Vermelho,جنوب البرشاء,,,,,,Le Marais
+host_listings_count,continuous,155.0,20,0.02,0.0,8301.0,8301.0,30.294311867831315,1.0,116.51399652428407,1.0,1.0
+host_total_listings_count,continuous,200.0,20,0.02,0.0,8769.0,8769.0,39.94297083862065,2.0,156.0588192120642,1.0,1.0
 host_verifications,discrete_categorical,8.0,20,0.02,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
 host_has_profile_pic,discrete_categorical,2.0,20,0.02,f,t,,,,,,t
 host_identity_verified,discrete_categorical,2.0,20,0.02,f,t,,,,,,t
-neighbourhood,discrete_categorical,1.0,42253,51.62,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood,discrete_categorical,1.0,41983,51.71,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
 neighbourhood_cleansed,discrete_categorical,20.0,0,0.0,Batignolles-Monceau,Élysée,,,,,,Buttes-Montmartre
-neighbourhood_group_cleansed,empty,,81853,100.0,,,,,,,,
-latitude,continuous,38993.0,0,0.0,48.816090055186486,48.90167,0.08557994481351727,48.863979560385346,48.86524,0.018125502172962958,15.0,48.849
-longitude,continuous,44767.0,0,0.0,2.2298957,2.46836,0.23846429999999996,2.343039810180872,2.34685,0.03421832707764313,16.0,2.3017715
-property_type,discrete_categorical,61.0,0,0.0,Barn,Tower,,,,,,Entire rental unit
-room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,3.2217878391751067,3.0,1.6846135699100035,0.0,2
-bathrooms,empty,,81853,100.0,,,,,,,,
-bathrooms_text,discrete_categorical,36.0,67,0.08,0 baths,Shared half-bath,,,,,,1 bath
-bedrooms,discrete_numeric,19.0,15427,18.85,0.0,41.0,41.0,1.4698160358895613,1.0,0.8670958380430928,0.0,1.0
-beds,empty,,81853,100.0,,,,,,,,
-amenities,discrete_categorical,71479.0,0,0.0,"[""1 inch HDTV with standard cable"", ""Mini fridge"",...",[],,,,,,"[""TV"", ""Wifi"", ""Smoke alarm"", ""Washer"", ""Kitchen""]"
-price,empty,,81853,100.0,,,,,,,,
-minimum_nights,continuous,108.0,0,0.0,1,1000,999.0,44.04735318192369,3.0,110.07825494411308,0.0,2
-maximum_nights,continuous,272.0,0,0.0,1,10000000,9999999.0,589.7330702601005,365.0,34953.99527961595,0.0,365
-minimum_minimum_nights,continuous,117.0,13,0.02,1.0,1000.0,999.0,43.1169477028348,3.0,109.63508093649345,1.0,1.0
-maximum_minimum_nights,continuous,138.0,13,0.02,1.0,1000.0,999.0,54.28682795698925,3.0,121.40371653435665,1.0,3.0
-minimum_maximum_nights,continuous,280.0,13,0.02,1.0,10000000.0,9999999.0,622.5061827956989,365.0,34956.91174927781,1.0,1125.0
-maximum_maximum_nights,continuous,305.0,13,0.02,1.0,2147483647.0,2147483646.0,236823.45226050832,365.0,22518915.48912445,1.0,1125.0
-minimum_nights_avg_ntm,continuous,627.0,0,0.0,1.0,1000.0,999.0,46.179376443135865,3.0,109.90658102564241,1.0,2.0
-maximum_nights_avg_ntm,continuous,2305.0,0,0.0,1.0,2141600133.2,2141600132.2,189109.05505234996,365.0,18250012.483513042,1.0,1125.0
-calendar_updated,empty,,81853,100.0,,,,,,,,
-has_availability,discrete_categorical,1.0,4074,4.98,t,t,,,,,,t
-availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,6.217756221519065,0.0,9.58420037113116,0.0,0
-availability_60,continuous,61.0,0,0.0,0,60,60.0,16.2883583985926,3.0,20.942647251206267,0.0,0
-availability_90,continuous,91.0,0,0.0,0,90,90.0,27.77510903693206,6.0,33.27707701047287,0.0,0
-availability_365,continuous,366.0,0,0.0,0,365,365.0,127.25310006963703,74.0,135.21510080381748,0.0,0
+neighbourhood_group_cleansed,empty,,81189,100.0,,,,,,,,
+latitude,continuous,38961.0,0,0.0,48.816090055186486,48.90167,0.08557994481351727,48.863979902154085,48.86522,0.018145995778039808,15.0,48.849
+longitude,continuous,44713.0,0,0.0,2.2298957,2.46836,0.23846429999999996,2.3431630332413675,2.3469808,0.03425145849345311,16.0,2.3017715
+property_type,discrete_categorical,58.0,0,0.0,Barn,Tower,,,,,,Entire rental unit
+room_type,discrete_categorical,3.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,3.228011183781054,3.0,1.6868193802808154,0.0,2
+bathrooms,empty,,81189,100.0,,,,,,,,
+bathrooms_text,discrete_categorical,36.0,23,0.03,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,19.0,15387,18.95,0.0,41.0,41.0,1.473222698398225,1.0,0.869655297102681,0.0,1.0
+beds,empty,,81189,100.0,,,,,,,,
+amenities,discrete_categorical,70971.0,0,0.0,"[""1 inch HDTV with standard cable"", ""Mini fridge"",...",[],,,,,,"[""TV"", ""Wifi"", ""Smoke alarm"", ""Washer"", ""Kitchen""]"
+price,empty,,81189,100.0,,,,,,,,
+minimum_nights,continuous,108.0,0,0.0,1,1000,999.0,44.13727229058124,3.0,110.12556127417302,0.0,2
+maximum_nights,continuous,272.0,0,0.0,1,10000000,9999999.0,586.5118796881351,365.0,35096.6084734086,0.0,365
+minimum_minimum_nights,continuous,117.0,13,0.02,1.0,1000.0,999.0,43.37150142899379,3.0,109.90236222410334,1.0,1.0
+maximum_minimum_nights,continuous,138.0,13,0.02,1.0,1000.0,999.0,54.60745786932098,3.0,121.69290984810546,1.0,3.0
+minimum_maximum_nights,continuous,280.0,13,0.02,1.0,10000000.0,9999999.0,624.8821819256923,365.0,35099.552265314436,1.0,1125.0
+maximum_maximum_nights,continuous,305.0,13,0.02,1.0,2147483647.0,2147483646.0,238754.30600177392,365.0,22610818.520449724,1.0,1125.0
+minimum_nights_avg_ntm,continuous,626.0,0,0.0,1.0,1000.0,999.0,46.45584377193955,3.0,110.16849341204559,1.0,2.0
+maximum_nights_avg_ntm,continuous,2237.0,0,0.0,1.0,2141600133.2,2141600132.2,190651.5494266464,365.0,18324481.817941315,1.0,1125.0
+calendar_updated,empty,,81189,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,3909,4.81,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,6.198253457980761,0.0,9.573908013022853,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,16.24928253827489,3.0,20.92037382141053,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,27.717350872655164,6.0,33.24526981121135,0.0,0
+availability_365,continuous,366.0,0,0.0,0,365,365.0,127.06601879564965,74.0,135.07556610886434,0.0,0
 calendar_last_scraped,discrete_categorical,4.0,0,0.0,2025-09-12,2025-09-15,,,,,,2025-09-15
-number_of_reviews,continuous,629.0,0,0.0,0,4040,4040.0,27.22796965291437,7.0,61.90759888783552,0.0,0
-number_of_reviews_ltm,continuous,142.0,0,0.0,0,839,839.0,6.887029186468425,1.0,13.512288212700632,0.0,0
-number_of_reviews_l30d,discrete_numeric,22.0,0,0.0,0,91,91.0,0.4495375856718752,0.0,1.1858563890820744,0.0,0
-availability_eoy,continuous,112.0,0,0.0,0,111,111.0,34.889252684690845,10.0,40.516236847914584,0.0,0
-number_of_reviews_ly,continuous,140.0,0,0.0,0,786,786.0,5.465187592391238,0.0,11.77072300253891,0.0,0
-estimated_occupancy_l365d,continuous,99.0,0,0.0,0,255,255.0,62.89506798773411,10.0,87.06037918561212,0.0,0
-estimated_revenue_l365d,empty,,81853,100.0,,,,,,,,
-first_review,discrete_categorical,4673.0,17960,21.94,2010-01-26,2025-09-15,,,,,,2024-08-04
-last_review,discrete_categorical,3512.0,17960,21.94,2010-05-28,2025-09-15,,,,,,2025-09-07
-review_scores_rating,continuous,169.0,17960,21.94,0.0,5.0,5.0,4.734383735307468,4.84,0.386405734661806,2.0,5.0
-review_scores_accuracy,continuous,164.0,17971,21.96,0.0,5.0,5.0,4.777179800256723,4.88,0.36802531728213356,2.0,5.0
-review_scores_cleanliness,continuous,198.0,17968,21.95,0.0,5.0,5.0,4.668076230727087,4.79,0.43827417113981365,2.0,5.0
-review_scores_checkin,continuous,166.0,17978,21.96,0.0,5.0,5.0,4.817172133072407,4.92,0.3503537301151593,2.0,5.0
-review_scores_communication,continuous,156.0,17969,21.95,0.0,5.0,5.0,4.835650241061925,4.95,0.3509832401060542,2.0,5.0
-review_scores_location,continuous,163.0,17977,21.96,0.0,5.0,5.0,4.822042238086293,4.92,0.3038806978295464,2.0,5.0
-review_scores_value,continuous,182.0,17978,21.96,0.0,5.0,5.0,4.633288140900197,4.73,0.42716317336052617,2.0,5.0
-license,discrete_categorical,52486.0,17256,21.08,0610029488,Exempt - hotel-type listing,,,,,,"Available with a mobility lease only (""bail mobili..."
+number_of_reviews,continuous,620.0,0,0.0,0,4040,4040.0,27.00145339885945,7.0,59.80106365874841,0.0,0
+number_of_reviews_ltm,continuous,138.0,0,0.0,0,714,714.0,6.9012550961337125,1.0,13.173725495521968,0.0,0
+number_of_reviews_l30d,discrete_numeric,21.0,0,0.0,0,91,91.0,0.45007328578994693,0.0,1.1712132827024826,0.0,0
+availability_eoy,continuous,112.0,0,0.0,0,111,111.0,34.81423591865893,10.0,40.46534606279351,0.0,0
+number_of_reviews_ly,continuous,136.0,0,0.0,0,786,786.0,5.4743130227001195,0.0,11.707906774658976,0.0,0
+estimated_occupancy_l365d,continuous,99.0,0,0.0,0,255,255.0,63.19668920666593,10.0,87.14985545532113,0.0,0
+estimated_revenue_l365d,empty,,81189,100.0,,,,,,,,
+first_review,discrete_categorical,4666.0,17784,21.9,2010-01-26,2025-09-15,,,,,,2024-08-04
+last_review,discrete_categorical,3496.0,17784,21.9,2010-05-28,2025-09-15,,,,,,2025-09-07
+review_scores_rating,continuous,169.0,17784,21.9,0.0,5.0,5.0,4.735474489393581,4.84,0.3858544885838061,2.0,5.0
+review_scores_accuracy,continuous,162.0,17795,21.92,0.0,5.0,5.0,4.7781400447991915,4.88,0.3675511262854189,2.0,5.0
+review_scores_cleanliness,continuous,198.0,17792,21.91,0.0,5.0,5.0,4.667671025442845,4.79,0.43877606018089016,2.0,5.0
+review_scores_checkin,continuous,166.0,17802,21.93,0.0,5.0,5.0,4.817307334311452,4.92,0.3505359995066406,2.0,5.0
+review_scores_communication,continuous,156.0,17793,21.92,0.0,5.0,5.0,4.836523282226008,4.95,0.3507742317547722,2.0,5.0
+review_scores_location,continuous,163.0,17801,21.93,0.0,5.0,5.0,4.822384678488042,4.92,0.30358510993445986,2.0,5.0
+review_scores_value,continuous,181.0,17802,21.93,0.0,5.0,5.0,4.634525849148879,4.73,0.4267019340290736,2.0,5.0
+license,discrete_categorical,52469.0,16728,20.6,0610029488,Exempt - hotel-type listing,,,,,,"Available with a mobility lease only (""bail mobili..."
 instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
-calculated_host_listings_count,continuous,95.0,0,0.0,1,816,815.0,23.151246747217574,1.0,92.45202403329561,0.0,1
-calculated_host_listings_count_entire_homes,continuous,96.0,0,0.0,0,816,816.0,21.924620966855215,1.0,90.7471579760661,0.0,1
-calculated_host_listings_count_private_rooms,discrete_numeric,27.0,0,0.0,0,154,154.0,1.1019754926514604,0.0,10.075969683403983,0.0,0
-calculated_host_listings_count_shared_rooms,discrete_numeric,10.0,0,0.0,0,9,9.0,0.01494141937375539,0.0,0.2643692569000142,0.0,0
-reviews_per_month,continuous,888.0,17960,21.94,0.01,67.92,67.91,1.0330342917064468,0.56,1.3392745957332106,2.0,0.01
-price_clean,empty,,81853,100.0,,,,,,,,
+calculated_host_listings_count,continuous,95.0,0,0.0,1,816,815.0,23.229981894098955,1.0,92.78654245993928,0.0,1
+calculated_host_listings_count_entire_homes,continuous,96.0,0,0.0,0,816,816.0,22.058135954378056,1.0,91.08075613718655,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,27.0,0,0.0,0,154,154.0,1.0991390459298673,0.0,10.110240646428759,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,10.0,0,0.0,0,9,9.0,0.015063616992449716,0.0,0.26544466658905097,0.0,0
+reviews_per_month,continuous,878.0,17784,21.9,0.01,39.71,39.7,1.0321551928081383,0.56,1.2944231000564912,2.0,0.01
+price_clean,empty,,81189,100.0,,,,,,,,
+log_price,empty,,81189,100.0,,,,,,,,
+price_per_accommodates,empty,,81189,100.0,,,,,,,,
+log_price_per_accommodates,empty,,81189,100.0,,,,,,,,
+log_reviews,continuous,620.0,0,0.0,0.0,8.304247465078474,8.304247465078474,2.1157277383501962,2.0794415416798357,1.6037240708042473,16.0,0.0
+log_accommodates,discrete_numeric,16.0,0,0.0,0.0,2.772588722239781,2.772588722239781,1.0546860745786,1.0986122886681098,0.4769190431444261,0.0,0.6931471805599453
+log_beds,empty,,81189,100.0,,,,,,,,
+price_percentile,empty,,81189,100.0,,,,,,,,
+reviews_zscore,continuous,620.0,0,0.0,-0.45152128987105994,67.10580550040218,67.55732679027324,2.240438241074353e-17,-0.33446651572949737,0.9999999999999999,18.0,-0.45152128987105994
+reviews_percentile,continuous,620.0,0,0.0,0.10952838438704751,1.0,0.8904716156129525,0.5000061584697434,0.49043589648844055,0.28704283916389445,17.0,0.10952838438704751
+reviews_per_month_zscore,continuous,878.0,17784,21.9,-0.7896608093316083,29.880372812802772,30.67003362213438,-1.14753688418633e-16,-0.36476109920128313,0.9999999999999999,18.0,-0.7896608093316083
+occupancy_rate,continuous,366.0,0,0.0,0.0,1.0,1.0,0.651873921107809,0.7972602739726027,0.3700700441338749,19.0,1.0
+occupancy_rate_booked,continuous,99.0,0,0.0,0.0,0.6986301369863014,0.6986301369863014,0.17314161426483818,0.0273972602739726,0.23876672727485238,18.0,0.0
+occupancy_is_capped,discrete_numeric,2.0,0,0.0,0,1,1.0,0.09331313355257485,0.0,0.29087254039602645,0.0,0
+est_annual_revenue,empty,,81189,100.0,,,,,,,,
+est_annual_revenue_booked,empty,,81189,100.0,,,,,,,,
+revenue_per_accommodates,empty,,81189,100.0,,,,,,,,
+revenue_per_bedroom,empty,,81189,100.0,,,,,,,,
+log_est_revenue,empty,,81189,100.0,,,,,,,,
+host_listings_in_city,continuous,95.0,0,0.0,1,816,815.0,23.229981894098955,1.0,92.78654245993928,0.0,1
+host_is_professional,discrete_numeric,2.0,0,0.0,0,1,1.0,0.32951508209240166,0.0,0.4700400132342586,0.0,0
+host_professional_tier,discrete_categorical,4.0,0,0.0,casual,small_professional,,,,,,casual
+pct_professional_hosts,discrete_numeric,1.0,0,0.0,32.95150820924017,32.95150820924017,0.0,32.95150820924017,32.95150820924017,0.0,0.0,32.95150820924017
+pct_large_operators,discrete_numeric,1.0,0,0.0,13.297367870031653,13.297367870031653,0.0,13.297367870031652,13.297367870031653,1.7763677791411574e-15,0.0,13.297367870031653
+median_host_listings,discrete_numeric,1.0,0,0.0,1.0,1.0,0.0,1.0,1.0,0.0,0.0,1.0
+gini_host_concentration,discrete_numeric,1.0,0,0.0,0.8892641418295073,0.8892641418295073,0.0,0.8892641418295073,0.8892641418295073,0.0,0.0,0.8892641418295073
+market_professionalization_score,discrete_numeric,1.0,0,0.0,36.04915602138119,36.04915602138119,0.0,36.04915602138119,36.04915602138119,0.0,0.0,36.04915602138119

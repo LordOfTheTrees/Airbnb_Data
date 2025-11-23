@@ -22,7 +22,8 @@ import io
 from scipy import stats
 
 # Set UTF-8 encoding for Windows compatibility
-if sys.platform == 'win32':
+# Only wrap stdout/stderr when running as main script, not when imported
+if sys.platform == 'win32' and __name__ == "__main__":
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
 
@@ -153,23 +154,40 @@ def create_size_vs_price_scatter_plots(df, city_name, output_dir=None, price_var
     
     print(f"\nUsing {len(df_plot):,} listings with complete data")
     
-    # Create figure with subplots: 4 rows (size vars) × 3 cols (price vars)
-    fig, axes = plt.subplots(len(available_size), len(available_price), 
-                            figsize=(18, 5 * len(available_size)))
+    # Create figure with subplots: 2x2 quad chart for ROI workflow (when 4 size vars and 1 price var)
+    # Otherwise use flexible layout
+    if len(available_size) == 4 and len(available_price) == 1:
+        # Quad chart format for ROI workflow
+        fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+        axes = axes.flatten()
+    else:
+        # Flexible layout for other cases
+        fig, axes = plt.subplots(len(available_size), len(available_price), 
+                                figsize=(18, 5 * len(available_size)))
     
-    # Handle case where we only have one row or one column
-    if len(available_size) == 1:
-        axes = axes.reshape(1, -1)
-    if len(available_price) == 1:
-        axes = axes.reshape(-1, 1)
+    # Handle case where we only have one row or one column (only if not quad chart)
+    if len(available_size) == 4 and len(available_price) == 1:
+        # Already flattened for quad chart
+        pass
+    else:
+        if len(available_size) == 1:
+            axes = axes.reshape(1, -1)
+        if len(available_price) == 1:
+            axes = axes.reshape(-1, 1)
     
     # Store regression results for documentation
     regression_results = []
     
     # Create scatter plots
+    plot_idx = 0
     for i, size_var in enumerate(available_size):
         for j, price_var in enumerate(available_price):
-            ax = axes[i, j]
+            # Handle quad chart layout (flattened) vs flexible layout
+            if len(available_size) == 4 and len(available_price) == 1:
+                ax = axes[plot_idx]
+                plot_idx += 1
+            else:
+                ax = axes[i, j]
             
             # Get data for this specific plot
             plot_data = df_plot[[size_var, price_var]].dropna()
@@ -246,7 +264,9 @@ def create_size_vs_price_scatter_plots(df, city_name, output_dir=None, price_var
         output_dir.mkdir(exist_ok=True)
     
     # Create filename based on price vars
-    if len(available_price) == 1:
+    # For ROI workflow, we want a specific quad chart format
+    if len(available_price) == 1 and len(available_size) == 4:
+        # Create 2x2 quad chart for ROI workflow
         filename = f'{city_name}_size_vs_{available_price[0]}.png'
     else:
         filename = f'{city_name}_size_vs_price_scatter.png'

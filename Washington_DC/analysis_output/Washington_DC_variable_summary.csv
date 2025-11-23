@@ -1,81 +1,122 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
-id,continuous,6423.0,0,0.0,3344,1444333353652565632,1.4443333536525622e+18,6.485935858386532e+17,8.02399477059003e+17,5.6597853989647616e+17,0.0,3344
-listing_url,discrete_categorical,6423.0,0,0.0,https://www.airbnb.com/rooms/1000826250389415584,https://www.airbnb.com/rooms/999247664972316947,,,,,,https://www.airbnb.com/rooms/1000826250389415584
+id,continuous,6329.0,0,0.0,3344,1444333353652565632,1.4443333536525622e+18,6.4278937030958e+17,7.824406189981116e+17,5.6723715115701395e+17,0.0,3344
+listing_url,discrete_categorical,6329.0,0,0.0,https://www.airbnb.com/rooms/1000826250389415584,https://www.airbnb.com/rooms/999247664972316947,,,,,,https://www.airbnb.com/rooms/1000826250389415584
 scrape_id,discrete_numeric,1.0,0,0.0,20250617145457,20250617145457,0.0,20250617145457.0,20250617145457.0,0.0,0.0,20250617145457
 last_scraped,discrete_categorical,1.0,0,0.0,2025-06-17,2025-06-17,,,,,,2025-06-17
 source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
-name,discrete_categorical,6208.0,0,0.0,"""Call Me Stylish"" HUGE Studio in Columbia Hgts!",🏘️❤️Turnkey Happiness in Washington DC/Petworth🔑,,,,,,Upscale and Great Location
-description,discrete_categorical,5541.0,74,1.15,"The room is located inside a Row house in NW DC, i...",🚗 Private garage parking spot – rare for DC! 🚆 5-m...,,,,,,"In Central DC’s NoMa neighborhood, this new city-c..."
-neighborhood_overview,discrete_categorical,2730.0,2589,40.31,"""Columbia Heights is a vibrant and diverse neighbo...",⭐PROXIMITY⭐ Our neighborhood is safe and convenien...,,,,,,Revel in the ideal apartment in an ideal location....
-picture_url,discrete_categorical,6294.0,0,0.0,https://a0.muscache.com/pictures/001e5b70-4436-463...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/05593349-9f1c-408...
-host_id,continuous,3161.0,0,0.0,4617,699735765,699731148.0,185205685.0099642,81929011.0,208743669.83193874,0.0,39930655
-host_url,discrete_categorical,3161.0,0,0.0,https://www.airbnb.com/users/show/100083313,https://www.airbnb.com/users/show/99955771,,,,,,https://www.airbnb.com/users/show/39930655
-host_name,discrete_categorical,1879.0,3,0.05,A.,Zyhra,,,,,,Sojourn
-host_since,discrete_categorical,2242.0,3,0.05,2008-11-25,2025-06-06,,,,,,2015-07-29
-host_location,discrete_categorical,136.0,1339,20.85,"Abell, MD","Williamsburg, VA",,,,,,"Washington, DC"
-host_about,discrete_categorical,1736.0,2382,37.09,"I enjoy hosting family and friends in Washington, ...",“Hi there! My name is Rahsaan and I've been living...,,,,,,"Hi, I'm Nicole, the co-founder of Sojourn. At Sojo..."
-host_response_time,discrete_categorical,4.0,466,7.26,a few days or more,within an hour,,,,,,within an hour
-host_response_rate,discrete_categorical,44.0,466,7.26,0%,99%,,,,,,100%
-host_acceptance_rate,discrete_categorical,82.0,300,4.67,0%,99%,,,,,,100%
-host_is_superhost,discrete_categorical,2.0,119,1.85,f,t,,,,,,f
-host_thumbnail_url,discrete_categorical,3089.0,3,0.05,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/pictures/user/User/origi...,,,,,,https://z0.muscache.cn/im/pictures/user/adc0efa0-2...
-host_picture_url,discrete_categorical,3089.0,3,0.05,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/pictures/user/User/origi...,,,,,,https://z0.muscache.cn/im/pictures/user/adc0efa0-2...
-host_neighbourhood,discrete_categorical,194.0,224,3.49,16th Street Heights,Wooten,,,,,,Northwest Washington
-host_listings_count,continuous,70.0,3,0.05,1.0,4927.0,4926.0,287.898753894081,3.0,1009.166850463834,1.0,1.0
-host_total_listings_count,continuous,88.0,3,0.05,1.0,9109.0,9108.0,425.97445482866044,5.0,1342.5481269202783,1.0,1.0
+name,discrete_categorical,6115.0,0,0.0,"""Call Me Stylish"" HUGE Studio in Columbia Hgts!",🏘️❤️Turnkey Happiness in Washington DC/Petworth🔑,,,,,,Upscale and Great Location
+description,discrete_categorical,5521.0,73,1.15,"The room is located inside a Row house in NW DC, i...",🚗 Private garage parking spot – rare for DC! 🚆 5-m...,,,,,,"In Central DC’s NoMa neighborhood, this new city-c..."
+neighborhood_overview,discrete_categorical,2711.0,2585,40.84,"""Columbia Heights is a vibrant and diverse neighbo...",⭐PROXIMITY⭐ Our neighborhood is safe and convenien...,,,,,,Revel in the ideal apartment in an ideal location....
+picture_url,discrete_categorical,6200.0,0,0.0,https://a0.muscache.com/pictures/001e5b70-4436-463...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/05593349-9f1c-408...
+host_id,continuous,3157.0,0,0.0,4617,699735765,699731148.0,180712489.0333386,78194147.0,206528306.61395547,0.0,39930655
+host_url,discrete_categorical,3157.0,0,0.0,https://www.airbnb.com/users/show/100083313,https://www.airbnb.com/users/show/99955771,,,,,,https://www.airbnb.com/users/show/39930655
+host_name,discrete_categorical,1878.0,3,0.05,A.,Zyhra,,,,,,Sojourn
+host_since,discrete_categorical,2241.0,3,0.05,2008-11-25,2025-06-06,,,,,,2015-07-29
+host_location,discrete_categorical,136.0,1263,19.96,"Abell, MD","Williamsburg, VA",,,,,,"Washington, DC"
+host_about,discrete_categorical,1735.0,2305,36.42,"I enjoy hosting family and friends in Washington, ...",“Hi there! My name is Rahsaan and I've been living...,,,,,,"Hi, I'm Nicole, the co-founder of Sojourn. At Sojo..."
+host_response_time,discrete_categorical,4.0,466,7.36,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,44.0,466,7.36,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,82.0,300,4.74,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,119,1.88,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,3085.0,3,0.05,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z1.muscache.cn/im/pictures/user/User/origi...,,,,,,https://z0.muscache.cn/im/pictures/user/adc0efa0-2...
+host_picture_url,discrete_categorical,3085.0,3,0.05,https://a0.muscache.com/defaults/user_pic-225x225....,https://z1.muscache.cn/im/pictures/user/User/origi...,,,,,,https://z0.muscache.cn/im/pictures/user/adc0efa0-2...
+host_neighbourhood,discrete_categorical,190.0,224,3.54,16th Street Heights,Wooten,,,,,,Northwest Washington
+host_listings_count,continuous,66.0,3,0.05,1.0,4927.0,4926.0,267.1648751185583,3.0,987.9975146017971,1.0,1.0
+host_total_listings_count,continuous,84.0,3,0.05,1.0,9109.0,9108.0,382.55975339867217,4.0,1257.1879263657115,1.0,1.0
 host_verifications,discrete_categorical,5.0,3,0.05,"['email', 'phone', 'work_email']",['phone'],,,,,,"['email', 'phone']"
 host_has_profile_pic,discrete_categorical,2.0,3,0.05,f,t,,,,,,t
 host_identity_verified,discrete_categorical,2.0,3,0.05,f,t,,,,,,t
-neighbourhood,discrete_categorical,1.0,2589,40.31,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood,discrete_categorical,1.0,2585,40.84,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
 neighbourhood_cleansed,discrete_categorical,39.0,0,0.0,"Brightwood Park, Crestwood, Petworth","Woodridge, Fort Lincoln, Gateway",,,,,,"Union Station, Stanton Park, Kingman Park"
-neighbourhood_group_cleansed,empty,,6423,100.0,,,,,,,,
-latitude,continuous,4958.0,0,0.0,38.82028,38.99447,0.17419000000000295,38.90940082901012,38.90885554193135,0.025112924797331602,14.0,38.9034
-longitude,continuous,5040.0,0,0.0,-77.11286177614646,-76.91092,0.20194177614645525,-77.01294319136689,-77.01468,0.03052269230122133,14.0,-77.00522
-property_type,discrete_categorical,42.0,0,0.0,Casa particular,Treehouse,,,,,,Entire rental unit
-room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,3.772847579012922,3.0,2.415420221306576,0.0,2
-bathrooms,discrete_numeric,13.0,1561,24.3,0.0,7.0,7.0,1.2992595639654463,1.0,0.6770212804030246,0.0,1.0
-bathrooms_text,discrete_categorical,25.0,3,0.05,0 baths,Shared half-bath,,,,,,1 bath
-bedrooms,discrete_numeric,12.0,217,3.38,0.0,12.0,12.0,1.589429584273284,1.0,1.0824113246366114,0.0,1.0
-beds,discrete_numeric,15.0,1576,24.54,0.0,14.0,14.0,1.9422323086445223,2.0,1.31782166888168,0.0,1.0
-amenities,discrete_categorical,5708.0,0,0.0,"[""25 inch HDTV with standard cable, Roku"", ""Hot wa...",[],,,,,,"[""Hot water"", ""Freezer"", ""Elevator"", ""Refrigerator..."
-price,discrete_categorical,490.0,1577,24.55,"$1,000.00",$999.00,,,,,,$100.00
-minimum_nights,continuous,53.0,0,0.0,1,701,700.0,13.003425190720847,2.0,28.20164170630554,0.0,1
-maximum_nights,continuous,140.0,0,0.0,1,3650,3649.0,434.9361669002024,365.0,405.92636246654087,0.0,365
-minimum_minimum_nights,continuous,54.0,0,0.0,1,701,700.0,11.794799937723806,2.0,24.169447327241812,0.0,1
-maximum_minimum_nights,continuous,62.0,0,0.0,1,701,700.0,21.849291608282734,3.0,58.420550987494714,0.0,2
-minimum_maximum_nights,continuous,124.0,0,0.0,1,3650,3649.0,635.7899735326172,365.0,472.0369523765622,0.0,1125
-maximum_maximum_nights,continuous,121.0,0,0.0,1,3650,3649.0,688.1307800093414,731.0,457.5800543024365,0.0,1125
-minimum_nights_avg_ntm,continuous,235.0,0,0.0,1.0,701.0,700.0,12.970683481239297,3.0,24.951678026300584,1.0,31.0
-maximum_nights_avg_ntm,continuous,350.0,0,0.0,1.0,3650.0,3649.0,670.7107270745757,700.0,454.851388526846,1.0,1125.0
-calendar_updated,empty,,6423,100.0,,,,,,,,
-has_availability,discrete_categorical,1.0,41,0.64,t,t,,,,,,t
-availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,10.868285847734704,9.0,10.294560565596731,0.0,0
-availability_60,continuous,61.0,0,0.0,0,60,60.0,27.627121282889615,27.0,20.640514155007793,0.0,0
-availability_90,continuous,91.0,0,0.0,0,90,90.0,48.74357776739841,51.0,29.33828159299894,0.0,0
-availability_365,continuous,366.0,0,0.0,0,365,365.0,216.0126109294722,244.0,119.47622376017625,0.0,0
+neighbourhood_group_cleansed,empty,,6329,100.0,,,,,,,,
+latitude,continuous,4942.0,0,0.0,38.82028,38.99447,0.17419000000000295,38.90928597258838,38.90883,0.02517234453392992,14.0,38.9034
+longitude,continuous,5022.0,0,0.0,-77.11286177614646,-76.91092,0.20194177614645525,-77.0124705441134,-77.01399,0.03040573865818158,14.0,-77.00522
+property_type,discrete_categorical,39.0,0,0.0,Casa particular,Treehouse,,,,,,Entire rental unit
+room_type,discrete_categorical,3.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,3.7531995575920365,3.0,2.376218089022774,0.0,2
+bathrooms,discrete_numeric,13.0,1512,23.89,0.0,7.0,7.0,1.2967614697944778,1.0,0.6731115886248198,0.0,1.0
+bathrooms_text,discrete_categorical,25.0,1,0.02,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,12.0,217,3.43,0.0,12.0,12.0,1.5909685863874345,1.0,1.085105530248967,0.0,1.0
+beds,discrete_numeric,15.0,1527,24.13,0.0,14.0,14.0,1.9348188254893794,2.0,1.3026336653993151,0.0,1.0
+amenities,discrete_categorical,5678.0,0,0.0,"[""25 inch HDTV with standard cable, Roku"", ""Hot wa...",[],,,,,,"[""Hot water"", ""Freezer"", ""Elevator"", ""Refrigerator..."
+price,discrete_categorical,487.0,1528,24.14,"$1,000.00",$999.00,,,,,,$100.00
+minimum_nights,continuous,53.0,0,0.0,1,701,700.0,13.179017222310002,2.0,28.37317962406811,0.0,2
+maximum_nights,continuous,140.0,0,0.0,1,3650,3649.0,427.5564860167483,365.0,401.38618732369105,0.0,365
+minimum_minimum_nights,continuous,54.0,0,0.0,1,701,700.0,11.954021172381102,2.0,24.31257686529295,0.0,1
+maximum_minimum_nights,continuous,62.0,0,0.0,1,701,700.0,22.150102701848635,3.0,58.80013045669708,0.0,2
+minimum_maximum_nights,continuous,124.0,0,0.0,1,3650,3649.0,642.5732343182177,365.0,469.71790063805184,0.0,1125
+maximum_maximum_nights,continuous,121.0,0,0.0,1,3650,3649.0,684.225154052773,731.0,457.2985225318117,0.0,1125
+minimum_nights_avg_ntm,continuous,235.0,0,0.0,1.0,701.0,700.0,13.146895244114393,3.0,25.09393597794672,1.0,31.0
+maximum_nights_avg_ntm,continuous,303.0,0,0.0,1.0,3650.0,3649.0,673.3384262916733,727.1,455.3102620180152,1.0,1125.0
+calendar_updated,empty,,6329,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,41,0.65,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,10.813082635487438,9.0,10.311579819558375,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,27.490124822246802,27.0,20.641687720108553,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,48.57212829830937,51.0,29.314959213086976,0.0,0
+availability_365,continuous,366.0,0,0.0,0,365,365.0,215.19418549533893,242.0,119.4616124794858,0.0,0
 calendar_last_scraped,discrete_categorical,1.0,0,0.0,2025-06-17,2025-06-17,,,,,,2025-06-17
-number_of_reviews,continuous,485.0,0,0.0,0,1332,1332.0,68.63023509263584,21.0,111.62025537043269,0.0,0
-number_of_reviews_ltm,continuous,125.0,0,0.0,0,339,339.0,15.515646893974779,5.0,21.494461192523325,0.0,0
-number_of_reviews_l30d,discrete_numeric,18.0,0,0.0,0,29,29.0,1.4614666043904718,0.0,2.0929882862684557,0.0,0
-availability_eoy,continuous,199.0,0,0.0,0,198,198.0,123.0319165498988,144.0,63.77674200757262,0.0,0
-number_of_reviews_ly,continuous,126.0,0,0.0,0,347,347.0,14.763350459286938,3.0,22.363111019251694,0.0,0
-estimated_occupancy_l365d,continuous,84.0,0,0.0,0,255,255.0,95.07675541024443,62.0,95.12038231456857,0.0,0
-estimated_revenue_l365d,continuous,2132.0,1577,24.55,0.0,1500000.0,1500000.0,16814.319851423854,10260.0,29375.466093454317,1.0,0.0
-first_review,discrete_categorical,2390.0,1095,17.05,2009-05-09,2025-06-16,,,,,,2025-01-21
-last_review,discrete_categorical,821.0,1095,17.05,2013-06-15,2025-06-17,,,,,,2025-06-16
-review_scores_rating,continuous,118.0,1095,17.05,0.0,5.0,5.0,4.769316816816817,4.87,0.3672101205218972,2.0,5.0
-review_scores_accuracy,continuous,113.0,1096,17.06,1.0,5.0,4.0,4.806418246667918,4.9,0.34918510901518507,2.0,5.0
-review_scores_cleanliness,continuous,131.0,1096,17.06,1.0,5.0,4.0,4.791299042613103,4.89,0.34457482239496795,2.0,5.0
-review_scores_checkin,continuous,106.0,1096,17.06,1.0,5.0,4.0,4.861428571428572,4.95,0.3083954296046218,2.0,5.0
-review_scores_communication,continuous,114.0,1096,17.06,1.0,5.0,4.0,4.8559902384081095,4.95,0.33579626965625703,2.0,5.0
-review_scores_location,continuous,145.0,1096,17.06,1.0,5.0,4.0,4.74819973718791,4.87,0.37022347522427695,2.0,5.0
-review_scores_value,continuous,121.0,1096,17.06,1.0,5.0,4.0,4.6974225642951,4.8,0.3952247614402893,2.0,5.0
-license,discrete_categorical,2617.0,1484,23.1,Exempt,Unhosted License: 5567423323008765,,,,,,Exempt
+number_of_reviews,continuous,485.0,0,0.0,0,1332,1332.0,69.33401801232422,21.0,112.03063619359729,0.0,0
+number_of_reviews_ltm,continuous,125.0,0,0.0,0,339,339.0,15.581766471796492,6.0,21.483874880367637,0.0,0
+number_of_reviews_l30d,discrete_numeric,18.0,0,0.0,0,29,29.0,1.4711644809606572,0.0,2.0970069091189076,0.0,0
+availability_eoy,continuous,199.0,0,0.0,0,198,198.0,122.6432295781324,143.0,63.73287233338856,0.0,0
+number_of_reviews_ly,continuous,126.0,0,0.0,0,347,347.0,14.894770105861905,3.0,22.462955587332537,0.0,0
+estimated_occupancy_l365d,continuous,84.0,0,0.0,0,255,255.0,95.73992731869174,62.0,94.99580129151082,0.0,0
+estimated_revenue_l365d,continuous,2126.0,1528,24.14,0.0,237915.0,237915.0,16356.085815455113,10296.0,18971.118849267983,1.0,0.0
+first_review,discrete_categorical,2390.0,1045,16.51,2009-05-09,2025-06-16,,,,,,2025-01-21
+last_review,discrete_categorical,821.0,1045,16.51,2013-06-15,2025-06-17,,,,,,2025-06-16
+review_scores_rating,continuous,118.0,1045,16.51,0.0,5.0,5.0,4.769587433762301,4.87,0.36719638072678945,2.0,5.0
+review_scores_accuracy,continuous,113.0,1046,16.53,1.0,5.0,4.0,4.806587166382736,4.9,0.348891403446787,2.0,5.0
+review_scores_cleanliness,continuous,131.0,1046,16.53,1.0,5.0,4.0,4.791118682566724,4.89,0.345068159855757,2.0,5.0
+review_scores_checkin,continuous,106.0,1046,16.53,1.0,5.0,4.0,4.861491576755632,4.95,0.3086302034706773,2.0,5.0
+review_scores_communication,continuous,114.0,1046,16.53,1.0,5.0,4.0,4.856963846299451,4.95,0.33545407975478225,2.0,5.0
+review_scores_location,continuous,145.0,1046,16.53,1.0,5.0,4.0,4.747039560855574,4.87,0.37109657155091874,2.0,5.0
+review_scores_value,continuous,121.0,1046,16.53,1.0,5.0,4.0,4.697512776831346,4.8,0.39476518691446755,2.0,5.0
+license,discrete_categorical,2617.0,1484,23.45,Exempt,Unhosted License: 5567423323008765,,,,,,Exempt
 instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
-calculated_host_listings_count,discrete_numeric,38.0,0,0.0,1,257,256.0,26.38502257512066,3.0,61.26056794177389,0.0,1
-calculated_host_listings_count_entire_homes,discrete_numeric,35.0,0,0.0,0,253,253.0,22.159738439981318,1.0,59.43984094384466,0.0,1
-calculated_host_listings_count_private_rooms,discrete_numeric,19.0,0,0.0,0,124,124.0,3.795267009185739,0.0,17.465960024993958,0.0,0
-calculated_host_listings_count_shared_rooms,discrete_numeric,6.0,0,0.0,0,7,7.0,0.03549743110695937,0.0,0.43008668194618926,0.0,0
-reviews_per_month,continuous,732.0,1095,17.05,0.01,29.0,28.99,2.0546865615615615,1.55,1.9742421431784838,2.0,1.0
-price_clean,continuous,490.0,1577,24.55,10.0,50000.0,49990.0,392.25567478332647,135.0,3126.66800641453,1.0,100.0
+calculated_host_listings_count,discrete_numeric,37.0,0,0.0,1,257,256.0,26.376520777373994,2.0,61.62258417985313,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,35.0,0,0.0,0,253,253.0,22.44493600884816,1.0,59.74905256642309,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,19.0,0,0.0,0,124,124.0,3.8424711644809606,0.0,17.590123470366766,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,6.0,0,0.0,0,7,7.0,0.03381260862695529,0.0,0.41517594509389993,0.0,0
+reviews_per_month,continuous,729.0,1045,16.51,0.01,29.0,28.99,2.050897047691143,1.56,1.9656762319934658,2.0,1.0
+price_clean,continuous,487.0,1528,24.14,10.0,2800.0,2790.0,164.10664444907312,135.0,129.64085598783575,1.0,100.0
+log_price,continuous,487.0,1528,24.14,2.302585092994046,7.937374696163295,5.634789603169249,4.9137126265995,4.90527477843843,0.5910668139377373,16.0,4.605170185988092
+price_per_accommodates,continuous,1003.0,1528,24.14,2.5,1130.0,1127.5,52.614233549897996,43.0,38.687834259852394,15.0,45.0
+log_price_per_accommodates,continuous,1003.0,1528,24.14,0.9162907318741551,7.029972911706386,6.113682179832231,3.8119970864567767,3.7612001156935624,0.522347380074719,16.0,3.8066624897703196
+log_reviews,continuous,485.0,0,0.0,0.0,7.195187320178709,7.195187320178709,2.8852744517105915,3.091042453358316,1.9129203815237994,16.0,0.0
+log_accommodates,discrete_numeric,16.0,0,0.0,0.0,2.772588722239781,2.772588722239781,1.1478926168656445,1.0986122886681098,0.5919201357931497,0.0,0.6931471805599453
+log_beds,discrete_numeric,15.0,1527,24.13,0.0,2.70805020110221,2.70805020110221,1.002874829609748,1.0986122886681098,0.36551586922572615,0.0,0.6931471805599453
+price_zscore,continuous,487.0,1528,24.14,-1.188719738656562,20.33227361440944,21.520993353066004,-2.959978070235785e-17,-0.22451752749769102,1.0,18.0,-0.49449414662217495
+price_percentile,continuous,487.0,1528,24.14,0.0003124349093938763,1.0,0.9996875650906061,0.5001041449697979,0.505207248489898,0.2887013028810561,19.0,0.300562382836909
+log_price_zscore,continuous,487.0,1528,24.14,-4.417652069162704,5.115601144005874,9.533253213168578,6.156754386090433e-16,-0.014275624958294514,1.0,18.0,-0.522009413040585
+reviews_zscore,continuous,485.0,0,0.0,-0.6188844441846235,11.270720446554414,11.889604890739037,-3.592568738240355e-17,-0.4314357184297288,1.0,18.0,-0.6188844441846235
+reviews_percentile,continuous,485.0,0,0.0,0.0826354874387739,1.0,0.9173645125612261,0.5000790014220255,0.49857797440353924,0.28800065684951015,17.0,0.0826354874387739
+reviews_per_month_zscore,continuous,729.0,1045,16.51,-1.0382671441376656,13.709838127807428,14.748105271945093,4.3030597169423175e-17,-0.249734437289963,1.0,18.0,-0.5346236733123588
+occupancy_rate,continuous,366.0,0,0.0,0.0,1.0,1.0,0.41042688905386604,0.336986301369863,0.3272920889848926,19.0,1.0
+occupancy_rate_booked,continuous,84.0,0,0.0,0.0,0.6986301369863014,0.6986301369863014,0.26230117073614173,0.16986301369863013,0.26026246929181046,17.0,0.0
+occupancy_is_capped,discrete_numeric,2.0,0,0.0,0,1,1.0,0.14536261652709748,0.0,0.3524939125804879,0.0,0
+est_annual_revenue,continuous,3848.0,1528,24.14,0.0,741258.0,741258.0,21924.358466986043,13783.0,29817.782904250547,1.0,0.0
+est_annual_revenue_booked,continuous,2126.0,1528,24.14,0.0,237915.0,237915.0,16356.085815455113,10296.0,18971.118849267983,1.0,0.0
+revenue_per_accommodates,continuous,3962.0,1528,24.14,0.0,152347.5,152347.5,6853.033454275712,4704.0,7647.673327714951,14.0,0.0
+revenue_per_bedroom,continuous,3647.0,1852,29.26,0.0,370629.0,370629.0,15334.827635693542,10452.0,17836.768859254258,12.0,0.0
+log_est_revenue,continuous,3847.0,1693,26.75,4.02535169073515,13.516104021815934,9.490752331080785,9.34829127854553,9.577581887093196,1.3623301842702813,16.0,5.823045895483019
+host_listings_in_city,discrete_numeric,37.0,0,0.0,1,257,256.0,26.376520777373994,2.0,61.62258417985313,0.0,1
+host_is_professional,discrete_numeric,2.0,0,0.0,0,1,1.0,0.6320113762047717,1.0,0.4822963296091998,0.0,1
+host_professional_tier,discrete_categorical,4.0,0,0.0,casual,small_professional,,,,,,casual
+pct_professional_hosts,discrete_numeric,1.0,0,0.0,63.20113762047717,63.20113762047717,0.0,63.20113762047718,63.20113762047717,1.421197752598993e-14,0.0,63.20113762047717
+pct_large_operators,discrete_numeric,1.0,0,0.0,19.971559488070785,19.971559488070785,0.0,19.97155948807079,19.971559488070785,3.552994381497482e-15,0.0,19.971559488070785
+median_host_listings,discrete_numeric,1.0,0,0.0,2.0,2.0,0.0,2.0,2.0,0.0,0.0,2.0
+gini_host_concentration,discrete_numeric,1.0,0,0.0,0.816002363584815,0.816002363584815,0.0,0.8160023635848149,0.816002363584815,1.1103107442179632e-16,0.0,0.816002363584815
+market_professionalization_score,discrete_numeric,1.0,0,0.0,48.06332425068193,48.06332425068193,0.0,48.06332425068194,48.06332425068193,7.105988762994964e-15,0.0,48.06332425068193
+purchase_price,discrete_numeric,1.0,0,0.0,575077.7782481499,575077.7782481499,0.0,575077.7782481499,575077.7782481499,0.0,0.0,575077.7782481499
+monthly_payment,discrete_numeric,1.0,0,0.0,3658.450702683835,3658.450702683835,0.0,3658.450702683835,3658.450702683835,0.0,0.0,3658.450702683835
+zori_rent,discrete_numeric,1.0,0,0.0,2381.0045571287937,2381.0045571287937,0.0,2381.004557128793,2381.0045571287937,9.095665616633554e-13,0.0,2381.0045571287937
+zillow_metro,discrete_categorical,1.0,0,0.0,"Washington, DC","Washington, DC",,,,,,"Washington, DC"
+annual_cash_flow,continuous,3848.0,1528,24.14,-43901.40843220602,697356.591567794,741258.0,-21977.04996521998,-30118.408432206023,29817.782904250547,13.0,-43901.40843220602
+cash_on_cash_roi,continuous,3848.0,1528,24.14,-38.16997464755304,606.3150220237513,644.4849966713044,-19.107893572386253,-26.186378235614704,25.92500008875667,16.0,-38.16997464755304
+cap_rate,continuous,3848.0,1528,24.14,0.0,128.89699933426087,128.89699933426087,3.812416215033358,2.3967192823876675,5.185000017751334,18.0,0.0
+price_to_rent_ratio,continuous,3847.0,1693,26.75,9.309759002908297,123230.9524817464,123221.64272274349,2149.2073286635027,477.9890001633367,6655.083322324848,14.0,20416.962541354435
+revenue_yield,continuous,3848.0,1528,24.14,0.0,128.89699933426087,128.89699933426087,3.812416215033358,2.3967192823876675,5.185000017751334,18.0,0.0
+annual_cash_flow_booked,continuous,2126.0,1528,24.14,-43901.40843220602,194013.59156779398,237915.0,-27545.322616750906,-33605.40843220602,18971.11884926798,12.0,-43901.40843220602
+cash_on_cash_roi_booked,continuous,2126.0,1528,24.14,-38.16997464755304,168.68465354270376,206.8546281902568,-23.949214922424733,-29.21814205252169,16.494393947075636,15.0,-38.16997464755304
+cap_rate_booked,continuous,2126.0,1528,24.14,0.0,41.37092563805136,41.37092563805136,2.844151945025661,1.7903665190062705,3.2988787894151277,17.0,0.0
+revenue_yield_booked,continuous,2126.0,1528,24.14,0.0,41.37092563805136,41.37092563805136,2.844151945025661,1.7903665190062705,3.2988787894151277,17.0,0.0

@@ -466,9 +466,9 @@ class CrossCityAnalyzer:
         corr_matrix.to_csv('city_comparison_outputs/overall_correlation_matrix.csv')
         print("✓ Saved: city_comparison_outputs/overall_correlation_matrix.csv")
 
-        # Create heatmap
+        # Create heatmap (no numbers on chart for readability)
         plt.figure(figsize=(12, 10))
-        sns.heatmap(corr_matrix, annot=True, fmt='.3f', cmap='coolwarm',
+        sns.heatmap(corr_matrix, annot=False, cmap='coolwarm',
                    center=0, square=True, linewidths=1, cbar_kws={"shrink": 0.8})
         plt.title('Correlation Matrix - All Cities Combined', 
                  fontsize=16, fontweight='bold')
@@ -807,6 +807,36 @@ class CrossCityAnalyzer:
         
         return self
 
+def discover_city_folders(base_dir='.'):
+    """
+    Automatically discover city folders by looking for directories that contain
+    listings.csv or listings.csv.gz files.
+    
+    Args:
+        base_dir: Base directory to search in
+        
+    Returns:
+        List of city folder names (sorted)
+    """
+    base_path = Path(base_dir)
+    city_folders = []
+    
+    # Directories to exclude (not cities)
+    exclude_dirs = {
+        '__pycache__', 'Census', 'Kaggle', 'Zillow', 'old_scripts',
+        'city_comparison_outputs', '.git'
+    }
+    
+    # Look for directories that contain listings files
+    for item in base_path.iterdir():
+        if item.is_dir() and item.name not in exclude_dirs:
+            # Check if it contains listings.csv or listings.csv.gz
+            if (item / 'listings.csv').exists() or (item / 'listings.csv.gz').exists():
+                city_folders.append(item.name)
+    
+    return sorted(city_folders)
+
+
 # ============================================================================
 # MAIN EXECUTION
 # ============================================================================
@@ -824,19 +854,21 @@ if __name__ == "__main__":
     # Parse command-line arguments
     use_detailed = '-all' in sys.argv
     
-    # ====== CUSTOMIZE THIS LIST ======
-    city_folders = [
-        'Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge',
-        'Chicago', 'Columbus', 'Dallas', 'Denver', 'Hawaii',
-        'Jersey_City', 'Los_Angeles', 'Nashville', 'New_Orleans',
-        'New_York', 'Oakland', 'Oregon', 'Paris',
-        'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC'
-    ]
-    # =================================
+    # Automatically discover city folders
+    city_folders = discover_city_folders(base_dir='.')
+    
+    if not city_folders:
+        print("❌ ERROR: No city folders found!")
+        print("   Make sure you're running this from the Airbnb_Data directory")
+        print("   and that city folders contain listings.csv or listings.csv.gz")
+        sys.exit(1)
     
     print("\n" + "#"*80)
     print("CROSS-CITY COMPARISON ANALYSIS")
     print("#"*80)
+    print(f"\n📍 Discovered {len(city_folders)} cities:")
+    for i, city in enumerate(city_folders, 1):
+        print(f"   {i:2d}. {city}")
     
     if use_detailed:
         print("\n🔍 MODE: DETAILED ANALYSIS (79 variables)")

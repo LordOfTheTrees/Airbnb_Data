@@ -482,6 +482,32 @@ def create_roi_visualizations(df, city_name, output_dir=None, use_primary=True):
         plt.close(chart_fig)
         print(f"  ✓ Saved individual chart: {individual_file}")
     
+    # Also create size vs price and occupancy boxplot charts for ROI analysis
+    # These are part of the ROI analysis workflow
+    print(f"\n  Creating size vs log price scatter plots (ROI workflow)...")
+    try:
+        # Import here to avoid circular import issues
+        from explore_city_data import create_size_vs_price_scatter_plots
+        # Use df (not df_roi) to ensure we have all necessary columns
+        create_size_vs_price_scatter_plots(df, city_name, output_dir=combined_output_dir, price_vars=['log_price'])
+        print(f"  ✓ Saved size vs log price scatter plots to analysis_output")
+    except Exception as e:
+        print(f"  ⚠️  Error creating size vs price plots: {e}")
+        import traceback
+        traceback.print_exc()
+    
+    print(f"\n  Creating size vs occupancy boxplots (ROI workflow)...")
+    try:
+        # Import here to avoid circular import issues
+        from explore_city_data import create_size_vs_occupancy_boxplots
+        # Use df (not df_roi) to ensure we have all necessary columns
+        create_size_vs_occupancy_boxplots(df, city_name, output_dir=combined_output_dir, use_log=False)
+        print(f"  ✓ Saved size vs occupancy boxplots to analysis_output")
+    except Exception as e:
+        print(f"  ⚠️  Error creating occupancy boxplots: {e}")
+        import traceback
+        traceback.print_exc()
+    
     return output_file, individual_files
 
 
@@ -569,10 +595,10 @@ if __name__ == "__main__":
     
     # City list
     all_cities = [
-        'Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge',
+        'Albany', 'Asheville', 'Austin', 'Boston', 'Bozeman', 'Cambridge',
         'Chicago', 'Columbus', 'Dallas', 'Denver', 'Hawaii',
         'Jersey_City', 'Los_Angeles', 'Nashville', 'New_Orleans',
-        'New_York', 'Oakland', 'Oregon', 'Paris',
+        'New_York', 'Oakland', 'Portland', 'Paris',
         'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC'
     ]
     

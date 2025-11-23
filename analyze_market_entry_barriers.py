@@ -206,24 +206,12 @@ def analyze_market_entry_barriers(df, city_name, output_dir=None):
         ax1.set_title('1. Cumulative Profit by Host Listings\n(What % of profit is controlled by hosts with ≤N listings)', 
                      fontweight='bold', fontsize=13)
         ax1.set_xlim(0, min(cum_profit['listings_threshold'].max(), 50))  # Focus on 0-50 range
-        ax1.set_ylim(0, 100)
+        # Set y-axis limit based on peak value, default to 100% if never exceeds
+        max_cum_pct = cum_profit['cumulative_pct'].max()
+        y_max = max(100, max_cum_pct)
+        ax1.set_ylim(0, y_max)
         ax1.grid(True, alpha=0.3)
         ax1.legend(loc='lower right', fontsize=10)
-        
-        # Add interpretation text
-        if p50_threshold and p50_threshold <= 5:
-            interpretation = "⚠️ High concentration: Small operators control most profit"
-            color = 'red'
-        elif p50_threshold and p50_threshold <= 10:
-            interpretation = "⚠️ Moderate concentration: Entry may be difficult"
-            color = 'orange'
-        else:
-            interpretation = "✓ Lower concentration: More accessible market"
-            color = 'green'
-        
-        ax1.text(0.02, 0.98, interpretation, transform=ax1.transAxes,
-                fontsize=10, fontweight='bold', color=color,
-                verticalalignment='top', bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.7))
     
     # ============================================================================
     # PANEL 2: Cumulative Revenue by Host Listings
@@ -261,164 +249,147 @@ def analyze_market_entry_barriers(df, city_name, output_dir=None):
         ax2.set_title('2. Cumulative Revenue by Host Listings\n(What % of revenue is controlled by hosts with ≤N listings)', 
                      fontweight='bold', fontsize=13)
         ax2.set_xlim(0, min(cum_revenue['listings_threshold'].max(), 50))
-        ax2.set_ylim(0, 100)
+        # Set y-axis limit based on peak value, default to 100% if never exceeds
+        max_cum_pct = cum_revenue['cumulative_pct'].max()
+        y_max = max(100, max_cum_pct)
+        ax2.set_ylim(0, y_max)
         ax2.grid(True, alpha=0.3)
         ax2.legend(loc='lower right', fontsize=10)
-        
-        # Add interpretation
-        if p50_threshold and p50_threshold <= 5:
-            interpretation = "⚠️ High concentration: Small operators control most revenue"
-            color = 'red'
-        elif p50_threshold and p50_threshold <= 10:
-            interpretation = "⚠️ Moderate concentration: Entry may be difficult"
-            color = 'orange'
-        else:
-            interpretation = "✓ Lower concentration: More accessible market"
-            color = 'green'
-        
-        ax2.text(0.02, 0.98, interpretation, transform=ax2.transAxes,
-                fontsize=10, fontweight='bold', color=color,
-                verticalalignment='top', bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.7))
     
     # ============================================================================
-    # PANEL 3: Performance Gap by Market Professionalization
+    # PANEL 3: Performance Gap by Host Listings (within city)
     # ============================================================================
     ax3 = axes[1, 0]
     
-    # Calculate performance gap (professional ROI - casual ROI)
-    # For this single-city analysis, we'll show the gap as a function of market professionalization
-    # Since we only have one city, we'll show the gap directly
+    # Calculate ROI by host listing count bins
+    # This shows how performance changes as hosts scale up
+    df_analysis['listings_bin'] = pd.cut(df_analysis['host_listings_in_city'], 
+                                         bins=[0, 1, 2, 5, 10, 20, 1000],
+                                         labels=['1', '2', '3-5', '6-10', '11-20', '21+'])
     
-    professional = df_analysis[df_analysis['host_is_professional'] == 1]
-    casual = df_analysis[df_analysis['host_is_professional'] == 0]
+    # Calculate median ROI by bin
+    roi_by_bin = df_analysis.groupby('listings_bin')['cash_on_cash_roi'].agg(['median', 'count']).reset_index()
+    roi_by_bin = roi_by_bin[roi_by_bin['count'] >= 10]  # Only bins with at least 10 listings
     
-    if len(professional) > 0 and len(casual) > 0:
-        prof_roi = professional['cash_on_cash_roi'].median()
-        casual_roi = casual['cash_on_cash_roi'].median()
-        performance_gap = prof_roi - casual_roi
-        
-        # Get market professionalization score
-        if 'market_professionalization_score' in df_analysis.columns:
-            prof_score = df_analysis['market_professionalization_score'].iloc[0]
-        else:
-            # Calculate it
-            pct_prof = (len(professional) / len(df_analysis)) * 100
-            prof_score = pct_prof  # Simplified
-        
-        # Create scatter plot (for single city, this is a single point)
-        # But we can show it with context
-        ax3.scatter(prof_score, performance_gap, s=500, alpha=0.7, 
-                   color='red' if performance_gap > 0 else 'green', 
-                   edgecolors='black', linewidth=2, zorder=5)
-        
-        # Add reference lines
-        ax3.axhline(y=0, color='black', linestyle='-', alpha=0.3, linewidth=1)
-        ax3.axvline(x=50, color='gray', linestyle='--', alpha=0.5, label='50% professionalization')
-        
-        # Add annotation
-        ax3.annotate(f'{city_name}\nGap: {performance_gap:.1f}%\nProf Score: {prof_score:.1f}',
-                    xy=(prof_score, performance_gap),
-                    xytext=(10, 10), textcoords='offset points',
-                    fontsize=11, fontweight='bold',
-                    bbox=dict(boxstyle='round,pad=0.5', facecolor='yellow', alpha=0.7),
-                    arrowprops=dict(arrowstyle='->', connectionstyle='arc3,rad=0'))
-        
-        # Add interpretation zones
-        ax3.axhspan(-100, 0, alpha=0.1, color='green', label='Casual advantage')
-        ax3.axhspan(0, 100, alpha=0.1, color='red', label='Professional advantage')
-        
-        ax3.set_xlabel('Market Professionalization Score (0-100)', fontweight='bold', fontsize=12)
-        ax3.set_ylabel('Performance Gap (Professional ROI - Casual ROI, %)', fontweight='bold', fontsize=12)
-        ax3.set_title('3. Performance Gap by Market Professionalization\n(Higher gap = harder for casual operators)', 
-                     fontweight='bold', fontsize=13)
-        ax3.set_xlim(0, 100)
-        ax3.grid(True, alpha=0.3)
-        ax3.legend(loc='best', fontsize=10)
-        
-        # Add interpretation
-        if performance_gap > 10 and prof_score > 50:
-            interpretation = "⚠️ High barrier: Large gap in professionalized market"
-            color = 'red'
-        elif performance_gap > 5:
-            interpretation = "⚠️ Moderate barrier: Professional advantage exists"
-            color = 'orange'
-        else:
-            interpretation = "✓ Lower barrier: Casual operators competitive"
-            color = 'green'
-        
-        ax3.text(0.02, 0.98, interpretation, transform=ax3.transAxes,
-                fontsize=10, fontweight='bold', color=color,
-                verticalalignment='top', bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.7))
+    if len(roi_by_bin) > 0:
+        # Get casual host ROI (1 listing) as baseline
+        casual_roi = roi_by_bin[roi_by_bin['listings_bin'] == '1']['median'].values
+        if len(casual_roi) > 0:
+            baseline_roi = casual_roi[0]
+            
+            # Calculate performance gap relative to casual hosts
+            roi_by_bin['performance_gap'] = roi_by_bin['median'] - baseline_roi
+            
+            # Create bar chart
+            x_pos = np.arange(len(roi_by_bin))
+            colors = ['green' if gap <= 0 else 'red' for gap in roi_by_bin['performance_gap']]
+            
+            bars = ax3.bar(x_pos, roi_by_bin['performance_gap'], color=colors, alpha=0.7, 
+                          edgecolor='black', linewidth=1)
+            
+            # Add value labels
+            for i, (bar, gap, count) in enumerate(zip(bars, roi_by_bin['performance_gap'], roi_by_bin['count'])):
+                height = bar.get_height()
+                ax3.text(bar.get_x() + bar.get_width()/2., height,
+                        f'{height:.1f}%\n(n={count:.0f})',
+                        ha='center', va='bottom' if height >= 0 else 'top',
+                        fontsize=9, fontweight='bold')
+            
+            # Add reference line
+            ax3.axhline(y=0, color='black', linestyle='-', linewidth=1.5, alpha=0.5)
+            
+            ax3.set_xlabel('Host Listings in City', fontweight='bold', fontsize=12)
+            ax3.set_ylabel('Performance Gap vs Casual Hosts (ROI difference, %)', fontweight='bold', fontsize=12)
+            ax3.set_title('3. Performance Gap by Host Scale\n(How ROI changes as hosts scale up)', 
+                         fontweight='bold', fontsize=13)
+            ax3.set_xticks(x_pos)
+            ax3.set_xticklabels(roi_by_bin['listings_bin'], fontsize=10)
+            ax3.grid(True, alpha=0.3, axis='y')
     
     # ============================================================================
     # PANEL 4: Casual Host Performance vs Market Average
     # ============================================================================
     ax4 = axes[1, 1]
     
+    # Calculate professional vs casual for Panel 4
+    professional = df_analysis[df_analysis['host_is_professional'] == 1]
+    casual = df_analysis[df_analysis['host_is_professional'] == 0]
+    
     if len(casual) > 0:
         # Calculate metrics for casual hosts and market average
         casual_roi = casual['cash_on_cash_roi'].median()
         market_roi = df_analysis['cash_on_cash_roi'].median()
         
-        casual_revenue = casual['est_annual_revenue'].median()
-        market_revenue = df_analysis['est_annual_revenue'].median()
+        # Use annual cash flow (net profit) instead of revenue
+        casual_profit = casual['annual_cash_flow'].median() if 'annual_cash_flow' in casual.columns else np.nan
+        market_profit = df_analysis['annual_cash_flow'].median() if 'annual_cash_flow' in df_analysis.columns else np.nan
         
         casual_occupancy = casual['occupancy_rate'].median() if 'occupancy_rate' in casual.columns else np.nan
         market_occupancy = df_analysis['occupancy_rate'].median() if 'occupancy_rate' in df_analysis.columns else np.nan
         
-        # Create comparison bars
-        metrics = ['ROI (%)', 'Revenue ($)', 'Occupancy']
-        casual_values = [casual_roi, casual_revenue/1000, casual_occupancy*100 if pd.notna(casual_occupancy) else np.nan]
-        market_values = [market_roi, market_revenue/1000, market_occupancy*100 if pd.notna(market_occupancy) else np.nan]
+        # Create simple comparison: ROI, Net Profit, Occupancy as separate metrics
+        metrics = ['ROI (%)', 'Net Profit\n($K)', 'Occupancy\n(%)']
+        casual_values = [
+            casual_roi,
+            casual_profit/1000 if pd.notna(casual_profit) else np.nan,
+            casual_occupancy*100 if pd.notna(casual_occupancy) else np.nan
+        ]
+        market_values = [
+            market_roi,
+            market_profit/1000 if pd.notna(market_profit) else np.nan,
+            market_occupancy*100 if pd.notna(market_occupancy) else np.nan
+        ]
         
         x = np.arange(len(metrics))
         width = 0.35
         
-        bars1 = ax4.bar(x - width/2, casual_values, width, label='Casual Hosts (1 listing)', 
+        bars1 = ax4.bar(x - width/2, casual_values, width, 
+                       label='Casual Hosts (1 listing)', 
                        color='lightcoral', alpha=0.8, edgecolor='black', linewidth=1)
-        bars2 = ax4.bar(x + width/2, market_values, width, label='Market Average', 
+        bars2 = ax4.bar(x + width/2, market_values, width, 
+                       label='Market Average', 
                        color='lightblue', alpha=0.8, edgecolor='black', linewidth=1)
         
-        # Add value labels on bars
-        for bars in [bars1, bars2]:
-            for bar in bars:
-                height = bar.get_height()
-                if pd.notna(height) and not np.isinf(height):
-                    ax4.text(bar.get_x() + bar.get_width()/2., height,
-                            f'{height:.1f}' if abs(height) < 1000 else f'{height:.0f}',
-                            ha='center', va='bottom' if height >= 0 else 'top',
-                            fontsize=9, fontweight='bold')
-        
-        # Calculate performance ratio
-        if market_roi != 0:
-            roi_ratio = (casual_roi / market_roi) * 100
-        else:
-            roi_ratio = 0
+        # Add value labels with proper formatting
+        for i, (bar1, bar2) in enumerate(zip(bars1, bars2)):
+            h1 = bar1.get_height()
+            h2 = bar2.get_height()
+            
+            if pd.notna(h1) and not np.isinf(h1):
+                if i == 0:  # ROI
+                    label1 = f'{h1:.1f}%'
+                elif i == 1:  # Net Profit
+                    label1 = f'${h1:.1f}K'
+                else:  # Occupancy
+                    label1 = f'{h1:.1f}%'
+                
+                ax4.text(bar1.get_x() + bar1.get_width()/2., h1,
+                        label1,
+                        ha='center', va='bottom' if h1 >= 0 else 'top',
+                        fontsize=9, fontweight='bold')
+            
+            if pd.notna(h2) and not np.isinf(h2):
+                if i == 0:  # ROI
+                    label2 = f'{h2:.1f}%'
+                elif i == 1:  # Net Profit
+                    label2 = f'${h2:.1f}K'
+                else:  # Occupancy
+                    label2 = f'{h2:.1f}%'
+                
+                ax4.text(bar2.get_x() + bar2.get_width()/2., h2,
+                        label2,
+                        ha='center', va='bottom' if h2 >= 0 else 'top',
+                        fontsize=9, fontweight='bold')
         
         ax4.set_xlabel('Metric', fontweight='bold', fontsize=12)
         ax4.set_ylabel('Value', fontweight='bold', fontsize=12)
-        ax4.set_title(f'4. Casual Host Performance vs Market Average\n(Casual ROI = {roi_ratio:.0f}% of market average)', 
+        ax4.set_title('4. Casual Host Performance vs Market Average', 
                      fontweight='bold', fontsize=13)
         ax4.set_xticks(x)
         ax4.set_xticklabels(metrics)
-        ax4.axhline(y=0, color='black', linestyle='-', linewidth=1)
+        ax4.axhline(y=0, color='black', linestyle='-', linewidth=1.5)
         ax4.grid(True, alpha=0.3, axis='y')
         ax4.legend(loc='best', fontsize=10)
-        
-        # Add interpretation
-        if roi_ratio < 70:
-            interpretation = "⚠️ Casual hosts significantly underperform"
-            color = 'red'
-        elif roi_ratio < 90:
-            interpretation = "⚠️ Casual hosts moderately underperform"
-            color = 'orange'
-        else:
-            interpretation = "✓ Casual hosts competitive with market"
-            color = 'green'
-        
-        ax4.text(0.02, 0.98, interpretation, transform=ax4.transAxes,
-                fontsize=10, fontweight='bold', color=color,
-                verticalalignment='top', bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.7))
     
     # Overall title
     fig.suptitle(f'Market Entry Barrier Analysis: {city_name}\n(Actionable Insights for Non-Professional Operators)', 
@@ -438,6 +409,10 @@ def analyze_market_entry_barriers(df, city_name, output_dir=None):
     print(f"{'='*80}")
     
     if len(professional) > 0 and len(casual) > 0:
+        prof_roi = professional['cash_on_cash_roi'].median()
+        casual_roi = casual['cash_on_cash_roi'].median()
+        performance_gap = prof_roi - casual_roi
+        
         print(f"\nProfessional Hosts (2+ listings): {len(professional):,} listings")
         print(f"Casual Hosts (1 listing): {len(casual):,} listings")
         print(f"\nPerformance Comparison:")
@@ -465,10 +440,10 @@ def main():
     
     # List of all cities
     all_cities = [
-        'Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge',
+        'Albany', 'Asheville', 'Austin', 'Boston', 'Bozeman', 'Cambridge',
         'Chicago', 'Columbus', 'Dallas', 'Denver', 'Hawaii',
         'Jersey_City', 'Los_Angeles', 'Nashville', 'New_Orleans',
-        'New_York', 'Oakland', 'Oregon', 'Paris',
+        'New_York', 'Oakland', 'Portland', 'Paris',
         'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC'
     ]
     

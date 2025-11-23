@@ -33,28 +33,42 @@ def load_zillow_zhvi(zillow_dir='Zillow'):
     metadata_cols = ['RegionID', 'SizeRank', 'RegionName', 'RegionType', 'StateName']
     date_cols = [col for col in df.columns if col not in metadata_cols]
     
-    # Convert date columns to datetime and find the latest non-null date for each row
+    # Convert date columns to datetime (vectorized)
+    date_cols_parsed = []
+    for col in date_cols:
+        try:
+            pd.to_datetime(col)  # Test if it's a valid date
+            date_cols_parsed.append(col)
+        except:
+            continue
+    
+    if not date_cols_parsed:
+        raise ValueError("No valid date columns found in ZHVI file")
+    
+    # Convert date column names to datetime for sorting
+    date_cols_sorted = sorted(date_cols_parsed, key=lambda x: pd.to_datetime(x))
+    
+    # Extract date columns as numeric values
+    date_data = df[date_cols_sorted].copy()
+    
+    # Find the last non-null value for each row (fully vectorized)
+    # Use apply to find last non-null column index for each row
+    def get_last_non_null(row):
+        non_null = row[row.notna()]
+        if len(non_null) > 0:
+            return non_null.index[-1]
+        return None
+    
+    last_col_indices = date_data.apply(get_last_non_null, axis=1)
+    
+    # Extract values and dates
     latest_prices = []
     latest_dates = []
     
-    for idx, row in df.iterrows():
-        # Get all date values for this row
-        date_values = []
-        for col in date_cols:
-            try:
-                date_val = pd.to_datetime(col)
-                price_val = row[col]
-                if pd.notna(price_val) and price_val != '':
-                    date_values.append((date_val, price_val))
-            except:
-                continue
-        
-        if date_values:
-            # Sort by date and get the latest
-            date_values.sort(key=lambda x: x[0])
-            latest_date, latest_price = date_values[-1]
-            latest_prices.append(latest_price)
-            latest_dates.append(latest_date)
+    for idx, col_name in enumerate(last_col_indices):
+        if col_name is not None:
+            latest_prices.append(date_data.loc[df.index[idx], col_name])
+            latest_dates.append(pd.to_datetime(col_name))
         else:
             latest_prices.append(np.nan)
             latest_dates.append(pd.NaT)
@@ -99,26 +113,41 @@ def load_zillow_zori(zillow_dir='Zillow'):
     metadata_cols = ['RegionID', 'SizeRank', 'RegionName', 'RegionType', 'StateName']
     date_cols = [col for col in df.columns if col not in metadata_cols]
     
-    # Extract latest values
+    # Convert date columns to datetime (vectorized)
+    date_cols_parsed = []
+    for col in date_cols:
+        try:
+            pd.to_datetime(col)  # Test if it's a valid date
+            date_cols_parsed.append(col)
+        except:
+            continue
+    
+    if not date_cols_parsed:
+        raise ValueError("No valid date columns found in ZORI file")
+    
+    # Convert date column names to datetime for sorting
+    date_cols_sorted = sorted(date_cols_parsed, key=lambda x: pd.to_datetime(x))
+    
+    # Extract date columns as numeric values
+    date_data = df[date_cols_sorted].copy()
+    
+    # Find the last non-null value for each row (fully vectorized)
+    def get_last_non_null(row):
+        non_null = row[row.notna()]
+        if len(non_null) > 0:
+            return non_null.index[-1]
+        return None
+    
+    last_col_indices = date_data.apply(get_last_non_null, axis=1)
+    
+    # Extract values and dates
     latest_rents = []
     latest_dates = []
     
-    for idx, row in df.iterrows():
-        date_values = []
-        for col in date_cols:
-            try:
-                date_val = pd.to_datetime(col)
-                rent_val = row[col]
-                if pd.notna(rent_val) and rent_val != '':
-                    date_values.append((date_val, rent_val))
-            except:
-                continue
-        
-        if date_values:
-            date_values.sort(key=lambda x: x[0])
-            latest_date, latest_rent = date_values[-1]
-            latest_rents.append(latest_rent)
-            latest_dates.append(latest_date)
+    for idx, col_name in enumerate(last_col_indices):
+        if col_name is not None:
+            latest_rents.append(date_data.loc[df.index[idx], col_name])
+            latest_dates.append(pd.to_datetime(col_name))
         else:
             latest_rents.append(np.nan)
             latest_dates.append(pd.NaT)
@@ -162,26 +191,41 @@ def load_zillow_monthly_payment(zillow_dir='Zillow'):
     metadata_cols = ['RegionID', 'SizeRank', 'RegionName', 'RegionType', 'StateName']
     date_cols = [col for col in df.columns if col not in metadata_cols]
     
-    # Extract latest values
+    # Convert date columns to datetime (vectorized)
+    date_cols_parsed = []
+    for col in date_cols:
+        try:
+            pd.to_datetime(col)  # Test if it's a valid date
+            date_cols_parsed.append(col)
+        except:
+            continue
+    
+    if not date_cols_parsed:
+        raise ValueError("No valid date columns found in monthly payment file")
+    
+    # Convert date column names to datetime for sorting
+    date_cols_sorted = sorted(date_cols_parsed, key=lambda x: pd.to_datetime(x))
+    
+    # Extract date columns as numeric values
+    date_data = df[date_cols_sorted].copy()
+    
+    # Find the last non-null value for each row (fully vectorized)
+    def get_last_non_null(row):
+        non_null = row[row.notna()]
+        if len(non_null) > 0:
+            return non_null.index[-1]
+        return None
+    
+    last_col_indices = date_data.apply(get_last_non_null, axis=1)
+    
+    # Extract values and dates
     latest_payments = []
     latest_dates = []
     
-    for idx, row in df.iterrows():
-        date_values = []
-        for col in date_cols:
-            try:
-                date_val = pd.to_datetime(col)
-                payment_val = row[col]
-                if pd.notna(payment_val) and payment_val != '':
-                    date_values.append((date_val, payment_val))
-            except:
-                continue
-        
-        if date_values:
-            date_values.sort(key=lambda x: x[0])
-            latest_date, latest_payment = date_values[-1]
-            latest_payments.append(latest_payment)
-            latest_dates.append(latest_date)
+    for idx, col_name in enumerate(last_col_indices):
+        if col_name is not None:
+            latest_payments.append(date_data.loc[df.index[idx], col_name])
+            latest_dates.append(pd.to_datetime(col_name))
         else:
             latest_payments.append(np.nan)
             latest_dates.append(pd.NaT)

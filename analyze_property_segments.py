@@ -291,10 +291,10 @@ if __name__ == "__main__":
     
     # City list (same as city_level_analysis.py)
     all_cities = [
-        'Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge',
+        'Albany', 'Asheville', 'Austin', 'Boston', 'Bozeman', 'Cambridge',
         'Chicago', 'Columbus', 'Dallas', 'Denver', 'Hawaii',
         'Jersey_City', 'Los_Angeles', 'Nashville', 'New_Orleans',
-        'New_York', 'Oakland', 'Oregon', 'Paris',
+        'New_York', 'Oakland', 'Portland', 'Paris',
         'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC'
     ]
     

@@ -1,81 +1,122 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
-id,continuous,2876.0,0,0.0,155305,1443673378794478395,1.4436733787943232e+18,4.695888311578333e+17,52957222.0,5.2563078320926496e+17,0.0,155305
-listing_url,discrete_categorical,2876.0,0,0.0,https://www.airbnb.com/rooms/1000762258749813139,https://www.airbnb.com/rooms/999943947740090590,,,,,,https://www.airbnb.com/rooms/1000762258749813139
+id,continuous,2864.0,0,0.0,155305,1443673378794478395,1.4436733787943232e+18,4.674978839010324e+17,52928415.5,5.249867062588988e+17,0.0,155305
+listing_url,discrete_categorical,2864.0,0,0.0,https://www.airbnb.com/rooms/1000762258749813139,https://www.airbnb.com/rooms/999943947740090590,,,,,,https://www.airbnb.com/rooms/1000762258749813139
 scrape_id,discrete_numeric,1.0,0,0.0,20250617145515,20250617145515,0.0,20250617145515.0,20250617145515.0,0.0,0.0,20250617145515
 last_scraped,discrete_categorical,2.0,0,0.0,2025-06-17,2025-06-27,,,,,,2025-06-17
 source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
-name,discrete_categorical,2866.0,0,0.0,"""Albergue"" Home base for exploring Asheville & WNC",🔥 Tranquil Mountain Cottage in East Asheville ⛰,,,,,,Downtown Gorgeous Garden Homestay: Private Room
-description,discrete_categorical,2765.0,50,1.74,"""Rustic Treasure"" is a 10 minute walk from downtow...",🦇 Asheville’s Own Tiny House - Welcome to what is ...,,,,,,"Located off I-240, explore Biltmore, revel in the ..."
-neighborhood_overview,discrete_categorical,1661.0,952,33.1,"""Nestled on a hill, our cozy neighborhood comprise...",📍 The Neighborhood Tucked into one of Asheville’s ...,,,,,,Downtown
-picture_url,discrete_categorical,2864.0,0,0.0,https://a0.muscache.com/pictures/0013abfb-8e30-49f...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/189af2de-ae29-415...
-host_id,continuous,1795.0,0,0.0,4134,698473165,698469031.0,167751869.47183588,106940216.0,173999529.7589696,0.0,167186184
-host_url,discrete_categorical,1795.0,0,0.0,https://www.airbnb.com/users/show/100023677,https://www.airbnb.com/users/show/99911550,,,,,,https://www.airbnb.com/users/show/167186184
-host_name,discrete_categorical,1019.0,0,0.0,Aaron,Zoe,,,,,,Towns
-host_since,discrete_categorical,1428.0,0,0.0,2008-11-08,2025-05-30,,,,,,2018-01-11
-host_location,discrete_categorical,160.0,440,15.3,"Alden, MN","Zirconia, NC",,,,,,"Asheville, NC"
-host_about,discrete_categorical,1123.0,1025,35.64,,“Travel changes you. As you move through this life...,,,,,,Welcome to Yonder Luxury Vacation Rentals! We are ...
-host_response_time,discrete_categorical,4.0,442,15.37,a few days or more,within an hour,,,,,,within an hour
-host_response_rate,discrete_categorical,20.0,442,15.37,0%,99%,,,,,,100%
-host_acceptance_rate,discrete_categorical,55.0,222,7.72,0%,99%,,,,,,100%
-host_is_superhost,discrete_categorical,2.0,46,1.6,f,t,,,,,,t
-host_thumbnail_url,discrete_categorical,1770.0,0,0.0,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z0.muscache.cn/im/pictures/user/02376b61-1...,,,,,,https://a0.muscache.com/im/pictures/user/User-1671...
-host_picture_url,discrete_categorical,1770.0,0,0.0,https://a0.muscache.com/defaults/user_pic-225x225....,https://z0.muscache.cn/im/pictures/user/02376b61-1...,,,,,,https://a0.muscache.com/im/pictures/user/User-1671...
-host_neighbourhood,discrete_categorical,109.0,1792,62.31,Academy Acres North,Yerba Buena,,,,,,South Slope Brewing District
-host_listings_count,continuous,57.0,0,0.0,1,1656,1655.0,40.35639777468707,2.0,180.87198998886615,0.0,1
-host_total_listings_count,continuous,62.0,0,0.0,1,3370,3369.0,74.72844228094576,3.0,389.08216407934754,0.0,1
+name,discrete_categorical,2854.0,0,0.0,"""Albergue"" Home base for exploring Asheville & WNC",🔥 Tranquil Mountain Cottage in East Asheville ⛰,,,,,,Downtown Gorgeous Garden Homestay: Private Room
+description,discrete_categorical,2762.0,50,1.75,"""Rustic Treasure"" is a 10 minute walk from downtow...",🦇 Asheville’s Own Tiny House - Welcome to what is ...,,,,,,We welcome you to Downtown Inn where Asheville is ...
+neighborhood_overview,discrete_categorical,1660.0,950,33.17,"""Nestled on a hill, our cozy neighborhood comprise...",📍 The Neighborhood Tucked into one of Asheville’s ...,,,,,,Downtown
+picture_url,discrete_categorical,2852.0,0,0.0,https://a0.muscache.com/pictures/0013abfb-8e30-49f...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/189af2de-ae29-415...
+host_id,continuous,1794.0,0,0.0,4134,698473165,698469031.0,168238426.6469972,107756167.0,174158756.1271342,0.0,167186184
+host_url,discrete_categorical,1794.0,0,0.0,https://www.airbnb.com/users/show/100023677,https://www.airbnb.com/users/show/99911550,,,,,,https://www.airbnb.com/users/show/167186184
+host_name,discrete_categorical,1018.0,0,0.0,Aaron,Zoe,,,,,,Towns
+host_since,discrete_categorical,1427.0,0,0.0,2008-11-08,2025-05-30,,,,,,2018-01-11
+host_location,discrete_categorical,160.0,430,15.01,"Alden, MN","Zirconia, NC",,,,,,"Asheville, NC"
+host_about,discrete_categorical,1122.0,1025,35.79,,“Travel changes you. As you move through this life...,,,,,,Welcome to Yonder Luxury Vacation Rentals! We are ...
+host_response_time,discrete_categorical,4.0,442,15.43,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,20.0,442,15.43,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,55.0,222,7.75,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,46,1.61,f,t,,,,,,t
+host_thumbnail_url,discrete_categorical,1769.0,0,0.0,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z0.muscache.cn/im/pictures/user/02376b61-1...,,,,,,https://a0.muscache.com/im/pictures/user/User-1671...
+host_picture_url,discrete_categorical,1769.0,0,0.0,https://a0.muscache.com/defaults/user_pic-225x225....,https://z0.muscache.cn/im/pictures/user/02376b61-1...,,,,,,https://a0.muscache.com/im/pictures/user/User-1671...
+host_neighbourhood,discrete_categorical,109.0,1790,62.5,Academy Acres North,Yerba Buena,,,,,,South Slope Brewing District
+host_listings_count,continuous,56.0,0,0.0,1,1656,1655.0,38.269902234636874,2.0,177.67838425390048,0.0,1
+host_total_listings_count,continuous,61.0,0,0.0,1,3370,3369.0,65.94587988826815,3.0,359.9922839489109,0.0,1
 host_verifications,discrete_categorical,6.0,0,0.0,"['email', 'phone', 'work_email']",[],,,,,,"['email', 'phone']"
 host_has_profile_pic,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
 host_identity_verified,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
-neighbourhood,discrete_categorical,1.0,952,33.1,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
-neighbourhood_cleansed,discrete_numeric,8.0,0,0.0,28704,28806,102.0,28792.484700973575,28804.0,30.436821675143168,0.0,28806
-neighbourhood_group_cleansed,empty,,2876,100.0,,,,,,,,
-latitude,continuous,2594.0,0,0.0,35.42667,35.65807,0.23140000000000072,35.575674135209894,35.586855,0.04910228225022097,15.0,35.60326
-longitude,continuous,2612.0,0,0.0,-82.67072739999999,-82.46021,0.2105173999999863,-82.55807825473848,-82.55661750371094,0.04851798581927103,14.0,-82.55033
+neighbourhood,discrete_categorical,1.0,950,33.17,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood_cleansed,discrete_numeric,8.0,0,0.0,28704,28806,102.0,28792.430167597766,28804.0,30.48876520759543,0.0,28806
+neighbourhood_group_cleansed,empty,,2864,100.0,,,,,,,,
+latitude,continuous,2591.0,0,0.0,35.42667,35.65807,0.23140000000000072,35.575826065944014,35.58702,0.049144415503727154,15.0,35.60326
+longitude,continuous,2609.0,0,0.0,-82.67072739999999,-82.46021,0.2105173999999863,-82.55792915175554,-82.55652,0.04853012492038974,14.0,-82.55033
 property_type,discrete_categorical,46.0,0,0.0,Barn,Yurt,,,,,,Entire home
-room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,4.926981919332406,4.0,3.2955657271451657,0.0,2
-bathrooms,discrete_numeric,19.0,331,11.51,0.0,22.0,22.0,1.693123772102161,1.0,1.0899645257793777,0.0,1.0
+room_type,discrete_categorical,3.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,4.915502793296089,4.0,3.282036102267946,0.0,2
+bathrooms,discrete_numeric,19.0,331,11.56,0.0,22.0,22.0,1.6916699565732334,1.0,1.089442774667289,0.0,1.0
 bathrooms_text,discrete_categorical,30.0,0,0.0,0 baths,Shared half-bath,,,,,,1 bath
-bedrooms,discrete_numeric,14.0,34,1.18,0.0,38.0,38.0,2.074595355383533,2.0,1.5661171441072885,0.0,1.0
-beds,discrete_numeric,19.0,339,11.79,0.0,50.0,50.0,2.7560110366574695,2.0,2.38141221651955,0.0,1.0
-amenities,discrete_categorical,2826.0,0,0.0,"[""32 inch TV with Amazon Prime Video, Netflix"", ""C...",[],,,,,,"[""First aid kit"", ""Air conditioning"", ""Pets allowe..."
-price,discrete_categorical,469.0,340,11.82,"$1,000.00",$999.00,,,,,,$90.00
-minimum_nights,discrete_numeric,27.0,0,0.0,1,730,729.0,5.907510431154381,2.0,18.060934520331926,0.0,2
-maximum_nights,continuous,87.0,0,0.0,1,1125,1124.0,414.5351182197497,365.0,423.4174018124267,0.0,365
-minimum_minimum_nights,discrete_numeric,32.0,0,0.0,1,730,729.0,5.587621696801112,2.0,17.792122529805702,0.0,2
-maximum_minimum_nights,discrete_numeric,32.0,0,0.0,1,730,729.0,6.983310152990264,2.0,18.683163300612048,0.0,2
-minimum_maximum_nights,continuous,80.0,0,0.0,1,1125,1124.0,619.5646731571627,365.0,476.77229455936947,0.0,1125
-maximum_maximum_nights,continuous,94.0,0,0.0,1,1125,1124.0,654.1230876216968,365.0,468.0708398362765,0.0,1125
-minimum_nights_avg_ntm,continuous,107.0,0,0.0,1.0,730.0,729.0,6.3182545201668985,2.0,18.136206704079825,1.0,2.0
-maximum_nights_avg_ntm,continuous,205.0,0,0.0,1.0,1125.0,1124.0,634.5079972183588,365.0,467.91439680725847,1.0,1125.0
-calendar_updated,empty,,2876,100.0,,,,,,,,
-has_availability,discrete_categorical,1.0,40,1.39,t,t,,,,,,t
-availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,13.6884561891516,14.0,10.205418113335337,0.0,0
-availability_60,continuous,61.0,0,0.0,0,60,60.0,31.820236439499304,36.0,20.0812095793596,0.0,0
-availability_90,continuous,91.0,0,0.0,0,90,90.0,53.197844228094574,61.0,29.3513316586086,0.0,0
-availability_365,continuous,359.0,0,0.0,0,365,365.0,224.53581363004173,254.0,117.15087457031616,0.0,0
+bedrooms,discrete_numeric,14.0,34,1.19,0.0,38.0,38.0,2.074911660777385,2.0,1.567624767530902,0.0,1.0
+beds,discrete_numeric,19.0,339,11.84,0.0,50.0,50.0,2.7508910891089107,2.0,2.379780658087208,0.0,1.0
+amenities,discrete_categorical,2823.0,0,0.0,"[""32 inch TV with Amazon Prime Video, Netflix"", ""C...",[],,,,,,"[""First aid kit"", ""Coffee maker: drip coffee maker..."
+price,discrete_categorical,467.0,340,11.87,"$1,000.00",$999.00,,,,,,$90.00
+minimum_nights,discrete_numeric,27.0,0,0.0,1,730,729.0,5.928072625698324,2.0,18.095944696165965,0.0,2
+maximum_nights,continuous,87.0,0,0.0,1,1125,1124.0,414.8928072625698,365.0,424.2359696070432,0.0,365
+minimum_minimum_nights,discrete_numeric,32.0,0,0.0,1,730,729.0,5.606843575418995,2.0,17.82688619520157,0.0,2
+maximum_minimum_nights,discrete_numeric,32.0,0,0.0,1,730,729.0,7.001396648044692,2.0,18.72011992803323,0.0,2
+minimum_maximum_nights,continuous,80.0,0,0.0,1,1125,1124.0,621.3715083798883,365.0,476.17897244836973,0.0,1125
+maximum_maximum_nights,continuous,94.0,0,0.0,1,1125,1124.0,655.9734636871508,365.0,467.4288483301165,0.0,1125
+minimum_nights_avg_ntm,continuous,107.0,0,0.0,1.0,730.0,729.0,6.336696927374303,2.0,18.171912142154362,1.0,2.0
+maximum_nights_avg_ntm,continuous,204.0,0,0.0,1.0,1125.0,1124.0,636.322625698324,365.0,467.28689056163677,1.0,1125.0
+calendar_updated,empty,,2864,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,40,1.4,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,13.668296089385475,14.0,10.186642464330124,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,31.79259776536313,36.0,20.0415984008057,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,53.175977653631286,61.0,29.288937872248734,0.0,0
+availability_365,continuous,359.0,0,0.0,0,365,365.0,224.83798882681563,254.0,117.02692136308569,0.0,0
 calendar_last_scraped,discrete_categorical,2.0,0,0.0,2025-06-17,2025-06-27,,,,,,2025-06-17
-number_of_reviews,continuous,492.0,0,0.0,0,1448,1448.0,110.76112656467316,53.0,154.42750925689026,0.0,0
-number_of_reviews_ltm,continuous,102.0,0,0.0,0,186,186.0,13.748956884561892,7.0,18.298555389601507,0.0,0
-number_of_reviews_l30d,discrete_numeric,18.0,0,0.0,0,18,18.0,1.2739916550764951,0.0,2.013354939726635,0.0,0
-availability_eoy,continuous,198.0,0,0.0,0,198,198.0,128.3988178025035,152.0,61.74634664350042,0.0,0
-number_of_reviews_ly,continuous,111.0,0,0.0,0,259,259.0,16.20375521557719,8.0,20.785116744136033,0.0,0
-estimated_occupancy_l365d,continuous,65.0,0,0.0,0,255,255.0,81.38977746870654,54.0,83.40158284277881,0.0,0
-estimated_revenue_l365d,continuous,1407.0,340,11.82,0.0,281520.0,281520.0,13580.01498422713,8244.0,19333.6084632137,1.0,0.0
-first_review,discrete_categorical,1506.0,263,9.14,2011-07-31,2025-06-15,,,,,,2024-09-02
-last_review,discrete_categorical,500.0,263,9.14,2015-10-03,2025-06-16,,,,,,2025-06-15
-review_scores_rating,continuous,74.0,263,9.14,1.0,5.0,4.0,4.896069651741294,4.95,0.205561397775717,2.0,5.0
-review_scores_accuracy,continuous,68.0,263,9.14,1.0,5.0,4.0,4.913107539226942,4.96,0.18629227351686287,2.0,5.0
-review_scores_cleanliness,continuous,74.0,263,9.14,1.0,5.0,4.0,4.9036203597397625,4.96,0.18214410366821007,2.0,5.0
-review_scores_checkin,continuous,54.0,263,9.14,1.0,5.0,4.0,4.945376961347111,4.98,0.14736864228126276,2.0,5.0
-review_scores_communication,continuous,58.0,263,9.14,1.0,5.0,4.0,4.939498660543436,4.98,0.17093052604505662,2.0,5.0
-review_scores_location,continuous,77.0,263,9.14,1.0,5.0,4.0,4.880704171450439,4.92,0.17921099015131578,2.0,5.0
-review_scores_value,continuous,81.0,263,9.14,1.0,5.0,4.0,4.829923459624952,4.88,0.21882848379153283,2.0,5.0
-license,empty,,2876,100.0,,,,,,,,
+number_of_reviews,continuous,492.0,0,0.0,0,1448,1448.0,111.11906424581005,53.0,154.60158749323577,0.0,0
+number_of_reviews_ltm,continuous,102.0,0,0.0,0,186,186.0,13.803421787709498,7.0,18.317229496449393,0.0,0
+number_of_reviews_l30d,discrete_numeric,18.0,0,0.0,0,18,18.0,1.2793296089385475,0.0,2.015876238173257,0.0,0
+availability_eoy,continuous,198.0,0,0.0,0,198,198.0,128.41480446927375,152.0,61.6112994688967,0.0,0
+number_of_reviews_ly,continuous,111.0,0,0.0,0,259,259.0,16.26326815642458,8.0,20.80603750310302,0.0,0
+estimated_occupancy_l365d,continuous,65.0,0,0.0,0,255,255.0,81.71194134078212,54.0,83.42535707532633,0.0,0
+estimated_revenue_l365d,continuous,1406.0,340,11.87,0.0,281520.0,281520.0,13642.285261489698,8328.0,19358.26925085683,1.0,0.0
+first_review,discrete_categorical,1506.0,255,8.9,2011-07-31,2025-06-15,,,,,,2019-10-06
+last_review,discrete_categorical,500.0,255,8.9,2015-10-03,2025-06-16,,,,,,2025-06-15
+review_scores_rating,continuous,74.0,255,8.9,1.0,5.0,4.0,4.898566500574933,4.95,0.18711508416190425,2.0,5.0
+review_scores_accuracy,continuous,68.0,255,8.9,1.0,5.0,4.0,4.91541970103488,4.96,0.16573197630697617,2.0,5.0
+review_scores_cleanliness,continuous,73.0,255,8.9,2.0,5.0,3.0,4.906013798390188,4.96,0.1610980623691731,2.0,5.0
+review_scores_checkin,continuous,52.0,255,8.9,2.0,5.0,3.0,4.9477347642775005,4.98,0.11962863109489322,2.0,5.0
+review_scores_communication,continuous,57.0,255,8.9,1.0,5.0,4.0,4.941782292065926,4.98,0.14978718587162093,2.0,5.0
+review_scores_location,continuous,75.0,255,8.9,2.0,5.0,3.0,4.883016481410502,4.92,0.1581618437656535,2.0,5.0
+review_scores_value,continuous,81.0,255,8.9,1.0,5.0,4.0,4.832238405519357,4.88,0.20252596564551134,2.0,5.0
+license,empty,,2864,100.0,,,,,,,,
 instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
-calculated_host_listings_count,discrete_numeric,22.0,0,0.0,1,108,107.0,9.07162726008345,2.0,21.87252590557922,0.0,1
-calculated_host_listings_count_entire_homes,discrete_numeric,21.0,0,0.0,0,108,108.0,8.64673157162726,1.0,21.918402665354446,0.0,1
-calculated_host_listings_count_private_rooms,discrete_numeric,10.0,0,0.0,0,14,14.0,0.3703059805285118,0.0,1.4130600935850115,0.0,0
-calculated_host_listings_count_shared_rooms,discrete_numeric,3.0,0,0.0,0,3,3.0,0.01634214186369958,0.0,0.21446144425546812,0.0,0
-reviews_per_month,continuous,661.0,263,9.14,0.02,19.96,19.94,2.169177190968236,1.62,1.991770293380457,2.0,1.0
-price_clean,continuous,469.0,340,11.82,18.0,6846.0,6828.0,181.26143533123027,128.0,222.09580503634854,1.0,90.0
+calculated_host_listings_count,discrete_numeric,22.0,0,0.0,1,108,107.0,9.07122905027933,2.0,21.917983446229588,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,21.0,0,0.0,0,108,108.0,8.682960893854748,1.0,21.95712432422467,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,10.0,0,0.0,0,14,14.0,0.36976256983240224,0.0,1.4141421137071803,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,3.0,0,0.0,0,3,3.0,0.016410614525139665,0.0,0.21490780672653065,0.0,0
+reviews_per_month,continuous,661.0,255,8.9,0.02,19.96,19.94,2.170858566500575,1.62,1.9923497546338367,2.0,1.0
+price_clean,continuous,467.0,340,11.87,18.0,6846.0,6828.0,181.02773375594296,128.0,222.38898735291048,1.0,90.0
+log_price,continuous,467.0,340,11.87,2.8903717578961645,8.831419819090131,5.941048061193967,4.935070190939496,4.852030263919617,0.6566772781125004,16.0,4.499809670330265
+price_per_accommodates,continuous,768.0,340,11.87,3.5,860.0,856.5,39.90890900128222,33.225,37.300332943980706,15.0,37.5
+log_price_per_accommodates,continuous,768.0,340,11.87,1.252762968495368,6.756932389247553,5.504169420752185,3.5285727973633993,3.5033023215121535,0.5125805636879274,16.0,3.624340932976365
+log_reviews,continuous,492.0,0,0.0,0.0,7.278628942320682,7.278628942320682,3.597097595945427,3.9889840465642745,1.8245195094714965,16.0,0.0
+log_accommodates,discrete_numeric,16.0,0,0.0,0.0,2.772588722239781,2.772588722239781,1.399083288864887,1.3862943611198906,0.6164578973458821,0.0,0.6931471805599453
+log_beds,discrete_numeric,19.0,339,11.84,0.0,3.9318256327243257,3.9318256327243257,1.1878065691789486,1.0986122886681098,0.49356528454556464,0.0,0.6931471805599453
+price_zscore,continuous,467.0,340,11.87,-0.7330746710817709,29.969884505420094,30.702959176501864,-5.630291091601428e-17,-0.2384458618528305,1.0,19.0,-0.4093176323137372
+price_percentile,continuous,467.0,340,11.87,0.0003961965134706815,1.0,0.9996038034865293,0.5001980982567353,0.5003961965134707,0.2887279155745917,18.0,0.25039619651347067
+log_price_zscore,continuous,467.0,340,11.87,-3.113703642861598,5.933431470858844,9.047135113720442,-3.1529630112967997e-16,-0.126454698202079,1.0,18.0,-0.6628225691930565
+reviews_zscore,continuous,492.0,0,0.0,-0.7187446522867807,8.647265254069154,9.366009906355934,3.9695124902798894e-17,-0.3759279913497196,1.0,18.0,-0.7187446522867807
+reviews_percentile,continuous,492.0,0,0.0,0.0446927374301676,1.0,0.9553072625698324,0.5001745810055865,0.49877793296089384,0.28861003046643785,17.0,0.0446927374301676
+reviews_per_month_zscore,continuous,661.0,255,8.9,-1.0795587278278207,8.928724182149834,10.008282909977655,-1.8519320058139828e-16,-0.27648687948457856,1.0,20.0,-0.5876772207175849
+occupancy_rate,continuous,359.0,0,0.0,0.0,1.0,1.0,0.38400551006351874,0.3041095890410959,0.3206217023646184,19.0,1.0
+occupancy_rate_booked,continuous,65.0,0,0.0,0.0,0.6986301369863014,0.6986301369863014,0.22386833244049895,0.14794520547945206,0.2285626221241817,18.0,0.0
+occupancy_is_capped,discrete_numeric,2.0,0,0.0,0,1,1.0,0.08414804469273743,0.0,0.27765818840349943,0.0,0
+est_annual_revenue,continuous,2203.0,340,11.87,0.0,567954.0,567954.0,20538.576862123613,13206.0,32785.37577487859,1.0,0.0
+est_annual_revenue_booked,continuous,1406.0,340,11.87,0.0,281520.0,281520.0,13642.285261489698,8328.0,19358.26925085683,1.0,0.0
+revenue_per_accommodates,continuous,2257.0,340,11.87,0.0,137362.5,137362.5,4924.035063219928,3082.75,6884.172907083247,13.0,0.0
+revenue_per_bedroom,continuous,2148.0,447,15.61,0.0,364560.0,364560.0,10926.486516352943,6982.5,15255.304677929986,13.0,0.0
+log_est_revenue,continuous,2202.0,413,14.42,2.995732273553991,13.249795708508259,10.254063434954269,9.242219176232743,9.523690191176541,1.38624966868733,16.0,9.632072452548218
+host_listings_in_city,discrete_numeric,22.0,0,0.0,1,108,107.0,9.07122905027933,2.0,21.917983446229588,0.0,1
+host_is_professional,discrete_numeric,2.0,0,0.0,0,1,1.0,0.5073324022346368,1.0,0.5000335369657619,0.0,1
+host_professional_tier,discrete_categorical,4.0,0,0.0,casual,small_professional,,,,,,casual
+pct_professional_hosts,discrete_numeric,1.0,0,0.0,50.73324022346368,50.73324022346368,0.0,50.73324022346369,50.73324022346368,7.106668155193207e-15,0.0,50.73324022346368
+pct_large_operators,discrete_numeric,1.0,0,0.0,10.998603351955309,10.998603351955309,0.0,10.99860335195531,10.998603351955309,1.7766670387983016e-15,0.0,10.998603351955309
+median_host_listings,discrete_numeric,1.0,0,0.0,2.0,2.0,0.0,2.0,2.0,0.0,0.0,2.0
+gini_host_concentration,discrete_numeric,1.0,0,0.0,0.7680465151534701,0.7680465151534701,0.0,0.7680465151534701,0.7680465151534701,0.0,0.0,0.7680465151534701
+market_professionalization_score,discrete_numeric,1.0,0,0.0,37.98006438128169,37.98006438128169,0.0,37.98006438128169,37.98006438128169,0.0,0.0,37.98006438128169
+purchase_price,discrete_numeric,1.0,0,0.0,423101.7187775375,423101.7187775375,0.0,423101.7187775374,423101.7187775375,1.164356510546855e-10,0.0,423101.7187775375
+monthly_payment,discrete_numeric,1.0,0,0.0,2555.38500175753,2555.38500175753,0.0,2555.3850017575305,2555.38500175753,4.548267619323652e-13,0.0,2555.38500175753
+zori_rent,discrete_numeric,1.0,0,0.0,1803.1727441036785,1803.1727441036785,0.0,1803.1727441036787,1803.1727441036785,2.274133809661826e-13,0.0,1803.1727441036785
+zillow_metro,discrete_categorical,1.0,0,0.0,"Asheville, NC","Asheville, NC",,,,,,"Asheville, NC"
+annual_cash_flow,continuous,2203.0,340,11.87,-30664.620021090363,537289.3799789096,567954.0,-10126.043158966751,-17458.620021090363,32785.37577487859,14.0,-30664.620021090363
+cash_on_cash_roi,continuous,2203.0,340,11.87,-36.23788164899124,634.9411455137704,671.1790271627616,-11.96644058575772,-20.631705386985114,38.744082474546495,16.0,-36.23788164899124
+cap_rate,continuous,2203.0,340,11.87,0.0,134.23580543255233,134.23580543255233,4.854288212646705,3.121235252401226,7.748816494909299,18.0,0.0
+price_to_rent_ratio,continuous,2202.0,413,14.42,8.939492679566392,253861.0312665225,253852.09177384293,2176.042959032614,371.1418585767873,9757.073026611502,14.0,333.0198494903877
+revenue_yield,continuous,2203.0,340,11.87,0.0,134.23580543255233,134.23580543255233,4.854288212646705,3.121235252401226,7.748816494909299,18.0,0.0
+annual_cash_flow_booked,continuous,1406.0,340,11.87,-30664.620021090363,250855.37997890962,281520.0,-17022.334759600668,-22336.620021090363,19358.269250856825,13.0,-30664.620021090363
+cash_on_cash_roi_booked,continuous,1406.0,340,11.87,-36.23788164899124,296.4480748313939,332.68595648038513,-20.116125749598798,-26.39627662778974,22.87661381616273,16.0,-36.23788164899124
+cap_rate_booked,continuous,1406.0,340,11.87,0.0,66.53719129607703,66.53719129607703,3.2243511798784894,1.9683210042403008,4.575322763232546,17.0,0.0
+revenue_yield_booked,continuous,1406.0,340,11.87,0.0,66.53719129607703,66.53719129607703,3.2243511798784894,1.9683210042403008,4.575322763232546,17.0,0.0

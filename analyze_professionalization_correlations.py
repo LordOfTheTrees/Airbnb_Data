@@ -482,10 +482,10 @@ def main():
         cities = [sys.argv[1]]
     else:
         cities = [
-            'Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge',
+            'Albany', 'Asheville', 'Austin', 'Boston', 'Bozeman', 'Cambridge',
             'Chicago', 'Columbus', 'Dallas', 'Denver', 'Hawaii',
             'Jersey_City', 'Los_Angeles', 'Nashville', 'New_Orleans',
-            'New_York', 'Oakland', 'Oregon', 'Paris',
+            'New_York', 'Oakland', 'Portland', 'Paris',
             'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC'
         ]
     
@@ -510,11 +510,12 @@ def main():
         try:
             df = load_city_data(city, base_dir='.', use_detailed=use_detailed)
             
-            # Investigate occupancy distribution
-            occ_stats = investigate_occupancy_distribution(df, city)
-            if occ_stats:
-                occ_stats['city'] = city
-                all_occupancy_stats.append(occ_stats)
+            # Investigate occupancy distribution (optional, disabled by default)
+            # Uncomment the following lines to enable occupancy distribution investigation:
+            # occ_stats = investigate_occupancy_distribution(df, city)
+            # if occ_stats:
+            #     occ_stats['city'] = city
+            #     all_occupancy_stats.append(occ_stats)
             
             # Analyze professionalization correlations
             correlations = analyze_professionalization_correlations(df, city)

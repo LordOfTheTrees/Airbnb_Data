@@ -36,7 +36,7 @@ def get_city_to_zillow_mapping():
         
         # Special cases - need to check if these metros exist
         'Hawaii': 'Honolulu, HI',  # Assuming Hawaii refers to Honolulu
-        'Oregon': 'Portland, OR',  # Assuming Oregon refers to Portland
+        'Portland': 'Portland, OR',
         'Rhode_Island': 'Providence, RI',  # Assuming RI refers to Providence
         
         # Cities that might need manual checking

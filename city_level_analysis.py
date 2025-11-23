@@ -5,7 +5,7 @@ NOW INCLUDES: Log transforms, within-city standardization, and revenue proxies
 
 Run this from your main Airbnb_Data directory
 
-⚠️ IMPORTANT: The detailed file is named listings.csv.gz (not listings_csv.gz)
+WARNING: The detailed file is named listings.csv.gz (not listings_csv.gz)
 
 Usage:
     python city_level_analysis.py                    # All cities, simple (19 vars)
@@ -66,7 +66,7 @@ def add_log_transforms(df):
     Returns:
         DataFrame with added log-transformed columns
     """
-    print(f"\n  🔧 Priority 1: Adding log transformations...")
+    print(f"\n  [PRIORITY 1] Adding log transformations...")
     
     df = df.copy()
     
@@ -75,7 +75,7 @@ def add_log_transforms(df):
         # Filter out zeros and negatives for log
         valid_price = df['price_clean'] > 0
         df.loc[valid_price, 'log_price'] = np.log(df.loc[valid_price, 'price_clean'])
-        print(f"     ✓ Created log_price ({valid_price.sum():,} valid values)")
+        print(f"     [OK] Created log_price ({valid_price.sum():,} valid values)")
         
         # Price per accommodates (size-adjusted pricing)
         if 'accommodates' in df.columns:
@@ -84,22 +84,22 @@ def add_log_transforms(df):
             df.loc[valid_ppa, 'log_price_per_accommodates'] = np.log(
                 df.loc[valid_ppa, 'price_per_accommodates']
             )
-            print(f"     ✓ Created log_price_per_accommodates ({valid_ppa.sum():,} valid values)")
+            print(f"     [OK] Created log_price_per_accommodates ({valid_ppa.sum():,} valid values)")
     
     # Review transformations (use log1p to handle zeros gracefully)
     if 'number_of_reviews' in df.columns:
         df['log_reviews'] = np.log1p(df['number_of_reviews'])  # log(x + 1)
-        print(f"     ✓ Created log_reviews (using log1p to handle zeros)")
+        print(f"     [OK] Created log_reviews (using log1p to handle zeros)")
     
     # Capacity transformations
     if 'accommodates' in df.columns:
         valid_acc = df['accommodates'] > 0
         df.loc[valid_acc, 'log_accommodates'] = np.log(df.loc[valid_acc, 'accommodates'])
-        print(f"     ✓ Created log_accommodates ({valid_acc.sum():,} valid values)")
+        print(f"     [OK] Created log_accommodates ({valid_acc.sum():,} valid values)")
     
     if 'beds' in df.columns:
         df['log_beds'] = np.log1p(df['beds'])  # log(x + 1) for zeros
-        print(f"     ✓ Created log_beds (using log1p to handle zeros)")
+        print(f"     [OK] Created log_beds (using log1p to handle zeros)")
     
     return df
 
@@ -132,7 +132,7 @@ def add_within_city_metrics(df, city_name):
     Returns:
         DataFrame with added standardized metrics
     """
-    print(f"\n  🔧 Priority 2: Adding within-city standardization for {city_name}...")
+    print(f"\n  [PRIORITY 2] Adding within-city standardization for {city_name}...")
     
     df = df.copy()
     
@@ -144,11 +144,11 @@ def add_within_city_metrics(df, city_name):
         
         if price_std > 0:  # Avoid division by zero
             df['price_zscore'] = (df['price_clean'] - price_mean) / price_std
-            print(f"     ✓ Created price_zscore (mean=${price_mean:.2f}, std=${price_std:.2f})")
+            print(f"     [OK] Created price_zscore (mean=${price_mean:.2f}, std=${price_std:.2f})")
         
         # Percentile rank: better than X% of listings
         df['price_percentile'] = df['price_clean'].rank(pct=True)
-        print(f"     ✓ Created price_percentile (0=cheapest, 1=most expensive)")
+        print(f"     [OK] Created price_percentile (0=cheapest, 1=most expensive)")
     
     # Log price standardization (for relative percentage positioning)
     if 'log_price' in df.columns:
@@ -157,7 +157,7 @@ def add_within_city_metrics(df, city_name):
         
         if log_price_std > 0:
             df['log_price_zscore'] = (df['log_price'] - log_price_mean) / log_price_std
-            print(f"     ✓ Created log_price_zscore (for relative % differences)")
+            print(f"     [OK] Created log_price_zscore (for relative % differences)")
     
     # Review count standardization (popularity/visibility metric)
     if 'number_of_reviews' in df.columns:
@@ -166,10 +166,10 @@ def add_within_city_metrics(df, city_name):
         
         if reviews_std > 0:
             df['reviews_zscore'] = (df['number_of_reviews'] - reviews_mean) / reviews_std
-            print(f"     ✓ Created reviews_zscore (mean={reviews_mean:.1f}, std={reviews_std:.1f})")
+            print(f"     [OK] Created reviews_zscore (mean={reviews_mean:.1f}, std={reviews_std:.1f})")
         
         df['reviews_percentile'] = df['number_of_reviews'].rank(pct=True)
-        print(f"     ✓ Created reviews_percentile (visibility ranking)")
+        print(f"     [OK] Created reviews_percentile (visibility ranking)")
     
     # Reviews per month standardization (activity velocity)
     if 'reviews_per_month' in df.columns:
@@ -178,7 +178,7 @@ def add_within_city_metrics(df, city_name):
         
         if rpm_std > 0:
             df['reviews_per_month_zscore'] = (df['reviews_per_month'] - rpm_mean) / rpm_std
-            print(f"     ✓ Created reviews_per_month_zscore")
+            print(f"     [OK] Created reviews_per_month_zscore")
     
     return df
 
@@ -237,7 +237,7 @@ def add_revenue_proxies(df):
     Returns:
         DataFrame with added revenue proxy columns
     """
-    print(f"\n  🔧 Priority 3: Adding revenue proxy metrics...")
+    print(f"\n  [PRIORITY 3] Adding revenue proxy metrics...")
     print(f"     Using calendar-based occupancy as PRIMARY (includes host-blocked days)")
     print(f"     Rationale: Captures full market capacity and potential revenue")
     
@@ -247,10 +247,10 @@ def add_revenue_proxies(df):
     if 'availability_365' in df.columns:
         df['occupancy_rate'] = (365 - df['availability_365']) / 365
         valid_occ = df['occupancy_rate'].notna()
-        print(f"     ✓ Created occupancy_rate (PRIMARY) from calendar availability ({valid_occ.sum():,} valid values)")
+        print(f"     [OK] Created occupancy_rate (PRIMARY) from calendar availability ({valid_occ.sum():,} valid values)")
         print(f"        Includes booked days + host-blocked days (full market capacity)")
     else:
-        print(f"     ⚠️  availability_365 not found - cannot create primary occupancy_rate")
+        print(f"     [WARNING]  availability_365 not found - cannot create primary occupancy_rate")
     
     # SECONDARY: Actual booked days from Airbnb (for comparison)
     if 'estimated_occupancy_l365d' in df.columns:
@@ -261,31 +261,31 @@ def add_revenue_proxies(df):
         df['occupancy_is_capped'] = (df['estimated_occupancy_l365d'] == 255).astype(int)
         n_capped = df['occupancy_is_capped'].sum()
         
-        print(f"     ✓ Created occupancy_rate_booked (SECONDARY) from estimated_occupancy_l365d ({valid_booked.sum():,} valid values)")
+        print(f"     [OK] Created occupancy_rate_booked (SECONDARY) from estimated_occupancy_l365d ({valid_booked.sum():,} valid values)")
         print(f"        {n_capped:,} listings capped at 255 days ({n_capped/valid_booked.sum()*100:.1f}%)")
         print(f"        Only includes actual booked days (excludes host-blocked days)")
     else:
-        print(f"     ⚠️  estimated_occupancy_l365d not found - cannot create secondary occupancy_rate_booked")
+        print(f"     [WARNING]  estimated_occupancy_l365d not found - cannot create secondary occupancy_rate_booked")
     
     # PRIMARY: Estimated annual revenue using calendar-based occupancy
     if 'price_clean' in df.columns and 'availability_365' in df.columns:
         df['est_annual_revenue'] = df['price_clean'] * (365 - df['availability_365'])
         valid_rev = df['est_annual_revenue'].notna()
-        print(f"     ✓ Created est_annual_revenue (PRIMARY) using calendar-based occupancy ({valid_rev.sum():,} valid values)")
+        print(f"     [OK] Created est_annual_revenue (PRIMARY) using calendar-based occupancy ({valid_rev.sum():,} valid values)")
         print(f"        Revenue = Price × (Booked + Host-blocked days)")
     
     # SECONDARY: Estimated annual revenue using actual booked days (for comparison)
     if 'price_clean' in df.columns and 'estimated_occupancy_l365d' in df.columns:
         df['est_annual_revenue_booked'] = df['price_clean'] * df['estimated_occupancy_l365d']
         valid_rev_booked = df['est_annual_revenue_booked'].notna()
-        print(f"     ✓ Created est_annual_revenue_booked (SECONDARY) using actual booked days ({valid_rev_booked.sum():,} valid values)")
+        print(f"     [OK] Created est_annual_revenue_booked (SECONDARY) using actual booked days ({valid_rev_booked.sum():,} valid values)")
         print(f"        Revenue = Price × Booked days only")
     
     # Size-adjusted revenue metrics (using PRIMARY revenue)
     if 'est_annual_revenue' in df.columns:
         if 'accommodates' in df.columns:
             df['revenue_per_accommodates'] = df['est_annual_revenue'] / df['accommodates']
-            print(f"     ✓ Created revenue_per_accommodates (unit economics)")
+            print(f"     [OK] Created revenue_per_accommodates (unit economics)")
         
         if 'bedrooms' in df.columns:
             # Handle 0 bedrooms (studios)
@@ -293,14 +293,14 @@ def add_revenue_proxies(df):
             df.loc[valid_br, 'revenue_per_bedroom'] = (
                 df.loc[valid_br, 'est_annual_revenue'] / df.loc[valid_br, 'bedrooms']
             )
-            print(f"     ✓ Created revenue_per_bedroom ({valid_br.sum():,} valid values)")
+            print(f"     [OK] Created revenue_per_bedroom ({valid_br.sum():,} valid values)")
         
         # Log-transformed revenue for percentage analysis
         valid_rev = df['est_annual_revenue'] > 0
         df.loc[valid_rev, 'log_est_revenue'] = np.log(
             df.loc[valid_rev, 'est_annual_revenue']
         )
-        print(f"     ✓ Created log_est_revenue ({valid_rev.sum():,} valid values)")
+        print(f"     [OK] Created log_est_revenue ({valid_rev.sum():,} valid values)")
     
     return df
 
@@ -338,7 +338,7 @@ def add_professionalization_metrics(df, city_name):
     Returns:
         DataFrame with added professionalization metrics
     """
-    print(f"\n  🔧 Priority 4: Adding professionalization metrics for {city_name}...")
+    print(f"\n  [PRIORITY 4] Adding professionalization metrics for {city_name}...")
     
     df = df.copy()
     
@@ -356,7 +356,7 @@ def add_professionalization_metrics(df, city_name):
         # Binary professional indicator (2+ listings = professional)
         df['host_is_professional'] = (df['calculated_host_listings_count'] >= 2).astype(int)
         n_professional = df['host_is_professional'].sum()
-        print(f"     ✓ Created host_is_professional ({n_professional:,} professional hosts, {n_professional/len(df)*100:.1f}%)")
+        print(f"     [OK] Created host_is_professional ({n_professional:,} professional hosts, {n_professional/len(df)*100:.1f}%)")
         
         # Professional tier categorization
         def categorize_professional(count):
@@ -373,7 +373,7 @@ def add_professionalization_metrics(df, city_name):
         
         df['host_professional_tier'] = df['calculated_host_listings_count'].apply(categorize_professional)
         tier_counts = df['host_professional_tier'].value_counts()
-        print(f"     ✓ Created host_professional_tier")
+        print(f"     [OK] Created host_professional_tier")
         for tier, count in tier_counts.items():
             print(f"        {tier}: {count:,} listings ({count/len(df)*100:.1f}%)")
         
@@ -434,7 +434,7 @@ def add_professionalization_metrics(df, city_name):
         
         df['market_professionalization_score'] = professionalization_score
         
-        print(f"     ✓ Market-level metrics:")
+        print(f"     [OK] Market-level metrics:")
         print(f"        % Professional hosts: {pct_prof:.1f}%")
         print(f"        % Large operators (21+): {pct_large:.1f}%")
         print(f"        Median listings per host: {median_listings:.1f}")
@@ -460,7 +460,7 @@ def add_zillow_prices(df, city_name, zillow_data=None):
     Returns:
         DataFrame with added columns: purchase_price, monthly_payment, zori_rent
     """
-    print(f"\n  🔧 Adding Zillow purchase prices for {city_name}...")
+    print(f"\n  [ZILLOW] Adding Zillow purchase prices for {city_name}...")
     
     # Load Zillow data if not provided
     if zillow_data is None:
@@ -468,7 +468,7 @@ def add_zillow_prices(df, city_name, zillow_data=None):
             from load_zillow_data import load_all_zillow_data
             zillow_data = load_all_zillow_data()
         except Exception as e:
-            print(f"     ⚠️  Could not load Zillow data: {e}")
+            print(f"     [WARNING]  Could not load Zillow data: {e}")
             return df
     
     # Match city to Zillow metro
@@ -477,7 +477,7 @@ def add_zillow_prices(df, city_name, zillow_data=None):
         metro_data = match_city_to_zillow(city_name, zillow_data)
         
         if metro_data is None:
-            print(f"     ⚠️  No Zillow data available for {city_name}")
+            print(f"     [WARNING]  No Zillow data available for {city_name}")
             return df
         
         # Add metro-level prices to all listings
@@ -487,14 +487,14 @@ def add_zillow_prices(df, city_name, zillow_data=None):
         df['zillow_metro'] = metro_data['RegionName']
         
         n_valid = df['purchase_price'].notna().sum()
-        print(f"     ✓ Added Zillow prices from {metro_data['RegionName']}")
+        print(f"     [OK] Added Zillow prices from {metro_data['RegionName']}")
         print(f"        Purchase price: ${metro_data['zhvi_price']:,.0f}")
         if pd.notna(metro_data['monthly_payment']):
             print(f"        Monthly payment: ${metro_data['monthly_payment']:,.0f}")
         print(f"        Applied to {n_valid:,} listings")
         
     except Exception as e:
-        print(f"     ⚠️  Error matching city to Zillow: {e}")
+        print(f"     [WARNING]  Error matching city to Zillow: {e}")
         return df
     
     return df
@@ -526,7 +526,7 @@ def add_roi_metrics(df):
     Returns:
         DataFrame with added ROI metric columns (both primary and secondary)
     """
-    print(f"\n  🔧 Adding ROI metrics...")
+    print(f"\n  [ROI] Adding ROI metrics...")
     print(f"     Calculating ROI for both PRIMARY (calendar-based) and SECONDARY (booked days) revenue")
     
     df = df.copy()
@@ -538,7 +538,7 @@ def add_roi_metrics(df):
     has_payment = 'monthly_payment' in df.columns and df['monthly_payment'].notna().any()
     
     if not has_price or not has_revenue:
-        print(f"     ⚠️  Missing required data for ROI calculations")
+        print(f"     [WARNING]  Missing required data for ROI calculations")
         if not has_price:
             print(f"        Missing: purchase_price")
         if not has_revenue:
@@ -553,11 +553,11 @@ def add_roi_metrics(df):
     if has_payment:
         df['annual_cash_flow'] = df['est_annual_revenue'] - (df['monthly_payment'] * 12)
         valid_cf = df['annual_cash_flow'].notna()
-        print(f"     ✓ Created annual_cash_flow (PRIMARY) ({valid_cf.sum():,} valid values)")
+        print(f"     [OK] Created annual_cash_flow (PRIMARY) ({valid_cf.sum():,} valid values)")
     else:
         # If no monthly payment data, cash flow = revenue (simplified)
         df['annual_cash_flow'] = df['est_annual_revenue']
-        print(f"     ✓ Created annual_cash_flow (PRIMARY, simplified, no payment data)")
+        print(f"     [OK] Created annual_cash_flow (PRIMARY, simplified, no payment data)")
     
     # Cash-on-cash ROI (assuming 20% downpayment)
     # ROI = Annual Cash Flow / Down Payment
@@ -568,7 +568,7 @@ def add_roi_metrics(df):
     )
     # Convert to percentage
     df.loc[valid_roi, 'cash_on_cash_roi'] = df.loc[valid_roi, 'cash_on_cash_roi'] * 100
-    print(f"     ✓ Created cash_on_cash_roi (PRIMARY) ({valid_roi.sum():,} valid values)")
+    print(f"     [OK] Created cash_on_cash_roi (PRIMARY) ({valid_roi.sum():,} valid values)")
     
     # Cap rate (gross cap rate = revenue / purchase price)
     valid_cap = (df['est_annual_revenue'].notna() & (df['purchase_price'] > 0))
@@ -577,7 +577,7 @@ def add_roi_metrics(df):
     )
     # Convert to percentage
     df.loc[valid_cap, 'cap_rate'] = df.loc[valid_cap, 'cap_rate'] * 100
-    print(f"     ✓ Created cap_rate (PRIMARY) ({valid_cap.sum():,} valid values)")
+    print(f"     [OK] Created cap_rate (PRIMARY) ({valid_cap.sum():,} valid values)")
     
     # Price-to-rent ratio (months to pay off at current revenue)
     monthly_revenue = df['est_annual_revenue'] / 12
@@ -585,11 +585,11 @@ def add_roi_metrics(df):
     df.loc[valid_ptr, 'price_to_rent_ratio'] = (
         df.loc[valid_ptr, 'purchase_price'] / monthly_revenue.loc[valid_ptr]
     )
-    print(f"     ✓ Created price_to_rent_ratio (PRIMARY) ({valid_ptr.sum():,} valid values)")
+    print(f"     [OK] Created price_to_rent_ratio (PRIMARY) ({valid_ptr.sum():,} valid values)")
     
     # Revenue yield (annual revenue as % of purchase price, same as cap rate but different interpretation)
     df.loc[valid_cap, 'revenue_yield'] = df.loc[valid_cap, 'cap_rate']
-    print(f"     ✓ Created revenue_yield (PRIMARY) ({valid_cap.sum():,} valid values)")
+    print(f"     [OK] Created revenue_yield (PRIMARY) ({valid_cap.sum():,} valid values)")
     
     # ============================================================================
     # SECONDARY ROI METRICS (using booked days only, for comparison)
@@ -602,25 +602,25 @@ def add_roi_metrics(df):
         else:
             df['annual_cash_flow_booked'] = df['est_annual_revenue_booked']
         valid_cf_booked = df['annual_cash_flow_booked'].notna()
-        print(f"     ✓ Created annual_cash_flow_booked (SECONDARY) ({valid_cf_booked.sum():,} valid values)")
+        print(f"     [OK] Created annual_cash_flow_booked (SECONDARY) ({valid_cf_booked.sum():,} valid values)")
         
         # Cash-on-cash ROI (booked days)
         valid_roi_booked = (df['annual_cash_flow_booked'].notna() & (downpayment > 0))
         df.loc[valid_roi_booked, 'cash_on_cash_roi_booked'] = (
             df.loc[valid_roi_booked, 'annual_cash_flow_booked'] / downpayment.loc[valid_roi_booked]
         ) * 100
-        print(f"     ✓ Created cash_on_cash_roi_booked (SECONDARY) ({valid_roi_booked.sum():,} valid values)")
+        print(f"     [OK] Created cash_on_cash_roi_booked (SECONDARY) ({valid_roi_booked.sum():,} valid values)")
         
         # Cap rate (booked days)
         valid_cap_booked = (df['est_annual_revenue_booked'].notna() & (df['purchase_price'] > 0))
         df.loc[valid_cap_booked, 'cap_rate_booked'] = (
             df.loc[valid_cap_booked, 'est_annual_revenue_booked'] / df.loc[valid_cap_booked, 'purchase_price']
         ) * 100
-        print(f"     ✓ Created cap_rate_booked (SECONDARY) ({valid_cap_booked.sum():,} valid values)")
+        print(f"     [OK] Created cap_rate_booked (SECONDARY) ({valid_cap_booked.sum():,} valid values)")
         
         # Revenue yield (booked days)
         df.loc[valid_cap_booked, 'revenue_yield_booked'] = df.loc[valid_cap_booked, 'cap_rate_booked']
-        print(f"     ✓ Created revenue_yield_booked (SECONDARY) ({valid_cap_booked.sum():,} valid values)")
+        print(f"     [OK] Created revenue_yield_booked (SECONDARY) ({valid_cap_booked.sum():,} valid values)")
     
     # Summary statistics (PRIMARY)
     if valid_roi.any():
@@ -678,7 +678,7 @@ def apply_all_feature_engineering(df, city_name, include_zillow=True):
         n_hotel = (df['room_type'] == 'Hotel room').sum()
         if n_hotel > 0:
             df = df[df['room_type'] != 'Hotel room'].copy()
-            print(f"  🏨 Excluded {n_hotel:,} hotel room listings from analysis")
+            print(f"  [HOTEL] Excluded {n_hotel:,} hotel room listings from analysis")
             print(f"     Focus: Residential rental investments (Entire home/apt, Private room, Shared room)")
     
     print(f"After filtering: {len(df):,} listings")
@@ -699,7 +699,7 @@ def apply_all_feature_engineering(df, city_name, include_zillow=True):
     new_cols = len(df.columns)
     added_cols = new_cols - original_cols
     
-    print(f"\n  ✅ Feature engineering complete!")
+    print(f"\n  [OK] Feature engineering complete!")
     print(f"     Added {added_cols} new columns (now {new_cols} total)")
     print(f"{'='*80}")
     
@@ -837,7 +837,7 @@ def create_variable_summary_table(df, city_name):
     
     return summary_df
 
-def create_all_correlation_matrices(df, city_name, output_dir, top_n=25):
+def create_all_correlation_matrices(df, city_name, output_dir, top_n=25, create_scatter_plots=False):
     """
     Create correlation matrices for all combinations of numeric variables
     
@@ -856,7 +856,7 @@ def create_all_correlation_matrices(df, city_name, output_dir, top_n=25):
     numeric_cols = [col for col in numeric_cols if col != 'city']
     
     if len(numeric_cols) < 2:
-        print(f"  ⚠️  Not enough numeric variables for correlation analysis")
+        print(f"  [WARNING]  Not enough numeric variables for correlation analysis")
         return
     
     print(f"  Found {len(numeric_cols)} numeric variables")
@@ -868,7 +868,7 @@ def create_all_correlation_matrices(df, city_name, output_dir, top_n=25):
     
     # Save correlation matrix as CSV
     corr_matrix.to_csv(output_dir / f'{city_name}_correlation_matrix.csv')
-    print(f"  ✓ Saved correlation matrix CSV")
+    print(f"  [OK] Saved correlation matrix CSV")
     
     # Create heatmap
     plt.figure(figsize=(14, 12))
@@ -879,7 +879,7 @@ def create_all_correlation_matrices(df, city_name, output_dir, top_n=25):
     plt.tight_layout()
     plt.savefig(output_dir / f'{city_name}_correlation_heatmap_full.png', 
                dpi=300, bbox_inches='tight')
-    print(f"  ✓ Saved full correlation heatmap")
+    print(f"  [OK] Saved full correlation heatmap")
     plt.close()
     
     # Get top correlations
@@ -907,38 +907,41 @@ def create_all_correlation_matrices(df, city_name, output_dir, top_n=25):
     
     # Save top correlations
     top_corrs_df.to_csv(output_dir / f'{city_name}_top_correlations.csv', index=False)
-    print(f"  ✓ Saved top {len(top_corrs_df)} correlations")
+    print(f"  [OK] Saved top {len(top_corrs_df)} correlations")
     
-    # Create scatter plots for top correlations
-    print(f"\n  Creating scatter plots for top correlations...")
-    n_plots = min(9, len(top_corrs_df))  # Up to 9 plots (3x3 grid)
-    
-    if n_plots > 0:
-        fig, axes = plt.subplots(3, 3, figsize=(15, 15))
-        axes = axes.flatten()
+    # Create scatter plots for top correlations (optional, disabled by default)
+    if create_scatter_plots:
+        print(f"\n  Creating scatter plots for top correlations...")
+        n_plots = min(9, len(top_corrs_df))  # Up to 9 plots (3x3 grid)
         
-        for idx in range(n_plots):
-            row = top_corrs_df.iloc[idx]
-            var1, var2, corr = row['variable_1'], row['variable_2'], row['correlation']
+        if n_plots > 0:
+            fig, axes = plt.subplots(3, 3, figsize=(15, 15))
+            axes = axes.flatten()
             
-            # Create scatter plot
-            axes[idx].scatter(df[var1], df[var2], alpha=0.3, s=20)
-            axes[idx].set_xlabel(var1, fontsize=9)
-            axes[idx].set_ylabel(var2, fontsize=9)
-            axes[idx].set_title(f'r = {corr:.3f}', fontsize=10, fontweight='bold')
-            axes[idx].grid(True, alpha=0.3)
-        
-        # Hide unused subplots
-        for idx in range(n_plots, 9):
-            axes[idx].axis('off')
-        
-        plt.suptitle(f'{city_name.upper()} - Top Correlation Scatter Plots', 
-                    fontsize=14, fontweight='bold', y=0.995)
-        plt.tight_layout()
-        plt.savefig(output_dir / f'{city_name}_correlation_scatter_plots.png', 
-                   dpi=300, bbox_inches='tight')
-        print(f"  ✓ Saved scatter plots")
-        plt.close()
+            for idx in range(n_plots):
+                row = top_corrs_df.iloc[idx]
+                var1, var2, corr = row['variable_1'], row['variable_2'], row['correlation']
+                
+                # Create scatter plot
+                axes[idx].scatter(df[var1], df[var2], alpha=0.3, s=20)
+                axes[idx].set_xlabel(var1, fontsize=9)
+                axes[idx].set_ylabel(var2, fontsize=9)
+                axes[idx].set_title(f'r = {corr:.3f}', fontsize=10, fontweight='bold')
+                axes[idx].grid(True, alpha=0.3)
+            
+            # Hide unused subplots
+            for idx in range(n_plots, 9):
+                axes[idx].axis('off')
+            
+            plt.suptitle(f'{city_name.upper()} - Top Correlation Scatter Plots', 
+                        fontsize=14, fontweight='bold', y=0.995)
+            plt.tight_layout()
+            plt.savefig(output_dir / f'{city_name}_correlation_scatter_plots.png', 
+                       dpi=300, bbox_inches='tight')
+            print(f"  [OK] Saved scatter plots")
+            plt.close()
+    else:
+        print(f"\n  Skipping correlation scatter plots (use create_scatter_plots=True to enable)")
 
 
 # ============================================================================
@@ -954,33 +957,33 @@ def analyze_city(city_name, base_dir='.', use_detailed=False):
     city_path = Path(base_dir) / city_name
     
     if not city_path.exists():
-        print(f"⚠️  Directory not found: {city_path}")
+        print(f"[WARNING] Directory not found: {city_path}")
         return None
     
     # Determine which file to use
     if use_detailed:
         listings_file = city_path / 'listings.csv.gz'
         if not listings_file.exists():
-            print(f"⚠️  Detailed file (listings.csv.gz) not found for {city_name}")
+            print(f"[WARNING] Detailed file (listings.csv.gz) not found for {city_name}")
             print(f"    Falling back to simple listings.csv...")
             listings_file = city_path / 'listings.csv'
             if listings_file.exists():
-                print(f"📊 Using SIMPLE dataset (19 variables) as fallback")
+                print(f"[INFO] Using SIMPLE dataset (19 variables) as fallback")
         else:
-            print(f"📊 Using DETAILED dataset (79 variables) from listings.csv.gz")
+            print(f"[INFO] Using DETAILED dataset (79 variables) from listings.csv.gz")
     else:
         listings_file = city_path / 'listings.csv'
         if not listings_file.exists():
-            print(f"⚠️  Simple file (listings.csv) not found for {city_name}")
+            print(f"[WARNING] Simple file (listings.csv) not found for {city_name}")
             print(f"    Trying detailed listings.csv.gz...")
             listings_file = city_path / 'listings.csv.gz'
             if listings_file.exists():
-                print(f"📊 Using DETAILED dataset (79 variables) as fallback")
+                print(f"[INFO] Using DETAILED dataset (79 variables) as fallback")
         else:
-            print(f"📊 Using SIMPLE dataset (19 variables) from listings.csv")
+            print(f"[INFO] Using SIMPLE dataset (19 variables) from listings.csv")
     
     if not listings_file.exists():
-        print(f"❌ No listings file found for {city_name}")
+        print(f"[ERROR] No listings file found for {city_name}")
         return None
     
     print(f"\n{'='*80}")
@@ -993,9 +996,9 @@ def analyze_city(city_name, base_dir='.', use_detailed=False):
             df = pd.read_csv(listings_file, compression='gzip')
         else:
             df = pd.read_csv(listings_file)
-        print(f"✓ Loaded {len(df):,} listings with {len(df.columns)} columns")
+        print(f"[OK] Loaded {len(df):,} listings with {len(df.columns)} columns")
     except Exception as e:
-        print(f"❌ Error loading {city_name}: {e}")
+        print(f"[ERROR] Error loading {city_name}: {e}")
         return None
     
     # Clean price if present
@@ -1011,22 +1014,25 @@ def analyze_city(city_name, base_dir='.', use_detailed=False):
     output_dir.mkdir(exist_ok=True)
     
     # 1. Create variable summary table
-    print(f"\n📋 Creating variable summary table...")
+    print(f"\n[INFO] Creating variable summary table...")
     summary_table = create_variable_summary_table(df, city_name)
     summary_table.to_csv(output_dir / f'{city_name}_variable_summary.csv', index=False)
-    print(f"✓ Saved: {city_name}_variable_summary.csv")
+    print(f"[OK] Saved: {city_name}_variable_summary.csv")
     
-    # Print summary to console
+    # Print summary to console (skip if encoding issues)
     print(f"\n{'='*80}")
     print(f"VARIABLE SUMMARY TABLE - {city_name.upper()}")
     print(f"{'='*80}")
-    print(summary_table.to_string(index=False))
+    try:
+        print(summary_table.to_string(index=False))
+    except UnicodeEncodeError:
+        print(f"[INFO] Summary table saved to CSV (skipping console print due to encoding)")
     
-    # 2. Create correlation matrices
-    create_all_correlation_matrices(df, city_name, output_dir, top_n=TOP_CORRELATIONS_N)
+    # 2. Create correlation matrices (scatter plots are optional, controlled by flag)
+    create_all_correlation_matrices(df, city_name, output_dir, top_n=TOP_CORRELATIONS_N, create_scatter_plots=False)
     
     print(f"\n{'='*80}")
-    print(f"✅ ANALYSIS COMPLETE FOR {city_name.upper()}")
+    print(f"[OK] ANALYSIS COMPLETE FOR {city_name.upper()}")
     print(f"{'='*80}")
     print(f"Output saved to: {output_dir}/")
     print(f"\nGenerated files:")
@@ -1034,7 +1040,7 @@ def analyze_city(city_name, base_dir='.', use_detailed=False):
     print(f"  - {city_name}_correlation_matrix.csv")
     print(f"  - {city_name}_correlation_heatmap_full.png")
     print(f"  - {city_name}_top_correlations.csv")
-    print(f"  - {city_name}_correlation_scatter_plots.png")
+    # Note: correlation_scatter_plots.png is not generated by default (create_scatter_plots=False)
     
     return summary_table
 
@@ -1052,9 +1058,9 @@ def analyze_all_cities(city_folders, base_dir='.', use_detailed=False):
     print(f"{'#'*80}")
     
     if use_detailed:
-        print(f"\n🔍 MODE: DETAILED ANALYSIS (79 variables from listings_csv.gz)")
+        print(f"\n[MODE] DETAILED ANALYSIS (79 variables from listings_csv.gz)")
     else:
-        print(f"\n🔍 MODE: SIMPLE ANALYSIS (19 variables from listings.csv)")
+        print(f"\n[MODE] SIMPLE ANALYSIS (19 variables from listings.csv)")
     
     print(f"\nWill analyze {len(city_folders)} cities")
     print(f"Cities: {', '.join(city_folders)}")
@@ -1072,7 +1078,7 @@ def analyze_all_cities(city_folders, base_dir='.', use_detailed=False):
             else:
                 failed += 1
         except Exception as e:
-            print(f"\n❌ ERROR analyzing {city}: {e}")
+            print(f"\n[ERROR] analyzing {city}: {e}")
             import traceback
             traceback.print_exc()
             failed += 1
@@ -1081,8 +1087,8 @@ def analyze_all_cities(city_folders, base_dir='.', use_detailed=False):
     print(f"\n{'#'*80}")
     print(f"BATCH ANALYSIS COMPLETE")
     print(f"{'#'*80}")
-    print(f"✅ Successfully analyzed: {successful} cities")
-    print(f"❌ Failed: {failed} cities")
+    print(f"[SUCCESS] Successfully analyzed: {successful} cities")
+    print(f"[FAILED] {failed} cities")
     
     return results
 
@@ -1099,7 +1105,7 @@ if __name__ == "__main__":
         city_level_analysis.py  (this file)
         Austin/
             listings.csv        (19 variables - simple)
-            listings.csv.gz     (79 variables - detailed)  ⚠️ NOTE: .csv.gz not _csv.gz
+            listings.csv.gz     (79 variables - detailed)  [WARNING] NOTE: .csv.gz not _csv.gz
         Boston/
             listings.csv
             listings.csv.gz
@@ -1122,10 +1128,10 @@ if __name__ == "__main__":
     
     # ====== CUSTOMIZE THIS LIST ======
     all_cities = [
-        'Albany', 'Asheville', 'Austin', 'Bozeman', 'Cambridge',
+        'Albany', 'Asheville', 'Austin', 'Boston', 'Bozeman', 'Cambridge',
         'Chicago', 'Columbus', 'Dallas', 'Denver', 'Hawaii',
         'Jersey_City', 'Los_Angeles', 'Nashville', 'New_Orleans',
-        'New_York', 'Oakland', 'Oregon', 'Paris',
+        'New_York', 'Oakland', 'Portland', 'Paris',
         'Rhode_Island', 'San_Francisco', 'Seattle', 'Washington_DC'
     ]
     # =================================
@@ -1136,19 +1142,19 @@ if __name__ == "__main__":
         city_folders = [c for c in all_cities if c.lower() == single_city.lower()]
         
         if not city_folders:
-            print(f"\n❌ ERROR: City '{single_city}' not found in city list!")
+            print(f"\n[ERROR] City '{single_city}' not found in city list!")
             print(f"\nAvailable cities:")
             for city in all_cities:
                 print(f"  - {city}")
             print(f"\nUsage: python city_level_analysis.py CityName [-all]")
             sys.exit(1)
         
-        print(f"\n🎯 SINGLE CITY MODE: Analyzing {city_folders[0]} only")
+        print(f"\n[SINGLE CITY MODE] Analyzing {city_folders[0]} only")
         print(f"   (For all cities, run without city name)")
     else:
         # All cities mode
         city_folders = all_cities
-        print(f"\n📊 BATCH MODE: Analyzing all {len(city_folders)} cities")
+        print(f"\n[BATCH MODE] Analyzing all {len(city_folders)} cities")
     
     # Run analysis
     results = analyze_all_cities(city_folders, base_dir='.', use_detailed=use_detailed)
@@ -1161,18 +1167,18 @@ if __name__ == "__main__":
     if results:
         sample_city = list(results.keys())[0]
         num_vars = len(results[sample_city])
-        print(f"\n✅ VERIFICATION: Analyzed {num_vars} variables per city")
+        print(f"\n[OK] VERIFICATION: Analyzed {num_vars} variables per city")
         
         if num_vars >= 70:
-            print(f"   🎯 SUCCESS: Full detailed analysis with ~79+ variables")
+            print(f"   [SUCCESS] Full detailed analysis with ~79+ variables")
         elif num_vars <= 25:
-            print(f"   ⚠️  Simple analysis with ~19+ variables")
-            print(f"   💡 TIP: Run 'python city_level_analysis.py -all' for full 79-variable analysis")
+            print(f"   [WARNING] Simple analysis with ~19+ variables")
+            print(f"   [TIP] Run 'python city_level_analysis.py -all' for full 79-variable analysis")
         else:
-            print(f"   ⚠️  Partial dataset detected")
+            print(f"   [WARNING] Partial dataset detected")
     
     if use_detailed:
-        print(f"\n💡 You requested DETAILED analysis (-all flag)")
+        print(f"\n[TIP] You requested DETAILED analysis (-all flag)")
     else:
-        print(f"\n💡 You used SIMPLE analysis (default)")
+        print(f"\n[TIP] You used SIMPLE analysis (default)")
         print(f"   To get full analysis with 79 variables, run: python city_level_analysis.py -all")

@@ -1,81 +1,122 @@
 variable_name,data_type,n_unique,n_missing,pct_missing,min,max,range,mean,median,std,precision,mode
-id,continuous,5762.0,0,0.0,15373,1518246788234100829,1.5182467882340854e+18,6.376705227926967e+17,7.365797571574506e+17,5.595327518259237e+17,0.0,15373
-listing_url,discrete_categorical,5762.0,0,0.0,https://www.airbnb.com/rooms/1000090352573229384,https://www.airbnb.com/rooms/9999926,,,,,,https://www.airbnb.com/rooms/1000090352573229384
-scrape_id,discrete_numeric,1.0,0,0.0,20250930030713,20250930030713,0.0,20250930030713.0,20250930030713.0,0.0,0.0,20250930030713
+id,continuous,5684.0,0,0.0,15373,1518246788234100829,1.5182467882340854e+18,6.330836109474609e+17,7.2481192367184e+17,5.5835152938627066e+17,0.0,15373
+listing_url,discrete_categorical,5684.0,0,0.0,https://www.airbnb.com/rooms/1000090352573229384,https://www.airbnb.com/rooms/9999926,,,,,,https://www.airbnb.com/rooms/1000090352573229384
+scrape_id,discrete_numeric,1.0,0,0.0,20250930030713,20250930030713,0.0,20250930030713.004,20250930030713.0,0.003906593663397489,0.0,20250930030713
 last_scraped,discrete_categorical,1.0,0,0.0,2025-09-30,2025-09-30,,,,,,2025-09-30
 source,discrete_categorical,2.0,0,0.0,city scrape,previous scrape,,,,,,city scrape
-name,discrete_categorical,5438.0,0,0.0,! Rare 10 Guests/FamilyVacation+BeachHouse!Newport,🏡🏡🤩😍 Beautiful apartment perfect location.💎💜,,,,,,Wyndham Long Wharf Resort |2BR King Suite
-description,discrete_categorical,4988.0,42,0.73,"""Casnewydd"" (kas-new-with) is anything but ordinar...",🐔Welcome to The Roost – Your Providence Farmhouse ...,,,,,,Shingle-style architecture makes this beautiful re...
-neighborhood_overview,discrete_categorical,2265.0,2640,45.82,"""If you're looking for that proverbial ""All Americ...",▶ What's nearby — Aquidneck Shopping Centre - 4 mi...,,,,,,"Narragansett, Rhode Island, is a charming coastal ..."
-picture_url,discrete_categorical,5620.0,0,0.0,https://a0.muscache.com/pictures/00034430-1cd6-4a4...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/hosting/Hosting-1...
-host_id,continuous,2903.0,0,0.0,11808,718717272,718705464.0,210190359.22353348,142514120.0,192190165.06108555,0.0,223489475
-host_url,discrete_categorical,2903.0,0,0.0,https://www.airbnb.com/users/show/100021167,https://www.airbnb.com/users/show/9990213,,,,,,https://www.airbnb.com/users/show/223489475
-host_name,discrete_categorical,1371.0,0,0.0,A,Zongdong,,,,,,Rhonda
-host_since,discrete_categorical,2091.0,0,0.0,2009-03-30,2025-09-12,,,,,,2018-10-31
-host_location,discrete_categorical,359.0,1493,25.91,"Addison, MI","Zürich, Switzerland",,,,,,"Providence, RI"
-host_about,discrete_categorical,1287.0,2679,46.49,"Love Renovating & Design, Fashion, Food, Travel, L...",￼ I love visiting different parts of the world! Of...,,,,,,I am the Vacation Leasing Consultant with Narragan...
-host_response_time,discrete_categorical,4.0,509,8.83,a few days or more,within an hour,,,,,,within an hour
-host_response_rate,discrete_categorical,38.0,509,8.83,0%,99%,,,,,,100%
-host_acceptance_rate,discrete_categorical,90.0,300,5.21,0%,99%,,,,,,100%
-host_is_superhost,discrete_categorical,2.0,99,1.72,f,t,,,,,,f
-host_thumbnail_url,discrete_categorical,2753.0,0,0.0,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z0.muscache.cn/im/pictures/user/fa98e6af-a...,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.pn...
-host_picture_url,discrete_categorical,2753.0,0,0.0,https://a0.muscache.com/defaults/user_pic-225x225....,https://z0.muscache.cn/im/pictures/user/fa98e6af-a...,,,,,,https://a0.muscache.com/defaults/user_pic-225x225....
-host_neighbourhood,discrete_categorical,170.0,2690,46.69,Albion,Wyoming,,,,,,Newport East
-host_listings_count,continuous,74.0,0,0.0,1,3818,3817.0,146.63832002776815,3.0,549.3456836411922,0.0,1
-host_total_listings_count,continuous,83.0,0,0.0,1,9764,9763.0,236.07775078097882,4.0,970.9597482372998,0.0,1
+name,discrete_categorical,5360.0,0,0.0,! Rare 10 Guests/FamilyVacation+BeachHouse!Newport,🏡🏡🤩😍 Beautiful apartment perfect location.💎💜,,,,,,Wyndham Long Wharf Resort |2BR King Suite
+description,discrete_categorical,4968.0,37,0.65,"""Casnewydd"" (kas-new-with) is anything but ordinar...",🐔Welcome to The Roost – Your Providence Farmhouse ...,,,,,,Shingle-style architecture makes this beautiful re...
+neighborhood_overview,discrete_categorical,2250.0,2633,46.32,"""If you're looking for that proverbial ""All Americ...",▶ What's nearby — Aquidneck Shopping Centre - 4 mi...,,,,,,"Narragansett, Rhode Island, is a charming coastal ..."
+picture_url,discrete_categorical,5545.0,0,0.0,https://a0.muscache.com/pictures/00034430-1cd6-4a4...,https://a0.muscache.com/pictures/prohost-api/Hosti...,,,,,,https://a0.muscache.com/pictures/hosting/Hosting-1...
+host_id,continuous,2899.0,0,0.0,11808,718717272,718705464.0,209716568.08163264,142367925.5,190863045.4076482,0.0,223489475
+host_url,discrete_categorical,2899.0,0,0.0,https://www.airbnb.com/users/show/100021167,https://www.airbnb.com/users/show/9990213,,,,,,https://www.airbnb.com/users/show/223489475
+host_name,discrete_categorical,1368.0,0,0.0,A,Zongdong,,,,,,Rhonda
+host_since,discrete_categorical,2089.0,0,0.0,2009-03-30,2025-09-12,,,,,,2018-10-31
+host_location,discrete_categorical,359.0,1450,25.51,"Addison, MI","Zürich, Switzerland",,,,,,"Providence, RI"
+host_about,discrete_categorical,1285.0,2646,46.55,"Love Renovating & Design, Fashion, Food, Travel, L...",￼ I love visiting different parts of the world! Of...,,,,,,I am the Vacation Leasing Consultant with Narragan...
+host_response_time,discrete_categorical,4.0,504,8.87,a few days or more,within an hour,,,,,,within an hour
+host_response_rate,discrete_categorical,38.0,504,8.87,0%,99%,,,,,,100%
+host_acceptance_rate,discrete_categorical,90.0,295,5.19,0%,99%,,,,,,100%
+host_is_superhost,discrete_categorical,2.0,99,1.74,f,t,,,,,,f
+host_thumbnail_url,discrete_categorical,2749.0,0,0.0,https://a0.muscache.com/defaults/user_pic-50x50.pn...,https://z0.muscache.cn/im/pictures/user/fa98e6af-a...,,,,,,https://a0.muscache.com/defaults/user_pic-50x50.pn...
+host_picture_url,discrete_categorical,2749.0,0,0.0,https://a0.muscache.com/defaults/user_pic-225x225....,https://z0.muscache.cn/im/pictures/user/fa98e6af-a...,,,,,,https://a0.muscache.com/defaults/user_pic-225x225....
+host_neighbourhood,discrete_categorical,167.0,2675,47.06,Albion,Wyoming,,,,,,Newport East
+host_listings_count,continuous,71.0,0,0.0,1,3818,3817.0,139.24120337790288,3.0,546.4135295356217,0.0,1
+host_total_listings_count,continuous,79.0,0,0.0,1,4935,4934.0,181.27920478536242,4.0,698.0296411240258,0.0,1
 host_verifications,discrete_categorical,5.0,0,0.0,"['email', 'phone', 'work_email']",['phone'],,,,,,"['email', 'phone']"
 host_has_profile_pic,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
 host_identity_verified,discrete_categorical,2.0,0,0.0,f,t,,,,,,t
-neighbourhood,discrete_categorical,1.0,2640,45.82,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
+neighbourhood,discrete_categorical,1.0,2633,46.32,Neighborhood highlights,Neighborhood highlights,,,,,,Neighborhood highlights
 neighbourhood_cleansed,discrete_categorical,38.0,0,0.0,Barrington,Woonsocket,,,,,,Newport
 neighbourhood_group_cleansed,discrete_categorical,5.0,0,0.0,Bristol,Washington,,,,,,Newport
-latitude,continuous,4914.0,0,0.0,41.15037,42.0107708,0.8604008000000007,41.56080236534654,41.49353,0.18323258614537782,14.0,41.4902895
-longitude,continuous,4931.0,0,0.0,-71.859497,-71.1268,0.7326970000000017,-71.41488086931679,-71.41698500000001,0.13059758657477957,14.0,-71.3199932
-property_type,discrete_categorical,53.0,0,0.0,Barn,Yurt,,,,,,Entire home
-room_type,discrete_categorical,4.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
-accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,5.4434224227698715,5.0,3.168749718799094,0.0,4
-bathrooms,continuous,20.0,719,12.48,0.0,10.5,10.5,1.630180448145945,1.0,0.9476883225209854,1.0,1.0
-bathrooms_text,discrete_categorical,29.0,28,0.49,0 baths,Shared half-bath,,,,,,1 bath
-bedrooms,discrete_numeric,14.0,75,1.3,0.0,18.0,18.0,2.3882539124318622,2.0,1.5139598597048325,0.0,1.0
-beds,discrete_numeric,19.0,742,12.88,0.0,18.0,18.0,3.1585657370517928,3.0,2.255178525078988,0.0,1.0
-amenities,discrete_categorical,5242.0,0,0.0,"[""32 inch HDTV with standard cable"", ""Laundromat n...","[""Window AC unit"", ""Body soap"", ""Mini fridge"", ""Lo...",,,,,,"[""Free parking on premises"", ""Building staff"", ""Ai..."
-price,discrete_categorical,939.0,769,13.35,"$1,000.00",$999.00,,,,,,$300.00
-minimum_nights,discrete_numeric,37.0,0,0.0,1,365,364.0,7.692120791391877,2.0,17.426044899540855,0.0,2
-maximum_nights,continuous,110.0,0,0.0,1,1125,1124.0,401.47032280458177,365.0,405.1660299069042,0.0,365
-minimum_minimum_nights,continuous,40.0,9,0.16,1.0,365.0,364.0,7.634799235181644,2.0,20.602012680656603,1.0,2.0
-maximum_minimum_nights,continuous,48.0,9,0.16,1.0,365.0,364.0,10.04432470015644,3.0,26.180095002494053,1.0,2.0
-minimum_maximum_nights,continuous,102.0,9,0.16,1.0,2147483647.0,2147483646.0,5226460.671475751,365.0,105816955.51054862,1.0,1125.0
-maximum_maximum_nights,continuous,101.0,9,0.16,1.0,2147483647.0,2147483646.0,5226504.075786546,365.0,105816953.36658503,1.0,1125.0
-minimum_nights_avg_ntm,continuous,164.0,0,0.0,1.0,365.0,364.0,8.830024297119056,2.8,23.031134696044898,1.0,2.0
-maximum_nights_avg_ntm,continuous,304.0,0,0.0,1.0,2147483647.0,2147483646.0,5218320.051128081,365.0,105734468.40871187,1.0,1125.0
-calendar_updated,empty,,5762,100.0,,,,,,,,
-has_availability,discrete_categorical,1.0,37,0.64,t,t,,,,,,t
-availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,11.661055189170426,11.0,10.769467670921502,0.0,0
-availability_60,continuous,61.0,0,0.0,0,60,60.0,27.31690385282888,29.0,22.49875436218978,0.0,0
-availability_90,continuous,91.0,0,0.0,0,90,90.0,43.60864283234988,52.0,34.678463271762524,0.0,0
-availability_365,continuous,364.0,0,0.0,0,365,365.0,180.53280111072544,173.0,128.09174148716238,0.0,0
+latitude,continuous,4888.0,0,0.0,41.15037,42.0107708,0.8604008000000007,41.56082795612769,41.493645,0.18363629671042608,14.0,41.4902895
+longitude,continuous,4903.0,0,0.0,-71.859497,-71.1268,0.7326970000000017,-71.41587898689612,-71.41928,0.13092550232799438,14.0,-71.3199932
+property_type,discrete_categorical,51.0,0,0.0,Barn,Yurt,,,,,,Entire home
+room_type,discrete_categorical,3.0,0,0.0,Entire home/apt,Shared room,,,,,,Entire home/apt
+accommodates,discrete_numeric,16.0,0,0.0,1,16,15.0,5.450035186488388,5.0,3.1597952185466416,0.0,4
+bathrooms,continuous,20.0,704,12.39,0.0,10.5,10.5,1.6314257028112449,1.0,0.9487501823545452,1.0,1.0
+bathrooms_text,discrete_categorical,28.0,1,0.02,0 baths,Shared half-bath,,,,,,1 bath
+bedrooms,discrete_numeric,14.0,75,1.32,0.0,18.0,18.0,2.4002495988589767,2.0,1.5176352561748419,0.0,1.0
+beds,discrete_numeric,19.0,727,12.79,0.0,18.0,18.0,3.1831753076457536,3.0,2.253043713896099,0.0,1.0
+amenities,discrete_categorical,5220.0,0,0.0,"[""32 inch HDTV with standard cable"", ""Laundromat n...","[""Window AC unit"", ""Body soap"", ""Mini fridge"", ""Lo...",,,,,,"[""Free parking on premises"", ""Building staff"", ""Ai..."
+price,discrete_categorical,936.0,754,13.27,"$1,000.00",$999.00,,,,,,$300.00
+minimum_nights,discrete_numeric,37.0,0,0.0,1,365,364.0,7.773223082336383,2.0,17.52315119575137,0.0,2
+maximum_nights,continuous,110.0,0,0.0,1,1125,1124.0,394.899366643209,365.0,401.2907457373206,0.0,365
+minimum_minimum_nights,continuous,40.0,9,0.16,1.0,365.0,364.0,7.7258149779735685,2.0,20.728396894237328,1.0,2.0
+maximum_minimum_nights,continuous,48.0,9,0.16,1.0,365.0,364.0,10.14431718061674,3.0,26.34237712527077,1.0,2.0
+minimum_maximum_nights,continuous,102.0,9,0.16,1.0,2147483647.0,2147483646.0,4163060.125814978,365.0,94462649.57085639,1.0,1125.0
+maximum_maximum_nights,continuous,101.0,9,0.16,1.0,2147483647.0,2147483646.0,4163093.8310132157,365.0,94462648.08536309,1.0,1125.0
+minimum_nights_avg_ntm,continuous,164.0,0,0.0,1.0,365.0,364.0,8.935080928923293,2.8,23.17101218954889,1.0,2.0
+maximum_nights_avg_ntm,continuous,263.0,0,0.0,1.0,2147483647.0,2147483646.0,4156488.3187192115,365.0,94387965.35729305,1.0,1125.0
+calendar_updated,empty,,5684,100.0,,,,,,,,
+has_availability,discrete_categorical,1.0,33,0.58,t,t,,,,,,t
+availability_30,discrete_numeric,31.0,0,0.0,0,30,30.0,11.571780436312457,11.0,10.790143128576764,0.0,0
+availability_60,continuous,61.0,0,0.0,0,60,60.0,27.14109781843772,29.0,22.554685882956427,0.0,0
+availability_90,continuous,91.0,0,0.0,0,90,90.0,43.3448275862069,51.0,34.7467551604617,0.0,0
+availability_365,continuous,364.0,0,0.0,0,365,365.0,179.5042223786066,172.0,128.16535439691413,0.0,0
 calendar_last_scraped,discrete_categorical,1.0,0,0.0,2025-09-30,2025-09-30,,,,,,2025-09-30
-number_of_reviews,continuous,397.0,0,0.0,0,821,821.0,49.74071502950365,17.0,85.60300888841805,0.0,0
-number_of_reviews_ltm,continuous,109.0,0,0.0,0,316,316.0,10.805449496702535,5.0,16.65381566695802,0.0,0
-number_of_reviews_l30d,discrete_numeric,18.0,0,0.0,0,41,41.0,1.0975355779243319,0.0,1.8588064534025568,0.0,0
-availability_eoy,continuous,94.0,0,0.0,0,93,93.0,45.073238458868445,53.0,35.84342963850371,0.0,0
-number_of_reviews_ly,continuous,113.0,0,0.0,0,210,210.0,9.758937868795558,3.0,16.180966297400506,0.0,0
-estimated_occupancy_l365d,continuous,84.0,0,0.0,0,255,255.0,67.4389101006595,42.0,77.0019116171921,0.0,0
-estimated_revenue_l365d,continuous,2523.0,769,13.35,0.0,2700000.0,2700000.0,20685.536951732425,11934.0,47787.80839427239,1.0,0.0
-first_review,discrete_categorical,1883.0,787,13.66,2010-10-11,2025-09-29,,,,,,2023-05-29
-last_review,discrete_categorical,657.0,787,13.66,2016-07-10,2025-09-29,,,,,,2025-09-14
-review_scores_rating,continuous,111.0,787,13.66,1.0,5.0,4.0,4.830114572864321,4.92,0.309220726534997,2.0,5.0
-review_scores_accuracy,continuous,107.0,787,13.66,1.0,5.0,4.0,4.8436361809045225,4.93,0.3037059404232637,2.0,5.0
-review_scores_cleanliness,continuous,115.0,787,13.66,1.0,5.0,4.0,4.818277386934674,4.92,0.33040322661929367,2.0,5.0
-review_scores_checkin,continuous,88.0,787,13.66,1.0,5.0,4.0,4.8977065326633165,4.98,0.2706114283290296,2.0,5.0
-review_scores_communication,continuous,94.0,787,13.66,1.0,5.0,4.0,4.890683417085428,4.97,0.2734136452110564,2.0,5.0
-review_scores_location,continuous,110.0,787,13.66,1.0,5.0,4.0,4.859234170854271,4.94,0.25479817781444647,2.0,5.0
-review_scores_value,continuous,116.0,787,13.66,1.0,5.0,4.0,4.729318592964824,4.81,0.3496096939217609,2.0,5.0
-license,discrete_categorical,3924.0,740,12.84,Exempt,"re06931-str, expiry date: 2026-01-12",,,,,,Exempt
+number_of_reviews,continuous,395.0,0,0.0,0,821,821.0,50.08497536945813,17.0,85.77377358636417,0.0,0
+number_of_reviews_ltm,continuous,109.0,0,0.0,0,316,316.0,10.92628430682618,5.0,16.70829162936818,0.0,0
+number_of_reviews_l30d,discrete_numeric,18.0,0,0.0,0,41,41.0,1.1103096410978184,0.0,1.8673140719284966,0.0,0
+availability_eoy,continuous,94.0,0,0.0,0,93,93.0,44.7990851513019,53.0,35.90956967587212,0.0,0
+number_of_reviews_ly,continuous,113.0,0,0.0,0,210,210.0,9.863828289936665,3.0,16.233648376946142,0.0,0
+estimated_occupancy_l365d,continuous,84.0,0,0.0,0,255,255.0,68.15218156228009,42.0,77.0609715878525,0.0,0
+estimated_revenue_l365d,continuous,2519.0,754,13.27,0.0,2700000.0,2700000.0,20733.325354969573,12096.0,47216.7476933739,1.0,0.0
+first_review,discrete_categorical,1873.0,733,12.9,2010-10-11,2025-09-29,,,,,,2023-05-29
+last_review,discrete_categorical,653.0,733,12.9,2016-07-10,2025-09-29,,,,,,2025-09-14
+review_scores_rating,continuous,110.0,733,12.9,1.0,5.0,4.0,4.831531003837609,4.92,0.3049062101169158,2.0,5.0
+review_scores_accuracy,continuous,107.0,733,12.9,1.0,5.0,4.0,4.844029488992123,4.93,0.30373064612062106,2.0,5.0
+review_scores_cleanliness,continuous,115.0,733,12.9,1.0,5.0,4.0,4.818594223389215,4.92,0.32983326543701785,2.0,5.0
+review_scores_checkin,continuous,88.0,733,12.9,1.0,5.0,4.0,4.8990426176529995,4.98,0.2639653566218492,2.0,5.0
+review_scores_communication,continuous,94.0,733,12.9,1.0,5.0,4.0,4.892078368006463,4.97,0.26908070720237076,2.0,5.0
+review_scores_location,continuous,110.0,733,12.9,1.0,5.0,4.0,4.859589981821855,4.94,0.2536071357944773,2.0,5.0
+review_scores_value,continuous,116.0,733,12.9,1.0,5.0,4.0,4.730603918400322,4.81,0.3476058066618667,2.0,5.0
+license,discrete_categorical,3923.0,740,13.02,Exempt,"re06931-str, expiry date: 2026-01-12",,,,,,Exempt
 instant_bookable,discrete_categorical,2.0,0,0.0,f,t,,,,,,f
-calculated_host_listings_count,discrete_numeric,41.0,0,0.0,1,147,146.0,15.956959389101007,3.0,30.58247057826519,0.0,1
-calculated_host_listings_count_entire_homes,discrete_numeric,32.0,0,0.0,0,147,147.0,13.71242624088858,1.0,30.317003873758214,0.0,1
-calculated_host_listings_count_private_rooms,discrete_numeric,20.0,0,0.0,0,31,31.0,2.024817771607081,0.0,5.451327152549262,0.0,0
-calculated_host_listings_count_shared_rooms,discrete_numeric,2.0,0,0.0,0,2,2.0,0.0020826102047900035,0.0,0.06451050607823619,0.0,0
-reviews_per_month,continuous,629.0,787,13.66,0.01,24.9,24.889999999999997,1.4516140703517588,0.95,1.603641835608866,2.0,0.08
-price_clean,continuous,939.0,769,13.35,29.0,50000.0,49971.0,869.6959743641097,274.0,4681.291744971711,1.0,300.0
+calculated_host_listings_count,discrete_numeric,40.0,0,0.0,1,147,146.0,15.955313159746657,2.0,30.77861853723797,0.0,1
+calculated_host_listings_count_entire_homes,discrete_numeric,32.0,0,0.0,0,147,147.0,13.891977480647432,1.0,30.4828111020908,0.0,1
+calculated_host_listings_count_private_rooms,discrete_numeric,20.0,0,0.0,0,31,31.0,2.041871921182266,0.0,5.481336761959105,0.0,0
+calculated_host_listings_count_shared_rooms,discrete_numeric,2.0,0,0.0,0,2,2.0,0.00211118930330753,0.0,0.06495124083606638,0.0,0
+reviews_per_month,continuous,629.0,733,12.9,0.01,24.9,24.889999999999997,1.4541223995152495,0.96,1.6056363200575836,2.0,0.08
+price_clean,continuous,936.0,754,13.27,29.0,50000.0,49971.0,435.48052738336713,271.0,1749.7529847190133,1.0,300.0
+log_price,continuous,936.0,754,13.27,3.367295829986474,10.819778284410283,7.452482454423809,5.5894584757869366,5.602118820879701,0.8142123314654646,16.0,5.703782474656201
+price_per_accommodates,continuous,1586.0,754,13.27,8.416666666666666,16666.666666666668,16658.25,85.1163474985686,56.5,459.7177644627907,15.0,50.0
+log_price_per_accommodates,continuous,1586.0,754,13.27,2.130213867053259,9.721165995742174,7.590952128688915,4.063352537535802,4.034240638152395,0.5971225797049656,16.0,3.912023005428146
+log_reviews,continuous,395.0,0,0.0,0.0,6.71174039505618,6.71174039505618,2.757343897803878,2.8903717578961645,1.6975523685946476,16.0,0.0
+log_accommodates,discrete_numeric,16.0,0,0.0,0.0,2.772588722239781,2.772588722239781,1.5209886155272827,1.6094379124341003,0.6151956087288581,0.0,1.3862943611198906
+log_beds,discrete_numeric,19.0,727,12.79,0.0,2.9444389791664403,2.9444389791664403,1.3035949122534507,1.3862943611198906,0.5023142423968789,0.0,0.6931471805599453
+price_zscore,continuous,936.0,754,13.27,-0.23230737763173034,28.32658089768941,28.55888827532114,-2.8825263114000007e-18,-0.09400214134212806,1.0000000000000002,19.0,-0.07742837335701043
+price_percentile,continuous,936.0,754,13.27,0.00020283975659229209,0.9998985801217039,0.9996957403651116,0.5001014198782961,0.5002028397565923,0.28870326150038655,18.0,0.5626774847870183
+log_price_zscore,continuous,936.0,754,13.27,-2.729217625334771,6.423778671110921,9.152996296445693,-3.624776836585501e-16,0.015549193500886542,1.0,18.0,0.14041054704182346
+reviews_zscore,continuous,395.0,0,0.0,-0.5839194578402034,8.987770881437559,9.571690339277762,4.000240595412246e-17,-0.3857236773679477,0.9999999999999998,18.0,-0.5839194578402034
+reviews_percentile,continuous,395.0,0,0.0,0.06456720619282195,1.0,0.935432793807178,0.5000879662209712,0.5018472906403941,0.2883298385783884,17.0,0.06456720619282195
+reviews_per_month_zscore,continuous,629.0,733,12.9,-0.8994081545585977,14.602234209328234,15.501642363886832,1.148119952753141e-17,-0.30774241547894765,1.0,18.0,-0.8558117316790446
+occupancy_rate,continuous,364.0,0,0.0,0.0,1.0,1.0,0.5082076099216258,0.5287671232876713,0.3511379572518195,19.0,1.0
+occupancy_rate_booked,continuous,84.0,0,0.0,0.0,0.6986301369863014,0.6986301369863014,0.18671830565008243,0.11506849315068493,0.21112594955576028,18.0,0.0
+occupancy_is_capped,discrete_numeric,2.0,0,0.0,0,1,1.0,0.06210415200562984,0.0,0.2413658544393777,0.0,0
+est_annual_revenue,continuous,4187.0,754,13.27,0.0,2312000.0,2312000.0,60270.10547667343,33715.5,86478.51154260871,1.0,0.0
+est_annual_revenue_booked,continuous,2519.0,754,13.27,0.0,2700000.0,2700000.0,20733.325354969573,12096.0,47216.7476933739,1.0,0.0
+revenue_per_accommodates,continuous,4234.0,754,13.27,0.0,578000.0,578000.0,11327.105761511702,7990.55,14904.272479362086,14.0,0.0
+revenue_per_bedroom,continuous,4110.0,873,15.36,0.0,2312000.0,2312000.0,26131.19981581561,17424.0,44633.62812144479,12.0,0.0
+log_est_revenue,continuous,4186.0,869,15.29,3.828641396489095,14.653623508774405,10.82498211228531,10.20845413453337,10.480213270078822,1.5280447315200238,16.0,10.145649109686099
+host_listings_in_city,discrete_numeric,40.0,0,0.0,1,147,146.0,15.955313159746657,2.0,30.77861853723797,0.0,1
+host_is_professional,discrete_numeric,2.0,0,0.0,0,1,1.0,0.604679802955665,1.0,0.4889623722952171,0.0,1
+host_professional_tier,discrete_categorical,4.0,0,0.0,casual,small_professional,,,,,,casual
+pct_professional_hosts,discrete_numeric,1.0,0,0.0,60.467980295566505,60.467980295566505,0.0,60.467980295566505,60.467980295566505,0.0,0.0,60.467980295566505
+pct_large_operators,discrete_numeric,1.0,0,0.0,18.877551020408163,18.877551020408163,0.0,18.877551020408163,18.877551020408163,0.0,0.0,18.877551020408163
+median_host_listings,discrete_numeric,1.0,0,0.0,2.0,2.0,0.0,2.0,2.0,0.0,0.0,2.0
+gini_host_concentration,discrete_numeric,1.0,0,0.0,0.752475279639272,0.752475279639272,0.0,0.7524752796392721,0.752475279639272,1.1103206996374094e-16,0.0,0.752475279639272
+market_professionalization_score,discrete_numeric,1.0,0,0.0,45.316430293700286,45.316430293700286,0.0,45.3164302937003,45.316430293700286,1.421210495535884e-14,0.0,45.316430293700286
+purchase_price,discrete_numeric,1.0,0,0.0,506874.2332009312,506874.2332009312,0.0,506874.2332009311,506874.2332009312,1.1642556379429962e-10,0.0,506874.2332009312
+monthly_payment,discrete_numeric,1.0,0,0.0,3311.6959786613875,3311.6959786613875,0.0,3311.695978661387,3311.6959786613875,4.547873585714829e-13,0.0,3311.6959786613875
+zori_rent,discrete_numeric,1.0,0,0.0,2141.009126984127,2141.009126984127,0.0,2141.0091269841278,2141.009126984127,9.095747171429658e-13,0.0,2141.009126984127
+zillow_metro,discrete_categorical,1.0,0,0.0,"Providence, RI","Providence, RI",,,,,,"Providence, RI"
+annual_cash_flow,continuous,4187.0,754,13.27,-39740.35174393665,2272259.6482560635,2312000.0,20529.753732736775,-6024.851743936648,86478.5115426087,14.0,-39740.35174393665
+cash_on_cash_roi,continuous,4187.0,754,13.27,-39.20139271331146,2241.443241163249,2280.6446338765604,20.251329016164973,-5.9431426469338025,85.30568914155826,17.0,-39.20139271331146
+cap_rate,continuous,4187.0,754,13.27,0.0,456.12892677531204,456.12892677531204,11.89054434589529,6.651650013275534,17.061137828311654,17.0,0.0
+price_to_rent_ratio,continuous,4186.0,869,15.29,2.630835120420058,132228.06083502554,132225.4299999051,1209.753466963329,170.8372879005498,5939.513276545669,15.0,238.71627937249505
+revenue_yield,continuous,4187.0,754,13.27,0.0,456.12892677531204,456.12892677531204,11.89054434589529,6.651650013275534,17.061137828311654,17.0,0.0
+annual_cash_flow_booked,continuous,2519.0,754,13.27,-39740.35174393665,2660259.6482560635,2700000.0,-19007.026388967075,-27644.351743936648,47216.7476933739,14.0,-39740.35174393665
+cash_on_cash_roi_booked,continuous,2519.0,754,13.27,-39.20139271331146,2624.1811814504913,2663.382574163803,-18.74925291520239,-27.26943878105763,46.57639370934111,16.0,-39.20139271331146
+cap_rate_booked,continuous,2519.0,754,13.27,0.0,532.6765148327606,532.6765148327606,4.090427959621816,2.386390786450767,9.315278741868223,17.0,0.0
+revenue_yield_booked,continuous,2519.0,754,13.27,0.0,532.6765148327606,532.6765148327606,4.090427959621816,2.386390786450767,9.315278741868223,17.0,0.0
