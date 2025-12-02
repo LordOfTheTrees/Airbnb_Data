@@ -205,3 +205,49 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Airbnb Data Project - Data files (too large for repo)
+# CSV data files in city folders
+**/listings.csv
+**/listings.csv.gz
+**/calendar.csv.gz
+**/reviews.csv
+**/reviews.csv.gz
+**/neighbourhoods.csv
+**/neighbourhoods.geojson
+
+# External data sources
+Census/**/*.csv
+Zillow/**/*.csv
+Kaggle/**/*.csv
+
+# Analysis outputs (moved to portfolio_outputs for portfolio use)
+portfolio_outputs/
+**/analysis_output/
+**/exploration_output/
+city_comparison_outputs/
+
+# Empty city folders (kept for structure but no data)
+Albany/
+Asheville/
+Austin/
+Boston/
+Bozeman/
+Cambridge/
+Chicago/
+Columbus/
+Dallas/
+Denver/
+Hawaii/
+Jersey_City/
+Los_Angeles/
+Nashville/
+New_Orleans/
+New_York/
+Oakland/
+Paris/
+Portland/
+Rhode_Island/
+San_Francisco/
+Seattle/
+Washington_DC/
